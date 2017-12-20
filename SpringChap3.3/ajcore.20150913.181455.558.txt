@@ -1,0 +1,1250 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.181455.558.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.MutablePropertyValues extends java.lang.Object implements org.springframework.beans.PropertyValues, java.io.Serializable:
+  private final java.util.List propertyValueList [Signature(Ljava/util/List<Lorg/springframework/beans/PropertyValue;>;)]
+  private java.util.Set processedProperties [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  private volatile boolean converted
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 52)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 53)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ICONST_0
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               RETURN   (line 54)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.beans.PropertyValues):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 63)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(org.springframework.beans.PropertyValues))
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_1     // Lorg/springframework/beans/PropertyValues; original   (line 66)
+    |               IFNULL L2
+    |               ALOAD_1     // Lorg/springframework/beans/PropertyValues; original   (line 67)
+    |               INVOKEINTERFACE org.springframework.beans.PropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 68)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvs
+    |               ARRAYLENGTH
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvs   (line 69)
+    |               DUP
+    |               ASTORE 6
+    |               ARRAYLENGTH
+    |               ISTORE 5
+    |               ICONST_0
+    |               ISTORE 4
+    |               GOTO L1
+    |           L0: ALOAD 6
+    |               ILOAD 4
+    |               AALOAD
+    |               ASTORE_3
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 70)
+    |               GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               NEW org.springframework.beans.PropertyValue
+    |               DUP
+    |               ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+    |               INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Lorg/springframework/beans/PropertyValue;)V
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |               IINC 4 1   (line 69)
+    |           L1: ILOAD 4
+    |               ILOAD 5
+    |               IF_ICMPLT L0
+    |               GOTO L3
+    |           L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 74)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ICONST_0
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |           L3: RETURN   (line 76)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(org.springframework.beans.PropertyValues))
+  end public void <init>(org.springframework.beans.PropertyValues)
+
+  public void <init>(java.util.Map):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 83)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.Map))
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_1     // Ljava/util/Map; original   (line 86)
+    |               IFNULL L2
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 87)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ALOAD_1     // Ljava/util/Map; original
+    |               INVOKEINTERFACE java.util.Map.size ()I
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               ALOAD_1     // Ljava/util/Map; original   (line 88)
+    |               INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_3
+    |               GOTO L1
+    |           L0: ALOAD_3
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Map$Entry
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 89)
+    |               GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               NEW org.springframework.beans.PropertyValue
+    |               DUP
+    |               ALOAD_2     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+    |               INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+    |               ALOAD_2     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+    |               INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L1: ALOAD_3   (line 88)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L0
+    |               GOTO L3
+    |           L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 93)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ICONST_0
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |           L3: RETURN   (line 95)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.Map))
+  end public void <init>(java.util.Map)
+
+  public void <init>(java.util.List):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 104)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.List))
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 105)
+    |               ALOAD_1     // Ljava/util/List; propertyValueList   (line 106)
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/util/List; propertyValueList
+    |               GOTO L1
+    |           L0: NEW java.util.ArrayList
+    |               DUP
+    |               INVOKESPECIAL java.util.ArrayList.<init> ()V
+    |           L1: PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;   (line 105)
+    |               RETURN   (line 107)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.List))
+  end public void <init>(java.util.List)
+
+  public java.util.List getPropertyValueList():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 117)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ARETURN
+  end public java.util.List getPropertyValueList()
+
+  public int size():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 124)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IRETURN
+  end public int size()
+
+  public org.springframework.beans.MutablePropertyValues addPropertyValues(org.springframework.beans.PropertyValues):
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; other   (line 135)
+                    IFNULL L2
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; other   (line 136)
+                    INVOKEINTERFACE org.springframework.beans.PropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+                    ASTORE_2
+                    ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvs   (line 137)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L1
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 138)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Lorg/springframework/beans/PropertyValue;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    IINC 4 1   (line 137)
+                L1: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 141)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues addPropertyValues(org.springframework.beans.PropertyValues)
+
+  public org.springframework.beans.MutablePropertyValues addPropertyValues(java.util.Map):
+                    ALOAD_1     // Ljava/util/Map; other   (line 151)
+                    IFNULL L2
+                    ALOAD_1     // Ljava/util/Map; other   (line 152)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 153)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_2     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                L1: ALOAD_3   (line 152)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 156)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues addPropertyValues(java.util.Map)
+
+  public org.springframework.beans.MutablePropertyValues addPropertyValue(org.springframework.beans.PropertyValue):
+                    ICONST_0   (line 166)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 167)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ILOAD_2     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.PropertyValue
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; currentPv   (line 168)
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 169)
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; currentPv
+                    INVOKESPECIAL org.springframework.beans.MutablePropertyValues.mergeIfRequired (Lorg/springframework/beans/PropertyValue;Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/PropertyValue;
+                    ASTORE_1     // Lorg/springframework/beans/PropertyValue; pv
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 170)
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    ILOAD_2     // I i
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.setPropertyValueAt (Lorg/springframework/beans/PropertyValue;I)V
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 171)
+                    ARETURN
+                L1: IINC_2 1     // I i   (line 166)
+                L2: ILOAD_2     // I i
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 174)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 175)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues addPropertyValue(org.springframework.beans.PropertyValue)
+
+  public void addPropertyValue(String, Object):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 188)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD_2     // Ljava/lang/Object; propertyValue
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    RETURN   (line 189)
+  end public void addPropertyValue(String, Object)
+
+  public org.springframework.beans.MutablePropertyValues add(String, Object):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 199)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD_2     // Ljava/lang/Object; propertyValue
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 200)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues add(String, Object)
+
+  public void setPropertyValueAt(org.springframework.beans.PropertyValue, int):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 208)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ILOAD_2     // I i
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEINTERFACE java.util.List.set (ILjava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    RETURN   (line 209)
+  end public void setPropertyValueAt(org.springframework.beans.PropertyValue, int)
+
+  private org.springframework.beans.PropertyValue mergeIfRequired(org.springframework.beans.PropertyValue, org.springframework.beans.PropertyValue):
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; newPv   (line 217)
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Object; value   (line 218)
+                    INSTANCEOF org.springframework.beans.Mergeable
+                    IFEQ L0
+                    ALOAD_3     // Ljava/lang/Object; value   (line 219)
+                    CHECKCAST org.springframework.beans.Mergeable
+                    ASTORE 4
+                    ALOAD 4     // Lorg/springframework/beans/Mergeable; mergeable   (line 220)
+                    INVOKEINTERFACE org.springframework.beans.Mergeable.isMergeEnabled ()Z
+                    IFEQ L0
+                    ALOAD 4     // Lorg/springframework/beans/Mergeable; mergeable   (line 221)
+                    ALOAD_2     // Lorg/springframework/beans/PropertyValue; currentPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    INVOKEINTERFACE org.springframework.beans.Mergeable.merge (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 5
+                    NEW org.springframework.beans.PropertyValue   (line 222)
+                    DUP
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD 5     // Ljava/lang/Object; merged
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    ARETURN
+                L0: ALOAD_1     // Lorg/springframework/beans/PropertyValue; newPv   (line 225)
+                    ARETURN
+  end private org.springframework.beans.PropertyValue mergeIfRequired(org.springframework.beans.PropertyValue, org.springframework.beans.PropertyValue)
+
+  public void removePropertyValue(org.springframework.beans.PropertyValue):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 233)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEINTERFACE java.util.List.remove (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 234)
+  end public void removePropertyValue(org.springframework.beans.PropertyValue)
+
+  public void removePropertyValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 242)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValue (Ljava/lang/String;)Lorg/springframework/beans/PropertyValue;
+                    INVOKEINTERFACE java.util.List.remove (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 243)
+  end public void removePropertyValue(String)
+
+  public org.springframework.beans.PropertyValue[] getPropertyValues():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 247)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY org.springframework.beans.PropertyValue
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.beans.PropertyValue;
+                    ARETURN
+  end public org.springframework.beans.PropertyValue[] getPropertyValues()
+
+  public org.springframework.beans.PropertyValue getPropertyValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 251)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.PropertyValue
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/beans/PropertyValue; pv   (line 252)
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_2     // Lorg/springframework/beans/PropertyValue; pv   (line 253)
+                    ARETURN
+                L1: ALOAD_3   (line 251)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ACONST_NULL   (line 256)
+                    ARETURN
+  end public org.springframework.beans.PropertyValue getPropertyValue(String)
+
+  public org.springframework.beans.PropertyValues changesSince(org.springframework.beans.PropertyValues):
+                    NEW org.springframework.beans.MutablePropertyValues   (line 260)
+                    DUP
+                    INVOKESPECIAL org.springframework.beans.MutablePropertyValues.<init> ()V
+                    ASTORE_2
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; old   (line 261)
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    IF_ACMPNE L0
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 262)
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 266)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L3
+                L1: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.PropertyValue
+                    ASTORE_3
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; old   (line 268)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.beans.PropertyValues.getPropertyValue (Ljava/lang/String;)Lorg/springframework/beans/PropertyValue;
+                    ASTORE 5
+                    ALOAD 5     // Lorg/springframework/beans/PropertyValue; pvOld   (line 269)
+                    IFNONNULL L2
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 270)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    GOTO L3
+                L2: ALOAD 5     // Lorg/springframework/beans/PropertyValue; pvOld   (line 272)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.equals (Ljava/lang/Object;)Z
+                    IFNE L3
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 274)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                L3: ALOAD 4   (line 266)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 277)
+                    ARETURN
+  end public org.springframework.beans.PropertyValues changesSince(org.springframework.beans.PropertyValues)
+
+  public boolean contains(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 281)
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValue (Ljava/lang/String;)Lorg/springframework/beans/PropertyValue;
+                    IFNONNULL L1
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 282)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFNE L1
+                L0: ICONST_0
+                    IRETURN
+                L1: ICONST_1
+                    IRETURN   (line 281)
+  end public boolean contains(String)
+
+  public boolean isEmpty():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 286)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.isEmpty ()Z
+                    IRETURN
+  end public boolean isEmpty()
+
+  public void registerProcessedProperty(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 299)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 300)
+                    NEW java.util.HashSet
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    PUTFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                L0: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 302)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 303)
+  end public void registerProcessedProperty(String)
+
+  public void setConverted():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 310)
+                    ICONST_1
+                    PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+                    RETURN   (line 311)
+  end public void setConverted()
+
+  public boolean isConverted():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 318)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.converted Z
+                    IRETURN
+  end public boolean isConverted()
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 324)
+                    ALOAD_1     // Ljava/lang/Object; other
+                    IF_ACMPNE L0
+                    ICONST_1   (line 325)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; other   (line 327)
+                    INSTANCEOF org.springframework.beans.MutablePropertyValues
+                    IFNE L1
+                    ICONST_0   (line 328)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; other   (line 330)
+                    CHECKCAST org.springframework.beans.MutablePropertyValues
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 331)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; that
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.equals (Ljava/lang/Object;)Z
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 336)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.hashCode ()I
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 341)
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+                    ASTORE_1
+                    NEW java.lang.StringBuilder   (line 342)
+                    DUP
+                    LDC "PropertyValues: length="
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // [Lorg/springframework/beans/PropertyValue; pvs
+                    ARRAYLENGTH
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    ASTORE_2
+                    ALOAD_1     // [Lorg/springframework/beans/PropertyValue; pvs   (line 343)
+                    ARRAYLENGTH
+                    IFLE L0
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 344)
+                    LDC "; "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // [Lorg/springframework/beans/PropertyValue; pvs
+                    LDC "; "
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToDelimitedString ([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L0: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 346)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.MutablePropertyValues
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.createBeanFactory(AbstractRefreshableApplicationContext.java:194)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:127)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.MutablePropertyValues extends java.lang.Object implements org.springframework.beans.PropertyValues, java.io.Serializable:
+  private final java.util.List propertyValueList [Signature(Ljava/util/List<Lorg/springframework/beans/PropertyValue;>;)]
+  private java.util.Set processedProperties [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  private volatile boolean converted
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 52)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 53)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ICONST_0
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               RETURN   (line 54)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.beans.PropertyValues):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 63)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(org.springframework.beans.PropertyValues))
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_1     // Lorg/springframework/beans/PropertyValues; original   (line 66)
+    |               IFNULL L2
+    |               ALOAD_1     // Lorg/springframework/beans/PropertyValues; original   (line 67)
+    |               INVOKEINTERFACE org.springframework.beans.PropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 68)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvs
+    |               ARRAYLENGTH
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvs   (line 69)
+    |               DUP
+    |               ASTORE 6
+    |               ARRAYLENGTH
+    |               ISTORE 5
+    |               ICONST_0
+    |               ISTORE 4
+    |               GOTO L1
+    |           L0: ALOAD 6
+    |               ILOAD 4
+    |               AALOAD
+    |               ASTORE_3
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 70)
+    |               GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               NEW org.springframework.beans.PropertyValue
+    |               DUP
+    |               ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+    |               INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Lorg/springframework/beans/PropertyValue;)V
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |               IINC 4 1   (line 69)
+    |           L1: ILOAD 4
+    |               ILOAD 5
+    |               IF_ICMPLT L0
+    |               GOTO L3
+    |           L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 74)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ICONST_0
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |           L3: RETURN   (line 76)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(org.springframework.beans.PropertyValues))
+  end public void <init>(org.springframework.beans.PropertyValues)
+
+  public void <init>(java.util.Map):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 83)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.Map))
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_1     // Ljava/util/Map; original   (line 86)
+    |               IFNULL L2
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 87)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ALOAD_1     // Ljava/util/Map; original
+    |               INVOKEINTERFACE java.util.Map.size ()I
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               ALOAD_1     // Ljava/util/Map; original   (line 88)
+    |               INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_3
+    |               GOTO L1
+    |           L0: ALOAD_3
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Map$Entry
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 89)
+    |               GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |               NEW org.springframework.beans.PropertyValue
+    |               DUP
+    |               ALOAD_2     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+    |               INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+    |               ALOAD_2     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+    |               INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L1: ALOAD_3   (line 88)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L0
+    |               GOTO L3
+    |           L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 93)
+    |               NEW java.util.ArrayList
+    |               DUP
+    |               ICONST_0
+    |               INVOKESPECIAL java.util.ArrayList.<init> (I)V
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+    |           L3: RETURN   (line 95)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.Map))
+  end public void <init>(java.util.Map)
+
+  public void <init>(java.util.List):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 104)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.List))
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 44)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+    |               ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 105)
+    |               ALOAD_1     // Ljava/util/List; propertyValueList   (line 106)
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/util/List; propertyValueList
+    |               GOTO L1
+    |           L0: NEW java.util.ArrayList
+    |               DUP
+    |               INVOKESPECIAL java.util.ArrayList.<init> ()V
+    |           L1: PUTFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;   (line 105)
+    |               RETURN   (line 107)
+    constructor-execution(void org.springframework.beans.MutablePropertyValues.<init>(java.util.List))
+  end public void <init>(java.util.List)
+
+  public java.util.List getPropertyValueList():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 117)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ARETURN
+  end public java.util.List getPropertyValueList()
+
+  public int size():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 124)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IRETURN
+  end public int size()
+
+  public org.springframework.beans.MutablePropertyValues addPropertyValues(org.springframework.beans.PropertyValues):
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; other   (line 135)
+                    IFNULL L2
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; other   (line 136)
+                    INVOKEINTERFACE org.springframework.beans.PropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+                    ASTORE_2
+                    ALOAD_2     // [Lorg/springframework/beans/PropertyValue; pvs   (line 137)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L1
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 138)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Lorg/springframework/beans/PropertyValue;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    IINC 4 1   (line 137)
+                L1: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 141)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues addPropertyValues(org.springframework.beans.PropertyValues)
+
+  public org.springframework.beans.MutablePropertyValues addPropertyValues(java.util.Map):
+                    ALOAD_1     // Ljava/util/Map; other   (line 151)
+                    IFNULL L2
+                    ALOAD_1     // Ljava/util/Map; other   (line 152)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 153)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_2     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                L1: ALOAD_3   (line 152)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 156)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues addPropertyValues(java.util.Map)
+
+  public org.springframework.beans.MutablePropertyValues addPropertyValue(org.springframework.beans.PropertyValue):
+                    ICONST_0   (line 166)
+                    ISTORE_2
+                    GOTO L2
+                L0: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 167)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ILOAD_2     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.PropertyValue
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; currentPv   (line 168)
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 169)
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; currentPv
+                    INVOKESPECIAL org.springframework.beans.MutablePropertyValues.mergeIfRequired (Lorg/springframework/beans/PropertyValue;Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/PropertyValue;
+                    ASTORE_1     // Lorg/springframework/beans/PropertyValue; pv
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 170)
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    ILOAD_2     // I i
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.setPropertyValueAt (Lorg/springframework/beans/PropertyValue;I)V
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 171)
+                    ARETURN
+                L1: IINC_2 1     // I i   (line 166)
+                L2: ILOAD_2     // I i
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 174)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 175)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues addPropertyValue(org.springframework.beans.PropertyValue)
+
+  public void addPropertyValue(String, Object):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 188)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD_2     // Ljava/lang/Object; propertyValue
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    RETURN   (line 189)
+  end public void addPropertyValue(String, Object)
+
+  public org.springframework.beans.MutablePropertyValues add(String, Object):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 199)
+                    NEW org.springframework.beans.PropertyValue
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD_2     // Ljava/lang/Object; propertyValue
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 200)
+                    ARETURN
+  end public org.springframework.beans.MutablePropertyValues add(String, Object)
+
+  public void setPropertyValueAt(org.springframework.beans.PropertyValue, int):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 208)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ILOAD_2     // I i
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEINTERFACE java.util.List.set (ILjava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    RETURN   (line 209)
+  end public void setPropertyValueAt(org.springframework.beans.PropertyValue, int)
+
+  private org.springframework.beans.PropertyValue mergeIfRequired(org.springframework.beans.PropertyValue, org.springframework.beans.PropertyValue):
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; newPv   (line 217)
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Object; value   (line 218)
+                    INSTANCEOF org.springframework.beans.Mergeable
+                    IFEQ L0
+                    ALOAD_3     // Ljava/lang/Object; value   (line 219)
+                    CHECKCAST org.springframework.beans.Mergeable
+                    ASTORE 4
+                    ALOAD 4     // Lorg/springframework/beans/Mergeable; mergeable   (line 220)
+                    INVOKEINTERFACE org.springframework.beans.Mergeable.isMergeEnabled ()Z
+                    IFEQ L0
+                    ALOAD 4     // Lorg/springframework/beans/Mergeable; mergeable   (line 221)
+                    ALOAD_2     // Lorg/springframework/beans/PropertyValue; currentPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getValue ()Ljava/lang/Object;
+                    INVOKEINTERFACE org.springframework.beans.Mergeable.merge (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 5
+                    NEW org.springframework.beans.PropertyValue   (line 222)
+                    DUP
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD 5     // Ljava/lang/Object; merged
+                    INVOKESPECIAL org.springframework.beans.PropertyValue.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    ARETURN
+                L0: ALOAD_1     // Lorg/springframework/beans/PropertyValue; newPv   (line 225)
+                    ARETURN
+  end private org.springframework.beans.PropertyValue mergeIfRequired(org.springframework.beans.PropertyValue, org.springframework.beans.PropertyValue)
+
+  public void removePropertyValue(org.springframework.beans.PropertyValue):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 233)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValue; pv
+                    INVOKEINTERFACE java.util.List.remove (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 234)
+  end public void removePropertyValue(org.springframework.beans.PropertyValue)
+
+  public void removePropertyValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 242)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValue (Ljava/lang/String;)Lorg/springframework/beans/PropertyValue;
+                    INVOKEINTERFACE java.util.List.remove (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 243)
+  end public void removePropertyValue(String)
+
+  public org.springframework.beans.PropertyValue[] getPropertyValues():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 247)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY org.springframework.beans.PropertyValue
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.beans.PropertyValue;
+                    ARETURN
+  end public org.springframework.beans.PropertyValue[] getPropertyValues()
+
+  public org.springframework.beans.PropertyValue getPropertyValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 251)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.PropertyValue
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/beans/PropertyValue; pv   (line 252)
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_2     // Lorg/springframework/beans/PropertyValue; pv   (line 253)
+                    ARETURN
+                L1: ALOAD_3   (line 251)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ACONST_NULL   (line 256)
+                    ARETURN
+  end public org.springframework.beans.PropertyValue getPropertyValue(String)
+
+  public org.springframework.beans.PropertyValues changesSince(org.springframework.beans.PropertyValues):
+                    NEW org.springframework.beans.MutablePropertyValues   (line 260)
+                    DUP
+                    INVOKESPECIAL org.springframework.beans.MutablePropertyValues.<init> ()V
+                    ASTORE_2
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; old   (line 261)
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    IF_ACMPNE L0
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 262)
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 266)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L3
+                L1: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.PropertyValue
+                    ASTORE_3
+                    ALOAD_1     // Lorg/springframework/beans/PropertyValues; old   (line 268)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.getName ()Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.beans.PropertyValues.getPropertyValue (Ljava/lang/String;)Lorg/springframework/beans/PropertyValue;
+                    ASTORE 5
+                    ALOAD 5     // Lorg/springframework/beans/PropertyValue; pvOld   (line 269)
+                    IFNONNULL L2
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 270)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    GOTO L3
+                L2: ALOAD 5     // Lorg/springframework/beans/PropertyValue; pvOld   (line 272)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.PropertyValue.equals (Ljava/lang/Object;)Z
+                    IFNE L3
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 274)
+                    ALOAD_3     // Lorg/springframework/beans/PropertyValue; newPv
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.addPropertyValue (Lorg/springframework/beans/PropertyValue;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                L3: ALOAD 4   (line 266)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; changes   (line 277)
+                    ARETURN
+  end public org.springframework.beans.PropertyValues changesSince(org.springframework.beans.PropertyValues)
+
+  public boolean contains(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 281)
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValue (Ljava/lang/String;)Lorg/springframework/beans/PropertyValue;
+                    IFNONNULL L1
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 282)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFNE L1
+                L0: ICONST_0
+                    IRETURN
+                L1: ICONST_1
+                    IRETURN   (line 281)
+  end public boolean contains(String)
+
+  public boolean isEmpty():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 286)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.isEmpty ()Z
+                    IRETURN
+  end public boolean isEmpty()
+
+  public void registerProcessedProperty(String):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 299)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 300)
+                    NEW java.util.HashSet
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    PUTFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                L0: ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 302)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.processedProperties Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 303)
+  end public void registerProcessedProperty(String)
+
+  public void setConverted():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 310)
+                    ICONST_1
+                    PUTFIELD org.springframework.beans.MutablePropertyValues.converted Z
+                    RETURN   (line 311)
+  end public void setConverted()
+
+  public boolean isConverted():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 318)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.converted Z
+                    IRETURN
+  end public boolean isConverted()
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 324)
+                    ALOAD_1     // Ljava/lang/Object; other
+                    IF_ACMPNE L0
+                    ICONST_1   (line 325)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; other   (line 327)
+                    INSTANCEOF org.springframework.beans.MutablePropertyValues
+                    IFNE L1
+                    ICONST_0   (line 328)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; other   (line 330)
+                    CHECKCAST org.springframework.beans.MutablePropertyValues
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 331)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    ALOAD_2     // Lorg/springframework/beans/MutablePropertyValues; that
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.equals (Ljava/lang/Object;)Z
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 336)
+                    GETFIELD org.springframework.beans.MutablePropertyValues.propertyValueList Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.hashCode ()I
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/beans/MutablePropertyValues; this   (line 341)
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.getPropertyValues ()[Lorg/springframework/beans/PropertyValue;
+                    ASTORE_1
+                    NEW java.lang.StringBuilder   (line 342)
+                    DUP
+                    LDC "PropertyValues: length="
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // [Lorg/springframework/beans/PropertyValue; pvs
+                    ARRAYLENGTH
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    ASTORE_2
+                    ALOAD_1     // [Lorg/springframework/beans/PropertyValue; pvs   (line 343)
+                    ARRAYLENGTH
+                    IFLE L0
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 344)
+                    LDC "; "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // [Lorg/springframework/beans/PropertyValue; pvs
+                    LDC "; "
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToDelimitedString ([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L0: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 346)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.MutablePropertyValues
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.createBeanFactory(AbstractRefreshableApplicationContext.java:194)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:127)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

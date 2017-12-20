@@ -1,0 +1,2844 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.182859.707.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.MethodInvocationException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.MethodInvocationException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.MethodInvocationException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.MethodInvocationException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.MethodInvocationException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.MethodInvocationException extends org.springframework.beans.PropertyAccessException:
+  public static final String ERROR_CODE = "methodInvocation"
+  public void <init>(java.beans.PropertyChangeEvent, Throwable):
+                    ALOAD_0     // Lorg/springframework/beans/MethodInvocationException; this   (line 41)
+                    ALOAD_1     // Ljava/beans/PropertyChangeEvent; propertyChangeEvent
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Property '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/beans/PropertyChangeEvent; propertyChangeEvent
+                    INVOKEVIRTUAL java.beans.PropertyChangeEvent.getPropertyName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' threw exception"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/Throwable; cause
+                    INVOKESPECIAL org.springframework.beans.PropertyAccessException.<init> (Ljava/beans/PropertyChangeEvent;Ljava/lang/String;Ljava/lang/Throwable;)V
+    constructor-execution(void org.springframework.beans.MethodInvocationException.<init>(java.beans.PropertyChangeEvent, java.lang.Throwable))
+    |               RETURN   (line 42)
+    constructor-execution(void org.springframework.beans.MethodInvocationException.<init>(java.beans.PropertyChangeEvent, java.lang.Throwable))
+  end public void <init>(java.beans.PropertyChangeEvent, Throwable)
+
+  public String getErrorCode():
+                    LDC "methodInvocation"   (line 45)
+                    ARETURN
+  end public String getErrorCode()
+
+end public class org.springframework.beans.MethodInvocationException
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.TypeConverterDelegate
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.TypeConverterDelegate
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.TypeConverterDelegate
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.TypeConverterDelegate
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.TypeConverterDelegate
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+ class org.springframework.beans.TypeConverterDelegate extends java.lang.Object:
+  private static final org.apache.commons.logging.Log logger
+  private final org.springframework.beans.PropertyEditorRegistrySupport propertyEditorRegistry
+  private final Object targetObject
+  static void <clinit>():
+    staticinitialization(void org.springframework.beans.TypeConverterDelegate.<clinit>())
+    |               LDC org.springframework.beans.TypeConverterDelegate   (line 54)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;
+    |               RETURN   (line 52)
+    staticinitialization(void org.springframework.beans.TypeConverterDelegate.<clinit>())
+  end static void <clinit>()
+
+  public void <init>(org.springframework.beans.PropertyEditorRegistrySupport):
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 66)
+                    ALOAD_1     // Lorg/springframework/beans/PropertyEditorRegistrySupport; propertyEditorRegistry
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.TypeConverterDelegate.<init> (Lorg/springframework/beans/PropertyEditorRegistrySupport;Ljava/lang/Object;)V
+    constructor-execution(void org.springframework.beans.TypeConverterDelegate.<init>(org.springframework.beans.PropertyEditorRegistrySupport))
+    |               RETURN   (line 67)
+    constructor-execution(void org.springframework.beans.TypeConverterDelegate.<init>(org.springframework.beans.PropertyEditorRegistrySupport))
+  end public void <init>(org.springframework.beans.PropertyEditorRegistrySupport)
+
+  public void <init>(org.springframework.beans.PropertyEditorRegistrySupport, Object):
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 74)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.TypeConverterDelegate.<init>(org.springframework.beans.PropertyEditorRegistrySupport, java.lang.Object))
+    |               ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 75)
+    |               ALOAD_1     // Lorg/springframework/beans/PropertyEditorRegistrySupport; propertyEditorRegistry
+    |               PUTFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+    |               ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 76)
+    |               ALOAD_2     // Ljava/lang/Object; targetObject
+    |               PUTFIELD org.springframework.beans.TypeConverterDelegate.targetObject Ljava/lang/Object;
+    |               RETURN   (line 77)
+    constructor-execution(void org.springframework.beans.TypeConverterDelegate.<init>(org.springframework.beans.PropertyEditorRegistrySupport, java.lang.Object))
+  end public void <init>(org.springframework.beans.PropertyEditorRegistrySupport, Object)
+
+  public Object convertIfNecessary(Object, Class, org.springframework.core.MethodParameter) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 93)
+                    ACONST_NULL
+                    ACONST_NULL
+                    ALOAD_1     // Ljava/lang/Object; newValue
+                    ALOAD_2     // Ljava/lang/Class; requiredType
+                    ALOAD_3     // Lorg/springframework/core/MethodParameter; methodParam   (line 94)
+                    IFNULL L0
+                    NEW org.springframework.core.convert.TypeDescriptor
+                    DUP
+                    ALOAD_3     // Lorg/springframework/core/MethodParameter; methodParam
+                    INVOKESPECIAL org.springframework.core.convert.TypeDescriptor.<init> (Lorg/springframework/core/MethodParameter;)V
+                    GOTO L1
+                L0: ALOAD_2     // Ljava/lang/Class; requiredType
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.valueOf (Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+                L1: INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;   (line 93)
+                    ARETURN
+  end public Object convertIfNecessary(Object, Class, org.springframework.core.MethodParameter) throws java.lang.IllegalArgumentException
+
+  public Object convertIfNecessary(String, Object, Object, Class) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 111)
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD_2     // Ljava/lang/Object; oldValue
+                    ALOAD_3     // Ljava/lang/Object; newValue
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.valueOf (Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+                    ARETURN
+  end public Object convertIfNecessary(String, Object, Object, Class) throws java.lang.IllegalArgumentException
+
+  public Object convertIfNecessary(String, Object, Object, Class, org.springframework.core.convert.TypeDescriptor) throws java.lang.IllegalArgumentException:
+                    ALOAD_3     // Ljava/lang/Object; newValue   (line 130)
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 133)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.PropertyEditorRegistrySupport.findCustomEditor (Ljava/lang/Class;Ljava/lang/String;)Ljava/beans/PropertyEditor;
+                    ASTORE 7
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 136)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+                    INVOKEVIRTUAL org.springframework.beans.PropertyEditorRegistrySupport.getConversionService ()Lorg/springframework/core/convert/ConversionService;
+                    ASTORE 8
+                    ALOAD 7     // Ljava/beans/PropertyEditor; editor   (line 137)
+                    IFNONNULL L0
+                    ALOAD 8     // Lorg/springframework/core/convert/ConversionService; conversionService
+                    IFNULL L0
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    IFNULL L0
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 138)
+                    INVOKESTATIC org.springframework.core.convert.TypeDescriptor.forObject (Ljava/lang/Object;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ASTORE 9
+                    ALOAD 5     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 139)
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.forElementType (Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+                    ASTORE 10
+                    ALOAD 8     // Lorg/springframework/core/convert/ConversionService; conversionService   (line 140)
+                    ALOAD 9     // Lorg/springframework/core/convert/TypeDescriptor; sourceTypeDesc
+                    ALOAD 10     // Lorg/springframework/core/convert/TypeDescriptor; targetTypeDesc
+                    INVOKEINTERFACE org.springframework.core.convert.ConversionService.canConvert (Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+                    IFEQ L0
+                    ALOAD 8     // Lorg/springframework/core/convert/ConversionService; conversionService   (line 141)
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    ALOAD 9     // Lorg/springframework/core/convert/TypeDescriptor; sourceTypeDesc
+                    ALOAD 10     // Lorg/springframework/core/convert/TypeDescriptor; targetTypeDesc
+                    INVOKEINTERFACE org.springframework.core.convert.ConversionService.convert (Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+                    ARETURN
+                L0: ALOAD 7     // Ljava/beans/PropertyEditor; editor   (line 146)
+                    IFNONNULL L1
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    IFNULL L4
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    INVOKESTATIC org.springframework.util.ClassUtils.isAssignableValue (Ljava/lang/Class;Ljava/lang/Object;)Z
+                    IFNE L4
+                L1: ALOAD 4     // Ljava/lang/Class; requiredType   (line 147)
+                    IFNULL L2
+                    LDC java.util.Collection
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L2
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 148)
+                    INSTANCEOF java.lang.String
+                    IFEQ L2
+                    ALOAD 5     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMethodParameter ()Lorg/springframework/core/MethodParameter;
+                    IFNULL L2
+                    ALOAD 5     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 149)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMethodParameter ()Lorg/springframework/core/MethodParameter;
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getCollectionParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                    ASTORE 9
+                    ALOAD 9     // Ljava/lang/Class; elemType   (line 150)
+                    IFNULL L2
+                    LDC java.lang.Enum
+                    ALOAD 9     // Ljava/lang/Class; elemType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L2
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 151)
+                    CHECKCAST java.lang.String
+                    INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 6     // Ljava/lang/Object; convertedValue
+                L2: ALOAD 7     // Ljava/beans/PropertyEditor; editor   (line 154)
+                    IFNONNULL L3
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 155)
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 5     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.findDefaultEditor (Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/beans/PropertyEditor;
+                    ASTORE 7     // Ljava/beans/PropertyEditor; editor
+                L3: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 157)
+                    ALOAD_2     // Ljava/lang/Object; oldValue
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 7     // Ljava/beans/PropertyEditor; editor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.doConvertValue (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Ljava/beans/PropertyEditor;)Ljava/lang/Object;
+                    ASTORE 6     // Ljava/lang/Object; convertedValue
+                L4: ALOAD 4     // Ljava/lang/Class; requiredType   (line 160)
+                    IFNULL L16
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 163)
+                    IFNULL L13
+                    ALOAD 4     // Ljava/lang/Class; requiredType   (line 164)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L6
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 166)
+                    INSTANCEOF java.lang.String
+                    IFEQ L5
+                    LDC java.lang.Enum
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L5
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 167)
+                    CHECKCAST java.lang.String
+                    INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 6     // Ljava/lang/Object; convertedValue
+                L5: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 169)
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertToTypedArray (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+                L6: ALOAD 6     // Ljava/lang/Object; convertedValue   (line 171)
+                    INSTANCEOF java.util.Collection
+                    IFEQ L7
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 173)
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 174)
+                    CHECKCAST java.util.Collection
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 5     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertToTypedCollection (Ljava/util/Collection;Ljava/lang/String;Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/util/Collection;   (line 173)
+                    ASTORE 6     // Ljava/lang/Object; convertedValue
+                    GOTO L8
+                L7: ALOAD 6     // Ljava/lang/Object; convertedValue   (line 176)
+                    INSTANCEOF java.util.Map
+                    IFEQ L8
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 178)
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 179)
+                    CHECKCAST java.util.Map
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 5     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertToTypedMap (Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/util/Map;   (line 178)
+                    ASTORE 6     // Ljava/lang/Object; convertedValue
+                L8: ALOAD 6     // Ljava/lang/Object; convertedValue   (line 181)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L9
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    INVOKESTATIC java.lang.reflect.Array.getLength (Ljava/lang/Object;)I
+                    ICONST_1
+                    IF_ICMPNE L9
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 182)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.get (Ljava/lang/Object;I)Ljava/lang/Object;
+                    ASTORE 6     // Ljava/lang/Object; convertedValue
+                L9: LDC java.lang.String   (line 184)
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L10
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPrimitiveOrWrapper (Ljava/lang/Class;)Z
+                    IFEQ L10
+                    ALOAD 6     // Ljava/lang/Object; convertedValue   (line 186)
+                    INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+                    ARETURN
+               L10: ALOAD 6     // Ljava/lang/Object; convertedValue   (line 188)
+                    INSTANCEOF java.lang.String
+                    IFEQ L13
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    IFNE L13
+                    ALOAD 4     // Ljava/lang/Class; requiredType   (line 189)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFNE L11
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.isEnum ()Z
+                    IFNE L11
+    catch java.lang.Exception -> E1
+    | catch java.lang.NoSuchMethodException -> E0
+    | |             ALOAD 4     // Ljava/lang/Class; requiredType   (line 191)
+    | |             ICONST_1
+    | |             ANEWARRAY java.lang.Class
+    | |             DUP
+    | |             ICONST_0
+    | |             LDC java.lang.String
+    | |             AASTORE
+    | |             INVOKEVIRTUAL java.lang.Class.getConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    | |             ASTORE 9
+    | |             ALOAD 9     // Ljava/lang/reflect/Constructor; strCtor   (line 192)
+    | |             ICONST_1
+    | |             ANEWARRAY java.lang.Object
+    | |             DUP
+    | |             ICONST_0
+    | |             ALOAD 6     // Ljava/lang/Object; convertedValue
+    | |             AASTORE
+    | |             INVOKESTATIC org.springframework.beans.BeanUtils.instantiateClass (Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
+    | catch java.lang.NoSuchMethodException -> E0
+    catch java.lang.Exception -> E1
+                    ARETURN
+                E0: ASTORE 9   (line 194)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 196)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L11
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 197)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "No String constructor found on type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 9     // Ljava/lang/NoSuchMethodException; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    GOTO L11
+                E1: ASTORE 9   (line 200)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 201)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L11
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 202)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Construction via String failed for type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 9     // Ljava/lang/Exception; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V
+               L11: ALOAD 6     // Ljava/lang/Object; convertedValue   (line 206)
+                    CHECKCAST java.lang.String
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE 9
+                    ALOAD 4     // Ljava/lang/Class; requiredType   (line 207)
+                    INVOKEVIRTUAL java.lang.Class.isEnum ()Z
+                    IFEQ L12
+                    LDC ""
+                    ALOAD 9     // Ljava/lang/String; trimmedValue
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L12
+                    ACONST_NULL   (line 209)
+                    ARETURN
+               L12: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 212)
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    ALOAD 9     // Ljava/lang/String; trimmedValue
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    INVOKESPECIAL org.springframework.beans.TypeConverterDelegate.attemptToConvertStringToEnum (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 6     // Ljava/lang/Object; convertedValue
+               L13: ALOAD 4     // Ljava/lang/Class; requiredType   (line 216)
+                    ALOAD 6     // Ljava/lang/Object; convertedValue
+                    INVOKESTATIC org.springframework.util.ClassUtils.isAssignableValue (Ljava/lang/Class;Ljava/lang/Object;)Z
+                    IFNE L16
+                    NEW java.lang.StringBuilder   (line 218)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE 9
+                    ALOAD 9     // Ljava/lang/StringBuilder; msg   (line 219)
+                    LDC "Cannot convert value of type ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/Object; newValue
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDescriptiveType (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD 9     // Ljava/lang/StringBuilder; msg   (line 220)
+                    LDC "] to required type ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Ljava/lang/Class; requiredType
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/String; propertyName   (line 221)
+                    IFNULL L14
+                    ALOAD 9     // Ljava/lang/StringBuilder; msg   (line 222)
+                    LDC_W " for property '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+               L14: ALOAD 7     // Ljava/beans/PropertyEditor; editor   (line 224)
+                    IFNULL L15
+                    ALOAD 9     // Ljava/lang/StringBuilder; msg   (line 225)
+                    LDC_W ": PropertyEditor ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 7     // Ljava/beans/PropertyEditor; editor
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] returned inappropriate value"   (line 226)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;   (line 225)
+                    POP
+                    NEW java.lang.IllegalArgumentException   (line 227)
+                    DUP
+                    ALOAD 9     // Ljava/lang/StringBuilder; msg
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+               L15: ALOAD 9     // Ljava/lang/StringBuilder; msg   (line 230)
+                    LDC_W ": no matching editors or conversion strategy found"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    NEW java.lang.IllegalStateException   (line 231)
+                    DUP
+                    ALOAD 9     // Ljava/lang/StringBuilder; msg
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+               L16: ALOAD 6     // Ljava/lang/Object; convertedValue   (line 236)
+                    ARETURN
+  end public Object convertIfNecessary(String, Object, Object, Class, org.springframework.core.convert.TypeDescriptor) throws java.lang.IllegalArgumentException
+
+  private Object attemptToConvertStringToEnum(Class, String, Object):
+                    ALOAD_3     // Ljava/lang/Object; currentConvertedValue   (line 240)
+                    ASTORE 4
+                    LDC java.lang.Enum   (line 242)
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/String; trimmedValue   (line 244)
+                    LDC_W "."
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (Ljava/lang/String;)I
+                    ISTORE 5
+                    ILOAD 5     // I index   (line 245)
+                    ICONST_M1
+                    IF_ICMPLE L0
+                    ALOAD_2     // Ljava/lang/String; trimmedValue   (line 246)
+                    ICONST_0
+                    ILOAD 5     // I index
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD_2     // Ljava/lang/String; trimmedValue   (line 247)
+                    ILOAD 5     // I index
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 7
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 248)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.targetObject Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    ASTORE 8
+    catch java.lang.Throwable -> E1
+    | catch java.lang.ClassNotFoundException -> E0
+    | |             ALOAD 8     // Ljava/lang/ClassLoader; loader   (line 250)
+    | |             ALOAD 6     // Ljava/lang/String; enumType
+    | |             INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;
+    | |             ASTORE 9
+    | |             ALOAD 9     // Ljava/lang/Class; enumValueType   (line 251)
+    | |             ALOAD 7     // Ljava/lang/String; fieldName
+    | |             INVOKEVIRTUAL java.lang.Class.getField (Ljava/lang/String;)Ljava/lang/reflect/Field;
+    | |             ASTORE 10
+    | |             ALOAD 10     // Ljava/lang/reflect/Field; enumField   (line 252)
+    | |             ACONST_NULL
+    | |             INVOKEVIRTUAL java.lang.reflect.Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+    | |             ASTORE 4     // Ljava/lang/Object; convertedValue
+    | catch java.lang.ClassNotFoundException -> E0
+    catch java.lang.Throwable -> E1
+                    GOTO L0
+                E0: ASTORE 9   (line 254)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 255)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 256)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Enum class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 6     // Ljava/lang/String; enumType
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] cannot be loaded from ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 8     // Ljava/lang/ClassLoader; loader
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 9     // Ljava/lang/ClassNotFoundException; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    GOTO L0
+                E1: ASTORE 9   (line 259)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 260)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 261)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Field ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 7     // Ljava/lang/String; fieldName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] isn't an enum value for type ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 6     // Ljava/lang/String; enumType
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 9     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                L0: ALOAD 4     // Ljava/lang/Object; convertedValue   (line 267)
+                    ALOAD_3     // Ljava/lang/Object; currentConvertedValue
+                    IF_ACMPNE L1
+    catch java.lang.Throwable -> E2
+    |               ALOAD_1     // Ljava/lang/Class; requiredType   (line 272)
+    |               ALOAD_2     // Ljava/lang/String; trimmedValue
+    |               INVOKEVIRTUAL java.lang.Class.getField (Ljava/lang/String;)Ljava/lang/reflect/Field;
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/reflect/Field; enumField   (line 273)
+    |               ACONST_NULL
+    |               INVOKEVIRTUAL java.lang.reflect.Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               ASTORE 4     // Ljava/lang/Object; convertedValue
+    catch java.lang.Throwable -> E2
+                    GOTO L1
+                E2: ASTORE 5   (line 275)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 276)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L1
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 277)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Field ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/Object; convertedValue
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "] isn't an enum value"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 5     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                L1: ALOAD 4     // Ljava/lang/Object; convertedValue   (line 283)
+                    ARETURN
+  end private Object attemptToConvertStringToEnum(Class, String, Object)
+
+  protected java.beans.PropertyEditor findDefaultEditor(Class, org.springframework.core.convert.TypeDescriptor):
+                    ACONST_NULL   (line 292)
+                    ASTORE_3
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 293)
+                    INSTANCEOF org.springframework.core.convert.support.PropertyTypeDescriptor
+                    IFEQ L0
+                    ALOAD_2     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 294)
+                    CHECKCAST org.springframework.core.convert.support.PropertyTypeDescriptor
+                    INVOKEVIRTUAL org.springframework.core.convert.support.PropertyTypeDescriptor.getPropertyDescriptor ()Ljava/beans/PropertyDescriptor;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/beans/PropertyDescriptor; pd   (line 295)
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.targetObject Ljava/lang/Object;
+                    INVOKEVIRTUAL java.beans.PropertyDescriptor.createPropertyEditor (Ljava/lang/Object;)Ljava/beans/PropertyEditor;
+                    ASTORE_3     // Ljava/beans/PropertyEditor; editor
+                L0: ALOAD_3     // Ljava/beans/PropertyEditor; editor   (line 297)
+                    IFNONNULL L1
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    IFNULL L1
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 299)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL org.springframework.beans.PropertyEditorRegistrySupport.getDefaultEditor (Ljava/lang/Class;)Ljava/beans/PropertyEditor;
+                    ASTORE_3     // Ljava/beans/PropertyEditor; editor
+                    ALOAD_3     // Ljava/beans/PropertyEditor; editor   (line 300)
+                    IFNONNULL L1
+                    LDC java.lang.String
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/lang/Class; requiredType   (line 302)
+                    INVOKESTATIC org.springframework.beans.BeanUtils.findEditorByConvention (Ljava/lang/Class;)Ljava/beans/PropertyEditor;
+                    ASTORE_3     // Ljava/beans/PropertyEditor; editor
+                L1: ALOAD_3     // Ljava/beans/PropertyEditor; editor   (line 305)
+                    ARETURN
+  end protected java.beans.PropertyEditor findDefaultEditor(Class, org.springframework.core.convert.TypeDescriptor)
+
+  protected Object doConvertValue(Object, Object, Class, java.beans.PropertyEditor):
+                    ALOAD_2     // Ljava/lang/Object; newValue   (line 320)
+                    ASTORE 5
+                    ICONST_0   (line 321)
+                    ISTORE 6
+                    ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 323)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 324)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+                    ALOAD 4     // Ljava/beans/PropertyEditor; editor
+                    INVOKEVIRTUAL org.springframework.beans.PropertyEditorRegistrySupport.isSharedEditor (Ljava/beans/PropertyEditor;)Z
+                    ISTORE 6     // Z sharedEditor
+                L0: ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 327)
+                    IFNULL L3
+                    ALOAD 5     // Ljava/lang/Object; convertedValue
+                    INSTANCEOF java.lang.String
+                    IFNE L3
+    catch java.lang.Exception -> E2
+    |               ILOAD 6     // Z sharedEditor   (line 334)
+    |               IFEQ L1
+    |               ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 336)
+    |               DUP
+    |               ASTORE 8
+    |               MONITORENTER
+    | finally -> E1
+    | |             ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 337)
+    | |             ALOAD 5     // Ljava/lang/Object; convertedValue
+    | |             INVOKEINTERFACE java.beans.PropertyEditor.setValue (Ljava/lang/Object;)V
+    | |             ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 338)
+    | |             INVOKEINTERFACE java.beans.PropertyEditor.getValue ()Ljava/lang/Object;
+    | |             ASTORE 7
+    | |             ALOAD 8   (line 336)
+    | |             MONITOREXIT
+    | finally -> E1
+    |               GOTO L2
+    | finally -> E1
+    | |         E1: ALOAD 8
+    | |             MONITOREXIT
+    | finally -> E1
+    |               ATHROW
+    |           L1: ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 343)
+    |               ALOAD 5     // Ljava/lang/Object; convertedValue
+    |               INVOKEINTERFACE java.beans.PropertyEditor.setValue (Ljava/lang/Object;)V
+    |               ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 344)
+    |               INVOKEINTERFACE java.beans.PropertyEditor.getValue ()Ljava/lang/Object;
+    |               ASTORE 7
+    |           L2: ALOAD 7     // Ljava/lang/Object; newConvertedValue   (line 346)
+    |               ALOAD 5     // Ljava/lang/Object; convertedValue
+    |               IF_ACMPEQ L3
+    |               ALOAD 7     // Ljava/lang/Object; newConvertedValue   (line 347)
+    |               ASTORE 5     // Ljava/lang/Object; convertedValue
+    |               ACONST_NULL   (line 350)
+    |               ASTORE 4     // Ljava/beans/PropertyEditor; editor
+    catch java.lang.Exception -> E2
+                    GOTO L3
+                E2: ASTORE 7   (line 353)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 354)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L3
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 355)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "PropertyEditor ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/beans/PropertyEditor; editor
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] does not support setValue call"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 7     // Ljava/lang/Exception; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                L3: ALOAD 5     // Ljava/lang/Object; convertedValue   (line 361)
+                    ASTORE 7
+                    ALOAD_3     // Ljava/lang/Class; requiredType   (line 363)
+                    IFNULL L5
+                    ALOAD_3     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFNE L5
+                    ALOAD 5     // Ljava/lang/Object; convertedValue
+                    INSTANCEOF [Ljava.lang.String;
+                    IFEQ L5
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 367)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L4
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 368)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Converting String array to comma-delimited String ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/Object; convertedValue
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L4: ALOAD 5     // Ljava/lang/Object; convertedValue   (line 370)
+                    CHECKCAST [Ljava.lang.String;
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToCommaDelimitedString ([Ljava/lang/Object;)Ljava/lang/String;
+                    ASTORE 5     // Ljava/lang/Object; convertedValue
+                L5: ALOAD 5     // Ljava/lang/Object; convertedValue   (line 373)
+                    INSTANCEOF java.lang.String
+                    IFEQ L9
+                    ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 374)
+                    IFNULL L8
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 376)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L6
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 377)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Converting String to ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W "] using property editor ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Ljava/beans/PropertyEditor; editor
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L6: ALOAD 5     // Ljava/lang/Object; convertedValue   (line 379)
+                    CHECKCAST java.lang.String
+                    ASTORE 8
+                    ILOAD 6     // Z sharedEditor   (line 380)
+                    IFEQ L7
+                    ALOAD 4     // Ljava/beans/PropertyEditor; editor   (line 382)
+                    DUP
+                    ASTORE 9
+                    MONITORENTER
+    finally -> E4
+    |               ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 383)
+    |               ALOAD_1     // Ljava/lang/Object; oldValue
+    |               ALOAD 8     // Ljava/lang/String; newTextValue
+    |               ALOAD 4     // Ljava/beans/PropertyEditor; editor
+    |               INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.doConvertTextValue (Ljava/lang/Object;Ljava/lang/String;Ljava/beans/PropertyEditor;)Ljava/lang/Object;
+    |               ALOAD 9
+    |               MONITOREXIT
+    finally -> E4
+                    ARETURN
+    finally -> E4
+    |           E4: ALOAD 9   (line 382)
+    |               MONITOREXIT
+    finally -> E4
+                    ATHROW
+                L7: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 388)
+                    ALOAD_1     // Ljava/lang/Object; oldValue
+                    ALOAD 8     // Ljava/lang/String; newTextValue
+                    ALOAD 4     // Ljava/beans/PropertyEditor; editor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.doConvertTextValue (Ljava/lang/Object;Ljava/lang/String;Ljava/beans/PropertyEditor;)Ljava/lang/Object;
+                    ARETURN
+                L8: LDC java.lang.String   (line 391)
+                    ALOAD_3     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L9
+                    ALOAD 5     // Ljava/lang/Object; convertedValue   (line 392)
+                    ASTORE 7     // Ljava/lang/Object; returnValue
+                L9: ALOAD 7     // Ljava/lang/Object; returnValue   (line 396)
+                    ARETURN
+  end protected Object doConvertValue(Object, Object, Class, java.beans.PropertyEditor)
+
+  protected Object doConvertTextValue(Object, String, java.beans.PropertyEditor):
+    catch java.lang.Exception -> E0
+    |               ALOAD_3     // Ljava/beans/PropertyEditor; editor   (line 408)
+    |               ALOAD_1     // Ljava/lang/Object; oldValue
+    |               INVOKEINTERFACE java.beans.PropertyEditor.setValue (Ljava/lang/Object;)V
+    catch java.lang.Exception -> E0
+                    GOTO L0
+                E0: ASTORE 4   (line 410)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 411)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 412)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "PropertyEditor ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/beans/PropertyEditor; editor
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] does not support setValue call"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 4     // Ljava/lang/Exception; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                L0: ALOAD_3     // Ljava/beans/PropertyEditor; editor   (line 416)
+                    ALOAD_2     // Ljava/lang/String; newTextValue
+                    INVOKEINTERFACE java.beans.PropertyEditor.setAsText (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/beans/PropertyEditor; editor   (line 417)
+                    INVOKEINTERFACE java.beans.PropertyEditor.getValue ()Ljava/lang/Object;
+                    ARETURN
+  end protected Object doConvertTextValue(Object, String, java.beans.PropertyEditor)
+
+  protected Object convertToTypedArray(Object, String, Class):
+                    ALOAD_1     // Ljava/lang/Object; input   (line 421)
+                    INSTANCEOF java.util.Collection
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/Object; input   (line 423)
+                    CHECKCAST java.util.Collection
+                    ASTORE 4
+                    ALOAD_3     // Ljava/lang/Class; componentType   (line 424)
+                    ALOAD 4     // Ljava/util/Collection; coll
+                    INVOKEINTERFACE java.util.Collection.size ()I
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    ASTORE 5
+                    ICONST_0   (line 425)
+                    ISTORE 6
+                    ALOAD 4     // Ljava/util/Collection; coll   (line 426)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 7
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 427)
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 428)
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    ILOAD 6     // I i
+                    INVOKESPECIAL org.springframework.beans.TypeConverterDelegate.buildIndexedPropertyName (Ljava/lang/String;I)Ljava/lang/String;
+                    ACONST_NULL
+                    ALOAD 7     // Ljava/util/Iterator; it
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ALOAD_3     // Ljava/lang/Class; componentType
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;   (line 427)
+                    ASTORE 8
+                    ALOAD 5     // Ljava/lang/Object; result   (line 429)
+                    ILOAD 6     // I i
+                    ALOAD 8     // Ljava/lang/Object; value
+                    INVOKESTATIC java.lang.reflect.Array.set (Ljava/lang/Object;ILjava/lang/Object;)V
+                    IINC 6 1     // I i   (line 426)
+                L1: ALOAD 7     // Ljava/util/Iterator; it
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD 5     // Ljava/lang/Object; result   (line 431)
+                    ARETURN
+                L2: ALOAD_1     // Ljava/lang/Object; input   (line 433)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L6
+                    ALOAD_3     // Ljava/lang/Class; componentType   (line 435)
+                    ALOAD_1     // Ljava/lang/Object; input
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 436)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+                    ALOAD_3     // Ljava/lang/Class; componentType
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.PropertyEditorRegistrySupport.hasCustomEditorForElement (Ljava/lang/Class;Ljava/lang/String;)Z
+                    IFNE L3
+                    ALOAD_1     // Ljava/lang/Object; input   (line 437)
+                    ARETURN
+                L3: ALOAD_1     // Ljava/lang/Object; input   (line 439)
+                    INVOKESTATIC java.lang.reflect.Array.getLength (Ljava/lang/Object;)I
+                    ISTORE 4
+                    ALOAD_3     // Ljava/lang/Class; componentType   (line 440)
+                    ILOAD 4     // I arrayLength
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    ASTORE 5
+                    ICONST_0   (line 441)
+                    ISTORE 6
+                    GOTO L5
+                L4: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 442)
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 443)
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    ILOAD 6     // I i
+                    INVOKESPECIAL org.springframework.beans.TypeConverterDelegate.buildIndexedPropertyName (Ljava/lang/String;I)Ljava/lang/String;
+                    ACONST_NULL
+                    ALOAD_1     // Ljava/lang/Object; input
+                    ILOAD 6     // I i
+                    INVOKESTATIC java.lang.reflect.Array.get (Ljava/lang/Object;I)Ljava/lang/Object;
+                    ALOAD_3     // Ljava/lang/Class; componentType
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;   (line 442)
+                    ASTORE 7
+                    ALOAD 5     // Ljava/lang/Object; result   (line 444)
+                    ILOAD 6     // I i
+                    ALOAD 7     // Ljava/lang/Object; value
+                    INVOKESTATIC java.lang.reflect.Array.set (Ljava/lang/Object;ILjava/lang/Object;)V
+                    IINC 6 1     // I i   (line 441)
+                L5: ILOAD 6     // I i
+                    ILOAD 4     // I arrayLength
+                    IF_ICMPLT L4
+                    ALOAD 5     // Ljava/lang/Object; result   (line 446)
+                    ARETURN
+                L6: ALOAD_3     // Ljava/lang/Class; componentType   (line 450)
+                    ICONST_1
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 451)
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 452)
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.beans.TypeConverterDelegate.buildIndexedPropertyName (Ljava/lang/String;I)Ljava/lang/String;
+                    ACONST_NULL
+                    ALOAD_1     // Ljava/lang/Object; input
+                    ALOAD_3     // Ljava/lang/Class; componentType
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;   (line 451)
+                    ASTORE 5
+                    ALOAD 4     // Ljava/lang/Object; result   (line 453)
+                    ICONST_0
+                    ALOAD 5     // Ljava/lang/Object; value
+                    INVOKESTATIC java.lang.reflect.Array.set (Ljava/lang/Object;ILjava/lang/Object;)V
+                    ALOAD 4     // Ljava/lang/Object; result   (line 454)
+                    ARETURN
+  end protected Object convertToTypedArray(Object, String, Class)
+
+  protected java.util.Collection convertToTypedCollection(java.util.Collection, String, Class, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_3     // Ljava/lang/Class; requiredType   (line 462)
+                    ALOAD_1     // Ljava/util/Collection; original
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    ISTORE 5
+                    ILOAD 5     // Z originalAllowed   (line 463)
+                    IFNE L0
+                    LDC java.util.Collection
+                    ALOAD_3     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/util/Collection; original   (line 464)
+                    ARETURN
+                L0: ALOAD 4     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 467)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMethodParameter ()Lorg/springframework/core/MethodParameter;
+                    ASTORE 6
+                    ACONST_NULL   (line 468)
+                    ASTORE 7
+                    ALOAD 6     // Lorg/springframework/core/MethodParameter; methodParam   (line 469)
+                    IFNULL L1
+                    ALOAD 6     // Lorg/springframework/core/MethodParameter; methodParam   (line 470)
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getCollectionParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                    ASTORE 7     // Ljava/lang/Class; elementType
+                L1: ALOAD 7     // Ljava/lang/Class; elementType   (line 472)
+                    IFNONNULL L2
+                    ILOAD 5     // Z originalAllowed
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 473)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+                    ACONST_NULL
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.PropertyEditorRegistrySupport.hasCustomEditorForElement (Ljava/lang/Class;Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD_1     // Ljava/util/Collection; original   (line 474)
+                    ARETURN
+    catch java.lang.Throwable -> E0
+    |           L2: ALOAD_1     // Ljava/util/Collection; original   (line 479)
+    |               INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+    |               ASTORE 8
+    |               ALOAD 8     // Ljava/util/Iterator; it   (line 480)
+    |               IFNONNULL L5
+    |               GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 481)
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L3
+    |               GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 482)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC_W "Collection of type ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_1     // Ljava/util/Collection; original
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC_W "] returned null Iterator - injecting original Collection as-is"   (line 483)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 482)
+    |           L3: ALOAD_1     // Ljava/util/Collection; original   (line 485)
+    catch java.lang.Throwable -> E0
+                    ARETURN
+                E0: ASTORE 9   (line 488)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 489)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L4
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 490)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot access Collection of type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/util/Collection; original
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] - injecting original Collection as-is"   (line 491)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 9     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 490)
+                L4: ALOAD_1     // Ljava/util/Collection; original   (line 493)
+                    ARETURN
+    catch java.lang.Throwable -> E1
+    |           L5: ALOAD_3     // Ljava/lang/Class; requiredType   (line 498)
+    |               INVOKESTATIC org.springframework.core.CollectionFactory.isApproximableCollectionType (Ljava/lang/Class;)Z
+    |               IFEQ L6
+    |               ALOAD_1     // Ljava/util/Collection; original   (line 499)
+    |               ALOAD_1     // Ljava/util/Collection; original
+    |               INVOKEINTERFACE java.util.Collection.size ()I
+    |               INVOKESTATIC org.springframework.core.CollectionFactory.createApproximateCollection (Ljava/lang/Object;I)Ljava/util/Collection;
+    |               ASTORE 9
+    |               GOTO L8
+    |           L6: ALOAD_3     // Ljava/lang/Class; requiredType   (line 502)
+    |               INVOKEVIRTUAL java.lang.Class.newInstance ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Collection
+    |               ASTORE 9
+    catch java.lang.Throwable -> E1
+                    GOTO L8
+                E1: ASTORE 10   (line 505)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 506)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L7
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 507)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot create copy of Collection type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/util/Collection; original
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] - injecting original Collection as-is"   (line 508)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 10     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 507)
+                L7: ALOAD_1     // Ljava/util/Collection; original   (line 510)
+                    ARETURN
+                L8: ICONST_0   (line 513)
+                    ISTORE 10
+                    GOTO L16   (line 514)
+                L9: ALOAD 8     // Ljava/util/Iterator; it   (line 515)
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 11
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 516)
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    ILOAD 10     // I i
+                    INVOKESPECIAL org.springframework.beans.TypeConverterDelegate.buildIndexedPropertyName (Ljava/lang/String;I)Ljava/lang/String;
+                    ASTORE 12
+                    ALOAD 6     // Lorg/springframework/core/MethodParameter; methodParam   (line 517)
+                    IFNULL L10
+                    ALOAD 6     // Lorg/springframework/core/MethodParameter; methodParam   (line 518)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.increaseNestingLevel ()V
+               L10: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 520)
+                    ALOAD 12     // Ljava/lang/String; indexedPropertyName   (line 521)
+                    ACONST_NULL
+                    ALOAD 11     // Ljava/lang/Object; element
+                    ALOAD 7     // Ljava/lang/Class; elementType
+                    ALOAD 4     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;   (line 520)
+                    ASTORE 13
+                    ALOAD 6     // Lorg/springframework/core/MethodParameter; methodParam   (line 522)
+                    IFNULL L11
+                    ALOAD 6     // Lorg/springframework/core/MethodParameter; methodParam   (line 523)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.decreaseNestingLevel ()V
+    catch java.lang.Throwable -> E2
+    |          L11: ALOAD 9     // Ljava/util/Collection; convertedCopy   (line 526)
+    |               ALOAD 13     // Ljava/lang/Object; convertedElement
+    |               INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+    |               POP
+    catch java.lang.Throwable -> E2
+                    GOTO L13
+                E2: ASTORE 14   (line 528)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 529)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L12
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 530)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Collection type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/util/Collection; original
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] seems to be read-only - injecting original Collection as-is"   (line 531)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 14     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 530)
+               L12: ALOAD_1     // Ljava/util/Collection; original   (line 533)
+                    ARETURN
+               L13: ILOAD 5     // Z originalAllowed   (line 535)
+                    IFEQ L14
+                    ALOAD 11     // Ljava/lang/Object; element
+                    ALOAD 13     // Ljava/lang/Object; convertedElement
+                    IF_ACMPNE L14
+                    ICONST_1
+                    GOTO L15
+               L14: ICONST_0
+               L15: ISTORE 5     // Z originalAllowed
+                    IINC 10 1     // I i   (line 514)
+               L16: ALOAD 8     // Ljava/util/Iterator; it
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L9
+                    ILOAD 5     // Z originalAllowed   (line 537)
+                    IFEQ L17
+                    ALOAD_1     // Ljava/util/Collection; original
+                    GOTO L18
+               L17: ALOAD 9     // Ljava/util/Collection; convertedCopy
+               L18: ARETURN
+  end protected java.util.Collection convertToTypedCollection(java.util.Collection, String, Class, org.springframework.core.convert.TypeDescriptor)
+
+  protected java.util.Map convertToTypedMap(java.util.Map, String, Class, org.springframework.core.convert.TypeDescriptor):
+                    ALOAD_3     // Ljava/lang/Class; requiredType   (line 544)
+                    ALOAD_1     // Ljava/util/Map; original
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    ISTORE 5
+                    ILOAD 5     // Z originalAllowed   (line 545)
+                    IFNE L0
+                    LDC java.util.Map
+                    ALOAD_3     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/util/Map; original   (line 546)
+                    ARETURN
+                L0: ACONST_NULL   (line 549)
+                    ASTORE 6
+                    ACONST_NULL   (line 550)
+                    ASTORE 7
+                    ALOAD 4     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor   (line 551)
+                    INVOKEVIRTUAL org.springframework.core.convert.TypeDescriptor.getMethodParameter ()Lorg/springframework/core/MethodParameter;
+                    ASTORE 8
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 552)
+                    IFNULL L1
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 553)
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getMapKeyParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                    ASTORE 6     // Ljava/lang/Class; keyType
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 554)
+                    INVOKESTATIC org.springframework.core.GenericCollectionTypeResolver.getMapValueParameterType (Lorg/springframework/core/MethodParameter;)Ljava/lang/Class;
+                    ASTORE 7     // Ljava/lang/Class; valueType
+                L1: ALOAD 6     // Ljava/lang/Class; keyType   (line 556)
+                    IFNONNULL L2
+                    ALOAD 7     // Ljava/lang/Class; valueType
+                    IFNONNULL L2
+                    ILOAD 5     // Z originalAllowed
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 557)
+                    GETFIELD org.springframework.beans.TypeConverterDelegate.propertyEditorRegistry Lorg/springframework/beans/PropertyEditorRegistrySupport;
+                    ACONST_NULL
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    INVOKEVIRTUAL org.springframework.beans.PropertyEditorRegistrySupport.hasCustomEditorForElement (Ljava/lang/Class;Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD_1     // Ljava/util/Map; original   (line 558)
+                    ARETURN
+    catch java.lang.Throwable -> E0
+    |           L2: ALOAD_1     // Ljava/util/Map; original   (line 563)
+    |               INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE 9
+    |               ALOAD 9     // Ljava/util/Iterator; it   (line 564)
+    |               IFNONNULL L5
+    |               GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 565)
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L3
+    |               GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 566)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC_W "Map of type ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_1     // Ljava/util/Map; original
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC_W "] returned null Iterator - injecting original Map as-is"   (line 567)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 566)
+    |           L3: ALOAD_1     // Ljava/util/Map; original   (line 569)
+    catch java.lang.Throwable -> E0
+                    ARETURN
+                E0: ASTORE 10   (line 572)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 573)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L4
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 574)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot access Map of type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/util/Map; original
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] - injecting original Map as-is"   (line 575)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 10     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 574)
+                L4: ALOAD_1     // Ljava/util/Map; original   (line 577)
+                    ARETURN
+    catch java.lang.Throwable -> E1
+    |           L5: ALOAD_3     // Ljava/lang/Class; requiredType   (line 582)
+    |               INVOKESTATIC org.springframework.core.CollectionFactory.isApproximableMapType (Ljava/lang/Class;)Z
+    |               IFEQ L6
+    |               ALOAD_1     // Ljava/util/Map; original   (line 583)
+    |               ALOAD_1     // Ljava/util/Map; original
+    |               INVOKEINTERFACE java.util.Map.size ()I
+    |               INVOKESTATIC org.springframework.core.CollectionFactory.createApproximateMap (Ljava/lang/Object;I)Ljava/util/Map;
+    |               ASTORE 10
+    |               GOTO L16
+    |           L6: ALOAD_3     // Ljava/lang/Class; requiredType   (line 586)
+    |               INVOKEVIRTUAL java.lang.Class.newInstance ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Map
+    |               ASTORE 10
+    catch java.lang.Throwable -> E1
+                    GOTO L16
+                E1: ASTORE 11   (line 589)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 590)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L7
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 591)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot create copy of Map type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/util/Map; original
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] - injecting original Map as-is"   (line 592)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 11     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 591)
+                L7: ALOAD_1     // Ljava/util/Map; original   (line 594)
+                    ARETURN
+                L8: ALOAD 9     // Ljava/util/Iterator; it   (line 598)
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 11
+                    ALOAD 11     // Ljava/util/Map$Entry; entry   (line 599)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    ASTORE 12
+                    ALOAD 11     // Ljava/util/Map$Entry; entry   (line 600)
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    ASTORE 13
+                    ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 601)
+                    ALOAD_2     // Ljava/lang/String; propertyName
+                    ALOAD 12     // Ljava/lang/Object; key
+                    INVOKESPECIAL org.springframework.beans.TypeConverterDelegate.buildKeyedPropertyName (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+                    ASTORE 14
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 602)
+                    IFNULL L9
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 603)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.increaseNestingLevel ()V
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 604)
+                    ICONST_0
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.setTypeIndexForCurrentLevel (I)V
+                L9: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 606)
+                    ALOAD 14     // Ljava/lang/String; keyedPropertyName
+                    ACONST_NULL
+                    ALOAD 12     // Ljava/lang/Object; key
+                    ALOAD 6     // Ljava/lang/Class; keyType
+                    ALOAD 4     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+                    ASTORE 15
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 607)
+                    IFNULL L10
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 608)
+                    ICONST_1
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.setTypeIndexForCurrentLevel (I)V
+               L10: ALOAD_0     // Lorg/springframework/beans/TypeConverterDelegate; this   (line 610)
+                    ALOAD 14     // Ljava/lang/String; keyedPropertyName
+                    ACONST_NULL
+                    ALOAD 13     // Ljava/lang/Object; value
+                    ALOAD 7     // Ljava/lang/Class; valueType
+                    ALOAD 4     // Lorg/springframework/core/convert/TypeDescriptor; typeDescriptor
+                    INVOKEVIRTUAL org.springframework.beans.TypeConverterDelegate.convertIfNecessary (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+                    ASTORE 16
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 611)
+                    IFNULL L11
+                    ALOAD 8     // Lorg/springframework/core/MethodParameter; methodParam   (line 612)
+                    INVOKEVIRTUAL org.springframework.core.MethodParameter.decreaseNestingLevel ()V
+    catch java.lang.Throwable -> E2
+    |          L11: ALOAD 10     // Ljava/util/Map; convertedCopy   (line 615)
+    |               ALOAD 15     // Ljava/lang/Object; convertedKey
+    |               ALOAD 16     // Ljava/lang/Object; convertedValue
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    catch java.lang.Throwable -> E2
+                    GOTO L13
+                E2: ASTORE 17   (line 617)
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 618)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L12
+                    GETSTATIC org.springframework.beans.TypeConverterDelegate.logger Lorg/apache/commons/logging/Log;   (line 619)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Map type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/util/Map; original
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] seems to be read-only - injecting original Map as-is"   (line 620)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 17     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 619)
+               L12: ALOAD_1     // Ljava/util/Map; original   (line 622)
+                    ARETURN
+               L13: ILOAD 5     // Z originalAllowed   (line 624)
+                    IFEQ L14
+                    ALOAD 12     // Ljava/lang/Object; key
+                    ALOAD 15     // Ljava/lang/Object; convertedKey
+                    IF_ACMPNE L14
+                    ALOAD 13     // Ljava/lang/Object; value
+                    ALOAD 16     // Ljava/lang/Object; convertedValue
+                    IF_ACMPNE L14
+                    ICONST_1
+                    GOTO L15
+               L14: ICONST_0
+               L15: ISTORE 5     // Z originalAllowed
+               L16: ALOAD 9     // Ljava/util/Iterator; it   (line 597)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L8
+                    ILOAD 5     // Z originalAllowed   (line 626)
+                    IFEQ L17
+                    ALOAD_1     // Ljava/util/Map; original
+                    GOTO L18
+               L17: ALOAD 10     // Ljava/util/Map; convertedCopy
+               L18: ARETURN
+  end protected java.util.Map convertToTypedMap(java.util.Map, String, Class, org.springframework.core.convert.TypeDescriptor)
+
+  private String buildIndexedPropertyName(String, int):
+                    ALOAD_1     // Ljava/lang/String; propertyName   (line 630)
+                    IFNULL L0
+                    NEW java.lang.StringBuilder   (line 631)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ILOAD_2     // I index
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    GOTO L1
+                L0: ACONST_NULL   (line 632)
+                L1: ARETURN   (line 630)
+  end private String buildIndexedPropertyName(String, int)
+
+  private String buildKeyedPropertyName(String, Object):
+                    ALOAD_1     // Ljava/lang/String; propertyName   (line 636)
+                    IFNULL L0
+                    NEW java.lang.StringBuilder   (line 637)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; propertyName
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/Object; key
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    GOTO L1
+                L0: ACONST_NULL   (line 638)
+                L1: ARETURN   (line 636)
+  end private String buildKeyedPropertyName(String, Object)
+end  class org.springframework.beans.TypeConverterDelegate
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.core.io.ResourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.core.io.ResourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.core.io.ResourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.core.io.ResourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.core.io.ResourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.core.io.ResourceEditor extends java.beans.PropertyEditorSupport:
+  private final org.springframework.core.io.ResourceLoader resourceLoader
+  private final boolean ignoreUnresolvablePlaceholders
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 61)
+                    NEW org.springframework.core.io.DefaultResourceLoader
+                    DUP
+                    INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> ()V
+                    INVOKESPECIAL org.springframework.core.io.ResourceEditor.<init> (Lorg/springframework/core/io/ResourceLoader;)V
+    constructor-execution(void org.springframework.core.io.ResourceEditor.<init>())
+    |               RETURN   (line 62)
+    constructor-execution(void org.springframework.core.io.ResourceEditor.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.core.io.ResourceLoader):
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 70)
+                    ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.core.io.ResourceEditor.<init> (Lorg/springframework/core/io/ResourceLoader;Z)V
+    constructor-execution(void org.springframework.core.io.ResourceEditor.<init>(org.springframework.core.io.ResourceLoader))
+    |               RETURN   (line 71)
+    constructor-execution(void org.springframework.core.io.ResourceEditor.<init>(org.springframework.core.io.ResourceLoader))
+  end public void <init>(org.springframework.core.io.ResourceLoader)
+
+  public void <init>(org.springframework.core.io.ResourceLoader, boolean):
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 80)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.core.io.ResourceEditor.<init>(org.springframework.core.io.ResourceLoader, boolean))
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader   (line 81)
+    |               LDC "ResourceLoader must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 82)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader
+    |               PUTFIELD org.springframework.core.io.ResourceEditor.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 83)
+    |               ILOAD_2     // Z ignoreUnresolvablePlaceholders
+    |               PUTFIELD org.springframework.core.io.ResourceEditor.ignoreUnresolvablePlaceholders Z
+    |               RETURN   (line 84)
+    constructor-execution(void org.springframework.core.io.ResourceEditor.<init>(org.springframework.core.io.ResourceLoader, boolean))
+  end public void <init>(org.springframework.core.io.ResourceLoader, boolean)
+
+  public void setAsText(String):
+                    ALOAD_1     // Ljava/lang/String; text   (line 89)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 90)
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.resolvePath (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 91)
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this
+                    GETFIELD org.springframework.core.io.ResourceEditor.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+                    ALOAD_2     // Ljava/lang/String; locationToUse
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getResource (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.setValue (Ljava/lang/Object;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 94)
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.setValue (Ljava/lang/Object;)V
+                L1: RETURN   (line 96)
+  end public void setAsText(String)
+
+  protected String resolvePath(String):
+                    ALOAD_1     // Ljava/lang/String; path   (line 106)
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this
+                    GETFIELD org.springframework.core.io.ResourceEditor.ignoreUnresolvablePlaceholders Z
+                    INVOKESTATIC org.springframework.util.SystemPropertyUtils.resolvePlaceholders (Ljava/lang/String;Z)Ljava/lang/String;
+                    ARETURN
+  end protected String resolvePath(String)
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/core/io/ResourceEditor; this   (line 112)
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.io.Resource
+                    ASTORE_1
+    catch java.io.IOException -> E0
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; value   (line 115)
+    |               IFNULL L0
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; value
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+    |               INVOKEVIRTUAL java.net.URL.toExternalForm ()Ljava/lang/String;
+    |               GOTO L1
+    |           L0: LDC ""
+    catch java.io.IOException -> E0
+                L1: ARETURN
+                E0: POP   (line 117)
+                    ACONST_NULL   (line 120)
+                    ARETURN
+  end public String getAsText()
+
+end public class org.springframework.core.io.ResourceEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.propertyeditors.InputStreamEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.propertyeditors.InputStreamEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.propertyeditors.InputStreamEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.propertyeditors.InputStreamEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.propertyeditors.InputStreamEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.propertyeditors.InputStreamEditor extends java.beans.PropertyEditorSupport:
+  private final org.springframework.core.io.ResourceEditor resourceEditor
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputStreamEditor; this   (line 53)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.InputStreamEditor.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputStreamEditor; this   (line 54)
+    |               NEW org.springframework.core.io.ResourceEditor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.io.ResourceEditor.<init> ()V
+    |               PUTFIELD org.springframework.beans.propertyeditors.InputStreamEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 55)
+    constructor-execution(void org.springframework.beans.propertyeditors.InputStreamEditor.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.core.io.ResourceEditor):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputStreamEditor; this   (line 62)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.InputStreamEditor.<init>(org.springframework.core.io.ResourceEditor))
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor   (line 63)
+    |               LDC "ResourceEditor must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputStreamEditor; this   (line 64)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor
+    |               PUTFIELD org.springframework.beans.propertyeditors.InputStreamEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 65)
+    constructor-execution(void org.springframework.beans.propertyeditors.InputStreamEditor.<init>(org.springframework.core.io.ResourceEditor))
+  end public void <init>(org.springframework.core.io.ResourceEditor)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputStreamEditor; this   (line 70)
+                    GETFIELD org.springframework.beans.propertyeditors.InputStreamEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.setAsText (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputStreamEditor; this   (line 71)
+                    GETFIELD org.springframework.beans.propertyeditors.InputStreamEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.io.Resource
+                    ASTORE_2
+    catch java.io.IOException -> E0
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputStreamEditor; this   (line 73)
+    |               ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+    |               IFNULL L0
+    |               ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getInputStream ()Ljava/io/InputStream;
+    |               GOTO L1
+    |           L0: ACONST_NULL
+    |           L1: INVOKEVIRTUAL org.springframework.beans.propertyeditors.InputStreamEditor.setValue (Ljava/lang/Object;)V
+    catch java.io.IOException -> E0
+                    GOTO L2
+                E0: ASTORE_3   (line 75)
+                    NEW java.lang.IllegalArgumentException   (line 76)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 77)
+                    DUP
+                    LDC "Could not retrieve InputStream for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 76)
+                    ATHROW
+                L2: RETURN   (line 79)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public String getAsText():
+                    ACONST_NULL   (line 87)
+                    ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.InputStreamEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.propertyeditors.InputSourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.propertyeditors.InputSourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.propertyeditors.InputSourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.propertyeditors.InputSourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.propertyeditors.InputSourceEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.propertyeditors.InputSourceEditor extends java.beans.PropertyEditorSupport:
+  private final org.springframework.core.io.ResourceEditor resourceEditor
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 52)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.InputSourceEditor.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 53)
+    |               NEW org.springframework.core.io.ResourceEditor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.io.ResourceEditor.<init> ()V
+    |               PUTFIELD org.springframework.beans.propertyeditors.InputSourceEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 54)
+    constructor-execution(void org.springframework.beans.propertyeditors.InputSourceEditor.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.core.io.ResourceEditor):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 61)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.InputSourceEditor.<init>(org.springframework.core.io.ResourceEditor))
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor   (line 62)
+    |               LDC "ResourceEditor must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 63)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor
+    |               PUTFIELD org.springframework.beans.propertyeditors.InputSourceEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 64)
+    constructor-execution(void org.springframework.beans.propertyeditors.InputSourceEditor.<init>(org.springframework.core.io.ResourceEditor))
+  end public void <init>(org.springframework.core.io.ResourceEditor)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 69)
+                    GETFIELD org.springframework.beans.propertyeditors.InputSourceEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.setAsText (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 70)
+                    GETFIELD org.springframework.beans.propertyeditors.InputSourceEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.io.Resource
+                    ASTORE_2
+    catch java.io.IOException -> E0
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 72)
+    |               ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+    |               IFNULL L0
+    |               NEW org.xml.sax.InputSource
+    |               DUP
+    |               ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+    |               INVOKEVIRTUAL java.net.URL.toString ()Ljava/lang/String;
+    |               INVOKESPECIAL org.xml.sax.InputSource.<init> (Ljava/lang/String;)V
+    |               GOTO L1
+    |           L0: ACONST_NULL
+    |           L1: INVOKEVIRTUAL org.springframework.beans.propertyeditors.InputSourceEditor.setValue (Ljava/lang/Object;)V
+    catch java.io.IOException -> E0
+                    GOTO L2
+                E0: ASTORE_3   (line 74)
+                    NEW java.lang.IllegalArgumentException   (line 75)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 76)
+                    DUP
+                    LDC "Could not retrieve URL for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 75)
+                    ATHROW
+                L2: RETURN   (line 78)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/InputSourceEditor; this   (line 82)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.InputSourceEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST org.xml.sax.InputSource
+                    ASTORE_1
+                    ALOAD_1     // Lorg/xml/sax/InputSource; value   (line 83)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/xml/sax/InputSource; value
+                    INVOKEVIRTUAL org.xml.sax.InputSource.getSystemId ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.InputSourceEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.propertyeditors.FileEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.propertyeditors.FileEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.propertyeditors.FileEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.propertyeditors.FileEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.propertyeditors.FileEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.propertyeditors.FileEditor extends java.beans.PropertyEditorSupport:
+  private final org.springframework.core.io.ResourceEditor resourceEditor
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 65)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.FileEditor.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 66)
+    |               NEW org.springframework.core.io.ResourceEditor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.io.ResourceEditor.<init> ()V
+    |               PUTFIELD org.springframework.beans.propertyeditors.FileEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 67)
+    constructor-execution(void org.springframework.beans.propertyeditors.FileEditor.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.core.io.ResourceEditor):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 74)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.FileEditor.<init>(org.springframework.core.io.ResourceEditor))
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor   (line 75)
+    |               LDC "ResourceEditor must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 76)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor
+    |               PUTFIELD org.springframework.beans.propertyeditors.FileEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 77)
+    constructor-execution(void org.springframework.beans.propertyeditors.FileEditor.<init>(org.springframework.core.io.ResourceEditor))
+  end public void <init>(org.springframework.core.io.ResourceEditor)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_1     // Ljava/lang/String; text   (line 82)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 83)
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.FileEditor.setValue (Ljava/lang/Object;)V
+                    RETURN   (line 84)
+                L0: ALOAD_1     // Ljava/lang/String; text   (line 89)
+                    INVOKESTATIC org.springframework.util.ResourceUtils.isUrl (Ljava/lang/String;)Z
+                    IFNE L1
+                    NEW java.io.File   (line 90)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKESPECIAL java.io.File.<init> (Ljava/lang/String;)V
+                    ASTORE_2
+                    ALOAD_2     // Ljava/io/File; file   (line 91)
+                    INVOKEVIRTUAL java.io.File.isAbsolute ()Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 92)
+                    ALOAD_2     // Ljava/io/File; file
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.FileEditor.setValue (Ljava/lang/Object;)V
+                    RETURN   (line 93)
+                L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 98)
+                    GETFIELD org.springframework.beans.propertyeditors.FileEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.setAsText (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 99)
+                    GETFIELD org.springframework.beans.propertyeditors.FileEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.io.Resource
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; text   (line 102)
+                    INVOKESTATIC org.springframework.util.ResourceUtils.isUrl (Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+                    INVOKEINTERFACE org.springframework.core.io.Resource.exists ()Z
+                    IFEQ L3
+    catch java.io.IOException -> E0
+    |           L2: ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 104)
+    |               ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getFile ()Ljava/io/File;
+    |               INVOKEVIRTUAL org.springframework.beans.propertyeditors.FileEditor.setValue (Ljava/lang/Object;)V
+    catch java.io.IOException -> E0
+                    GOTO L4
+                E0: ASTORE_3   (line 106)
+                    NEW java.lang.IllegalArgumentException   (line 107)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 108)
+                    DUP
+                    LDC "Could not retrieve File for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 107)
+                    ATHROW
+                L3: ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 113)
+                    NEW java.io.File
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKESPECIAL java.io.File.<init> (Ljava/lang/String;)V
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.FileEditor.setValue (Ljava/lang/Object;)V
+                L4: RETURN   (line 115)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/FileEditor; this   (line 119)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.FileEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.io.File
+                    ASTORE_1
+                    ALOAD_1     // Ljava/io/File; value   (line 120)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/io/File; value
+                    INVOKEVIRTUAL java.io.File.getPath ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.FileEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.propertyeditors.URLEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.propertyeditors.URLEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.propertyeditors.URLEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.propertyeditors.URLEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.propertyeditors.URLEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.propertyeditors.URLEditor extends java.beans.PropertyEditorSupport:
+  private final org.springframework.core.io.ResourceEditor resourceEditor
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 55)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URLEditor.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 56)
+    |               NEW org.springframework.core.io.ResourceEditor
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.io.ResourceEditor.<init> ()V
+    |               PUTFIELD org.springframework.beans.propertyeditors.URLEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 57)
+    constructor-execution(void org.springframework.beans.propertyeditors.URLEditor.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.core.io.ResourceEditor):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 63)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URLEditor.<init>(org.springframework.core.io.ResourceEditor))
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor   (line 64)
+    |               LDC "ResourceEditor must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 65)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceEditor; resourceEditor
+    |               PUTFIELD org.springframework.beans.propertyeditors.URLEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+    |               RETURN   (line 66)
+    constructor-execution(void org.springframework.beans.propertyeditors.URLEditor.<init>(org.springframework.core.io.ResourceEditor))
+  end public void <init>(org.springframework.core.io.ResourceEditor)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 71)
+                    GETFIELD org.springframework.beans.propertyeditors.URLEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.setAsText (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 72)
+                    GETFIELD org.springframework.beans.propertyeditors.URLEditor.resourceEditor Lorg/springframework/core/io/ResourceEditor;
+                    INVOKEVIRTUAL org.springframework.core.io.ResourceEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.core.io.Resource
+                    ASTORE_2
+    catch java.io.IOException -> E0
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 74)
+    |               ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+    |               IFNULL L0
+    |               ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+    |               GOTO L1
+    |           L0: ACONST_NULL
+    |           L1: INVOKEVIRTUAL org.springframework.beans.propertyeditors.URLEditor.setValue (Ljava/lang/Object;)V
+    catch java.io.IOException -> E0
+                    GOTO L2
+                E0: ASTORE_3   (line 76)
+                    NEW java.lang.IllegalArgumentException   (line 77)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not retrieve URL for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Lorg/springframework/core/io/Resource; resource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L2: RETURN   (line 79)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URLEditor; this   (line 83)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.URLEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.net.URL
+                    ASTORE_1
+                    ALOAD_1     // Ljava/net/URL; value   (line 84)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/net/URL; value
+                    INVOKEVIRTUAL java.net.URL.toExternalForm ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.URLEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.propertyeditors.URIEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.propertyeditors.URIEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.propertyeditors.URIEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.propertyeditors.URIEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.propertyeditors.URIEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.propertyeditors.URIEditor extends java.beans.PropertyEditorSupport:
+  private final ClassLoader classLoader
+  private final boolean encode
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 62)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 63)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 64)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 65)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>())
+  end public void <init>()
+
+  public void <init>(boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 72)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 73)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 74)
+    |               ILOAD_1     // Z encode
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 75)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(boolean))
+  end public void <init>(boolean)
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 84)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 85)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 86)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 87)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void <init>(ClassLoader, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 96)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader, boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 97)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 98)
+    |               ILOAD_2     // Z encode
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 99)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader, boolean))
+  end public void <init>(ClassLoader, boolean)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_1     // Ljava/lang/String; text   (line 104)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; text   (line 105)
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 106)
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/String; uri
+                    LDC "classpath:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.core.io.ClassPathResource   (line 108)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; uri
+                    LDC "classpath:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+                    INVOKESPECIAL org.springframework.core.io.ClassPathResource.<init> (Ljava/lang/String;Ljava/lang/ClassLoader;)V
+                    ASTORE_3   (line 107)
+    catch java.net.URISyntaxException -> E1
+    | catch java.io.IOException -> E0
+    | |             ALOAD_3     // Lorg/springframework/core/io/ClassPathResource; resource   (line 110)
+    | |             INVOKEVIRTUAL org.springframework.core.io.ClassPathResource.getURL ()Ljava/net/URL;
+    | |             INVOKEVIRTUAL java.net.URL.toString ()Ljava/lang/String;
+    | |             ASTORE 4
+    | |             ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 111)
+    | |             ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+    | |             ALOAD 4     // Ljava/lang/String; url
+    | |             INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.createURI (Ljava/lang/String;)Ljava/net/URI;
+    | |             INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+    | catch java.io.IOException -> E0
+    catch java.net.URISyntaxException -> E1
+                    GOTO L2
+                E0: ASTORE 4   (line 113)
+                    NEW java.lang.IllegalArgumentException   (line 114)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not retrieve URI for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Lorg/springframework/core/io/ClassPathResource; resource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                E1: ASTORE 4   (line 116)
+                    NEW java.lang.IllegalArgumentException   (line 117)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid URI syntax: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/net/URISyntaxException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+    catch java.net.URISyntaxException -> E2
+    |           L0: ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 122)
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+    |               ALOAD_2     // Ljava/lang/String; uri
+    |               INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.createURI (Ljava/lang/String;)Ljava/net/URI;
+    |               INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+    catch java.net.URISyntaxException -> E2
+                    GOTO L2
+                E2: ASTORE_3   (line 124)
+                    NEW java.lang.IllegalArgumentException   (line 125)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid URI syntax: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/net/URISyntaxException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 130)
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+                L2: RETURN   (line 132)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  protected java.net.URI createURI(String) throws java.net.URISyntaxException:
+                    ALOAD_1     // Ljava/lang/String; value   (line 143)
+                    BIPUSH 58
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 144)
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+                    IFEQ L4
+                    ILOAD_2     // I colonIndex
+                    ICONST_M1
+                    IF_ICMPEQ L4
+                    ALOAD_1     // Ljava/lang/String; value   (line 145)
+                    BIPUSH 35
+                    ILOAD_2     // I colonIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.indexOf (II)I
+                    ISTORE_3
+                    ALOAD_1     // Ljava/lang/String; value   (line 146)
+                    ICONST_0
+                    ILOAD_2     // I colonIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; value   (line 147)
+                    ILOAD_2     // I colonIndex
+                    ICONST_1
+                    IADD
+                    ILOAD_3     // I fragmentIndex
+                    IFLE L0
+                    ILOAD_3     // I fragmentIndex
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/String; value
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                L1: INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 5
+                    ILOAD_3     // I fragmentIndex   (line 148)
+                    IFLE L2
+                    ALOAD_1     // Ljava/lang/String; value
+                    ILOAD_3     // I fragmentIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    GOTO L3
+                L2: ACONST_NULL
+                L3: ASTORE 6
+                    NEW java.net.URI   (line 149)
+                    DUP
+                    ALOAD 4     // Ljava/lang/String; scheme
+                    ALOAD 5     // Ljava/lang/String; ssp
+                    ALOAD 6     // Ljava/lang/String; fragment
+                    INVOKESPECIAL java.net.URI.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+                    ARETURN
+                L4: NEW java.net.URI   (line 153)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; value
+                    INVOKESPECIAL java.net.URI.<init> (Ljava/lang/String;)V
+                    ARETURN
+  end protected java.net.URI createURI(String) throws java.net.URISyntaxException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 160)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.net.URI
+                    ASTORE_1
+                    ALOAD_1     // Ljava/net/URI; value   (line 161)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/net/URI; value
+                    INVOKEVIRTUAL java.net.URI.toString ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.URIEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.propertyeditors.ClassEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.propertyeditors.ClassEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.propertyeditors.ClassEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.propertyeditors.ClassEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.propertyeditors.ClassEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.propertyeditors.ClassEditor extends java.beans.PropertyEditorSupport:
+  private final ClassLoader classLoader
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassEditor; this   (line 47)
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.propertyeditors.ClassEditor.<init> (Ljava/lang/ClassLoader;)V
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassEditor.<init>())
+    |               RETURN   (line 48)
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassEditor.<init>())
+  end public void <init>()
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassEditor; this   (line 55)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassEditor.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassEditor; this   (line 56)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.ClassEditor.classLoader Ljava/lang/ClassLoader;
+    |               RETURN   (line 57)
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassEditor.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_1     // Ljava/lang/String; text   (line 62)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassEditor; this   (line 63)
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.ClassEditor.classLoader Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.resolveClassName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.ClassEditor.setValue (Ljava/lang/Object;)V
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassEditor; this   (line 66)
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.ClassEditor.setValue (Ljava/lang/Object;)V
+                L1: RETURN   (line 68)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassEditor; this   (line 72)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.ClassEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 73)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 74)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    ARETURN
+                L0: LDC ""   (line 77)
+                    ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.ClassEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.propertyeditors.ClassArrayEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.propertyeditors.ClassArrayEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.propertyeditors.ClassArrayEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.propertyeditors.ClassArrayEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.propertyeditors.ClassArrayEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.propertyeditors.ClassArrayEditor extends java.beans.PropertyEditorSupport:
+  private final ClassLoader classLoader
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassArrayEditor; this   (line 47)
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.propertyeditors.ClassArrayEditor.<init> (Ljava/lang/ClassLoader;)V
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassArrayEditor.<init>())
+    |               RETURN   (line 48)
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassArrayEditor.<init>())
+  end public void <init>()
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassArrayEditor; this   (line 56)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassArrayEditor.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassArrayEditor; this   (line 57)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.ClassArrayEditor.classLoader Ljava/lang/ClassLoader;
+    |               RETURN   (line 58)
+    constructor-execution(void org.springframework.beans.propertyeditors.ClassArrayEditor.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_1     // Ljava/lang/String; text   (line 63)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/String; text   (line 64)
+                    INVOKESTATIC org.springframework.util.StringUtils.commaDelimitedListToStringArray (Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/String; classNames   (line 65)
+                    ARRAYLENGTH
+                    ANEWARRAY java.lang.Class
+                    ASTORE_3
+                    ICONST_0   (line 66)
+                    ISTORE 4
+                    GOTO L1
+                L0: ALOAD_2     // [Ljava/lang/String; classNames   (line 67)
+                    ILOAD 4     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD_3     // [Ljava/lang/Class; classes   (line 68)
+                    ILOAD 4     // I i
+                    ALOAD 5     // Ljava/lang/String; className
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassArrayEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.ClassArrayEditor.classLoader Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.resolveClassName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    AASTORE
+                    IINC 4 1     // I i   (line 66)
+                L1: ILOAD 4     // I i
+                    ALOAD_2     // [Ljava/lang/String; classNames
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassArrayEditor; this   (line 70)
+                    ALOAD_3     // [Ljava/lang/Class; classes
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.ClassArrayEditor.setValue (Ljava/lang/Object;)V
+                    GOTO L3
+                L2: ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassArrayEditor; this   (line 73)
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.ClassArrayEditor.setValue (Ljava/lang/Object;)V
+                L3: RETURN   (line 75)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/ClassArrayEditor; this   (line 79)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.ClassArrayEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.Class;
+                    ASTORE_1
+                    ALOAD_1     // [Ljava/lang/Class; classes   (line 80)
+                    INVOKESTATIC org.springframework.util.ObjectUtils.isEmpty ([Ljava/lang/Object;)Z
+                    IFEQ L0
+                    LDC ""   (line 81)
+                    ARETURN
+                L0: NEW java.lang.StringBuilder   (line 83)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 84)
+                    ISTORE_3
+                    GOTO L3
+                L1: ILOAD_3     // I i   (line 85)
+                    IFLE L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 86)
+                    LDC ","
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L2: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 88)
+                    ALOAD_1     // [Ljava/lang/Class; classes
+                    ILOAD_3     // I i
+                    AALOAD
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 84)
+                L3: ILOAD_3     // I i
+                    ALOAD_1     // [Ljava/lang/Class; classes
+                    ARRAYLENGTH
+                    IF_ICMPLT L1
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 90)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.ClassArrayEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.core.io.support.ResourceArrayPropertyEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.core.io.support.ResourceArrayPropertyEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.core.io.support.ResourceArrayPropertyEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.core.io.support.ResourceArrayPropertyEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.core.io.support.ResourceArrayPropertyEditor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.core.io.support.ResourceArrayPropertyEditor extends java.beans.PropertyEditorSupport:
+  private static final org.apache.commons.logging.Log logger
+  private final org.springframework.core.io.support.ResourcePatternResolver resourcePatternResolver
+  private final boolean ignoreUnresolvablePlaceholders
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<clinit>())
+    |               LDC org.springframework.core.io.support.ResourceArrayPropertyEditor   (line 56)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.core.io.support.ResourceArrayPropertyEditor.logger Lorg/apache/commons/logging/Log;
+    |               RETURN   (line 54)
+    staticinitialization(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 69)
+                    NEW org.springframework.core.io.support.PathMatchingResourcePatternResolver
+                    DUP
+                    INVOKESPECIAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init> ()V
+                    INVOKESPECIAL org.springframework.core.io.support.ResourceArrayPropertyEditor.<init> (Lorg/springframework/core/io/support/ResourcePatternResolver;)V
+    constructor-execution(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<init>())
+    |               RETURN   (line 70)
+    constructor-execution(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<init>())
+  end public void <init>()
+
+  public void <init>(org.springframework.core.io.support.ResourcePatternResolver):
+                    ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 77)
+                    ALOAD_1     // Lorg/springframework/core/io/support/ResourcePatternResolver; resourcePatternResolver
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.core.io.support.ResourceArrayPropertyEditor.<init> (Lorg/springframework/core/io/support/ResourcePatternResolver;Z)V
+    constructor-execution(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<init>(org.springframework.core.io.support.ResourcePatternResolver))
+    |               RETURN   (line 78)
+    constructor-execution(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<init>(org.springframework.core.io.support.ResourcePatternResolver))
+  end public void <init>(org.springframework.core.io.support.ResourcePatternResolver)
+
+  public void <init>(org.springframework.core.io.support.ResourcePatternResolver, boolean):
+                    ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 86)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<init>(org.springframework.core.io.support.ResourcePatternResolver, boolean))
+    |               ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 87)
+    |               ALOAD_1     // Lorg/springframework/core/io/support/ResourcePatternResolver; resourcePatternResolver
+    |               PUTFIELD org.springframework.core.io.support.ResourceArrayPropertyEditor.resourcePatternResolver Lorg/springframework/core/io/support/ResourcePatternResolver;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 88)
+    |               ILOAD_2     // Z ignoreUnresolvablePlaceholders
+    |               PUTFIELD org.springframework.core.io.support.ResourceArrayPropertyEditor.ignoreUnresolvablePlaceholders Z
+    |               RETURN   (line 89)
+    constructor-execution(void org.springframework.core.io.support.ResourceArrayPropertyEditor.<init>(org.springframework.core.io.support.ResourcePatternResolver, boolean))
+  end public void <init>(org.springframework.core.io.support.ResourcePatternResolver, boolean)
+
+  public void setAsText(String):
+                    ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 97)
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.core.io.support.ResourceArrayPropertyEditor.resolvePath (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE_2
+    catch java.io.IOException -> E0
+    |               ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 99)
+    |               ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this
+    |               GETFIELD org.springframework.core.io.support.ResourceArrayPropertyEditor.resourcePatternResolver Lorg/springframework/core/io/support/ResourcePatternResolver;
+    |               ALOAD_2     // Ljava/lang/String; pattern
+    |               INVOKEINTERFACE org.springframework.core.io.support.ResourcePatternResolver.getResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+    |               INVOKEVIRTUAL org.springframework.core.io.support.ResourceArrayPropertyEditor.setValue (Ljava/lang/Object;)V
+    catch java.io.IOException -> E0
+                    GOTO L0
+                E0: ASTORE_3   (line 101)
+                    NEW java.lang.IllegalArgumentException   (line 102)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 103)
+                    DUP
+                    LDC "Could not resolve resource location pattern ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]: "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 102)
+                    ATHROW
+                L0: RETURN   (line 105)
+  end public void setAsText(String)
+
+  public void setValue(Object) throws java.lang.IllegalArgumentException:
+                    ALOAD_1     // Ljava/lang/Object; value   (line 113)
+                    INSTANCEOF java.util.Collection
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L10
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INSTANCEOF [Lorg.springframework.core.io.Resource;
+                    IFNE L10
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 114)
+                    INSTANCEOF java.util.Collection
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Collection
+                    GOTO L2
+                L1: ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST [Ljava.lang.Object;
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    CHECKCAST java.util.Collection
+                L2: ASTORE_2
+                    NEW java.util.ArrayList   (line 115)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE_3
+                    ALOAD_2     // Ljava/util/Collection; input   (line 116)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L9
+                L3: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; element   (line 117)
+                    INSTANCEOF java.lang.String
+                    IFEQ L7
+                    ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 120)
+                    ALOAD 4     // Ljava/lang/Object; element
+                    CHECKCAST java.lang.String
+                    INVOKEVIRTUAL org.springframework.core.io.support.ResourceArrayPropertyEditor.resolvePath (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE 6
+    catch java.io.IOException -> E0
+    |               ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 122)
+    |               GETFIELD org.springframework.core.io.support.ResourceArrayPropertyEditor.resourcePatternResolver Lorg/springframework/core/io/support/ResourcePatternResolver;
+    |               ALOAD 6     // Ljava/lang/String; pattern
+    |               INVOKEINTERFACE org.springframework.core.io.support.ResourcePatternResolver.getResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+    |               ASTORE 7
+    |               ALOAD 7     // [Lorg/springframework/core/io/Resource; resources   (line 123)
+    |               DUP
+    |               ASTORE 11
+    |               ARRAYLENGTH
+    |               ISTORE 10
+    |               ICONST_0
+    |               ISTORE 9
+    |               GOTO L6
+    |           L4: ALOAD 11
+    |               ILOAD 9
+    |               AALOAD
+    |               ASTORE 8
+    |               ALOAD_3     // Ljava/util/List; merged   (line 124)
+    |               ALOAD 8     // Lorg/springframework/core/io/Resource; resource
+    |               INVOKEINTERFACE java.util.List.contains (Ljava/lang/Object;)Z
+    |               IFNE L5
+    |               ALOAD_3     // Ljava/util/List; merged   (line 125)
+    |               ALOAD 8     // Lorg/springframework/core/io/Resource; resource
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L5: IINC 9 1   (line 123)
+    |           L6: ILOAD 9
+    |               ILOAD 10
+    |               IF_ICMPLT L4
+    catch java.io.IOException -> E0
+                    GOTO L9
+                E0: ASTORE 7   (line 129)
+                    GETSTATIC org.springframework.core.io.support.ResourceArrayPropertyEditor.logger Lorg/apache/commons/logging/Log;   (line 131)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L9
+                    GETSTATIC org.springframework.core.io.support.ResourceArrayPropertyEditor.logger Lorg/apache/commons/logging/Log;   (line 132)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not retrieve resources for pattern '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 6     // Ljava/lang/String; pattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "': "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 7     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                    GOTO L9
+                L7: ALOAD 4     // Ljava/lang/Object; element   (line 136)
+                    INSTANCEOF org.springframework.core.io.Resource
+                    IFEQ L8
+                    ALOAD 4     // Ljava/lang/Object; element   (line 138)
+                    CHECKCAST org.springframework.core.io.Resource
+                    ASTORE 6
+                    ALOAD_3     // Ljava/util/List; merged   (line 139)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; resource
+                    INVOKEINTERFACE java.util.List.contains (Ljava/lang/Object;)Z
+                    IFNE L9
+                    ALOAD_3     // Ljava/util/List; merged   (line 140)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; resource
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L9
+                L8: NEW java.lang.IllegalArgumentException   (line 144)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot convert element ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/Object; element
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "] to ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC org.springframework.core.io.Resource   (line 145)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]: only location String and Resource object supported"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 144)
+                    ATHROW
+                L9: ALOAD 5   (line 116)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L3
+                    ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 148)
+                    ALOAD_3     // Ljava/util/List; merged
+                    ALOAD_3     // Ljava/util/List; merged
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY org.springframework.core.io.Resource
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L11
+               L10: ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this   (line 154)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+               L11: RETURN   (line 156)
+  end public void setValue(Object) throws java.lang.IllegalArgumentException
+
+  protected String resolvePath(String):
+                    ALOAD_1     // Ljava/lang/String; path   (line 166)
+                    ALOAD_0     // Lorg/springframework/core/io/support/ResourceArrayPropertyEditor; this
+                    GETFIELD org.springframework.core.io.support.ResourceArrayPropertyEditor.ignoreUnresolvablePlaceholders Z
+                    INVOKESTATIC org.springframework.util.SystemPropertyUtils.resolvePlaceholders (Ljava/lang/String;Z)Ljava/lang/String;
+                    ARETURN
+  end protected String resolvePath(String)
+end public class org.springframework.core.io.support.ResourceArrayPropertyEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.support.AutowireUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.support.AutowireUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.support.AutowireUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.support.AutowireUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.support.AutowireUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

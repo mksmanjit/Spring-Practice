@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+	
+	<bean id="infoPhone" class="foo.PhoneNumber">
+		<constructor-arg value="888"/>
+		<constructor-arg value="555"/>
+		<constructor-arg value="1212"/>
+	</bean>
+	<bean id="contact" class="foo.Contact">
+		<!-- <property name="phoneNumber" ref="infoPhone"/> -->
+		<property name="phoneNumber" value="888-555-1212"/>
+	</bean>
+
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="foo.PhoneNumber" value-ref="phoneEditor">
+				<!-- Use below line if dont want to use vaue-ref -->
+					<!-- <bean id="phoneEditor" class="foo.PhoneEditor">
+					</bean> -->
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="phoneEditor" class="foo.PhoneEditor">
+	</bean>
+</beans>

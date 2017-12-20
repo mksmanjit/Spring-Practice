@@ -1,0 +1,2169 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.182900.051.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.asm.Type extends java.lang.Object:
+  public static final int VOID = 0
+  public static final int BOOLEAN = 1
+  public static final int CHAR = 2
+  public static final int BYTE = 3
+  public static final int SHORT = 4
+  public static final int INT = 5
+  public static final int FLOAT = 6
+  public static final int LONG = 7
+  public static final int DOUBLE = 8
+  public static final int ARRAY = 9
+  public static final int OBJECT = 10
+  public static final org.springframework.asm.Type VOID_TYPE
+  public static final org.springframework.asm.Type BOOLEAN_TYPE
+  public static final org.springframework.asm.Type CHAR_TYPE
+  public static final org.springframework.asm.Type BYTE_TYPE
+  public static final org.springframework.asm.Type SHORT_TYPE
+  public static final org.springframework.asm.Type INT_TYPE
+  public static final org.springframework.asm.Type FLOAT_TYPE
+  public static final org.springframework.asm.Type LONG_TYPE
+  public static final org.springframework.asm.Type DOUBLE_TYPE
+  private final int a
+  private char[] b
+  private int c
+  private int d
+  private void <init>(int):
+                    ALOAD_0
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.asm.Type.<init>(int))
+    |               ALOAD_0
+    |               ILOAD_1
+    |               PUTFIELD org.springframework.asm.Type.a I
+    |               ALOAD_0
+    |               ICONST_1
+    |               PUTFIELD org.springframework.asm.Type.d I
+    |               RETURN
+    constructor-execution(void org.springframework.asm.Type.<init>(int))
+  end private void <init>(int)
+
+  private void <init>(int, char[], int, int):
+                    ALOAD_0
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.asm.Type.<init>(int, char[], int, int))
+    |               ALOAD_0
+    |               ILOAD_1
+    |               PUTFIELD org.springframework.asm.Type.a I
+    |               ALOAD_0
+    |               ALOAD_2
+    |               PUTFIELD org.springframework.asm.Type.b [C
+    |               ALOAD_0
+    |               ILOAD_3
+    |               PUTFIELD org.springframework.asm.Type.c I
+    |               ALOAD_0
+    |               ILOAD 4
+    |               PUTFIELD org.springframework.asm.Type.d I
+    |               RETURN
+    constructor-execution(void org.springframework.asm.Type.<init>(int, char[], int, int))
+  end private void <init>(int, char[], int, int)
+
+  public static org.springframework.asm.Type getType(String):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.String.toCharArray ()[C
+                    ICONST_0
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getType(String)
+
+  public static org.springframework.asm.Type getType(Class):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L8
+                    ALOAD_0
+                    GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L0
+                    GETSTATIC org.springframework.asm.Type.INT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L0: ALOAD_0
+                    GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L1
+                    GETSTATIC org.springframework.asm.Type.VOID_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L1: ALOAD_0
+                    GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L2
+                    GETSTATIC org.springframework.asm.Type.BOOLEAN_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L2: ALOAD_0
+                    GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L3
+                    GETSTATIC org.springframework.asm.Type.BYTE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L3: ALOAD_0
+                    GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L4
+                    GETSTATIC org.springframework.asm.Type.CHAR_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L4: ALOAD_0
+                    GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L5
+                    GETSTATIC org.springframework.asm.Type.SHORT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L5: ALOAD_0
+                    GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L6
+                    GETSTATIC org.springframework.asm.Type.DOUBLE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L6: ALOAD_0
+                    GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L7
+                    GETSTATIC org.springframework.asm.Type.FLOAT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L7: GETSTATIC org.springframework.asm.Type.LONG_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L8: ALOAD_0
+                    INVOKESTATIC org.springframework.asm.Type.getDescriptor (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.asm.Type.getType (Ljava/lang/String;)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getType(Class)
+
+  public static org.springframework.asm.Type[] getArgumentTypes(String):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.String.toCharArray ()[C
+                    ASTORE_1
+                    ICONST_1
+                    ISTORE_2
+                    ICONST_0
+                    ISTORE_3
+                L0: ALOAD_1
+                    ILOAD_2
+                    IINC_2 1
+                    CALOAD
+                    ISTORE 4
+                    ILOAD 4
+                    BIPUSH 41
+                    IF_ICMPNE L1
+                    GOTO L6
+                L1: ILOAD 4
+                    BIPUSH 76
+                    IF_ICMPNE L4
+                L2: ALOAD_1
+                    ILOAD_2
+                    IINC_2 1
+                    CALOAD
+                    BIPUSH 59
+                    IF_ICMPEQ L3
+                    GOTO L2
+                L3: IINC_3 1
+                    GOTO L5
+                L4: ILOAD 4
+                    BIPUSH 91
+                    IF_ICMPEQ L5
+                    IINC_3 1
+                L5: GOTO L0
+                L6: ILOAD_3
+                    ANEWARRAY org.springframework.asm.Type
+                    ASTORE 4
+                    ICONST_1
+                    ISTORE_2
+                    ICONST_0
+                    ISTORE_3
+                L7: ALOAD_1
+                    ILOAD_2
+                    CALOAD
+                    BIPUSH 41
+                    IF_ICMPEQ L8
+                    ALOAD 4
+                    ILOAD_3
+                    ALOAD_1
+                    ILOAD_2
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    AASTORE
+                    ILOAD_2
+                    ALOAD 4
+                    ILOAD_3
+                    AALOAD
+                    GETFIELD org.springframework.asm.Type.d I
+                    IADD
+                    ISTORE_2
+                    IINC_3 1
+                    GOTO L7
+                L8: ALOAD 4
+                    ARETURN
+  end public static org.springframework.asm.Type[] getArgumentTypes(String)
+
+  public static org.springframework.asm.Type[] getArgumentTypes(java.lang.reflect.Method):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1
+                    ARRAYLENGTH
+                    ANEWARRAY org.springframework.asm.Type
+                    ASTORE_2
+                    ALOAD_1
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    ISTORE_3
+                L0: ILOAD_3
+                    IFLT L1
+                    ALOAD_2
+                    ILOAD_3
+                    ALOAD_1
+                    ILOAD_3
+                    AALOAD
+                    INVOKESTATIC org.springframework.asm.Type.getType (Ljava/lang/Class;)Lorg/springframework/asm/Type;
+                    AASTORE
+                    IINC_3 -1
+                    GOTO L0
+                L1: ALOAD_2
+                    ARETURN
+  end public static org.springframework.asm.Type[] getArgumentTypes(java.lang.reflect.Method)
+
+  public static org.springframework.asm.Type getReturnType(String):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.String.toCharArray ()[C
+                    ASTORE_1
+                    ALOAD_1
+                    ALOAD_0
+                    BIPUSH 41
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_1
+                    IADD
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getReturnType(String)
+
+  public static org.springframework.asm.Type getReturnType(java.lang.reflect.Method):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.asm.Type.getType (Ljava/lang/Class;)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getReturnType(java.lang.reflect.Method)
+
+  private static org.springframework.asm.Type a(char[], int):
+                    ALOAD_0
+                    ILOAD_1
+                    CALOAD
+                    TABLESWITCH
+                      66: 	L3
+                      67: 	L2
+                      68: 	L8
+                      69: 	L14
+                      70: 	L6
+                      71: 	L14
+                      72: 	L14
+                      73: 	L5
+                      74: 	L7
+                      75: 	L14
+                      76: 	L14
+                      77: 	L14
+                      78: 	L14
+                      79: 	L14
+                      80: 	L14
+                      81: 	L14
+                      82: 	L14
+                      83: 	L4
+                      84: 	L14
+                      85: 	L14
+                      86: 	L0
+                      87: 	L14
+                      88: 	L14
+                      89: 	L14
+                      90: 	L1
+                      91: 	L9
+                      default: 	L14
+                L0: GETSTATIC org.springframework.asm.Type.VOID_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L1: GETSTATIC org.springframework.asm.Type.BOOLEAN_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L2: GETSTATIC org.springframework.asm.Type.CHAR_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L3: GETSTATIC org.springframework.asm.Type.BYTE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L4: GETSTATIC org.springframework.asm.Type.SHORT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L5: GETSTATIC org.springframework.asm.Type.INT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L6: GETSTATIC org.springframework.asm.Type.FLOAT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L7: GETSTATIC org.springframework.asm.Type.LONG_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L8: GETSTATIC org.springframework.asm.Type.DOUBLE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L9: ICONST_1
+                    ISTORE_2
+               L10: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 91
+                    IF_ICMPNE L11
+                    IINC_2 1
+                    GOTO L10
+               L11: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 76
+                    IF_ICMPNE L13
+                    IINC_2 1
+               L12: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 59
+                    IF_ICMPEQ L13
+                    IINC_2 1
+                    GOTO L12
+               L13: NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 9
+                    ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    ICONST_1
+                    IADD
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I[CII)V
+                    ARETURN
+               L14: ICONST_1
+                    ISTORE_2
+               L15: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 59
+                    IF_ICMPEQ L16
+                    IINC_2 1
+                    GOTO L15
+               L16: NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 10
+                    ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    ICONST_1
+                    IADD
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I[CII)V
+                    ARETURN
+  end private static org.springframework.asm.Type a(char[], int)
+
+  public int getSort():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    IRETURN
+  end public int getSort()
+
+  public int getDimensions():
+                    ICONST_1
+                    ISTORE_1
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ILOAD_1
+                    IADD
+                    CALOAD
+                    BIPUSH 91
+                    IF_ICMPNE L1
+                    IINC_1 1
+                    GOTO L0
+                L1: ILOAD_1
+                    IRETURN
+  end public int getDimensions()
+
+  public org.springframework.asm.Type getElementType():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getDimensions ()I
+                    IADD
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public org.springframework.asm.Type getElementType()
+
+  public String getClassName():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      0: 	L0
+                      1: 	L1
+                      2: 	L2
+                      3: 	L3
+                      4: 	L4
+                      5: 	L5
+                      6: 	L6
+                      7: 	L7
+                      8: 	L8
+                      9: 	L9
+                      default: 	L12
+                L0: LDC "void"
+                    ARETURN
+                L1: LDC "boolean"
+                    ARETURN
+                L2: LDC "char"
+                    ARETURN
+                L3: LDC "byte"
+                    ARETURN
+                L4: LDC "short"
+                    ARETURN
+                L5: LDC "int"
+                    ARETURN
+                L6: LDC "float"
+                    ARETURN
+                L7: LDC "long"
+                    ARETURN
+                L8: LDC "double"
+                    ARETURN
+                L9: NEW java.lang.StringBuffer
+                    DUP
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getElementType ()Lorg/springframework/asm/Type;
+                    INVOKEVIRTUAL org.springframework.asm.Type.getClassName ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuffer.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getDimensions ()I
+                    ISTORE_2
+               L10: ILOAD_2
+                    IFLE L11
+                    ALOAD_1
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+                    POP
+                    IINC_2 -1
+                    GOTO L10
+               L11: ALOAD_1
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+               L12: NEW java.lang.String
+                    DUP
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ICONST_1
+                    IADD
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    ICONST_2
+                    ISUB
+                    INVOKESPECIAL java.lang.String.<init> ([CII)V
+                    BIPUSH 47
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public String getClassName()
+
+  public String getInternalName():
+                    NEW java.lang.String
+                    DUP
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ICONST_1
+                    IADD
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    ICONST_2
+                    ISUB
+                    INVOKESPECIAL java.lang.String.<init> ([CII)V
+                    ARETURN
+  end public String getInternalName()
+
+  public String getDescriptor():
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_1
+                    ALOAD_0
+                    ALOAD_1
+                    INVOKESPECIAL org.springframework.asm.Type.a (Ljava/lang/StringBuffer;)V
+                    ALOAD_1
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getDescriptor()
+
+  public static String getMethodDescriptor(org.springframework.asm.Type, org.springframework.asm.Type[]):
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_2
+                    ALOAD_2
+                    BIPUSH 40
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ICONST_0
+                    ISTORE_3
+                L0: ILOAD_3
+                    ALOAD_1
+                    ARRAYLENGTH
+                    IF_ICMPGE L1
+                    ALOAD_1
+                    ILOAD_3
+                    AALOAD
+                    ALOAD_2
+                    INVOKESPECIAL org.springframework.asm.Type.a (Ljava/lang/StringBuffer;)V
+                    IINC_3 1
+                    GOTO L0
+                L1: ALOAD_2
+                    BIPUSH 41
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_0
+                    ALOAD_2
+                    INVOKESPECIAL org.springframework.asm.Type.a (Ljava/lang/StringBuffer;)V
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getMethodDescriptor(org.springframework.asm.Type, org.springframework.asm.Type[])
+
+  private void a(StringBuffer):
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      0: 	L0
+                      1: 	L1
+                      2: 	L2
+                      3: 	L3
+                      4: 	L4
+                      5: 	L5
+                      6: 	L6
+                      7: 	L7
+                      8: 	L8
+                      default: 	L9
+                L0: ALOAD_1
+                    BIPUSH 86
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L1: ALOAD_1
+                    BIPUSH 90
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L2: ALOAD_1
+                    BIPUSH 67
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L3: ALOAD_1
+                    BIPUSH 66
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L4: ALOAD_1
+                    BIPUSH 83
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L5: ALOAD_1
+                    BIPUSH 73
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L6: ALOAD_1
+                    BIPUSH 70
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L7: ALOAD_1
+                    BIPUSH 74
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L8: ALOAD_1
+                    BIPUSH 68
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L9: ALOAD_1
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    INVOKEVIRTUAL java.lang.StringBuffer.append ([CII)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+  end private void a(StringBuffer)
+
+  public static String getInternalName(Class):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    BIPUSH 46
+                    BIPUSH 47
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String getInternalName(Class)
+
+  public static String getDescriptor(Class):
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_1
+                    ALOAD_1
+                    ALOAD_0
+                    INVOKESTATIC org.springframework.asm.Type.a (Ljava/lang/StringBuffer;Ljava/lang/Class;)V
+                    ALOAD_1
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getDescriptor(Class)
+
+  public static String getMethodDescriptor(java.lang.reflect.Method):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE_1
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_2
+                    ALOAD_2
+                    BIPUSH 40
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ICONST_0
+                    ISTORE_3
+                L0: ILOAD_3
+                    ALOAD_1
+                    ARRAYLENGTH
+                    IF_ICMPGE L1
+                    ALOAD_2
+                    ALOAD_1
+                    ILOAD_3
+                    AALOAD
+                    INVOKESTATIC org.springframework.asm.Type.a (Ljava/lang/StringBuffer;Ljava/lang/Class;)V
+                    IINC_3 1
+                    GOTO L0
+                L1: ALOAD_2
+                    BIPUSH 41
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_2
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.asm.Type.a (Ljava/lang/StringBuffer;Ljava/lang/Class;)V
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getMethodDescriptor(java.lang.reflect.Method)
+
+  private static void a(StringBuffer, Class):
+                    ALOAD_1
+                    ASTORE_2
+                L0: ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L10
+                    ALOAD_2
+                    GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L1
+                    BIPUSH 73
+                    ISTORE_3
+                    GOTO L9
+                L1: ALOAD_2
+                    GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L2
+                    BIPUSH 86
+                    ISTORE_3
+                    GOTO L9
+                L2: ALOAD_2
+                    GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L3
+                    BIPUSH 90
+                    ISTORE_3
+                    GOTO L9
+                L3: ALOAD_2
+                    GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L4
+                    BIPUSH 66
+                    ISTORE_3
+                    GOTO L9
+                L4: ALOAD_2
+                    GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L5
+                    BIPUSH 67
+                    ISTORE_3
+                    GOTO L9
+                L5: ALOAD_2
+                    GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L6
+                    BIPUSH 83
+                    ISTORE_3
+                    GOTO L9
+                L6: ALOAD_2
+                    GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L7
+                    BIPUSH 68
+                    ISTORE_3
+                    GOTO L9
+                L7: ALOAD_2
+                    GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L8
+                    BIPUSH 70
+                    ISTORE_3
+                    GOTO L9
+                L8: BIPUSH 74
+                    ISTORE_3
+                L9: ALOAD_0
+                    ILOAD_3
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+               L10: ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L11
+                    ALOAD_0
+                    BIPUSH 91
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_2
+                    GOTO L0
+               L11: ALOAD_0
+                    BIPUSH 76
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE 5
+               L12: ILOAD 5
+                    ILOAD 4
+                    IF_ICMPGE L15
+                    ALOAD_3
+                    ILOAD 5
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 6
+                    ALOAD_0
+                    ILOAD 6
+                    BIPUSH 46
+                    IF_ICMPNE L13
+                    BIPUSH 47
+                    GOTO L14
+               L13: ILOAD 6
+               L14: INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    IINC 5 1
+                    GOTO L12
+               L15: ALOAD_0
+                    BIPUSH 59
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+  end private static void a(StringBuffer, Class)
+
+  public int getSize():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 7
+                    IF_ICMPEQ L0
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 8
+                    IF_ICMPNE L1
+                L0: ICONST_2
+                    GOTO L2
+                L1: ICONST_1
+                L2: IRETURN
+  end public int getSize()
+
+  public int getOpcode(int):
+                    ILOAD_1
+                    BIPUSH 46
+                    IF_ICMPEQ L0
+                    ILOAD_1
+                    BIPUSH 79
+                    IF_ICMPNE L9
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      1: 	L1
+                      2: 	L2
+                      3: 	L1
+                      4: 	L3
+                      5: 	L4
+                      6: 	L5
+                      7: 	L6
+                      8: 	L7
+                      default: 	L8
+                L1: ILOAD_1
+                    ICONST_5
+                    IADD
+                    IRETURN
+                L2: ILOAD_1
+                    BIPUSH 6
+                    IADD
+                    IRETURN
+                L3: ILOAD_1
+                    BIPUSH 7
+                    IADD
+                    IRETURN
+                L4: ILOAD_1
+                    IRETURN
+                L5: ILOAD_1
+                    ICONST_2
+                    IADD
+                    IRETURN
+                L6: ILOAD_1
+                    ICONST_1
+                    IADD
+                    IRETURN
+                L7: ILOAD_1
+                    ICONST_3
+                    IADD
+                    IRETURN
+                L8: ILOAD_1
+                    ICONST_4
+                    IADD
+                    IRETURN
+                L9: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      0: 	L10
+                      1: 	L11
+                      2: 	L11
+                      3: 	L11
+                      4: 	L11
+                      5: 	L11
+                      6: 	L12
+                      7: 	L13
+                      8: 	L14
+                      default: 	L15
+               L10: ILOAD_1
+                    ICONST_5
+                    IADD
+                    IRETURN
+               L11: ILOAD_1
+                    IRETURN
+               L12: ILOAD_1
+                    ICONST_2
+                    IADD
+                    IRETURN
+               L13: ILOAD_1
+                    ICONST_1
+                    IADD
+                    IRETURN
+               L14: ILOAD_1
+                    ICONST_3
+                    IADD
+                    IRETURN
+               L15: ILOAD_1
+                    ICONST_4
+                    IADD
+                    IRETURN
+  end public int getOpcode(int)
+
+  public boolean equals(Object):
+                    ALOAD_0
+                    ALOAD_1
+                    IF_ACMPNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ALOAD_1
+                    IFNULL L1
+                    ALOAD_1
+                    INSTANCEOF org.springframework.asm.Type
+                    IFNE L2
+                L1: ICONST_0
+                    IRETURN
+                L2: ALOAD_1
+                    CHECKCAST org.springframework.asm.Type
+                    ASTORE_2
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.a I
+                    IF_ICMPEQ L3
+                    ICONST_0
+                    IRETURN
+                L3: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 10
+                    IF_ICMPEQ L4
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 9
+                    IF_ICMPNE L8
+                L4: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.d I
+                    IF_ICMPEQ L5
+                    ICONST_0
+                    IRETURN
+                L5: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ISTORE_3
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.c I
+                    ISTORE 4
+                    ILOAD_3
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    IADD
+                    ISTORE 5
+                L6: ILOAD_3
+                    ILOAD 5
+                    IF_ICMPGE L8
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ILOAD_3
+                    CALOAD
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ILOAD 4
+                    CALOAD
+                    IF_ICMPEQ L7
+                    ICONST_0
+                    IRETURN
+                L7: IINC_3 1
+                    IINC 4 1
+                    GOTO L6
+                L8: ICONST_1
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    BIPUSH 13
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    IMUL
+                    ISTORE_1
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 10
+                    IF_ICMPEQ L0
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 9
+                    IF_ICMPNE L2
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ISTORE_2
+                    ILOAD_2
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    IADD
+                    ISTORE_3
+                L1: ILOAD_2
+                    ILOAD_3
+                    IF_ICMPGE L2
+                    BIPUSH 17
+                    ILOAD_1
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ILOAD_2
+                    CALOAD
+                    IADD
+                    IMUL
+                    ISTORE_1
+                    IINC_2 1
+                    GOTO L1
+                L2: ILOAD_1
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getDescriptor ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  static void <clinit>():
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.VOID_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.BOOLEAN_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_2
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.CHAR_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_3
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.BYTE_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_4
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.SHORT_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_5
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.INT_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 6
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.FLOAT_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 7
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.LONG_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 8
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.DOUBLE_TYPE Lorg/springframework/asm/Type;
+                    RETURN
+  end static void <clinit>()
+end public class org.springframework.asm.Type
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.asm.Type extends java.lang.Object:
+  public static final int VOID = 0
+  public static final int BOOLEAN = 1
+  public static final int CHAR = 2
+  public static final int BYTE = 3
+  public static final int SHORT = 4
+  public static final int INT = 5
+  public static final int FLOAT = 6
+  public static final int LONG = 7
+  public static final int DOUBLE = 8
+  public static final int ARRAY = 9
+  public static final int OBJECT = 10
+  public static final org.springframework.asm.Type VOID_TYPE
+  public static final org.springframework.asm.Type BOOLEAN_TYPE
+  public static final org.springframework.asm.Type CHAR_TYPE
+  public static final org.springframework.asm.Type BYTE_TYPE
+  public static final org.springframework.asm.Type SHORT_TYPE
+  public static final org.springframework.asm.Type INT_TYPE
+  public static final org.springframework.asm.Type FLOAT_TYPE
+  public static final org.springframework.asm.Type LONG_TYPE
+  public static final org.springframework.asm.Type DOUBLE_TYPE
+  private final int a
+  private char[] b
+  private int c
+  private int d
+  private void <init>(int):
+                    ALOAD_0
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.asm.Type.<init>(int))
+    |               ALOAD_0
+    |               ILOAD_1
+    |               PUTFIELD org.springframework.asm.Type.a I
+    |               ALOAD_0
+    |               ICONST_1
+    |               PUTFIELD org.springframework.asm.Type.d I
+    |               RETURN
+    constructor-execution(void org.springframework.asm.Type.<init>(int))
+  end private void <init>(int)
+
+  private void <init>(int, char[], int, int):
+                    ALOAD_0
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.asm.Type.<init>(int, char[], int, int))
+    |               ALOAD_0
+    |               ILOAD_1
+    |               PUTFIELD org.springframework.asm.Type.a I
+    |               ALOAD_0
+    |               ALOAD_2
+    |               PUTFIELD org.springframework.asm.Type.b [C
+    |               ALOAD_0
+    |               ILOAD_3
+    |               PUTFIELD org.springframework.asm.Type.c I
+    |               ALOAD_0
+    |               ILOAD 4
+    |               PUTFIELD org.springframework.asm.Type.d I
+    |               RETURN
+    constructor-execution(void org.springframework.asm.Type.<init>(int, char[], int, int))
+  end private void <init>(int, char[], int, int)
+
+  public static org.springframework.asm.Type getType(String):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.String.toCharArray ()[C
+                    ICONST_0
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getType(String)
+
+  public static org.springframework.asm.Type getType(Class):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L8
+                    ALOAD_0
+                    GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L0
+                    GETSTATIC org.springframework.asm.Type.INT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L0: ALOAD_0
+                    GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L1
+                    GETSTATIC org.springframework.asm.Type.VOID_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L1: ALOAD_0
+                    GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L2
+                    GETSTATIC org.springframework.asm.Type.BOOLEAN_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L2: ALOAD_0
+                    GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L3
+                    GETSTATIC org.springframework.asm.Type.BYTE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L3: ALOAD_0
+                    GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L4
+                    GETSTATIC org.springframework.asm.Type.CHAR_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L4: ALOAD_0
+                    GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L5
+                    GETSTATIC org.springframework.asm.Type.SHORT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L5: ALOAD_0
+                    GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L6
+                    GETSTATIC org.springframework.asm.Type.DOUBLE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L6: ALOAD_0
+                    GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L7
+                    GETSTATIC org.springframework.asm.Type.FLOAT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L7: GETSTATIC org.springframework.asm.Type.LONG_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L8: ALOAD_0
+                    INVOKESTATIC org.springframework.asm.Type.getDescriptor (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.asm.Type.getType (Ljava/lang/String;)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getType(Class)
+
+  public static org.springframework.asm.Type[] getArgumentTypes(String):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.String.toCharArray ()[C
+                    ASTORE_1
+                    ICONST_1
+                    ISTORE_2
+                    ICONST_0
+                    ISTORE_3
+                L0: ALOAD_1
+                    ILOAD_2
+                    IINC_2 1
+                    CALOAD
+                    ISTORE 4
+                    ILOAD 4
+                    BIPUSH 41
+                    IF_ICMPNE L1
+                    GOTO L6
+                L1: ILOAD 4
+                    BIPUSH 76
+                    IF_ICMPNE L4
+                L2: ALOAD_1
+                    ILOAD_2
+                    IINC_2 1
+                    CALOAD
+                    BIPUSH 59
+                    IF_ICMPEQ L3
+                    GOTO L2
+                L3: IINC_3 1
+                    GOTO L5
+                L4: ILOAD 4
+                    BIPUSH 91
+                    IF_ICMPEQ L5
+                    IINC_3 1
+                L5: GOTO L0
+                L6: ILOAD_3
+                    ANEWARRAY org.springframework.asm.Type
+                    ASTORE 4
+                    ICONST_1
+                    ISTORE_2
+                    ICONST_0
+                    ISTORE_3
+                L7: ALOAD_1
+                    ILOAD_2
+                    CALOAD
+                    BIPUSH 41
+                    IF_ICMPEQ L8
+                    ALOAD 4
+                    ILOAD_3
+                    ALOAD_1
+                    ILOAD_2
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    AASTORE
+                    ILOAD_2
+                    ALOAD 4
+                    ILOAD_3
+                    AALOAD
+                    GETFIELD org.springframework.asm.Type.d I
+                    IADD
+                    ISTORE_2
+                    IINC_3 1
+                    GOTO L7
+                L8: ALOAD 4
+                    ARETURN
+  end public static org.springframework.asm.Type[] getArgumentTypes(String)
+
+  public static org.springframework.asm.Type[] getArgumentTypes(java.lang.reflect.Method):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1
+                    ARRAYLENGTH
+                    ANEWARRAY org.springframework.asm.Type
+                    ASTORE_2
+                    ALOAD_1
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    ISTORE_3
+                L0: ILOAD_3
+                    IFLT L1
+                    ALOAD_2
+                    ILOAD_3
+                    ALOAD_1
+                    ILOAD_3
+                    AALOAD
+                    INVOKESTATIC org.springframework.asm.Type.getType (Ljava/lang/Class;)Lorg/springframework/asm/Type;
+                    AASTORE
+                    IINC_3 -1
+                    GOTO L0
+                L1: ALOAD_2
+                    ARETURN
+  end public static org.springframework.asm.Type[] getArgumentTypes(java.lang.reflect.Method)
+
+  public static org.springframework.asm.Type getReturnType(String):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.String.toCharArray ()[C
+                    ASTORE_1
+                    ALOAD_1
+                    ALOAD_0
+                    BIPUSH 41
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_1
+                    IADD
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getReturnType(String)
+
+  public static org.springframework.asm.Type getReturnType(java.lang.reflect.Method):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.asm.Type.getType (Ljava/lang/Class;)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public static org.springframework.asm.Type getReturnType(java.lang.reflect.Method)
+
+  private static org.springframework.asm.Type a(char[], int):
+                    ALOAD_0
+                    ILOAD_1
+                    CALOAD
+                    TABLESWITCH
+                      66: 	L3
+                      67: 	L2
+                      68: 	L8
+                      69: 	L14
+                      70: 	L6
+                      71: 	L14
+                      72: 	L14
+                      73: 	L5
+                      74: 	L7
+                      75: 	L14
+                      76: 	L14
+                      77: 	L14
+                      78: 	L14
+                      79: 	L14
+                      80: 	L14
+                      81: 	L14
+                      82: 	L14
+                      83: 	L4
+                      84: 	L14
+                      85: 	L14
+                      86: 	L0
+                      87: 	L14
+                      88: 	L14
+                      89: 	L14
+                      90: 	L1
+                      91: 	L9
+                      default: 	L14
+                L0: GETSTATIC org.springframework.asm.Type.VOID_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L1: GETSTATIC org.springframework.asm.Type.BOOLEAN_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L2: GETSTATIC org.springframework.asm.Type.CHAR_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L3: GETSTATIC org.springframework.asm.Type.BYTE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L4: GETSTATIC org.springframework.asm.Type.SHORT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L5: GETSTATIC org.springframework.asm.Type.INT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L6: GETSTATIC org.springframework.asm.Type.FLOAT_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L7: GETSTATIC org.springframework.asm.Type.LONG_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L8: GETSTATIC org.springframework.asm.Type.DOUBLE_TYPE Lorg/springframework/asm/Type;
+                    ARETURN
+                L9: ICONST_1
+                    ISTORE_2
+               L10: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 91
+                    IF_ICMPNE L11
+                    IINC_2 1
+                    GOTO L10
+               L11: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 76
+                    IF_ICMPNE L13
+                    IINC_2 1
+               L12: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 59
+                    IF_ICMPEQ L13
+                    IINC_2 1
+                    GOTO L12
+               L13: NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 9
+                    ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    ICONST_1
+                    IADD
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I[CII)V
+                    ARETURN
+               L14: ICONST_1
+                    ISTORE_2
+               L15: ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    IADD
+                    CALOAD
+                    BIPUSH 59
+                    IF_ICMPEQ L16
+                    IINC_2 1
+                    GOTO L15
+               L16: NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 10
+                    ALOAD_0
+                    ILOAD_1
+                    ILOAD_2
+                    ICONST_1
+                    IADD
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I[CII)V
+                    ARETURN
+  end private static org.springframework.asm.Type a(char[], int)
+
+  public int getSort():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    IRETURN
+  end public int getSort()
+
+  public int getDimensions():
+                    ICONST_1
+                    ISTORE_1
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ILOAD_1
+                    IADD
+                    CALOAD
+                    BIPUSH 91
+                    IF_ICMPNE L1
+                    IINC_1 1
+                    GOTO L0
+                L1: ILOAD_1
+                    IRETURN
+  end public int getDimensions()
+
+  public org.springframework.asm.Type getElementType():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getDimensions ()I
+                    IADD
+                    INVOKESTATIC org.springframework.asm.Type.a ([CI)Lorg/springframework/asm/Type;
+                    ARETURN
+  end public org.springframework.asm.Type getElementType()
+
+  public String getClassName():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      0: 	L0
+                      1: 	L1
+                      2: 	L2
+                      3: 	L3
+                      4: 	L4
+                      5: 	L5
+                      6: 	L6
+                      7: 	L7
+                      8: 	L8
+                      9: 	L9
+                      default: 	L12
+                L0: LDC "void"
+                    ARETURN
+                L1: LDC "boolean"
+                    ARETURN
+                L2: LDC "char"
+                    ARETURN
+                L3: LDC "byte"
+                    ARETURN
+                L4: LDC "short"
+                    ARETURN
+                L5: LDC "int"
+                    ARETURN
+                L6: LDC "float"
+                    ARETURN
+                L7: LDC "long"
+                    ARETURN
+                L8: LDC "double"
+                    ARETURN
+                L9: NEW java.lang.StringBuffer
+                    DUP
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getElementType ()Lorg/springframework/asm/Type;
+                    INVOKEVIRTUAL org.springframework.asm.Type.getClassName ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuffer.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getDimensions ()I
+                    ISTORE_2
+               L10: ILOAD_2
+                    IFLE L11
+                    ALOAD_1
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+                    POP
+                    IINC_2 -1
+                    GOTO L10
+               L11: ALOAD_1
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+               L12: NEW java.lang.String
+                    DUP
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ICONST_1
+                    IADD
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    ICONST_2
+                    ISUB
+                    INVOKESPECIAL java.lang.String.<init> ([CII)V
+                    BIPUSH 47
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public String getClassName()
+
+  public String getInternalName():
+                    NEW java.lang.String
+                    DUP
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ICONST_1
+                    IADD
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    ICONST_2
+                    ISUB
+                    INVOKESPECIAL java.lang.String.<init> ([CII)V
+                    ARETURN
+  end public String getInternalName()
+
+  public String getDescriptor():
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_1
+                    ALOAD_0
+                    ALOAD_1
+                    INVOKESPECIAL org.springframework.asm.Type.a (Ljava/lang/StringBuffer;)V
+                    ALOAD_1
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getDescriptor()
+
+  public static String getMethodDescriptor(org.springframework.asm.Type, org.springframework.asm.Type[]):
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_2
+                    ALOAD_2
+                    BIPUSH 40
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ICONST_0
+                    ISTORE_3
+                L0: ILOAD_3
+                    ALOAD_1
+                    ARRAYLENGTH
+                    IF_ICMPGE L1
+                    ALOAD_1
+                    ILOAD_3
+                    AALOAD
+                    ALOAD_2
+                    INVOKESPECIAL org.springframework.asm.Type.a (Ljava/lang/StringBuffer;)V
+                    IINC_3 1
+                    GOTO L0
+                L1: ALOAD_2
+                    BIPUSH 41
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_0
+                    ALOAD_2
+                    INVOKESPECIAL org.springframework.asm.Type.a (Ljava/lang/StringBuffer;)V
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getMethodDescriptor(org.springframework.asm.Type, org.springframework.asm.Type[])
+
+  private void a(StringBuffer):
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      0: 	L0
+                      1: 	L1
+                      2: 	L2
+                      3: 	L3
+                      4: 	L4
+                      5: 	L5
+                      6: 	L6
+                      7: 	L7
+                      8: 	L8
+                      default: 	L9
+                L0: ALOAD_1
+                    BIPUSH 86
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L1: ALOAD_1
+                    BIPUSH 90
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L2: ALOAD_1
+                    BIPUSH 67
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L3: ALOAD_1
+                    BIPUSH 66
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L4: ALOAD_1
+                    BIPUSH 83
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L5: ALOAD_1
+                    BIPUSH 73
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L6: ALOAD_1
+                    BIPUSH 70
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L7: ALOAD_1
+                    BIPUSH 74
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L8: ALOAD_1
+                    BIPUSH 68
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+                L9: ALOAD_1
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    INVOKEVIRTUAL java.lang.StringBuffer.append ([CII)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+  end private void a(StringBuffer)
+
+  public static String getInternalName(Class):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    BIPUSH 46
+                    BIPUSH 47
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String getInternalName(Class)
+
+  public static String getDescriptor(Class):
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_1
+                    ALOAD_1
+                    ALOAD_0
+                    INVOKESTATIC org.springframework.asm.Type.a (Ljava/lang/StringBuffer;Ljava/lang/Class;)V
+                    ALOAD_1
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getDescriptor(Class)
+
+  public static String getMethodDescriptor(java.lang.reflect.Method):
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE_1
+                    NEW java.lang.StringBuffer
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuffer.<init> ()V
+                    ASTORE_2
+                    ALOAD_2
+                    BIPUSH 40
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ICONST_0
+                    ISTORE_3
+                L0: ILOAD_3
+                    ALOAD_1
+                    ARRAYLENGTH
+                    IF_ICMPGE L1
+                    ALOAD_2
+                    ALOAD_1
+                    ILOAD_3
+                    AALOAD
+                    INVOKESTATIC org.springframework.asm.Type.a (Ljava/lang/StringBuffer;Ljava/lang/Class;)V
+                    IINC_3 1
+                    GOTO L0
+                L1: ALOAD_2
+                    BIPUSH 41
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_2
+                    ALOAD_0
+                    INVOKEVIRTUAL java.lang.reflect.Method.getReturnType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.asm.Type.a (Ljava/lang/StringBuffer;Ljava/lang/Class;)V
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getMethodDescriptor(java.lang.reflect.Method)
+
+  private static void a(StringBuffer, Class):
+                    ALOAD_1
+                    ASTORE_2
+                L0: ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L10
+                    ALOAD_2
+                    GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L1
+                    BIPUSH 73
+                    ISTORE_3
+                    GOTO L9
+                L1: ALOAD_2
+                    GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L2
+                    BIPUSH 86
+                    ISTORE_3
+                    GOTO L9
+                L2: ALOAD_2
+                    GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L3
+                    BIPUSH 90
+                    ISTORE_3
+                    GOTO L9
+                L3: ALOAD_2
+                    GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L4
+                    BIPUSH 66
+                    ISTORE_3
+                    GOTO L9
+                L4: ALOAD_2
+                    GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L5
+                    BIPUSH 67
+                    ISTORE_3
+                    GOTO L9
+                L5: ALOAD_2
+                    GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L6
+                    BIPUSH 83
+                    ISTORE_3
+                    GOTO L9
+                L6: ALOAD_2
+                    GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L7
+                    BIPUSH 68
+                    ISTORE_3
+                    GOTO L9
+                L7: ALOAD_2
+                    GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+                    IF_ACMPNE L8
+                    BIPUSH 70
+                    ISTORE_3
+                    GOTO L9
+                L8: BIPUSH 74
+                    ISTORE_3
+                L9: ALOAD_0
+                    ILOAD_3
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+               L10: ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L11
+                    ALOAD_0
+                    BIPUSH 91
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_2
+                    GOTO L0
+               L11: ALOAD_0
+                    BIPUSH 76
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    ALOAD_2
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE 5
+               L12: ILOAD 5
+                    ILOAD 4
+                    IF_ICMPGE L15
+                    ALOAD_3
+                    ILOAD 5
+                    INVOKEVIRTUAL java.lang.String.charAt (I)C
+                    ISTORE 6
+                    ALOAD_0
+                    ILOAD 6
+                    BIPUSH 46
+                    IF_ICMPNE L13
+                    BIPUSH 47
+                    GOTO L14
+               L13: ILOAD 6
+               L14: INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    IINC 5 1
+                    GOTO L12
+               L15: ALOAD_0
+                    BIPUSH 59
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (C)Ljava/lang/StringBuffer;
+                    POP
+                    RETURN
+  end private static void a(StringBuffer, Class)
+
+  public int getSize():
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 7
+                    IF_ICMPEQ L0
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 8
+                    IF_ICMPNE L1
+                L0: ICONST_2
+                    GOTO L2
+                L1: ICONST_1
+                L2: IRETURN
+  end public int getSize()
+
+  public int getOpcode(int):
+                    ILOAD_1
+                    BIPUSH 46
+                    IF_ICMPEQ L0
+                    ILOAD_1
+                    BIPUSH 79
+                    IF_ICMPNE L9
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      1: 	L1
+                      2: 	L2
+                      3: 	L1
+                      4: 	L3
+                      5: 	L4
+                      6: 	L5
+                      7: 	L6
+                      8: 	L7
+                      default: 	L8
+                L1: ILOAD_1
+                    ICONST_5
+                    IADD
+                    IRETURN
+                L2: ILOAD_1
+                    BIPUSH 6
+                    IADD
+                    IRETURN
+                L3: ILOAD_1
+                    BIPUSH 7
+                    IADD
+                    IRETURN
+                L4: ILOAD_1
+                    IRETURN
+                L5: ILOAD_1
+                    ICONST_2
+                    IADD
+                    IRETURN
+                L6: ILOAD_1
+                    ICONST_1
+                    IADD
+                    IRETURN
+                L7: ILOAD_1
+                    ICONST_3
+                    IADD
+                    IRETURN
+                L8: ILOAD_1
+                    ICONST_4
+                    IADD
+                    IRETURN
+                L9: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    TABLESWITCH
+                      0: 	L10
+                      1: 	L11
+                      2: 	L11
+                      3: 	L11
+                      4: 	L11
+                      5: 	L11
+                      6: 	L12
+                      7: 	L13
+                      8: 	L14
+                      default: 	L15
+               L10: ILOAD_1
+                    ICONST_5
+                    IADD
+                    IRETURN
+               L11: ILOAD_1
+                    IRETURN
+               L12: ILOAD_1
+                    ICONST_2
+                    IADD
+                    IRETURN
+               L13: ILOAD_1
+                    ICONST_1
+                    IADD
+                    IRETURN
+               L14: ILOAD_1
+                    ICONST_3
+                    IADD
+                    IRETURN
+               L15: ILOAD_1
+                    ICONST_4
+                    IADD
+                    IRETURN
+  end public int getOpcode(int)
+
+  public boolean equals(Object):
+                    ALOAD_0
+                    ALOAD_1
+                    IF_ACMPNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ALOAD_1
+                    IFNULL L1
+                    ALOAD_1
+                    INSTANCEOF org.springframework.asm.Type
+                    IFNE L2
+                L1: ICONST_0
+                    IRETURN
+                L2: ALOAD_1
+                    CHECKCAST org.springframework.asm.Type
+                    ASTORE_2
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.a I
+                    IF_ICMPEQ L3
+                    ICONST_0
+                    IRETURN
+                L3: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 10
+                    IF_ICMPEQ L4
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 9
+                    IF_ICMPNE L8
+                L4: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.d I
+                    IF_ICMPEQ L5
+                    ICONST_0
+                    IRETURN
+                L5: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ISTORE_3
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.c I
+                    ISTORE 4
+                    ILOAD_3
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    IADD
+                    ISTORE 5
+                L6: ILOAD_3
+                    ILOAD 5
+                    IF_ICMPGE L8
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ILOAD_3
+                    CALOAD
+                    ALOAD_2
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ILOAD 4
+                    CALOAD
+                    IF_ICMPEQ L7
+                    ICONST_0
+                    IRETURN
+                L7: IINC_3 1
+                    IINC 4 1
+                    GOTO L6
+                L8: ICONST_1
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    BIPUSH 13
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    IMUL
+                    ISTORE_1
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 10
+                    IF_ICMPEQ L0
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.a I
+                    BIPUSH 9
+                    IF_ICMPNE L2
+                L0: ALOAD_0
+                    GETFIELD org.springframework.asm.Type.c I
+                    ISTORE_2
+                    ILOAD_2
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.d I
+                    IADD
+                    ISTORE_3
+                L1: ILOAD_2
+                    ILOAD_3
+                    IF_ICMPGE L2
+                    BIPUSH 17
+                    ILOAD_1
+                    ALOAD_0
+                    GETFIELD org.springframework.asm.Type.b [C
+                    ILOAD_2
+                    CALOAD
+                    IADD
+                    IMUL
+                    ISTORE_1
+                    IINC_2 1
+                    GOTO L1
+                L2: ILOAD_1
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    ALOAD_0
+                    INVOKEVIRTUAL org.springframework.asm.Type.getDescriptor ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  static void <clinit>():
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.VOID_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.BOOLEAN_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_2
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.CHAR_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_3
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.BYTE_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_4
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.SHORT_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    ICONST_5
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.INT_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 6
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.FLOAT_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 7
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.LONG_TYPE Lorg/springframework/asm/Type;
+                    NEW org.springframework.asm.Type
+                    DUP
+                    BIPUSH 8
+                    INVOKESPECIAL org.springframework.asm.Type.<init> (I)V
+                    PUTSTATIC org.springframework.asm.Type.DOUBLE_TYPE Lorg/springframework/asm/Type;
+                    RETURN
+  end static void <clinit>()
+end public class org.springframework.asm.Type
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.LocalVariableTableParameterNameDiscoverer$LocalVariableTableVisitor.<init>(LocalVariableTableParameterNameDiscoverer.java:195)
+	at org.springframework.core.LocalVariableTableParameterNameDiscoverer$ParameterNameDiscoveringVisitor.visitMethod(LocalVariableTableParameterNameDiscoverer.java:155)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.asm.ClassReader.accept(Unknown Source)
+	at org.springframework.core.LocalVariableTableParameterNameDiscoverer.inspectClass(LocalVariableTableParameterNameDiscoverer.java:114)
+	at org.springframework.core.LocalVariableTableParameterNameDiscoverer.getParameterNames(LocalVariableTableParameterNameDiscoverer.java:71)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:983)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:879)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

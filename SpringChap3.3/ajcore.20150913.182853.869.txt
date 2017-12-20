@@ -1,0 +1,860 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.182853.869.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.util.PropertyPlaceholderHelper extends java.lang.Object:
+  private static final org.apache.commons.logging.Log logger
+  private static final java.util.Map wellKnownSimplePrefixes [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)]
+  private final String placeholderPrefix
+  private final String placeholderSuffix
+  private final String simplePrefix
+  private final String valueSeparator
+  private final boolean ignoreUnresolvablePlaceholders
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.PropertyPlaceholderHelper.<clinit>())
+    |               LDC org.springframework.util.PropertyPlaceholderHelper   (line 40)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.util.PropertyPlaceholderHelper.logger Lorg/apache/commons/logging/Log;
+    |               NEW java.util.HashMap   (line 42)
+    |               DUP
+    |               ICONST_4
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 45)
+    |               LDC "}"
+    |               LDC "{"
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 46)
+    |               LDC "]"
+    |               LDC "["
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 47)
+    |               LDC ")"
+    |               LDC "("
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               RETURN   (line 38)
+    staticinitialization(void org.springframework.util.PropertyPlaceholderHelper.<clinit>())
+  end static void <clinit>()
+
+  public void <init>(String, String):
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 69)
+                    ALOAD_1     // Ljava/lang/String; placeholderPrefix
+                    ALOAD_2     // Ljava/lang/String; placeholderSuffix
+                    ACONST_NULL
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.util.PropertyPlaceholderHelper.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String))
+    |               RETURN   (line 70)
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String))
+  end public void <init>(String, String)
+
+  public void <init>(String, String, String, boolean):
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 81)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String, java.lang.String, boolean))
+    |               ALOAD_1     // Ljava/lang/String; placeholderPrefix   (line 84)
+    |               LDC "placeholderPrefix must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_2     // Ljava/lang/String; placeholderSuffix   (line 85)
+    |               LDC "placeholderSuffix must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 86)
+    |               ALOAD_1     // Ljava/lang/String; placeholderPrefix
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 87)
+    |               ALOAD_2     // Ljava/lang/String; placeholderSuffix
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 88)
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+    |               GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/String; simplePrefixForSuffix   (line 89)
+    |               IFNULL L0
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+    |               GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+    |               ALOAD 5     // Ljava/lang/String; simplePrefixForSuffix
+    |               INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+    |               IFEQ L0
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 90)
+    |               ALOAD 5     // Ljava/lang/String; simplePrefixForSuffix
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+    |               GOTO L1
+    |           L0: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 93)
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+    |               GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+    |           L1: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 95)
+    |               ALOAD_3     // Ljava/lang/String; valueSeparator
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 96)
+    |               ILOAD 4     // Z ignoreUnresolvablePlaceholders
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.ignoreUnresolvablePlaceholders Z
+    |               RETURN   (line 97)
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String, java.lang.String, boolean))
+  end public void <init>(String, String, String, boolean)
+
+  public String replacePlaceholders(String, java.util.Properties):
+                    ALOAD_2     // Ljava/util/Properties; properties   (line 108)
+                    LDC "Argument 'properties' must not be null."
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 109)
+                    ALOAD_1     // Ljava/lang/String; value
+                    NEW org.springframework.util.PropertyPlaceholderHelper$1
+                    DUP
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    ALOAD_2     // Ljava/util/Properties; properties
+                    INVOKESPECIAL org.springframework.util.PropertyPlaceholderHelper$1.<init> (Lorg/springframework/util/PropertyPlaceholderHelper;Ljava/util/Properties;)V
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;)Ljava/lang/String;
+                    ARETURN
+  end public String replacePlaceholders(String, java.util.Properties)
+
+  public String replacePlaceholders(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver):
+                    ALOAD_1     // Ljava/lang/String; value   (line 124)
+                    LDC "Argument 'value' must not be null."
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 125)
+                    ALOAD_1     // Ljava/lang/String; value
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver
+                    NEW java.util.HashSet
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.parseStringValue (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;Ljava/util/Set;)Ljava/lang/String;
+                    ARETURN
+  end public String replacePlaceholders(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver)
+
+  protected String parseStringValue(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver, java.util.Set):
+                    NEW java.lang.StringBuilder   (line 131)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; strVal
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; strVal   (line 133)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 5
+                    GOTO L8   (line 134)
+                L0: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 135)
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf
+                    ILOAD 5     // I startIndex
+                    INVOKESPECIAL org.springframework.util.PropertyPlaceholderHelper.findPlaceholderEndIndex (Ljava/lang/CharSequence;I)I
+                    ISTORE 6
+                    ILOAD 6     // I endIndex   (line 136)
+                    ICONST_M1
+                    IF_ICMPEQ L7
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 137)
+                    ILOAD 5     // I startIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ILOAD 6     // I endIndex
+                    INVOKEVIRTUAL java.lang.StringBuilder.substring (II)Ljava/lang/String;
+                    ASTORE 7
+                    ALOAD_3     // Ljava/util/Set; visitedPlaceholders   (line 138)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    IFNE L1
+                    NEW java.lang.IllegalArgumentException   (line 139)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 140)
+                    DUP
+                    LDC "Circular placeholder reference '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' in property definitions"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 139)
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 143)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver
+                    ALOAD_3     // Ljava/util/Set; visitedPlaceholders
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.parseStringValue (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;Ljava/util/Set;)Ljava/lang/String;
+                    ASTORE 7     // Ljava/lang/String; placeholder
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver   (line 146)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEINTERFACE org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver.resolvePlaceholder (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/String; propVal   (line 147)
+                    IFNONNULL L2
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+                    IFNULL L2
+                    ALOAD 7     // Ljava/lang/String; placeholder   (line 148)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 9
+                    ILOAD 9     // I separatorIndex   (line 149)
+                    ICONST_M1
+                    IF_ICMPEQ L2
+                    ALOAD 7     // Ljava/lang/String; placeholder   (line 150)
+                    ICONST_0
+                    ILOAD 9     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 10
+                    ALOAD 7     // Ljava/lang/String; placeholder   (line 151)
+                    ILOAD 9     // I separatorIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 11
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver   (line 152)
+                    ALOAD 10     // Ljava/lang/String; actualPlaceholder
+                    INVOKEINTERFACE org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver.resolvePlaceholder (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 8     // Ljava/lang/String; propVal
+                    ALOAD 8     // Ljava/lang/String; propVal   (line 153)
+                    IFNONNULL L2
+                    ALOAD 11     // Ljava/lang/String; defaultValue   (line 154)
+                    ASTORE 8     // Ljava/lang/String; propVal
+                L2: ALOAD 8     // Ljava/lang/String; propVal   (line 158)
+                    IFNULL L4
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 161)
+                    ALOAD 8     // Ljava/lang/String; propVal
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver
+                    ALOAD_3     // Ljava/util/Set; visitedPlaceholders
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.parseStringValue (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;Ljava/util/Set;)Ljava/lang/String;
+                    ASTORE 8     // Ljava/lang/String; propVal
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 162)
+                    ILOAD 5     // I startIndex
+                    ILOAD 6     // I endIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ALOAD 8     // Ljava/lang/String; propVal
+                    INVOKEVIRTUAL java.lang.StringBuilder.replace (IILjava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GETSTATIC org.springframework.util.PropertyPlaceholderHelper.logger Lorg/apache/commons/logging/Log;   (line 163)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L3
+                    GETSTATIC org.springframework.util.PropertyPlaceholderHelper.logger Lorg/apache/commons/logging/Log;   (line 164)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Resolved placeholder '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L3: ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 166)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    ILOAD 5     // I startIndex
+                    ALOAD 8     // Ljava/lang/String; propVal
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.StringBuilder.indexOf (Ljava/lang/String;I)I
+                    ISTORE 5     // I startIndex
+                    GOTO L6
+                L4: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 168)
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.ignoreUnresolvablePlaceholders Z
+                    IFEQ L5
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 170)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    ILOAD 6     // I endIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.StringBuilder.indexOf (Ljava/lang/String;I)I
+                    ISTORE 5     // I startIndex
+                    GOTO L6
+                L5: NEW java.lang.IllegalArgumentException   (line 173)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not resolve placeholder '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L6: ALOAD_3     // Ljava/util/Set; visitedPlaceholders   (line 176)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEINTERFACE java.util.Set.remove (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L8
+                L7: ICONST_M1   (line 179)
+                    ISTORE 5     // I startIndex
+                L8: ILOAD 5     // I startIndex   (line 134)
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 183)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end protected String parseStringValue(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver, java.util.Set)
+
+  private int findPlaceholderEndIndex(CharSequence, int):
+                    ILOAD_2     // I startIndex   (line 187)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ISTORE_3
+                    ICONST_0   (line 188)
+                    ISTORE 4
+                    GOTO L4   (line 189)
+                L0: ALOAD_1     // Ljava/lang/CharSequence; buf   (line 190)
+                    ILOAD_3     // I index
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.substringMatch (Ljava/lang/CharSequence;ILjava/lang/CharSequence;)Z
+                    IFEQ L2
+                    ILOAD 4     // I withinNestedPlaceholder   (line 191)
+                    IFLE L1
+                    IINC 4 -1     // I withinNestedPlaceholder   (line 192)
+                    ILOAD_3     // I index   (line 193)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ISTORE_3     // I index
+                    GOTO L4
+                L1: ILOAD_3     // I index   (line 196)
+                    IRETURN
+                L2: ALOAD_1     // Ljava/lang/CharSequence; buf   (line 199)
+                    ILOAD_3     // I index
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.substringMatch (Ljava/lang/CharSequence;ILjava/lang/CharSequence;)Z
+                    IFEQ L3
+                    IINC 4 1     // I withinNestedPlaceholder   (line 200)
+                    ILOAD_3     // I index   (line 201)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ISTORE_3     // I index
+                    GOTO L4
+                L3: IINC_3 1     // I index   (line 204)
+                L4: ILOAD_3     // I index   (line 189)
+                    ALOAD_1     // Ljava/lang/CharSequence; buf
+                    INVOKEINTERFACE java.lang.CharSequence.length ()I
+                    IF_ICMPLT L0
+                    ICONST_M1   (line 207)
+                    IRETURN
+  end private int findPlaceholderEndIndex(CharSequence, int)
+end public class org.springframework.util.PropertyPlaceholderHelper
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.SystemPropertyUtils.<clinit>(SystemPropertyUtils.java:49)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.resolvePath(AbstractRefreshableConfigApplicationContext.java:123)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.setConfigLocations(AbstractRefreshableConfigApplicationContext.java:81)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:137)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.util.PropertyPlaceholderHelper extends java.lang.Object:
+  private static final org.apache.commons.logging.Log logger
+  private static final java.util.Map wellKnownSimplePrefixes [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)]
+  private final String placeholderPrefix
+  private final String placeholderSuffix
+  private final String simplePrefix
+  private final String valueSeparator
+  private final boolean ignoreUnresolvablePlaceholders
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.PropertyPlaceholderHelper.<clinit>())
+    |               LDC org.springframework.util.PropertyPlaceholderHelper   (line 40)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.util.PropertyPlaceholderHelper.logger Lorg/apache/commons/logging/Log;
+    |               NEW java.util.HashMap   (line 42)
+    |               DUP
+    |               ICONST_4
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 45)
+    |               LDC "}"
+    |               LDC "{"
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 46)
+    |               LDC "]"
+    |               LDC "["
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 47)
+    |               LDC ")"
+    |               LDC "("
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               RETURN   (line 38)
+    staticinitialization(void org.springframework.util.PropertyPlaceholderHelper.<clinit>())
+  end static void <clinit>()
+
+  public void <init>(String, String):
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 69)
+                    ALOAD_1     // Ljava/lang/String; placeholderPrefix
+                    ALOAD_2     // Ljava/lang/String; placeholderSuffix
+                    ACONST_NULL
+                    ICONST_1
+                    INVOKESPECIAL org.springframework.util.PropertyPlaceholderHelper.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String))
+    |               RETURN   (line 70)
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String))
+  end public void <init>(String, String)
+
+  public void <init>(String, String, String, boolean):
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 81)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String, java.lang.String, boolean))
+    |               ALOAD_1     // Ljava/lang/String; placeholderPrefix   (line 84)
+    |               LDC "placeholderPrefix must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_2     // Ljava/lang/String; placeholderSuffix   (line 85)
+    |               LDC "placeholderSuffix must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 86)
+    |               ALOAD_1     // Ljava/lang/String; placeholderPrefix
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 87)
+    |               ALOAD_2     // Ljava/lang/String; placeholderSuffix
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+    |               GETSTATIC org.springframework.util.PropertyPlaceholderHelper.wellKnownSimplePrefixes Ljava/util/Map;   (line 88)
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+    |               GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.String
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/String; simplePrefixForSuffix   (line 89)
+    |               IFNULL L0
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+    |               GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+    |               ALOAD 5     // Ljava/lang/String; simplePrefixForSuffix
+    |               INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+    |               IFEQ L0
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 90)
+    |               ALOAD 5     // Ljava/lang/String; simplePrefixForSuffix
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+    |               GOTO L1
+    |           L0: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 93)
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+    |               GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+    |           L1: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 95)
+    |               ALOAD_3     // Ljava/lang/String; valueSeparator
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 96)
+    |               ILOAD 4     // Z ignoreUnresolvablePlaceholders
+    |               PUTFIELD org.springframework.util.PropertyPlaceholderHelper.ignoreUnresolvablePlaceholders Z
+    |               RETURN   (line 97)
+    constructor-execution(void org.springframework.util.PropertyPlaceholderHelper.<init>(java.lang.String, java.lang.String, java.lang.String, boolean))
+  end public void <init>(String, String, String, boolean)
+
+  public String replacePlaceholders(String, java.util.Properties):
+                    ALOAD_2     // Ljava/util/Properties; properties   (line 108)
+                    LDC "Argument 'properties' must not be null."
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 109)
+                    ALOAD_1     // Ljava/lang/String; value
+                    NEW org.springframework.util.PropertyPlaceholderHelper$1
+                    DUP
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    ALOAD_2     // Ljava/util/Properties; properties
+                    INVOKESPECIAL org.springframework.util.PropertyPlaceholderHelper$1.<init> (Lorg/springframework/util/PropertyPlaceholderHelper;Ljava/util/Properties;)V
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;)Ljava/lang/String;
+                    ARETURN
+  end public String replacePlaceholders(String, java.util.Properties)
+
+  public String replacePlaceholders(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver):
+                    ALOAD_1     // Ljava/lang/String; value   (line 124)
+                    LDC "Argument 'value' must not be null."
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 125)
+                    ALOAD_1     // Ljava/lang/String; value
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver
+                    NEW java.util.HashSet
+                    DUP
+                    INVOKESPECIAL java.util.HashSet.<init> ()V
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.parseStringValue (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;Ljava/util/Set;)Ljava/lang/String;
+                    ARETURN
+  end public String replacePlaceholders(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver)
+
+  protected String parseStringValue(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver, java.util.Set):
+                    NEW java.lang.StringBuilder   (line 131)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; strVal
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; strVal   (line 133)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 5
+                    GOTO L8   (line 134)
+                L0: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 135)
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf
+                    ILOAD 5     // I startIndex
+                    INVOKESPECIAL org.springframework.util.PropertyPlaceholderHelper.findPlaceholderEndIndex (Ljava/lang/CharSequence;I)I
+                    ISTORE 6
+                    ILOAD 6     // I endIndex   (line 136)
+                    ICONST_M1
+                    IF_ICMPEQ L7
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 137)
+                    ILOAD 5     // I startIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ILOAD 6     // I endIndex
+                    INVOKEVIRTUAL java.lang.StringBuilder.substring (II)Ljava/lang/String;
+                    ASTORE 7
+                    ALOAD_3     // Ljava/util/Set; visitedPlaceholders   (line 138)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    IFNE L1
+                    NEW java.lang.IllegalArgumentException   (line 139)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 140)
+                    DUP
+                    LDC "Circular placeholder reference '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' in property definitions"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 139)
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 143)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver
+                    ALOAD_3     // Ljava/util/Set; visitedPlaceholders
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.parseStringValue (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;Ljava/util/Set;)Ljava/lang/String;
+                    ASTORE 7     // Ljava/lang/String; placeholder
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver   (line 146)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEINTERFACE org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver.resolvePlaceholder (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/String; propVal   (line 147)
+                    IFNONNULL L2
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+                    IFNULL L2
+                    ALOAD 7     // Ljava/lang/String; placeholder   (line 148)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 9
+                    ILOAD 9     // I separatorIndex   (line 149)
+                    ICONST_M1
+                    IF_ICMPEQ L2
+                    ALOAD 7     // Ljava/lang/String; placeholder   (line 150)
+                    ICONST_0
+                    ILOAD 9     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 10
+                    ALOAD 7     // Ljava/lang/String; placeholder   (line 151)
+                    ILOAD 9     // I separatorIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.valueSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 11
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver   (line 152)
+                    ALOAD 10     // Ljava/lang/String; actualPlaceholder
+                    INVOKEINTERFACE org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver.resolvePlaceholder (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 8     // Ljava/lang/String; propVal
+                    ALOAD 8     // Ljava/lang/String; propVal   (line 153)
+                    IFNONNULL L2
+                    ALOAD 11     // Ljava/lang/String; defaultValue   (line 154)
+                    ASTORE 8     // Ljava/lang/String; propVal
+                L2: ALOAD 8     // Ljava/lang/String; propVal   (line 158)
+                    IFNULL L4
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 161)
+                    ALOAD 8     // Ljava/lang/String; propVal
+                    ALOAD_2     // Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver; placeholderResolver
+                    ALOAD_3     // Ljava/util/Set; visitedPlaceholders
+                    INVOKEVIRTUAL org.springframework.util.PropertyPlaceholderHelper.parseStringValue (Ljava/lang/String;Lorg/springframework/util/PropertyPlaceholderHelper$PlaceholderResolver;Ljava/util/Set;)Ljava/lang/String;
+                    ASTORE 8     // Ljava/lang/String; propVal
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 162)
+                    ILOAD 5     // I startIndex
+                    ILOAD 6     // I endIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ALOAD 8     // Ljava/lang/String; propVal
+                    INVOKEVIRTUAL java.lang.StringBuilder.replace (IILjava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GETSTATIC org.springframework.util.PropertyPlaceholderHelper.logger Lorg/apache/commons/logging/Log;   (line 163)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isTraceEnabled ()Z
+                    IFEQ L3
+                    GETSTATIC org.springframework.util.PropertyPlaceholderHelper.logger Lorg/apache/commons/logging/Log;   (line 164)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Resolved placeholder '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.trace (Ljava/lang/Object;)V
+                L3: ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 166)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    ILOAD 5     // I startIndex
+                    ALOAD 8     // Ljava/lang/String; propVal
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.StringBuilder.indexOf (Ljava/lang/String;I)I
+                    ISTORE 5     // I startIndex
+                    GOTO L6
+                L4: ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this   (line 168)
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.ignoreUnresolvablePlaceholders Z
+                    IFEQ L5
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 170)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    ILOAD 6     // I endIndex
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.StringBuilder.indexOf (Ljava/lang/String;I)I
+                    ISTORE 5     // I startIndex
+                    GOTO L6
+                L5: NEW java.lang.IllegalArgumentException   (line 173)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not resolve placeholder '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L6: ALOAD_3     // Ljava/util/Set; visitedPlaceholders   (line 176)
+                    ALOAD 7     // Ljava/lang/String; placeholder
+                    INVOKEINTERFACE java.util.Set.remove (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L8
+                L7: ICONST_M1   (line 179)
+                    ISTORE 5     // I startIndex
+                L8: ILOAD 5     // I startIndex   (line 134)
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ALOAD 4     // Ljava/lang/StringBuilder; buf   (line 183)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end protected String parseStringValue(String, org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver, java.util.Set)
+
+  private int findPlaceholderEndIndex(CharSequence, int):
+                    ILOAD_2     // I startIndex   (line 187)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderPrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ISTORE_3
+                    ICONST_0   (line 188)
+                    ISTORE 4
+                    GOTO L4   (line 189)
+                L0: ALOAD_1     // Ljava/lang/CharSequence; buf   (line 190)
+                    ILOAD_3     // I index
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.substringMatch (Ljava/lang/CharSequence;ILjava/lang/CharSequence;)Z
+                    IFEQ L2
+                    ILOAD 4     // I withinNestedPlaceholder   (line 191)
+                    IFLE L1
+                    IINC 4 -1     // I withinNestedPlaceholder   (line 192)
+                    ILOAD_3     // I index   (line 193)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.placeholderSuffix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ISTORE_3     // I index
+                    GOTO L4
+                L1: ILOAD_3     // I index   (line 196)
+                    IRETURN
+                L2: ALOAD_1     // Ljava/lang/CharSequence; buf   (line 199)
+                    ILOAD_3     // I index
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.substringMatch (Ljava/lang/CharSequence;ILjava/lang/CharSequence;)Z
+                    IFEQ L3
+                    IINC 4 1     // I withinNestedPlaceholder   (line 200)
+                    ILOAD_3     // I index   (line 201)
+                    ALOAD_0     // Lorg/springframework/util/PropertyPlaceholderHelper; this
+                    GETFIELD org.springframework.util.PropertyPlaceholderHelper.simplePrefix Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    ISTORE_3     // I index
+                    GOTO L4
+                L3: IINC_3 1     // I index   (line 204)
+                L4: ILOAD_3     // I index   (line 189)
+                    ALOAD_1     // Ljava/lang/CharSequence; buf
+                    INVOKEINTERFACE java.lang.CharSequence.length ()I
+                    IF_ICMPLT L0
+                    ICONST_M1   (line 207)
+                    IRETURN
+  end private int findPlaceholderEndIndex(CharSequence, int)
+end public class org.springframework.util.PropertyPlaceholderHelper
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.SystemPropertyUtils.<clinit>(SystemPropertyUtils.java:49)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.resolvePath(AbstractRefreshableConfigApplicationContext.java:123)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.setConfigLocations(AbstractRefreshableConfigApplicationContext.java:81)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:137)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

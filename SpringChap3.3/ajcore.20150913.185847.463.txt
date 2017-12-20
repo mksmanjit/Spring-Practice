@@ -1,0 +1,3381 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185847.463.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public abstract class org.springframework.util.ClassUtils extends java.lang.Object:
+  public static final String ARRAY_SUFFIX = "[]"
+  private static final String INTERNAL_ARRAY_PREFIX = "["
+  private static final String NON_PRIMITIVE_ARRAY_PREFIX = "[L"
+  private static final char PACKAGE_SEPARATOR = 46
+  private static final char INNER_CLASS_SEPARATOR = 36
+  public static final String CGLIB_CLASS_SEPARATOR = "$$"
+  public static final String CLASS_FILE_SUFFIX = ".class"
+  private static final java.util.Map primitiveWrapperTypeMap [Signature(Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<*>;>;)]
+  private static final java.util.Map primitiveTypeToWrapperMap [Signature(Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<*>;>;)]
+  private static final java.util.Map primitiveTypeNameMap [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;)]
+  private static final java.util.Map commonClassCache [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.ClassUtils.<clinit>())
+    |               NEW java.util.HashMap   (line 78)
+    |               DUP
+    |               BIPUSH 8
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;
+    |               NEW java.util.HashMap   (line 84)
+    |               DUP
+    |               BIPUSH 8
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;
+    |               NEW java.util.HashMap   (line 90)
+    |               DUP
+    |               BIPUSH 32
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.primitiveTypeNameMap Ljava/util/Map;
+    |               NEW java.util.HashMap   (line 96)
+    |               DUP
+    |               BIPUSH 32
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.commonClassCache Ljava/util/Map;
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 100)
+    |               LDC java.lang.Boolean
+    |               GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 101)
+    |               LDC java.lang.Byte
+    |               GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 102)
+    |               LDC java.lang.Character
+    |               GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 103)
+    |               LDC java.lang.Double
+    |               GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 104)
+    |               LDC java.lang.Float
+    |               GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 105)
+    |               LDC java.lang.Integer
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 106)
+    |               LDC java.lang.Long
+    |               GETSTATIC java.lang.Long.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 107)
+    |               LDC java.lang.Short
+    |               GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 109)
+    |               INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_1
+    |               GOTO L1
+    |           L0: ALOAD_1
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Map$Entry
+    |               ASTORE_0
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;   (line 110)
+    |               ALOAD_0     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               ALOAD_0     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               ICONST_1   (line 111)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               ALOAD_0     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |           L1: ALOAD_1   (line 109)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L0
+    |               NEW java.util.HashSet   (line 114)
+    |               DUP
+    |               BIPUSH 32
+    |               INVOKESPECIAL java.util.HashSet.<init> (I)V
+    |               ASTORE_0
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 115)
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;
+    |               INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+    |               INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+    |               POP
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 116)
+    |               BIPUSH 8
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC [Z   (line 117)
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC [B
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC [C
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC [D
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC [F   (line 118)
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [I
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 6
+    |               LDC [J
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 7
+    |               LDC [S
+    |               AASTORE
+    |               INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+    |               CHECKCAST java.util.Collection
+    |               INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z   (line 116)
+    |               POP
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 119)
+    |               GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 120)
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_2
+    |               GOTO L3
+    |           L2: ALOAD_2
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               ASTORE_1
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveTypeNameMap Ljava/util/Map;   (line 121)
+    |               ALOAD_1     // Ljava/lang/Class; primitiveType
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               ALOAD_1     // Ljava/lang/Class; primitiveType
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L3: ALOAD_2   (line 120)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L2
+    |               BIPUSH 8   (line 124)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC [Ljava.lang.Boolean;
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC [Ljava.lang.Byte;
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC [Ljava.lang.Character;
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC [Ljava.lang.Double;
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC [Ljava.lang.Float;   (line 125)
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [Ljava.lang.Integer;
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 6
+    |               LDC [Ljava.lang.Long;
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 7
+    |               LDC [Ljava.lang.Short;
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |               BIPUSH 8   (line 126)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.lang.Number
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC [Ljava.lang.Number;
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC java.lang.String
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC [Ljava.lang.String;
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC java.lang.Object   (line 127)
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [Ljava.lang.Object;
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 6
+    |               LDC java.lang.Class
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 7
+    |               LDC [Ljava.lang.Class;
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |               BIPUSH 6   (line 128)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.lang.Throwable
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC java.lang.Exception
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC java.lang.RuntimeException
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC java.lang.Error   (line 129)
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC java.lang.StackTraceElement
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [Ljava.lang.StackTraceElement;
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |               RETURN   (line 50)
+    staticinitialization(void org.springframework.util.ClassUtils.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/ClassUtils; this   (line 50)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.ClassUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.ClassUtils.<init>())
+  end public void <init>()
+
+  private static transient void registerCommonClasses(Class[]):
+                    ALOAD_0     // [Ljava/lang/Class; commonClasses   (line 137)
+                    DUP
+                    ASTORE 4
+                    ARRAYLENGTH
+                    ISTORE_3
+                    ICONST_0
+                    ISTORE_2
+                    GOTO L1
+                L0: ALOAD 4
+                    ILOAD_2
+                    AALOAD
+                    ASTORE_1
+                    GETSTATIC org.springframework.util.ClassUtils.commonClassCache Ljava/util/Map;   (line 138)
+                    ALOAD_1     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/Class; clazz
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    IINC_2 1   (line 137)
+                L1: ILOAD_2
+                    ILOAD_3
+                    IF_ICMPLT L0
+                    RETURN   (line 140)
+  end private static transient void registerCommonClasses(Class[])
+
+  public static ClassLoader getDefaultClassLoader():
+                    ACONST_NULL   (line 155)
+                    ASTORE_0
+    catch java.lang.Throwable -> E0
+    |               INVOKESTATIC java.lang.Thread.currentThread ()Ljava/lang/Thread;   (line 157)
+    |               INVOKEVIRTUAL java.lang.Thread.getContextClassLoader ()Ljava/lang/ClassLoader;
+    |               ASTORE_0     // Ljava/lang/ClassLoader; cl
+    catch java.lang.Throwable -> E0
+                    GOTO L0
+                E0: POP   (line 159)
+                L0: ALOAD_0     // Ljava/lang/ClassLoader; cl   (line 162)
+                    IFNONNULL L1
+                    LDC org.springframework.util.ClassUtils   (line 164)
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    ASTORE_0     // Ljava/lang/ClassLoader; cl
+                L1: ALOAD_0     // Ljava/lang/ClassLoader; cl   (line 166)
+                    ARETURN
+  end public static ClassLoader getDefaultClassLoader()
+
+  public static ClassLoader overrideThreadContextClassLoader(ClassLoader):
+                    INVOKESTATIC java.lang.Thread.currentThread ()Ljava/lang/Thread;   (line 177)
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Thread; currentThread   (line 178)
+                    INVOKEVIRTUAL java.lang.Thread.getContextClassLoader ()Ljava/lang/ClassLoader;
+                    ASTORE_2
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoaderToUse   (line 179)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoaderToUse
+                    ALOAD_2     // Ljava/lang/ClassLoader; threadContextClassLoader
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/Thread; currentThread   (line 180)
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoaderToUse
+                    INVOKEVIRTUAL java.lang.Thread.setContextClassLoader (Ljava/lang/ClassLoader;)V
+                    ALOAD_2     // Ljava/lang/ClassLoader; threadContextClassLoader   (line 181)
+                    ARETURN
+                L0: ACONST_NULL   (line 184)
+                    ARETURN
+  end public static ClassLoader overrideThreadContextClassLoader(ClassLoader)
+
+  public static Class forName(String) throws java.lang.ClassNotFoundException, java.lang.LinkageError:
+                    ALOAD_0     // Ljava/lang/String; name   (line 204)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ARETURN
+  end public static Class forName(String) throws java.lang.ClassNotFoundException, java.lang.LinkageError
+
+  public static Class forName(String, ClassLoader) throws java.lang.ClassNotFoundException, java.lang.LinkageError:
+                    ALOAD_0     // Ljava/lang/String; name   (line 221)
+                    LDC_W "Name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; name   (line 223)
+                    INVOKESTATIC org.springframework.util.ClassUtils.resolvePrimitiveClassName (Ljava/lang/String;)Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Class; clazz   (line 224)
+                    IFNONNULL L0
+                    GETSTATIC org.springframework.util.ClassUtils.commonClassCache Ljava/util/Map;   (line 225)
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_2     // Ljava/lang/Class; clazz
+                L0: ALOAD_2     // Ljava/lang/Class; clazz   (line 227)
+                    IFNULL L1
+                    ALOAD_2     // Ljava/lang/Class; clazz   (line 228)
+                    ARETURN
+                L1: ALOAD_0     // Ljava/lang/String; name   (line 232)
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_0     // Ljava/lang/String; name   (line 233)
+                    ICONST_0
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; elementClassName   (line 234)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementClass   (line 235)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ARETURN
+                L2: ALOAD_0     // Ljava/lang/String; name   (line 239)
+                    LDC "[L"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/String; name
+                    LDC_W ";"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/String; name   (line 240)
+                    LDC "[L"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; elementName   (line 241)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementClass   (line 242)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ARETURN
+                L3: ALOAD_0     // Ljava/lang/String; name   (line 246)
+                    LDC "["
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L4
+                    ALOAD_0     // Ljava/lang/String; name   (line 247)
+                    LDC "["
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; elementName   (line 248)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementClass   (line 249)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ARETURN
+                L4: ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 252)
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/ClassLoader; classLoaderToUse   (line 253)
+                    IFNONNULL L5
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;   (line 254)
+                    ASTORE_3     // Ljava/lang/ClassLoader; classLoaderToUse
+    catch java.lang.ClassNotFoundException -> E0
+    |           L5: ALOAD_3     // Ljava/lang/ClassLoader; classLoaderToUse   (line 257)
+    |               ALOAD_0     // Ljava/lang/String; name
+    |               INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E0
+                    ARETURN
+                E0: ASTORE 4   (line 259)
+                    ALOAD_0     // Ljava/lang/String; name   (line 260)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE 5
+                    ILOAD 5     // I lastDotIndex   (line 261)
+                    ICONST_M1
+                    IF_ICMPEQ L6
+                    NEW java.lang.StringBuilder   (line 262)
+                    DUP
+                    ALOAD_0     // Ljava/lang/String; name
+                    ICONST_0
+                    ILOAD 5     // I lastDotIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    BIPUSH 36
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Ljava/lang/String; name
+                    ILOAD 5     // I lastDotIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE 6
+    catch java.lang.ClassNotFoundException -> E1
+    |               ALOAD_3     // Ljava/lang/ClassLoader; classLoaderToUse   (line 264)
+    |               ALOAD 6     // Ljava/lang/String; innerClassName
+    |               INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E1
+                    ARETURN
+                E1: POP   (line 266)
+                L6: ALOAD 4     // Ljava/lang/ClassNotFoundException; ex   (line 270)
+                    ATHROW
+  end public static Class forName(String, ClassLoader) throws java.lang.ClassNotFoundException, java.lang.LinkageError
+
+  public static Class resolveClassName(String, ClassLoader) throws java.lang.IllegalArgumentException:
+    catch java.lang.LinkageError -> E1
+    | catch java.lang.ClassNotFoundException -> E0
+    | |             ALOAD_0     // Ljava/lang/String; className   (line 290)
+    | |             ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    | |             INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    | catch java.lang.ClassNotFoundException -> E0
+    catch java.lang.LinkageError -> E1
+                    ARETURN
+                E0: ASTORE_2   (line 292)
+                    NEW java.lang.IllegalArgumentException   (line 293)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot find class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/ClassNotFoundException; ex
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+                E1: ASTORE_2   (line 295)
+                    NEW java.lang.IllegalArgumentException   (line 296)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 297)
+                    DUP
+                    LDC_W "Error loading class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]: problem with class file or dependent class."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/LinkageError; ex
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V   (line 296)
+                    ATHROW
+  end public static Class resolveClassName(String, ClassLoader) throws java.lang.IllegalArgumentException
+
+  public static Class resolvePrimitiveClassName(String):
+                    ACONST_NULL   (line 312)
+                    ASTORE_1
+                    ALOAD_0     // Ljava/lang/String; name   (line 315)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    BIPUSH 8
+                    IF_ICMPGT L0
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveTypeNameMap Ljava/util/Map;   (line 317)
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_1     // Ljava/lang/Class; result
+                L0: ALOAD_1     // Ljava/lang/Class; result   (line 319)
+                    ARETURN
+  end public static Class resolvePrimitiveClassName(String)
+
+  public static boolean isPresent(String):
+                    ALOAD_0     // Ljava/lang/String; className   (line 332)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPresent (Ljava/lang/String;Ljava/lang/ClassLoader;)Z
+                    IRETURN
+  end public static boolean isPresent(String)
+
+  public static boolean isPresent(String, ClassLoader):
+    catch java.lang.Throwable -> E0
+    |               ALOAD_0     // Ljava/lang/String; className   (line 346)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    |               POP
+    catch java.lang.Throwable -> E0
+                    ICONST_1   (line 347)
+                    IRETURN
+                E0: POP   (line 349)
+                    ICONST_0   (line 351)
+                    IRETURN
+  end public static boolean isPresent(String, ClassLoader)
+
+  public static Class getUserClass(Object):
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 363)
+                    LDC_W "Instance must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 364)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getUserClass (Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public static Class getUserClass(Object)
+
+  public static Class getUserClass(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 374)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    LDC "$$"
+                    INVOKEVIRTUAL java.lang.String.contains (Ljava/lang/CharSequence;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 375)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Class; superClass   (line 376)
+                    IFNULL L0
+                    LDC java.lang.Object
+                    ALOAD_1     // Ljava/lang/Class; superClass
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/Class; superClass   (line 377)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 380)
+                    ARETURN
+  end public static Class getUserClass(Class)
+
+  public static boolean isCacheSafe(Class, ClassLoader):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 390)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 391)
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/ClassLoader; target   (line 392)
+                    IFNONNULL L0
+                    ICONST_0   (line 393)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 395)
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 396)
+                    ALOAD_2     // Ljava/lang/ClassLoader; target
+                    IF_ACMPNE L2
+                    ICONST_1   (line 397)
+                    IRETURN
+                L1: ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 400)
+                    INVOKEVIRTUAL java.lang.ClassLoader.getParent ()Ljava/lang/ClassLoader;
+                    ASTORE_3     // Ljava/lang/ClassLoader; cur
+                    ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 401)
+                    ALOAD_2     // Ljava/lang/ClassLoader; target
+                    IF_ACMPNE L2
+                    ICONST_1   (line 402)
+                    IRETURN
+                L2: ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 399)
+                    IFNONNULL L1
+                    ICONST_0   (line 405)
+                    IRETURN
+  end public static boolean isCacheSafe(Class, ClassLoader)
+
+  public static String getShortName(String):
+                    ALOAD_0     // Ljava/lang/String; className   (line 416)
+                    LDC_W "Class name must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasLength (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className   (line 417)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_1
+                    ALOAD_0     // Ljava/lang/String; className   (line 418)
+                    LDC "$$"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE_2
+                    ILOAD_2     // I nameEndIndex   (line 419)
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ALOAD_0     // Ljava/lang/String; className   (line 420)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE_2     // I nameEndIndex
+                L0: ALOAD_0     // Ljava/lang/String; className   (line 422)
+                    ILOAD_1     // I lastDotIndex
+                    ICONST_1
+                    IADD
+                    ILOAD_2     // I nameEndIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; shortName   (line 423)
+                    BIPUSH 36
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; shortName
+                    ALOAD_3     // Ljava/lang/String; shortName   (line 424)
+                    ARETURN
+  end public static String getShortName(String)
+
+  public static String getShortName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 433)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getShortName (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public static String getShortName(Class)
+
+  public static String getShortNameAsProperty(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 444)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getShortName (Ljava/lang/Class;)Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; shortName   (line 445)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    ILOAD_2     // I dotIndex   (line 446)
+                    ICONST_M1
+                    IF_ICMPEQ L0
+                    ALOAD_1     // Ljava/lang/String; shortName
+                    ILOAD_2     // I dotIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/String; shortName
+                L1: ASTORE_1     // Ljava/lang/String; shortName
+                    ALOAD_1     // Ljava/lang/String; shortName   (line 447)
+                    INVOKESTATIC java.beans.Introspector.decapitalize (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public static String getShortNameAsProperty(Class)
+
+  public static String getClassFileName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 457)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 458)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; className   (line 459)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    NEW java.lang.StringBuilder   (line 460)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; className
+                    ILOAD_2     // I lastDotIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC ".class"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getClassFileName(Class)
+
+  public static String getPackageName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 471)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 472)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; className   (line 473)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    ILOAD_2     // I lastDotIndex   (line 474)
+                    ICONST_M1
+                    IF_ICMPEQ L0
+                    ALOAD_1     // Ljava/lang/String; className
+                    ICONST_0
+                    ILOAD_2     // I lastDotIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    GOTO L1
+                L0: LDC_W ""
+                L1: ARETURN
+  end public static String getPackageName(Class)
+
+  public static String getQualifiedName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 484)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 485)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 486)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedNameForArray (Ljava/lang/Class;)Ljava/lang/String;
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 489)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ARETURN
+  end public static String getQualifiedName(Class)
+
+  private static String getQualifiedNameForArray(Class):
+                    NEW java.lang.StringBuilder   (line 500)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    GOTO L1   (line 501)
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 502)
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_0     // Ljava/lang/Class; clazz
+                    ALOAD_1     // Ljava/lang/StringBuilder; result   (line 503)
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L1: ALOAD_0     // Ljava/lang/Class; clazz   (line 501)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; result   (line 505)
+                    ICONST_0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; result   (line 506)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private static String getQualifiedNameForArray(Class)
+
+  public static String getQualifiedMethodName(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 516)
+                    LDC_W "Method must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    NEW java.lang.StringBuilder   (line 517)
+                    DUP
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getQualifiedMethodName(java.lang.reflect.Method)
+
+  public static String getDescriptiveType(Object):
+                    ALOAD_0     // Ljava/lang/Object; value   (line 528)
+                    IFNONNULL L0
+                    ACONST_NULL   (line 529)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Object; value   (line 531)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 532)
+                    INVOKESTATIC java.lang.reflect.Proxy.isProxyClass (Ljava/lang/Class;)Z
+                    IFEQ L4
+                    NEW java.lang.StringBuilder   (line 533)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 534)
+                    LDC_W " implementing "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 535)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE_3
+                    ICONST_0   (line 536)
+                    ISTORE 4
+                    GOTO L3
+                L1: ALOAD_2     // Ljava/lang/StringBuilder; result   (line 537)
+                    ALOAD_3     // [Ljava/lang/Class; ifcs
+                    ILOAD 4     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ILOAD 4     // I i   (line 538)
+                    ALOAD_3     // [Ljava/lang/Class; ifcs
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    IF_ICMPGE L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 539)
+                    BIPUSH 44
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                L2: IINC 4 1     // I i   (line 536)
+                L3: ILOAD 4     // I i
+                    ALOAD_3     // [Ljava/lang/Class; ifcs
+                    ARRAYLENGTH
+                    IF_ICMPLT L1
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 542)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L4: ALOAD_1     // Ljava/lang/Class; clazz   (line 544)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L5
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 545)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedNameForArray (Ljava/lang/Class;)Ljava/lang/String;
+                    ARETURN
+                L5: ALOAD_1     // Ljava/lang/Class; clazz   (line 548)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ARETURN
+  end public static String getDescriptiveType(Object)
+
+  public static boolean matchesTypeName(Class, String):
+                    ALOAD_1     // Ljava/lang/String; typeName   (line 558)
+                    IFNULL L1
+                    ALOAD_1     // Ljava/lang/String; typeName   (line 559)
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/String; typeName
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 560)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; typeName
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedNameForArray (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ICONST_1
+                    IRETURN
+                L1: ICONST_0
+                    IRETURN   (line 558)
+  end public static boolean matchesTypeName(Class, String)
+
+  public static transient boolean hasConstructor(Class, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 573)
+                    ALOAD_1     // [Ljava/lang/Class; paramTypes
+                    INVOKESTATIC org.springframework.util.ClassUtils.getConstructorIfAvailable (Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static transient boolean hasConstructor(Class, Class[])
+
+  public static transient java.lang.reflect.Constructor getConstructorIfAvailable(Class, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 586)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodException -> E0
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 588)
+    |               ALOAD_1     // [Ljava/lang/Class; paramTypes
+    |               INVOKEVIRTUAL java.lang.Class.getConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    catch java.lang.NoSuchMethodException -> E0
+                    ARETURN
+                E0: POP   (line 590)
+                    ACONST_NULL   (line 591)
+                    ARETURN
+  end public static transient java.lang.reflect.Constructor getConstructorIfAvailable(Class, Class[])
+
+  public static transient boolean hasMethod(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 605)
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes
+                    INVOKESTATIC org.springframework.util.ClassUtils.getMethodIfAvailable (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static transient boolean hasMethod(Class, String, Class[])
+
+  public static transient java.lang.reflect.Method getMethodIfAvailable(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 619)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 620)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodException -> E0
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 622)
+    |               ALOAD_1     // Ljava/lang/String; methodName
+    |               ALOAD_2     // [Ljava/lang/Class; paramTypes
+    |               INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    catch java.lang.NoSuchMethodException -> E0
+                    ARETURN
+                E0: POP   (line 624)
+                    ACONST_NULL   (line 625)
+                    ARETURN
+  end public static transient java.lang.reflect.Method getMethodIfAvailable(Class, String, Class[])
+
+  public static int getMethodCountForName(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 637)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 638)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ICONST_0   (line 639)
+                    ISTORE_2
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 640)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/reflect/Method; declaredMethods   (line 641)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L2
+                L0: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 642)
+                    ALOAD 4     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    IINC_2 1     // I count   (line 643)
+                L1: IINC 5 1   (line 641)
+                L2: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 646)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/lang/Class; ifcs   (line 647)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L4
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ILOAD_2     // I count   (line 648)
+                    ALOAD 5     // Ljava/lang/Class; ifc
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.getMethodCountForName (Ljava/lang/Class;Ljava/lang/String;)I
+                    IADD
+                    ISTORE_2     // I count
+                    IINC 6 1   (line 647)
+                L4: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 650)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    IFNULL L5
+                    ILOAD_2     // I count   (line 651)
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.getMethodCountForName (Ljava/lang/Class;Ljava/lang/String;)I
+                    IADD
+                    ISTORE_2     // I count
+                L5: ILOAD_2     // I count   (line 653)
+                    IRETURN
+  end public static int getMethodCountForName(Class, String)
+
+  public static boolean hasAtLeastOneMethodWithName(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 665)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 666)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 667)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/reflect/Method; declaredMethods   (line 668)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/reflect/Method; method   (line 669)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ICONST_1   (line 670)
+                    IRETURN
+                L1: IINC 4 1   (line 668)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 673)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/Class; ifcs   (line 674)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L5
+                L3: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; ifc   (line 675)
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.hasAtLeastOneMethodWithName (Ljava/lang/Class;Ljava/lang/String;)Z
+                    IFEQ L4
+                    ICONST_1   (line 676)
+                    IRETURN
+                L4: IINC 5 1   (line 674)
+                L5: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L3
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 679)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    IFNULL L6
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.hasAtLeastOneMethodWithName (Ljava/lang/Class;Ljava/lang/String;)Z
+                    IFEQ L6
+                    ICONST_1
+                    IRETURN
+                L6: ICONST_0
+                    IRETURN
+  end public static boolean hasAtLeastOneMethodWithName(Class, String)
+
+  public static java.lang.reflect.Method getMostSpecificMethod(java.lang.reflect.Method, Class):
+                    ACONST_NULL   (line 700)
+                    ASTORE_2
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 701)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    ALOAD_1     // Ljava/lang/Class; targetClass
+                    INVOKESTATIC org.springframework.util.ClassUtils.isOverridable (Ljava/lang/reflect/Method;Ljava/lang/Class;)Z
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/Class; targetClass   (line 702)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/Class; targetClass
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/Class; targetClass   (line 703)
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.findMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+                    ASTORE_2     // Ljava/lang/reflect/Method; specificMethod
+                L0: ALOAD_2     // Ljava/lang/reflect/Method; specificMethod   (line 705)
+                    IFNULL L1
+                    ALOAD_2     // Ljava/lang/reflect/Method; specificMethod
+                    GOTO L2
+                L1: ALOAD_0     // Ljava/lang/reflect/Method; method
+                L2: ARETURN
+  end public static java.lang.reflect.Method getMostSpecificMethod(java.lang.reflect.Method, Class)
+
+  private static boolean isOverridable(java.lang.reflect.Method, Class):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 714)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPrivate (I)Z
+                    IFEQ L0
+                    ICONST_0   (line 715)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 717)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isProtected (I)Z
+                    IFEQ L2
+                L1: ICONST_1   (line 718)
+                    IRETURN
+                L2: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 720)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getPackageName (Ljava/lang/Class;)Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/Class; targetClass
+                    INVOKESTATIC org.springframework.util.ClassUtils.getPackageName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IRETURN
+  end private static boolean isOverridable(java.lang.reflect.Method, Class)
+
+  public static transient java.lang.reflect.Method getStaticMethod(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 732)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 733)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodException -> E0
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 735)
+    |               ALOAD_1     // Ljava/lang/String; methodName
+    |               ALOAD_2     // [Ljava/lang/Class; args
+    |               INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/reflect/Method; method   (line 736)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+    |               INVOKESTATIC java.lang.reflect.Modifier.isStatic (I)Z
+    |               IFEQ L0
+    |               ALOAD_3     // Ljava/lang/reflect/Method; method
+    |               GOTO L1
+    |           L0: ACONST_NULL
+    catch java.lang.NoSuchMethodException -> E0
+                L1: ARETURN
+                E0: POP   (line 738)
+                    ACONST_NULL   (line 739)
+                    ARETURN
+  end public static transient java.lang.reflect.Method getStaticMethod(Class, String, Class[])
+
+  public static boolean isPrimitiveWrapper(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 751)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 752)
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IRETURN
+  end public static boolean isPrimitiveWrapper(Class)
+
+  public static boolean isPrimitiveOrWrapper(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 763)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 764)
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFNE L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPrimitiveWrapper (Ljava/lang/Class;)Z
+                    IFNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end public static boolean isPrimitiveOrWrapper(Class)
+
+  public static boolean isPrimitiveArray(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 774)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 775)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isPrimitiveArray(Class)
+
+  public static boolean isPrimitiveWrapperArray(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 785)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 786)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPrimitiveWrapper (Ljava/lang/Class;)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isPrimitiveWrapperArray(Class)
+
+  public static Class resolvePrimitiveIfNecessary(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 796)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 797)
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+                    IF_ACMPEQ L0
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    GOTO L1
+                L0: ALOAD_0     // Ljava/lang/Class; clazz
+                L1: ARETURN
+  end public static Class resolvePrimitiveIfNecessary(Class)
+
+  public static boolean isAssignable(Class, Class):
+                    ALOAD_0     // Ljava/lang/Class; lhsType   (line 810)
+                    LDC_W "Left-hand side type must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Class; rhsType   (line 811)
+                    LDC_W "Right-hand side type must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; lhsType   (line 812)
+                    ALOAD_1     // Ljava/lang/Class; rhsType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L0
+                    ICONST_1   (line 813)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/Class; lhsType   (line 815)
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L1
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 816)
+                    ALOAD_1     // Ljava/lang/Class; rhsType
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Class; resolvedPrimitive   (line 817)
+                    IFNULL L2
+                    ALOAD_0     // Ljava/lang/Class; lhsType
+                    ALOAD_2     // Ljava/lang/Class; resolvedPrimitive
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1   (line 818)
+                    IRETURN
+                L1: GETSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;   (line 822)
+                    ALOAD_1     // Ljava/lang/Class; rhsType
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Class; resolvedWrapper   (line 823)
+                    IFNULL L2
+                    ALOAD_0     // Ljava/lang/Class; lhsType
+                    ALOAD_2     // Ljava/lang/Class; resolvedWrapper
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L2
+                    ICONST_1   (line 824)
+                    IRETURN
+                L2: ICONST_0   (line 827)
+                    IRETURN
+  end public static boolean isAssignable(Class, Class)
+
+  public static boolean isAssignableValue(Class, Object):
+                    ALOAD_0     // Ljava/lang/Class; type   (line 839)
+                    LDC_W "Type must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; value   (line 840)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Class; type
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isAssignable (Ljava/lang/Class;Ljava/lang/Class;)Z
+                    GOTO L2
+                L0: ALOAD_0     // Ljava/lang/Class; type
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L1
+                    ICONST_0
+                    GOTO L2
+                L1: ICONST_1
+                L2: IRETURN
+  end public static boolean isAssignableValue(Class, Object)
+
+  public static String convertResourcePathToClassName(String):
+                    ALOAD_0     // Ljava/lang/String; resourcePath   (line 850)
+                    LDC_W "Resource path must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; resourcePath   (line 851)
+                    BIPUSH 47
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String convertResourcePathToClassName(String)
+
+  public static String convertClassNameToResourcePath(String):
+                    ALOAD_0     // Ljava/lang/String; className   (line 860)
+                    LDC_W "Class name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className   (line 861)
+                    BIPUSH 46
+                    BIPUSH 47
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String convertClassNameToResourcePath(String)
+
+  public static String addResourcePathToPackagePath(Class, String):
+                    ALOAD_1     // Ljava/lang/String; resourceName   (line 881)
+                    LDC_W "Resource name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; resourceName   (line 882)
+                    LDC_W "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L0
+                    NEW java.lang.StringBuilder   (line 883)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.classPackageAsResourcePath (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; resourceName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L0: NEW java.lang.StringBuilder   (line 885)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.classPackageAsResourcePath (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; resourceName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String addResourcePathToPackagePath(Class, String)
+
+  public static String classPackageAsResourcePath(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 903)
+                    IFNONNULL L0
+                    LDC_W ""   (line 904)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 906)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; className   (line 907)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    ILOAD_2     // I packageEndIndex   (line 908)
+                    ICONST_M1
+                    IF_ICMPNE L1
+                    LDC_W ""   (line 909)
+                    ARETURN
+                L1: ALOAD_1     // Ljava/lang/String; className   (line 911)
+                    ICONST_0
+                    ILOAD_2     // I packageEndIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; packageName   (line 912)
+                    BIPUSH 46
+                    BIPUSH 47
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String classPackageAsResourcePath(Class)
+
+  public static transient String classNamesToString(Class[]):
+                    ALOAD_0     // [Ljava/lang/Class; classes   (line 925)
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    CHECKCAST java.util.Collection
+                    INVOKESTATIC org.springframework.util.ClassUtils.classNamesToString (Ljava/util/Collection;)Ljava/lang/String;
+                    ARETURN
+  end public static transient String classNamesToString(Class[])
+
+  public static String classNamesToString(java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; classes   (line 938)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFEQ L0
+                    LDC "[]"   (line 939)
+                    ARETURN
+                L0: NEW java.lang.StringBuilder   (line 941)
+                    DUP
+                    LDC "["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ALOAD_0     // Ljava/util/Collection; classes   (line 942)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_2
+                    GOTO L2
+                L1: ALOAD_2     // Ljava/util/Iterator; it   (line 943)
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 944)
+                    ALOAD_3     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/util/Iterator; it   (line 945)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 946)
+                    LDC_W ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L2: ALOAD_2     // Ljava/util/Iterator; it   (line 942)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 949)
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 950)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String classNamesToString(java.util.Collection)
+
+  public static Class[] getAllInterfaces(Object):
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 961)
+                    LDC_W "Instance must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 962)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClass (Ljava/lang/Class;)[Ljava/lang/Class;
+                    ARETURN
+  end public static Class[] getAllInterfaces(Object)
+
+  public static Class[] getAllInterfacesForClass(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 973)
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClass (Ljava/lang/Class;Ljava/lang/ClassLoader;)[Ljava/lang/Class;
+                    ARETURN
+  end public static Class[] getAllInterfacesForClass(Class)
+
+  public static Class[] getAllInterfacesForClass(Class, ClassLoader):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 986)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Set;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Set; ifcs   (line 987)
+                    ALOAD_2     // Ljava/util/Set; ifcs
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY java.lang.Class
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.Class;
+                    ARETURN
+  end public static Class[] getAllInterfacesForClass(Class, ClassLoader)
+
+  public static java.util.Set getAllInterfacesAsSet(Object):
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 997)
+                    LDC_W "Instance must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 998)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;)Ljava/util/Set;
+                    ARETURN
+  end public static java.util.Set getAllInterfacesAsSet(Object)
+
+  public static java.util.Set getAllInterfacesForClassAsSet(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1009)
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Set;
+                    ARETURN
+  end public static java.util.Set getAllInterfacesForClassAsSet(Class)
+
+  public static java.util.Set getAllInterfacesForClassAsSet(Class, ClassLoader):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1022)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1023)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.isVisible (Ljava/lang/Class;Ljava/lang/ClassLoader;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1024)
+                    INVOKESTATIC java.util.Collections.singleton (Ljava/lang/Object;)Ljava/util/Set;
+                    ARETURN
+                L0: NEW java.util.LinkedHashSet   (line 1026)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+                    ASTORE_2
+                    GOTO L4   (line 1027)
+                L1: ALOAD_0     // Ljava/lang/Class; clazz   (line 1028)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/Class; ifcs   (line 1029)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L3
+                L2: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_2     // Ljava/util/Set; interfaces   (line 1030)
+                    ALOAD 4     // Ljava/lang/Class; ifc
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    IINC 5 1   (line 1029)
+                L3: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L2
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1032)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_0     // Ljava/lang/Class; clazz
+                L4: ALOAD_0     // Ljava/lang/Class; clazz   (line 1027)
+                    IFNONNULL L1
+                    ALOAD_2     // Ljava/util/Set; interfaces   (line 1034)
+                    ARETURN
+  end public static java.util.Set getAllInterfacesForClassAsSet(Class, ClassLoader)
+
+  public static Class createCompositeInterface(Class[], ClassLoader):
+                    ALOAD_0     // [Ljava/lang/Class; interfaces   (line 1047)
+                    LDC_W "Interfaces must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.notEmpty ([Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1048)
+                    LDC_W "ClassLoader must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1049)
+                    ALOAD_0     // [Ljava/lang/Class; interfaces
+                    INVOKESTATIC java.lang.reflect.Proxy.getProxyClass (Ljava/lang/ClassLoader;[Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public static Class createCompositeInterface(Class[], ClassLoader)
+
+  public static boolean isVisible(Class, ClassLoader):
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1059)
+                    IFNONNULL L0
+                    ICONST_1   (line 1060)
+                    IRETURN
+    catch java.lang.ClassNotFoundException -> E0
+    |           L0: ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1063)
+    |               ALOAD_0     // Ljava/lang/Class; clazz
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;
+    |               ASTORE_2
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 1064)
+    |               ALOAD_2     // Ljava/lang/Class; actualClass
+    |               IF_ACMPNE L1
+    |               ICONST_1
+    |               IRETURN
+    |           L1: ICONST_0
+    catch java.lang.ClassNotFoundException -> E0
+                    IRETURN
+                E0: POP   (line 1067)
+                    ICONST_0   (line 1069)
+                    IRETURN
+  end public static boolean isVisible(Class, ClassLoader)
+end public abstract class org.springframework.util.ClassUtils
+ -- (ClassFormatException) File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:402)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:467)
+	at org.aspectj.weaver.World.resolve(World.java:308)
+	at org.aspectj.weaver.World.resolve(World.java:218)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.io.DefaultResourceLoader.<init>(DefaultResourceLoader.java:53)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:220)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public abstract class org.springframework.util.ClassUtils extends java.lang.Object:
+  public static final String ARRAY_SUFFIX = "[]"
+  private static final String INTERNAL_ARRAY_PREFIX = "["
+  private static final String NON_PRIMITIVE_ARRAY_PREFIX = "[L"
+  private static final char PACKAGE_SEPARATOR = 46
+  private static final char INNER_CLASS_SEPARATOR = 36
+  public static final String CGLIB_CLASS_SEPARATOR = "$$"
+  public static final String CLASS_FILE_SUFFIX = ".class"
+  private static final java.util.Map primitiveWrapperTypeMap [Signature(Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<*>;>;)]
+  private static final java.util.Map primitiveTypeToWrapperMap [Signature(Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<*>;>;)]
+  private static final java.util.Map primitiveTypeNameMap [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;)]
+  private static final java.util.Map commonClassCache [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;)]
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.ClassUtils.<clinit>())
+    |               NEW java.util.HashMap   (line 78)
+    |               DUP
+    |               BIPUSH 8
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;
+    |               NEW java.util.HashMap   (line 84)
+    |               DUP
+    |               BIPUSH 8
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;
+    |               NEW java.util.HashMap   (line 90)
+    |               DUP
+    |               BIPUSH 32
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.primitiveTypeNameMap Ljava/util/Map;
+    |               NEW java.util.HashMap   (line 96)
+    |               DUP
+    |               BIPUSH 32
+    |               INVOKESPECIAL java.util.HashMap.<init> (I)V
+    |               PUTSTATIC org.springframework.util.ClassUtils.commonClassCache Ljava/util/Map;
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 100)
+    |               LDC java.lang.Boolean
+    |               GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 101)
+    |               LDC java.lang.Byte
+    |               GETSTATIC java.lang.Byte.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 102)
+    |               LDC java.lang.Character
+    |               GETSTATIC java.lang.Character.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 103)
+    |               LDC java.lang.Double
+    |               GETSTATIC java.lang.Double.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 104)
+    |               LDC java.lang.Float
+    |               GETSTATIC java.lang.Float.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 105)
+    |               LDC java.lang.Integer
+    |               GETSTATIC java.lang.Integer.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 106)
+    |               LDC java.lang.Long
+    |               GETSTATIC java.lang.Long.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 107)
+    |               LDC java.lang.Short
+    |               GETSTATIC java.lang.Short.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 109)
+    |               INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_1
+    |               GOTO L1
+    |           L0: ALOAD_1
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Map$Entry
+    |               ASTORE_0
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;   (line 110)
+    |               ALOAD_0     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               ALOAD_0     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               ICONST_1   (line 111)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               ALOAD_0     // Ljava/util/Map$Entry; entry
+    |               INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |           L1: ALOAD_1   (line 109)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L0
+    |               NEW java.util.HashSet   (line 114)
+    |               DUP
+    |               BIPUSH 32
+    |               INVOKESPECIAL java.util.HashSet.<init> (I)V
+    |               ASTORE_0
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 115)
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;
+    |               INVOKEINTERFACE java.util.Map.values ()Ljava/util/Collection;
+    |               INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+    |               POP
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 116)
+    |               BIPUSH 8
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC [Z   (line 117)
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC [B
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC [C
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC [D
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC [F   (line 118)
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [I
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 6
+    |               LDC [J
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 7
+    |               LDC [S
+    |               AASTORE
+    |               INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+    |               CHECKCAST java.util.Collection
+    |               INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z   (line 116)
+    |               POP
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 119)
+    |               GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |               ALOAD_0     // Ljava/util/Set; primitiveTypes   (line 120)
+    |               INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+    |               ASTORE_2
+    |               GOTO L3
+    |           L2: ALOAD_2
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               ASTORE_1
+    |               GETSTATIC org.springframework.util.ClassUtils.primitiveTypeNameMap Ljava/util/Map;   (line 121)
+    |               ALOAD_1     // Ljava/lang/Class; primitiveType
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               ALOAD_1     // Ljava/lang/Class; primitiveType
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L3: ALOAD_2   (line 120)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L2
+    |               BIPUSH 8   (line 124)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC [Ljava.lang.Boolean;
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC [Ljava.lang.Byte;
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC [Ljava.lang.Character;
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC [Ljava.lang.Double;
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC [Ljava.lang.Float;   (line 125)
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [Ljava.lang.Integer;
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 6
+    |               LDC [Ljava.lang.Long;
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 7
+    |               LDC [Ljava.lang.Short;
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |               BIPUSH 8   (line 126)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.lang.Number
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC [Ljava.lang.Number;
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC java.lang.String
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC [Ljava.lang.String;
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC java.lang.Object   (line 127)
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [Ljava.lang.Object;
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 6
+    |               LDC java.lang.Class
+    |               AASTORE
+    |               DUP
+    |               BIPUSH 7
+    |               LDC [Ljava.lang.Class;
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |               BIPUSH 6   (line 128)
+    |               ANEWARRAY java.lang.Class
+    |               DUP
+    |               ICONST_0
+    |               LDC java.lang.Throwable
+    |               AASTORE
+    |               DUP
+    |               ICONST_1
+    |               LDC java.lang.Exception
+    |               AASTORE
+    |               DUP
+    |               ICONST_2
+    |               LDC java.lang.RuntimeException
+    |               AASTORE
+    |               DUP
+    |               ICONST_3
+    |               LDC java.lang.Error   (line 129)
+    |               AASTORE
+    |               DUP
+    |               ICONST_4
+    |               LDC java.lang.StackTraceElement
+    |               AASTORE
+    |               DUP
+    |               ICONST_5
+    |               LDC [Ljava.lang.StackTraceElement;
+    |               AASTORE
+    |               INVOKESTATIC org.springframework.util.ClassUtils.registerCommonClasses ([Ljava/lang/Class;)V
+    |               RETURN   (line 50)
+    staticinitialization(void org.springframework.util.ClassUtils.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/ClassUtils; this   (line 50)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.ClassUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.ClassUtils.<init>())
+  end public void <init>()
+
+  private static transient void registerCommonClasses(Class[]):
+                    ALOAD_0     // [Ljava/lang/Class; commonClasses   (line 137)
+                    DUP
+                    ASTORE 4
+                    ARRAYLENGTH
+                    ISTORE_3
+                    ICONST_0
+                    ISTORE_2
+                    GOTO L1
+                L0: ALOAD 4
+                    ILOAD_2
+                    AALOAD
+                    ASTORE_1
+                    GETSTATIC org.springframework.util.ClassUtils.commonClassCache Ljava/util/Map;   (line 138)
+                    ALOAD_1     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/Class; clazz
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    IINC_2 1   (line 137)
+                L1: ILOAD_2
+                    ILOAD_3
+                    IF_ICMPLT L0
+                    RETURN   (line 140)
+  end private static transient void registerCommonClasses(Class[])
+
+  public static ClassLoader getDefaultClassLoader():
+                    ACONST_NULL   (line 155)
+                    ASTORE_0
+    catch java.lang.Throwable -> E0
+    |               INVOKESTATIC java.lang.Thread.currentThread ()Ljava/lang/Thread;   (line 157)
+    |               INVOKEVIRTUAL java.lang.Thread.getContextClassLoader ()Ljava/lang/ClassLoader;
+    |               ASTORE_0     // Ljava/lang/ClassLoader; cl
+    catch java.lang.Throwable -> E0
+                    GOTO L0
+                E0: POP   (line 159)
+                L0: ALOAD_0     // Ljava/lang/ClassLoader; cl   (line 162)
+                    IFNONNULL L1
+                    LDC org.springframework.util.ClassUtils   (line 164)
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    ASTORE_0     // Ljava/lang/ClassLoader; cl
+                L1: ALOAD_0     // Ljava/lang/ClassLoader; cl   (line 166)
+                    ARETURN
+  end public static ClassLoader getDefaultClassLoader()
+
+  public static ClassLoader overrideThreadContextClassLoader(ClassLoader):
+                    INVOKESTATIC java.lang.Thread.currentThread ()Ljava/lang/Thread;   (line 177)
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Thread; currentThread   (line 178)
+                    INVOKEVIRTUAL java.lang.Thread.getContextClassLoader ()Ljava/lang/ClassLoader;
+                    ASTORE_2
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoaderToUse   (line 179)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoaderToUse
+                    ALOAD_2     // Ljava/lang/ClassLoader; threadContextClassLoader
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/Thread; currentThread   (line 180)
+                    ALOAD_0     // Ljava/lang/ClassLoader; classLoaderToUse
+                    INVOKEVIRTUAL java.lang.Thread.setContextClassLoader (Ljava/lang/ClassLoader;)V
+                    ALOAD_2     // Ljava/lang/ClassLoader; threadContextClassLoader   (line 181)
+                    ARETURN
+                L0: ACONST_NULL   (line 184)
+                    ARETURN
+  end public static ClassLoader overrideThreadContextClassLoader(ClassLoader)
+
+  public static Class forName(String) throws java.lang.ClassNotFoundException, java.lang.LinkageError:
+                    ALOAD_0     // Ljava/lang/String; name   (line 204)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ARETURN
+  end public static Class forName(String) throws java.lang.ClassNotFoundException, java.lang.LinkageError
+
+  public static Class forName(String, ClassLoader) throws java.lang.ClassNotFoundException, java.lang.LinkageError:
+                    ALOAD_0     // Ljava/lang/String; name   (line 221)
+                    LDC_W "Name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; name   (line 223)
+                    INVOKESTATIC org.springframework.util.ClassUtils.resolvePrimitiveClassName (Ljava/lang/String;)Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Class; clazz   (line 224)
+                    IFNONNULL L0
+                    GETSTATIC org.springframework.util.ClassUtils.commonClassCache Ljava/util/Map;   (line 225)
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_2     // Ljava/lang/Class; clazz
+                L0: ALOAD_2     // Ljava/lang/Class; clazz   (line 227)
+                    IFNULL L1
+                    ALOAD_2     // Ljava/lang/Class; clazz   (line 228)
+                    ARETURN
+                L1: ALOAD_0     // Ljava/lang/String; name   (line 232)
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_0     // Ljava/lang/String; name   (line 233)
+                    ICONST_0
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; elementClassName   (line 234)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementClass   (line 235)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ARETURN
+                L2: ALOAD_0     // Ljava/lang/String; name   (line 239)
+                    LDC "[L"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/String; name
+                    LDC_W ";"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/String; name   (line 240)
+                    LDC "[L"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; elementName   (line 241)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementClass   (line 242)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ARETURN
+                L3: ALOAD_0     // Ljava/lang/String; name   (line 246)
+                    LDC "["
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L4
+                    ALOAD_0     // Ljava/lang/String; name   (line 247)
+                    LDC "["
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; elementName   (line 248)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementClass   (line 249)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ARETURN
+                L4: ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 252)
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/ClassLoader; classLoaderToUse   (line 253)
+                    IFNONNULL L5
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;   (line 254)
+                    ASTORE_3     // Ljava/lang/ClassLoader; classLoaderToUse
+    catch java.lang.ClassNotFoundException -> E0
+    |           L5: ALOAD_3     // Ljava/lang/ClassLoader; classLoaderToUse   (line 257)
+    |               ALOAD_0     // Ljava/lang/String; name
+    |               INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E0
+                    ARETURN
+                E0: ASTORE 4   (line 259)
+                    ALOAD_0     // Ljava/lang/String; name   (line 260)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE 5
+                    ILOAD 5     // I lastDotIndex   (line 261)
+                    ICONST_M1
+                    IF_ICMPEQ L6
+                    NEW java.lang.StringBuilder   (line 262)
+                    DUP
+                    ALOAD_0     // Ljava/lang/String; name
+                    ICONST_0
+                    ILOAD 5     // I lastDotIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    BIPUSH 36
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Ljava/lang/String; name
+                    ILOAD 5     // I lastDotIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE 6
+    catch java.lang.ClassNotFoundException -> E1
+    |               ALOAD_3     // Ljava/lang/ClassLoader; classLoaderToUse   (line 264)
+    |               ALOAD 6     // Ljava/lang/String; innerClassName
+    |               INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E1
+                    ARETURN
+                E1: POP   (line 266)
+                L6: ALOAD 4     // Ljava/lang/ClassNotFoundException; ex   (line 270)
+                    ATHROW
+  end public static Class forName(String, ClassLoader) throws java.lang.ClassNotFoundException, java.lang.LinkageError
+
+  public static Class resolveClassName(String, ClassLoader) throws java.lang.IllegalArgumentException:
+    catch java.lang.LinkageError -> E1
+    | catch java.lang.ClassNotFoundException -> E0
+    | |             ALOAD_0     // Ljava/lang/String; className   (line 290)
+    | |             ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    | |             INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    | catch java.lang.ClassNotFoundException -> E0
+    catch java.lang.LinkageError -> E1
+                    ARETURN
+                E0: ASTORE_2   (line 292)
+                    NEW java.lang.IllegalArgumentException   (line 293)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot find class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/ClassNotFoundException; ex
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+                E1: ASTORE_2   (line 295)
+                    NEW java.lang.IllegalArgumentException   (line 296)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 297)
+                    DUP
+                    LDC_W "Error loading class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]: problem with class file or dependent class."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/LinkageError; ex
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V   (line 296)
+                    ATHROW
+  end public static Class resolveClassName(String, ClassLoader) throws java.lang.IllegalArgumentException
+
+  public static Class resolvePrimitiveClassName(String):
+                    ACONST_NULL   (line 312)
+                    ASTORE_1
+                    ALOAD_0     // Ljava/lang/String; name   (line 315)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    BIPUSH 8
+                    IF_ICMPGT L0
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveTypeNameMap Ljava/util/Map;   (line 317)
+                    ALOAD_0     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_1     // Ljava/lang/Class; result
+                L0: ALOAD_1     // Ljava/lang/Class; result   (line 319)
+                    ARETURN
+  end public static Class resolvePrimitiveClassName(String)
+
+  public static boolean isPresent(String):
+                    ALOAD_0     // Ljava/lang/String; className   (line 332)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPresent (Ljava/lang/String;Ljava/lang/ClassLoader;)Z
+                    IRETURN
+  end public static boolean isPresent(String)
+
+  public static boolean isPresent(String, ClassLoader):
+    catch java.lang.Throwable -> E0
+    |               ALOAD_0     // Ljava/lang/String; className   (line 346)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    |               POP
+    catch java.lang.Throwable -> E0
+                    ICONST_1   (line 347)
+                    IRETURN
+                E0: POP   (line 349)
+                    ICONST_0   (line 351)
+                    IRETURN
+  end public static boolean isPresent(String, ClassLoader)
+
+  public static Class getUserClass(Object):
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 363)
+                    LDC_W "Instance must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 364)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getUserClass (Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public static Class getUserClass(Object)
+
+  public static Class getUserClass(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 374)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    LDC "$$"
+                    INVOKEVIRTUAL java.lang.String.contains (Ljava/lang/CharSequence;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 375)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Class; superClass   (line 376)
+                    IFNULL L0
+                    LDC java.lang.Object
+                    ALOAD_1     // Ljava/lang/Class; superClass
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/Class; superClass   (line 377)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 380)
+                    ARETURN
+  end public static Class getUserClass(Class)
+
+  public static boolean isCacheSafe(Class, ClassLoader):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 390)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 391)
+                    INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/ClassLoader; target   (line 392)
+                    IFNONNULL L0
+                    ICONST_0   (line 393)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 395)
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 396)
+                    ALOAD_2     // Ljava/lang/ClassLoader; target
+                    IF_ACMPNE L2
+                    ICONST_1   (line 397)
+                    IRETURN
+                L1: ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 400)
+                    INVOKEVIRTUAL java.lang.ClassLoader.getParent ()Ljava/lang/ClassLoader;
+                    ASTORE_3     // Ljava/lang/ClassLoader; cur
+                    ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 401)
+                    ALOAD_2     // Ljava/lang/ClassLoader; target
+                    IF_ACMPNE L2
+                    ICONST_1   (line 402)
+                    IRETURN
+                L2: ALOAD_3     // Ljava/lang/ClassLoader; cur   (line 399)
+                    IFNONNULL L1
+                    ICONST_0   (line 405)
+                    IRETURN
+  end public static boolean isCacheSafe(Class, ClassLoader)
+
+  public static String getShortName(String):
+                    ALOAD_0     // Ljava/lang/String; className   (line 416)
+                    LDC_W "Class name must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.hasLength (Ljava/lang/String;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className   (line 417)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_1
+                    ALOAD_0     // Ljava/lang/String; className   (line 418)
+                    LDC "$$"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE_2
+                    ILOAD_2     // I nameEndIndex   (line 419)
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ALOAD_0     // Ljava/lang/String; className   (line 420)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE_2     // I nameEndIndex
+                L0: ALOAD_0     // Ljava/lang/String; className   (line 422)
+                    ILOAD_1     // I lastDotIndex
+                    ICONST_1
+                    IADD
+                    ILOAD_2     // I nameEndIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; shortName   (line 423)
+                    BIPUSH 36
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; shortName
+                    ALOAD_3     // Ljava/lang/String; shortName   (line 424)
+                    ARETURN
+  end public static String getShortName(String)
+
+  public static String getShortName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 433)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getShortName (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public static String getShortName(Class)
+
+  public static String getShortNameAsProperty(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 444)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getShortName (Ljava/lang/Class;)Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; shortName   (line 445)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    ILOAD_2     // I dotIndex   (line 446)
+                    ICONST_M1
+                    IF_ICMPEQ L0
+                    ALOAD_1     // Ljava/lang/String; shortName
+                    ILOAD_2     // I dotIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/String; shortName
+                L1: ASTORE_1     // Ljava/lang/String; shortName
+                    ALOAD_1     // Ljava/lang/String; shortName   (line 447)
+                    INVOKESTATIC java.beans.Introspector.decapitalize (Ljava/lang/String;)Ljava/lang/String;
+                    ARETURN
+  end public static String getShortNameAsProperty(Class)
+
+  public static String getClassFileName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 457)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 458)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; className   (line 459)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    NEW java.lang.StringBuilder   (line 460)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; className
+                    ILOAD_2     // I lastDotIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC ".class"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getClassFileName(Class)
+
+  public static String getPackageName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 471)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 472)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; className   (line 473)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    ILOAD_2     // I lastDotIndex   (line 474)
+                    ICONST_M1
+                    IF_ICMPEQ L0
+                    ALOAD_1     // Ljava/lang/String; className
+                    ICONST_0
+                    ILOAD_2     // I lastDotIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    GOTO L1
+                L0: LDC_W ""
+                L1: ARETURN
+  end public static String getPackageName(Class)
+
+  public static String getQualifiedName(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 484)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 485)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 486)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedNameForArray (Ljava/lang/Class;)Ljava/lang/String;
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 489)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ARETURN
+  end public static String getQualifiedName(Class)
+
+  private static String getQualifiedNameForArray(Class):
+                    NEW java.lang.StringBuilder   (line 500)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    GOTO L1   (line 501)
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 502)
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_0     // Ljava/lang/Class; clazz
+                    ALOAD_1     // Ljava/lang/StringBuilder; result   (line 503)
+                    LDC "[]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L1: ALOAD_0     // Ljava/lang/Class; clazz   (line 501)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; result   (line 505)
+                    ICONST_0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; result   (line 506)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private static String getQualifiedNameForArray(Class)
+
+  public static String getQualifiedMethodName(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 516)
+                    LDC_W "Method must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    NEW java.lang.StringBuilder   (line 517)
+                    DUP
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String getQualifiedMethodName(java.lang.reflect.Method)
+
+  public static String getDescriptiveType(Object):
+                    ALOAD_0     // Ljava/lang/Object; value   (line 528)
+                    IFNONNULL L0
+                    ACONST_NULL   (line 529)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Object; value   (line 531)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 532)
+                    INVOKESTATIC java.lang.reflect.Proxy.isProxyClass (Ljava/lang/Class;)Z
+                    IFEQ L4
+                    NEW java.lang.StringBuilder   (line 533)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 534)
+                    LDC_W " implementing "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 535)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE_3
+                    ICONST_0   (line 536)
+                    ISTORE 4
+                    GOTO L3
+                L1: ALOAD_2     // Ljava/lang/StringBuilder; result   (line 537)
+                    ALOAD_3     // [Ljava/lang/Class; ifcs
+                    ILOAD 4     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ILOAD 4     // I i   (line 538)
+                    ALOAD_3     // [Ljava/lang/Class; ifcs
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    IF_ICMPGE L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 539)
+                    BIPUSH 44
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    POP
+                L2: IINC 4 1     // I i   (line 536)
+                L3: ILOAD 4     // I i
+                    ALOAD_3     // [Ljava/lang/Class; ifcs
+                    ARRAYLENGTH
+                    IF_ICMPLT L1
+                    ALOAD_2     // Ljava/lang/StringBuilder; result   (line 542)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L4: ALOAD_1     // Ljava/lang/Class; clazz   (line 544)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L5
+                    ALOAD_1     // Ljava/lang/Class; clazz   (line 545)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedNameForArray (Ljava/lang/Class;)Ljava/lang/String;
+                    ARETURN
+                L5: ALOAD_1     // Ljava/lang/Class; clazz   (line 548)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ARETURN
+  end public static String getDescriptiveType(Object)
+
+  public static boolean matchesTypeName(Class, String):
+                    ALOAD_1     // Ljava/lang/String; typeName   (line 558)
+                    IFNULL L1
+                    ALOAD_1     // Ljava/lang/String; typeName   (line 559)
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/String; typeName
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 560)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; typeName
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.getQualifiedNameForArray (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ICONST_1
+                    IRETURN
+                L1: ICONST_0
+                    IRETURN   (line 558)
+  end public static boolean matchesTypeName(Class, String)
+
+  public static transient boolean hasConstructor(Class, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 573)
+                    ALOAD_1     // [Ljava/lang/Class; paramTypes
+                    INVOKESTATIC org.springframework.util.ClassUtils.getConstructorIfAvailable (Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static transient boolean hasConstructor(Class, Class[])
+
+  public static transient java.lang.reflect.Constructor getConstructorIfAvailable(Class, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 586)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodException -> E0
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 588)
+    |               ALOAD_1     // [Ljava/lang/Class; paramTypes
+    |               INVOKEVIRTUAL java.lang.Class.getConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    catch java.lang.NoSuchMethodException -> E0
+                    ARETURN
+                E0: POP   (line 590)
+                    ACONST_NULL   (line 591)
+                    ARETURN
+  end public static transient java.lang.reflect.Constructor getConstructorIfAvailable(Class, Class[])
+
+  public static transient boolean hasMethod(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 605)
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes
+                    INVOKESTATIC org.springframework.util.ClassUtils.getMethodIfAvailable (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static transient boolean hasMethod(Class, String, Class[])
+
+  public static transient java.lang.reflect.Method getMethodIfAvailable(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 619)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 620)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodException -> E0
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 622)
+    |               ALOAD_1     // Ljava/lang/String; methodName
+    |               ALOAD_2     // [Ljava/lang/Class; paramTypes
+    |               INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    catch java.lang.NoSuchMethodException -> E0
+                    ARETURN
+                E0: POP   (line 624)
+                    ACONST_NULL   (line 625)
+                    ARETURN
+  end public static transient java.lang.reflect.Method getMethodIfAvailable(Class, String, Class[])
+
+  public static int getMethodCountForName(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 637)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 638)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ICONST_0   (line 639)
+                    ISTORE_2
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 640)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/reflect/Method; declaredMethods   (line 641)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L2
+                L0: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 642)
+                    ALOAD 4     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    IINC_2 1     // I count   (line 643)
+                L1: IINC 5 1   (line 641)
+                L2: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 646)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/lang/Class; ifcs   (line 647)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L4
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ILOAD_2     // I count   (line 648)
+                    ALOAD 5     // Ljava/lang/Class; ifc
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.getMethodCountForName (Ljava/lang/Class;Ljava/lang/String;)I
+                    IADD
+                    ISTORE_2     // I count
+                    IINC 6 1   (line 647)
+                L4: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 650)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    IFNULL L5
+                    ILOAD_2     // I count   (line 651)
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.getMethodCountForName (Ljava/lang/Class;Ljava/lang/String;)I
+                    IADD
+                    ISTORE_2     // I count
+                L5: ILOAD_2     // I count   (line 653)
+                    IRETURN
+  end public static int getMethodCountForName(Class, String)
+
+  public static boolean hasAtLeastOneMethodWithName(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 665)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 666)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 667)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/reflect/Method; declaredMethods   (line 668)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/reflect/Method; method   (line 669)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ICONST_1   (line 670)
+                    IRETURN
+                L1: IINC 4 1   (line 668)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 673)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/Class; ifcs   (line 674)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L5
+                L3: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; ifc   (line 675)
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.hasAtLeastOneMethodWithName (Ljava/lang/Class;Ljava/lang/String;)Z
+                    IFEQ L4
+                    ICONST_1   (line 676)
+                    IRETURN
+                L4: IINC 5 1   (line 674)
+                L5: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L3
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 679)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    IFNULL L6
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESTATIC org.springframework.util.ClassUtils.hasAtLeastOneMethodWithName (Ljava/lang/Class;Ljava/lang/String;)Z
+                    IFEQ L6
+                    ICONST_1
+                    IRETURN
+                L6: ICONST_0
+                    IRETURN
+  end public static boolean hasAtLeastOneMethodWithName(Class, String)
+
+  public static java.lang.reflect.Method getMostSpecificMethod(java.lang.reflect.Method, Class):
+                    ACONST_NULL   (line 700)
+                    ASTORE_2
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 701)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    ALOAD_1     // Ljava/lang/Class; targetClass
+                    INVOKESTATIC org.springframework.util.ClassUtils.isOverridable (Ljava/lang/reflect/Method;Ljava/lang/Class;)Z
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/Class; targetClass   (line 702)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/Class; targetClass
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/Class; targetClass   (line 703)
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.findMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+                    ASTORE_2     // Ljava/lang/reflect/Method; specificMethod
+                L0: ALOAD_2     // Ljava/lang/reflect/Method; specificMethod   (line 705)
+                    IFNULL L1
+                    ALOAD_2     // Ljava/lang/reflect/Method; specificMethod
+                    GOTO L2
+                L1: ALOAD_0     // Ljava/lang/reflect/Method; method
+                L2: ARETURN
+  end public static java.lang.reflect.Method getMostSpecificMethod(java.lang.reflect.Method, Class)
+
+  private static boolean isOverridable(java.lang.reflect.Method, Class):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 714)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPrivate (I)Z
+                    IFEQ L0
+                    ICONST_0   (line 715)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 717)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isProtected (I)Z
+                    IFEQ L2
+                L1: ICONST_1   (line 718)
+                    IRETURN
+                L2: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 720)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getPackageName (Ljava/lang/Class;)Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/Class; targetClass
+                    INVOKESTATIC org.springframework.util.ClassUtils.getPackageName (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IRETURN
+  end private static boolean isOverridable(java.lang.reflect.Method, Class)
+
+  public static transient java.lang.reflect.Method getStaticMethod(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 732)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; methodName   (line 733)
+                    LDC_W "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    catch java.lang.NoSuchMethodException -> E0
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 735)
+    |               ALOAD_1     // Ljava/lang/String; methodName
+    |               ALOAD_2     // [Ljava/lang/Class; args
+    |               INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/reflect/Method; method   (line 736)
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+    |               INVOKESTATIC java.lang.reflect.Modifier.isStatic (I)Z
+    |               IFEQ L0
+    |               ALOAD_3     // Ljava/lang/reflect/Method; method
+    |               GOTO L1
+    |           L0: ACONST_NULL
+    catch java.lang.NoSuchMethodException -> E0
+                L1: ARETURN
+                E0: POP   (line 738)
+                    ACONST_NULL   (line 739)
+                    ARETURN
+  end public static transient java.lang.reflect.Method getStaticMethod(Class, String, Class[])
+
+  public static boolean isPrimitiveWrapper(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 751)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 752)
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IRETURN
+  end public static boolean isPrimitiveWrapper(Class)
+
+  public static boolean isPrimitiveOrWrapper(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 763)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 764)
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFNE L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPrimitiveWrapper (Ljava/lang/Class;)Z
+                    IFNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end public static boolean isPrimitiveOrWrapper(Class)
+
+  public static boolean isPrimitiveArray(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 774)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 775)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isPrimitiveArray(Class)
+
+  public static boolean isPrimitiveWrapperArray(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 785)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 786)
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isPrimitiveWrapper (Ljava/lang/Class;)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isPrimitiveWrapperArray(Class)
+
+  public static Class resolvePrimitiveIfNecessary(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 796)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 797)
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    GETSTATIC java.lang.Void.TYPE Ljava/lang/Class;
+                    IF_ACMPEQ L0
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    GOTO L1
+                L0: ALOAD_0     // Ljava/lang/Class; clazz
+                L1: ARETURN
+  end public static Class resolvePrimitiveIfNecessary(Class)
+
+  public static boolean isAssignable(Class, Class):
+                    ALOAD_0     // Ljava/lang/Class; lhsType   (line 810)
+                    LDC_W "Left-hand side type must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Class; rhsType   (line 811)
+                    LDC_W "Right-hand side type must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; lhsType   (line 812)
+                    ALOAD_1     // Ljava/lang/Class; rhsType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L0
+                    ICONST_1   (line 813)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/Class; lhsType   (line 815)
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L1
+                    GETSTATIC org.springframework.util.ClassUtils.primitiveWrapperTypeMap Ljava/util/Map;   (line 816)
+                    ALOAD_1     // Ljava/lang/Class; rhsType
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Class; resolvedPrimitive   (line 817)
+                    IFNULL L2
+                    ALOAD_0     // Ljava/lang/Class; lhsType
+                    ALOAD_2     // Ljava/lang/Class; resolvedPrimitive
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1   (line 818)
+                    IRETURN
+                L1: GETSTATIC org.springframework.util.ClassUtils.primitiveTypeToWrapperMap Ljava/util/Map;   (line 822)
+                    ALOAD_1     // Ljava/lang/Class; rhsType
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Class; resolvedWrapper   (line 823)
+                    IFNULL L2
+                    ALOAD_0     // Ljava/lang/Class; lhsType
+                    ALOAD_2     // Ljava/lang/Class; resolvedWrapper
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L2
+                    ICONST_1   (line 824)
+                    IRETURN
+                L2: ICONST_0   (line 827)
+                    IRETURN
+  end public static boolean isAssignable(Class, Class)
+
+  public static boolean isAssignableValue(Class, Object):
+                    ALOAD_0     // Ljava/lang/Class; type   (line 839)
+                    LDC_W "Type must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; value   (line 840)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Class; type
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.isAssignable (Ljava/lang/Class;Ljava/lang/Class;)Z
+                    GOTO L2
+                L0: ALOAD_0     // Ljava/lang/Class; type
+                    INVOKEVIRTUAL java.lang.Class.isPrimitive ()Z
+                    IFEQ L1
+                    ICONST_0
+                    GOTO L2
+                L1: ICONST_1
+                L2: IRETURN
+  end public static boolean isAssignableValue(Class, Object)
+
+  public static String convertResourcePathToClassName(String):
+                    ALOAD_0     // Ljava/lang/String; resourcePath   (line 850)
+                    LDC_W "Resource path must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; resourcePath   (line 851)
+                    BIPUSH 47
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String convertResourcePathToClassName(String)
+
+  public static String convertClassNameToResourcePath(String):
+                    ALOAD_0     // Ljava/lang/String; className   (line 860)
+                    LDC_W "Class name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/String; className   (line 861)
+                    BIPUSH 46
+                    BIPUSH 47
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String convertClassNameToResourcePath(String)
+
+  public static String addResourcePathToPackagePath(Class, String):
+                    ALOAD_1     // Ljava/lang/String; resourceName   (line 881)
+                    LDC_W "Resource name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; resourceName   (line 882)
+                    LDC_W "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L0
+                    NEW java.lang.StringBuilder   (line 883)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.classPackageAsResourcePath (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; resourceName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L0: NEW java.lang.StringBuilder   (line 885)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    INVOKESTATIC org.springframework.util.ClassUtils.classPackageAsResourcePath (Ljava/lang/Class;)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; resourceName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String addResourcePathToPackagePath(Class, String)
+
+  public static String classPackageAsResourcePath(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 903)
+                    IFNONNULL L0
+                    LDC_W ""   (line 904)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Class; clazz   (line 906)
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; className   (line 907)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_2
+                    ILOAD_2     // I packageEndIndex   (line 908)
+                    ICONST_M1
+                    IF_ICMPNE L1
+                    LDC_W ""   (line 909)
+                    ARETURN
+                L1: ALOAD_1     // Ljava/lang/String; className   (line 911)
+                    ICONST_0
+                    ILOAD_2     // I packageEndIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; packageName   (line 912)
+                    BIPUSH 46
+                    BIPUSH 47
+                    INVOKEVIRTUAL java.lang.String.replace (CC)Ljava/lang/String;
+                    ARETURN
+  end public static String classPackageAsResourcePath(Class)
+
+  public static transient String classNamesToString(Class[]):
+                    ALOAD_0     // [Ljava/lang/Class; classes   (line 925)
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    CHECKCAST java.util.Collection
+                    INVOKESTATIC org.springframework.util.ClassUtils.classNamesToString (Ljava/util/Collection;)Ljava/lang/String;
+                    ARETURN
+  end public static transient String classNamesToString(Class[])
+
+  public static String classNamesToString(java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; classes   (line 938)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFEQ L0
+                    LDC "[]"   (line 939)
+                    ARETURN
+                L0: NEW java.lang.StringBuilder   (line 941)
+                    DUP
+                    LDC "["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ALOAD_0     // Ljava/util/Collection; classes   (line 942)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_2
+                    GOTO L2
+                L1: ALOAD_2     // Ljava/util/Iterator; it   (line 943)
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.lang.Class
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 944)
+                    ALOAD_3     // Ljava/lang/Class; clazz
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/util/Iterator; it   (line 945)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 946)
+                    LDC_W ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L2: ALOAD_2     // Ljava/util/Iterator; it   (line 942)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 949)
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 950)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String classNamesToString(java.util.Collection)
+
+  public static Class[] getAllInterfaces(Object):
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 961)
+                    LDC_W "Instance must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 962)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClass (Ljava/lang/Class;)[Ljava/lang/Class;
+                    ARETURN
+  end public static Class[] getAllInterfaces(Object)
+
+  public static Class[] getAllInterfacesForClass(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 973)
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClass (Ljava/lang/Class;Ljava/lang/ClassLoader;)[Ljava/lang/Class;
+                    ARETURN
+  end public static Class[] getAllInterfacesForClass(Class)
+
+  public static Class[] getAllInterfacesForClass(Class, ClassLoader):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 986)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Set;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Set; ifcs   (line 987)
+                    ALOAD_2     // Ljava/util/Set; ifcs
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY java.lang.Class
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.Class;
+                    ARETURN
+  end public static Class[] getAllInterfacesForClass(Class, ClassLoader)
+
+  public static java.util.Set getAllInterfacesAsSet(Object):
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 997)
+                    LDC_W "Instance must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; instance   (line 998)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;)Ljava/util/Set;
+                    ARETURN
+  end public static java.util.Set getAllInterfacesAsSet(Object)
+
+  public static java.util.Set getAllInterfacesForClassAsSet(Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1009)
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Set;
+                    ARETURN
+  end public static java.util.Set getAllInterfacesForClassAsSet(Class)
+
+  public static java.util.Set getAllInterfacesForClassAsSet(Class, ClassLoader):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1022)
+                    LDC_W "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1023)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.isVisible (Ljava/lang/Class;Ljava/lang/ClassLoader;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1024)
+                    INVOKESTATIC java.util.Collections.singleton (Ljava/lang/Object;)Ljava/util/Set;
+                    ARETURN
+                L0: NEW java.util.LinkedHashSet   (line 1026)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> ()V
+                    ASTORE_2
+                    GOTO L4   (line 1027)
+                L1: ALOAD_0     // Ljava/lang/Class; clazz   (line 1028)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/Class; ifcs   (line 1029)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L3
+                L2: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_2     // Ljava/util/Set; interfaces   (line 1030)
+                    ALOAD 4     // Ljava/lang/Class; ifc
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.getAllInterfacesForClassAsSet (Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    IINC 5 1   (line 1029)
+                L3: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L2
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 1032)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_0     // Ljava/lang/Class; clazz
+                L4: ALOAD_0     // Ljava/lang/Class; clazz   (line 1027)
+                    IFNONNULL L1
+                    ALOAD_2     // Ljava/util/Set; interfaces   (line 1034)
+                    ARETURN
+  end public static java.util.Set getAllInterfacesForClassAsSet(Class, ClassLoader)
+
+  public static Class createCompositeInterface(Class[], ClassLoader):
+                    ALOAD_0     // [Ljava/lang/Class; interfaces   (line 1047)
+                    LDC_W "Interfaces must not be empty"
+                    INVOKESTATIC org.springframework.util.Assert.notEmpty ([Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1048)
+                    LDC_W "ClassLoader must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1049)
+                    ALOAD_0     // [Ljava/lang/Class; interfaces
+                    INVOKESTATIC java.lang.reflect.Proxy.getProxyClass (Ljava/lang/ClassLoader;[Ljava/lang/Class;)Ljava/lang/Class;
+                    ARETURN
+  end public static Class createCompositeInterface(Class[], ClassLoader)
+
+  public static boolean isVisible(Class, ClassLoader):
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1059)
+                    IFNONNULL L0
+                    ICONST_1   (line 1060)
+                    IRETURN
+    catch java.lang.ClassNotFoundException -> E0
+    |           L0: ALOAD_1     // Ljava/lang/ClassLoader; classLoader   (line 1063)
+    |               ALOAD_0     // Ljava/lang/Class; clazz
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;
+    |               ASTORE_2
+    |               ALOAD_0     // Ljava/lang/Class; clazz   (line 1064)
+    |               ALOAD_2     // Ljava/lang/Class; actualClass
+    |               IF_ACMPNE L1
+    |               ICONST_1
+    |               IRETURN
+    |           L1: ICONST_0
+    catch java.lang.ClassNotFoundException -> E0
+                    IRETURN
+                E0: POP   (line 1067)
+                    ICONST_0   (line 1069)
+                    IRETURN
+  end public static boolean isVisible(Class, ClassLoader)
+end public abstract class org.springframework.util.ClassUtils
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.io.DefaultResourceLoader.<init>(DefaultResourceLoader.java:53)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:220)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

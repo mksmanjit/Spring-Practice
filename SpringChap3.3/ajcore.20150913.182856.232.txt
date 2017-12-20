@@ -1,0 +1,1807 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.182856.232.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public abstract class org.springframework.util.ReflectionUtils extends java.lang.Object:
+  public static org.springframework.util.ReflectionUtils$FieldFilter COPYABLE_FIELDS
+  public static org.springframework.util.ReflectionUtils$MethodFilter NON_BRIDGED_METHODS
+  public static org.springframework.util.ReflectionUtils$MethodFilter USER_DECLARED_METHODS
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.ReflectionUtils.<clinit>())
+    |               NEW org.springframework.util.ReflectionUtils$1   (line 607)
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.ReflectionUtils$1.<init> ()V
+    |               PUTSTATIC org.springframework.util.ReflectionUtils.COPYABLE_FIELDS Lorg/springframework/util/ReflectionUtils$FieldFilter;
+    |               NEW org.springframework.util.ReflectionUtils$2   (line 618)
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.ReflectionUtils$2.<init> ()V
+    |               PUTSTATIC org.springframework.util.ReflectionUtils.NON_BRIDGED_METHODS Lorg/springframework/util/ReflectionUtils$MethodFilter;
+    |               NEW org.springframework.util.ReflectionUtils$3   (line 630)
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.ReflectionUtils$3.<init> ()V
+    |               PUTSTATIC org.springframework.util.ReflectionUtils.USER_DECLARED_METHODS Lorg/springframework/util/ReflectionUtils$MethodFilter;
+    |               RETURN   (line 42)
+    staticinitialization(void org.springframework.util.ReflectionUtils.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/ReflectionUtils; this   (line 42)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.ReflectionUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.ReflectionUtils.<init>())
+  end public void <init>()
+
+  public static java.lang.reflect.Field findField(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 52)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.findField (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Field;
+                    ARETURN
+  end public static java.lang.reflect.Field findField(Class, String)
+
+  public static java.lang.reflect.Field findField(Class, String, Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 65)
+                    LDC "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name   (line 66)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/Class; type
+                    IFNONNULL L0
+                    ICONST_0
+                    GOTO L1
+                L0: ICONST_1
+                L1: LDC "Either name or type of the field must be specified"
+                    INVOKESTATIC org.springframework.util.Assert.isTrue (ZLjava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 67)
+                    ASTORE_3
+                    GOTO L8   (line 68)
+                L2: ALOAD_3     // Ljava/lang/Class; searchType   (line 69)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredFields ()[Ljava/lang/reflect/Field;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/lang/reflect/Field; fields   (line 70)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L7
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_1     // Ljava/lang/String; name   (line 71)
+                    IFNULL L4
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L6
+                L4: ALOAD_2     // Ljava/lang/Class; type
+                    IFNULL L5
+                    ALOAD_2     // Ljava/lang/Class; type
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L6
+                L5: ALOAD 5     // Ljava/lang/reflect/Field; field   (line 72)
+                    ARETURN
+                L6: IINC 6 1   (line 70)
+                L7: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    ALOAD_3     // Ljava/lang/Class; searchType   (line 75)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_3     // Ljava/lang/Class; searchType
+                L8: LDC java.lang.Object   (line 68)
+                    ALOAD_3     // Ljava/lang/Class; searchType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L9
+                    ALOAD_3     // Ljava/lang/Class; searchType
+                    IFNONNULL L2
+                L9: ACONST_NULL   (line 77)
+                    ARETURN
+  end public static java.lang.reflect.Field findField(Class, String, Class)
+
+  public static void setField(java.lang.reflect.Field, Object, Object):
+    catch java.lang.IllegalAccessException -> E0
+    |               ALOAD_0     // Ljava/lang/reflect/Field; field   (line 92)
+    |               ALOAD_1     // Ljava/lang/Object; target
+    |               ALOAD_2     // Ljava/lang/Object; value
+    |               INVOKEVIRTUAL java.lang.reflect.Field.set (Ljava/lang/Object;Ljava/lang/Object;)V
+    catch java.lang.IllegalAccessException -> E0
+                    GOTO L0
+                E0: ASTORE_3   (line 94)
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex   (line 95)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    NEW java.lang.IllegalStateException   (line 96)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Unexpected reflection exception - "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex   (line 97)
+                    INVOKEVIRTUAL java.lang.IllegalAccessException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 96)
+                    ATHROW
+                L0: RETURN   (line 99)
+  end public static void setField(java.lang.reflect.Field, Object, Object)
+
+  public static Object getField(java.lang.reflect.Field, Object):
+    catch java.lang.IllegalAccessException -> E0
+    |               ALOAD_0     // Ljava/lang/reflect/Field; field   (line 113)
+    |               ALOAD_1     // Ljava/lang/Object; target
+    |               INVOKEVIRTUAL java.lang.reflect.Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+    catch java.lang.IllegalAccessException -> E0
+                    ARETURN
+                E0: ASTORE_2   (line 115)
+                    ALOAD_2     // Ljava/lang/IllegalAccessException; ex   (line 116)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    NEW java.lang.IllegalStateException   (line 117)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 118)
+                    DUP
+                    LDC "Unexpected reflection exception - "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.IllegalAccessException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 117)
+                    ATHROW
+  end public static Object getField(java.lang.reflect.Field, Object)
+
+  public static java.lang.reflect.Method findMethod(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 131)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_0
+                    ANEWARRAY java.lang.Class
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.findMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+                    ARETURN
+  end public static java.lang.reflect.Method findMethod(Class, String)
+
+  public static transient java.lang.reflect.Method findMethod(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 145)
+                    LDC "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name   (line 146)
+                    LDC "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 147)
+                    ASTORE_3
+                    GOTO L7   (line 148)
+                L0: ALOAD_3     // Ljava/lang/Class; searchType   (line 149)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFEQ L1
+                    ALOAD_3     // Ljava/lang/Class; searchType
+                    INVOKEVIRTUAL java.lang.Class.getMethods ()[Ljava/lang/reflect/Method;
+                    GOTO L2
+                L1: ALOAD_3     // Ljava/lang/Class; searchType
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                L2: ASTORE 4
+                    ALOAD 4     // [Ljava/lang/reflect/Method; methods   (line 150)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L6
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_1     // Ljava/lang/String; name   (line 151)
+                    ALOAD 5     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L5
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes   (line 152)
+                    IFNULL L4
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes
+                    ALOAD 5     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    INVOKESTATIC java.util.Arrays.equals ([Ljava/lang/Object;[Ljava/lang/Object;)Z
+                    IFEQ L5
+                L4: ALOAD 5     // Ljava/lang/reflect/Method; method   (line 153)
+                    ARETURN
+                L5: IINC 6 1   (line 150)
+                L6: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    ALOAD_3     // Ljava/lang/Class; searchType   (line 156)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_3     // Ljava/lang/Class; searchType
+                L7: ALOAD_3     // Ljava/lang/Class; searchType   (line 148)
+                    IFNONNULL L0
+                    ACONST_NULL   (line 158)
+                    ARETURN
+  end public static transient java.lang.reflect.Method findMethod(Class, String, Class[])
+
+  public static Object invokeMethod(java.lang.reflect.Method, Object):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 171)
+                    ALOAD_1     // Ljava/lang/Object; target
+                    ICONST_0
+                    ANEWARRAY java.lang.Object
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.invokeMethod (Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public static Object invokeMethod(java.lang.reflect.Method, Object)
+
+  public static transient Object invokeMethod(java.lang.reflect.Method, Object, Object[]):
+    catch java.lang.Exception -> E0
+    |               ALOAD_0     // Ljava/lang/reflect/Method; method   (line 186)
+    |               ALOAD_1     // Ljava/lang/Object; target
+    |               ALOAD_2     // [Ljava/lang/Object; args
+    |               INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    catch java.lang.Exception -> E0
+                    ARETURN
+                E0: ASTORE_3   (line 188)
+                    ALOAD_3     // Ljava/lang/Exception; ex   (line 189)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    NEW java.lang.IllegalStateException   (line 191)
+                    DUP
+                    LDC "Should never get here"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public static transient Object invokeMethod(java.lang.reflect.Method, Object, Object[])
+
+  public static Object invokeJdbcMethod(java.lang.reflect.Method, Object) throws java.sql.SQLException:
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 204)
+                    ALOAD_1     // Ljava/lang/Object; target
+                    ICONST_0
+                    ANEWARRAY java.lang.Object
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.invokeJdbcMethod (Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public static Object invokeJdbcMethod(java.lang.reflect.Method, Object) throws java.sql.SQLException
+
+  public static transient Object invokeJdbcMethod(java.lang.reflect.Method, Object, Object[]) throws java.sql.SQLException:
+    catch java.lang.reflect.InvocationTargetException -> E1
+    | catch java.lang.IllegalAccessException -> E0
+    | |             ALOAD_0     // Ljava/lang/reflect/Method; method   (line 219)
+    | |             ALOAD_1     // Ljava/lang/Object; target
+    | |             ALOAD_2     // [Ljava/lang/Object; args
+    | |             INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    | catch java.lang.IllegalAccessException -> E0
+    catch java.lang.reflect.InvocationTargetException -> E1
+                    ARETURN
+                E0: ASTORE_3   (line 221)
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex   (line 222)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    GOTO L1
+                E1: ASTORE_3   (line 224)
+                    ALOAD_3     // Ljava/lang/reflect/InvocationTargetException; ex   (line 225)
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INSTANCEOF java.sql.SQLException
+                    IFEQ L0
+                    ALOAD_3     // Ljava/lang/reflect/InvocationTargetException; ex   (line 226)
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    CHECKCAST java.sql.SQLException
+                    ATHROW
+                L0: ALOAD_3     // Ljava/lang/reflect/InvocationTargetException; ex   (line 228)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleInvocationTargetException (Ljava/lang/reflect/InvocationTargetException;)V
+                L1: NEW java.lang.IllegalStateException   (line 230)
+                    DUP
+                    LDC "Should never get here"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public static transient Object invokeJdbcMethod(java.lang.reflect.Method, Object, Object[]) throws java.sql.SQLException
+
+  public static void handleReflectionException(Exception):
+                    ALOAD_0     // Ljava/lang/Exception; ex   (line 242)
+                    INSTANCEOF java.lang.NoSuchMethodException
+                    IFEQ L0
+                    NEW java.lang.IllegalStateException   (line 243)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Method not found: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Exception; ex
+                    INVOKEVIRTUAL java.lang.Exception.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Ljava/lang/Exception; ex   (line 245)
+                    INSTANCEOF java.lang.IllegalAccessException
+                    IFEQ L1
+                    NEW java.lang.IllegalStateException   (line 246)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not access method: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Exception; ex
+                    INVOKEVIRTUAL java.lang.Exception.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Exception; ex   (line 248)
+                    INSTANCEOF java.lang.reflect.InvocationTargetException
+                    IFEQ L2
+                    ALOAD_0     // Ljava/lang/Exception; ex   (line 249)
+                    CHECKCAST java.lang.reflect.InvocationTargetException
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleInvocationTargetException (Ljava/lang/reflect/InvocationTargetException;)V
+                L2: ALOAD_0     // Ljava/lang/Exception; ex   (line 251)
+                    INSTANCEOF java.lang.RuntimeException
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/Exception; ex   (line 252)
+                    CHECKCAST java.lang.RuntimeException
+                    ATHROW
+                L3: ALOAD_0     // Ljava/lang/Exception; ex   (line 254)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleUnexpectedException (Ljava/lang/Throwable;)V
+                    RETURN   (line 255)
+  end public static void handleReflectionException(Exception)
+
+  public static void handleInvocationTargetException(java.lang.reflect.InvocationTargetException):
+                    ALOAD_0     // Ljava/lang/reflect/InvocationTargetException; ex   (line 265)
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.rethrowRuntimeException (Ljava/lang/Throwable;)V
+                    RETURN   (line 266)
+  end public static void handleInvocationTargetException(java.lang.reflect.InvocationTargetException)
+
+  public static void rethrowRuntimeException(Throwable):
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 280)
+                    INSTANCEOF java.lang.RuntimeException
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 281)
+                    CHECKCAST java.lang.RuntimeException
+                    ATHROW
+                L0: ALOAD_0     // Ljava/lang/Throwable; ex   (line 283)
+                    INSTANCEOF java.lang.Error
+                    IFEQ L1
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 284)
+                    CHECKCAST java.lang.Error
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Throwable; ex   (line 286)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleUnexpectedException (Ljava/lang/Throwable;)V
+                    RETURN   (line 287)
+  end public static void rethrowRuntimeException(Throwable)
+
+  public static void rethrowException(Throwable) throws java.lang.Exception:
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 301)
+                    INSTANCEOF java.lang.Exception
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 302)
+                    CHECKCAST java.lang.Exception
+                    ATHROW
+                L0: ALOAD_0     // Ljava/lang/Throwable; ex   (line 304)
+                    INSTANCEOF java.lang.Error
+                    IFEQ L1
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 305)
+                    CHECKCAST java.lang.Error
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Throwable; ex   (line 307)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleUnexpectedException (Ljava/lang/Throwable;)V
+                    RETURN   (line 308)
+  end public static void rethrowException(Throwable) throws java.lang.Exception
+
+  private static void handleUnexpectedException(Throwable):
+                    NEW java.lang.IllegalStateException   (line 315)
+                    DUP
+                    LDC "Unexpected exception thrown"
+                    ALOAD_0     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+  end private static void handleUnexpectedException(Throwable)
+
+  public static boolean declaresException(java.lang.reflect.Method, Class):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 328)
+                    LDC "Method must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 329)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getExceptionTypes ()[Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/Class; declaredExceptions   (line 330)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Class; declaredException   (line 331)
+                    ALOAD_1     // Ljava/lang/Class; exceptionType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L1
+                    ICONST_1   (line 332)
+                    IRETURN
+                L1: IINC 4 1   (line 330)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ICONST_0   (line 335)
+                    IRETURN
+  end public static boolean declaresException(java.lang.reflect.Method, Class)
+
+  public static boolean isPublicStaticFinal(java.lang.reflect.Field):
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 343)
+                    INVOKEVIRTUAL java.lang.reflect.Field.getModifiers ()I
+                    ISTORE_1
+                    ILOAD_1     // I modifiers   (line 344)
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ILOAD_1     // I modifiers
+                    INVOKESTATIC java.lang.reflect.Modifier.isStatic (I)Z
+                    IFEQ L0
+                    ILOAD_1     // I modifiers
+                    INVOKESTATIC java.lang.reflect.Modifier.isFinal (I)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isPublicStaticFinal(java.lang.reflect.Field)
+
+  public static boolean isEqualsMethod(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 352)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    LDC_W "equals"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                L0: ICONST_0   (line 353)
+                    IRETURN
+                L1: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 355)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // [Ljava/lang/Class; paramTypes   (line 356)
+                    ARRAYLENGTH
+                    ICONST_1
+                    IF_ICMPNE L2
+                    ALOAD_1     // [Ljava/lang/Class; paramTypes
+                    ICONST_0
+                    AALOAD
+                    LDC java.lang.Object
+                    IF_ACMPNE L2
+                    ICONST_1
+                    IRETURN
+                L2: ICONST_0
+                    IRETURN
+  end public static boolean isEqualsMethod(java.lang.reflect.Method)
+
+  public static boolean isHashCodeMethod(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 364)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    LDC_W "hashCode"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ARRAYLENGTH
+                    IFNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isHashCodeMethod(java.lang.reflect.Method)
+
+  public static boolean isToStringMethod(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 372)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    LDC_W "toString"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ARRAYLENGTH
+                    IFNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isToStringMethod(java.lang.reflect.Method)
+
+  public static void makeAccessible(java.lang.reflect.Field):
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 384)
+                    INVOKEVIRTUAL java.lang.reflect.Field.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 385)
+                    INVOKEVIRTUAL java.lang.reflect.Field.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isFinal (I)Z
+                    IFEQ L1
+                L0: ALOAD_0     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.isAccessible ()Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 386)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.reflect.Field.setAccessible (Z)V
+                L1: RETURN   (line 388)
+  end public static void makeAccessible(java.lang.reflect.Field)
+
+  public static void makeAccessible(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 399)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFNE L1
+                L0: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 400)
+                    INVOKEVIRTUAL java.lang.reflect.Method.isAccessible ()Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 401)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.reflect.Method.setAccessible (Z)V
+                L1: RETURN   (line 403)
+  end public static void makeAccessible(java.lang.reflect.Method)
+
+  public static void makeAccessible(java.lang.reflect.Constructor):
+                    ALOAD_0     // Ljava/lang/reflect/Constructor; ctor   (line 414)
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Constructor; ctor
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFNE L1
+                L0: ALOAD_0     // Ljava/lang/reflect/Constructor; ctor   (line 415)
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.isAccessible ()Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Constructor; ctor   (line 416)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.setAccessible (Z)V
+                L1: RETURN   (line 418)
+  end public static void makeAccessible(java.lang.reflect.Constructor)
+
+  public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 430)
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;Lorg/springframework/util/ReflectionUtils$MethodFilter;)V
+                    RETURN   (line 431)
+  end public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback) throws java.lang.IllegalArgumentException
+
+  public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback, org.springframework.util.ReflectionUtils$MethodFilter) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 446)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/reflect/Method; methods   (line 447)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L3
+                L0: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf   (line 448)
+                    IFNULL L1
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf
+                    ALOAD 4     // Ljava/lang/reflect/Method; method
+                    INVOKEINTERFACE org.springframework.util.ReflectionUtils$MethodFilter.matches (Ljava/lang/reflect/Method;)Z
+                    IFNE L1
+                    GOTO L2   (line 449)
+    catch java.lang.IllegalAccessException -> E0
+    |           L1: ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc   (line 452)
+    |               ALOAD 4     // Ljava/lang/reflect/Method; method
+    |               INVOKEINTERFACE org.springframework.util.ReflectionUtils$MethodCallback.doWith (Ljava/lang/reflect/Method;)V
+    catch java.lang.IllegalAccessException -> E0
+                    GOTO L2
+                E0: ASTORE 8   (line 454)
+                    NEW java.lang.IllegalStateException   (line 455)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Shouldn't be illegal to access method '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "': "   (line 456)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 8     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 455)
+                    ATHROW
+                L2: IINC 5 1   (line 447)
+                L3: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 459)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    IFNULL L4
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 460)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;Lorg/springframework/util/ReflectionUtils$MethodFilter;)V
+                    GOTO L7
+                L4: ALOAD_0     // Ljava/lang/Class; clazz   (line 462)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFEQ L7
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 463)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L6
+                L5: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; superIfc   (line 464)
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;Lorg/springframework/util/ReflectionUtils$MethodFilter;)V
+                    IINC 5 1   (line 463)
+                L6: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L5
+                L7: RETURN   (line 467)
+  end public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback, org.springframework.util.ReflectionUtils$MethodFilter) throws java.lang.IllegalArgumentException
+
+  public static java.lang.reflect.Method[] getAllDeclaredMethods(Class) throws java.lang.IllegalArgumentException:
+                    NEW java.util.ArrayList   (line 474)
+                    DUP
+                    BIPUSH 32
+                    INVOKESPECIAL java.util.ArrayList.<init> (I)V
+                    ASTORE_1
+                    ALOAD_0     // Ljava/lang/Class; leafClass   (line 475)
+                    NEW org.springframework.util.ReflectionUtils$4
+                    DUP
+                    ALOAD_1     // Ljava/util/List; methods
+                    INVOKESPECIAL org.springframework.util.ReflectionUtils$4.<init> (Ljava/util/List;)V
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;)V
+                    ALOAD_1     // Ljava/util/List; methods   (line 480)
+                    ALOAD_1     // Ljava/util/List; methods
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY java.lang.reflect.Method
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.reflect.Method;
+                    ARETURN
+  end public static java.lang.reflect.Method[] getAllDeclaredMethods(Class) throws java.lang.IllegalArgumentException
+
+  public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 490)
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$FieldCallback; fc
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithFields (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$FieldCallback;Lorg/springframework/util/ReflectionUtils$FieldFilter;)V
+                    RETURN   (line 491)
+  end public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback) throws java.lang.IllegalArgumentException
+
+  public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback, org.springframework.util.ReflectionUtils$FieldFilter) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 504)
+                    ASTORE_3
+                L0: ALOAD_3     // Ljava/lang/Class; targetClass   (line 506)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredFields ()[Ljava/lang/reflect/Field;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/lang/reflect/Field; fields   (line 507)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L4
+                L1: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$FieldFilter; ff   (line 509)
+                    IFNULL L2
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$FieldFilter; ff
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEINTERFACE org.springframework.util.ReflectionUtils$FieldFilter.matches (Ljava/lang/reflect/Field;)Z
+                    IFNE L2
+                    GOTO L3   (line 510)
+    catch java.lang.IllegalAccessException -> E0
+    |           L2: ALOAD_1     // Lorg/springframework/util/ReflectionUtils$FieldCallback; fc   (line 513)
+    |               ALOAD 5     // Ljava/lang/reflect/Field; field
+    |               INVOKEINTERFACE org.springframework.util.ReflectionUtils$FieldCallback.doWith (Ljava/lang/reflect/Field;)V
+    catch java.lang.IllegalAccessException -> E0
+                    GOTO L3
+                E0: ASTORE 9   (line 515)
+                    NEW java.lang.IllegalStateException   (line 516)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 517)
+                    DUP
+                    LDC_W "Shouldn't be illegal to access field '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "': "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 9     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 516)
+                    ATHROW
+                L3: IINC 6 1   (line 507)
+                L4: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L1
+                    ALOAD_3     // Ljava/lang/Class; targetClass   (line 520)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_3     // Ljava/lang/Class; targetClass
+                    ALOAD_3     // Ljava/lang/Class; targetClass   (line 522)
+                    IFNULL L5
+                    ALOAD_3     // Ljava/lang/Class; targetClass
+                    LDC java.lang.Object
+                    IF_ACMPNE L0
+                L5: RETURN   (line 523)
+  end public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback, org.springframework.util.ReflectionUtils$FieldFilter) throws java.lang.IllegalArgumentException
+
+  public static void shallowCopyFieldState(Object, Object) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Object; src   (line 532)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalArgumentException   (line 533)
+                    DUP
+                    LDC_W "Source for field copy cannot be null"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_1     // Ljava/lang/Object; dest   (line 535)
+                    IFNONNULL L1
+                    NEW java.lang.IllegalArgumentException   (line 536)
+                    DUP
+                    LDC_W "Destination for field copy cannot be null"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Object; src   (line 538)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/Object; dest
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L2
+                    NEW java.lang.IllegalArgumentException   (line 539)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Destination class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; dest
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] must be same or subclass as source class ["   (line 540)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Ljava/lang/Object; src
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 539)
+                    ATHROW
+                L2: ALOAD_0     // Ljava/lang/Object; src   (line 542)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    NEW org.springframework.util.ReflectionUtils$5
+                    DUP
+                    ALOAD_0     // Ljava/lang/Object; src
+                    ALOAD_1     // Ljava/lang/Object; dest
+                    INVOKESPECIAL org.springframework.util.ReflectionUtils$5.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    GETSTATIC org.springframework.util.ReflectionUtils.COPYABLE_FIELDS Lorg/springframework/util/ReflectionUtils$FieldFilter;   (line 548)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithFields (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$FieldCallback;Lorg/springframework/util/ReflectionUtils$FieldFilter;)V   (line 542)
+                    RETURN   (line 549)
+  end public static void shallowCopyFieldState(Object, Object) throws java.lang.IllegalArgumentException
+end public abstract class org.springframework.util.ReflectionUtils
+ -- (ClassFormatException) File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:402)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:467)
+	at org.aspectj.weaver.World.resolve(World.java:308)
+	at org.aspectj.weaver.World.resolve(World.java:218)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:268)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:201)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:183)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.Constants.<init>(Constants.java:66)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.<clinit>(XmlBeanDefinitionReader.java:100)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:82)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public abstract class org.springframework.util.ReflectionUtils extends java.lang.Object:
+  public static org.springframework.util.ReflectionUtils$FieldFilter COPYABLE_FIELDS
+  public static org.springframework.util.ReflectionUtils$MethodFilter NON_BRIDGED_METHODS
+  public static org.springframework.util.ReflectionUtils$MethodFilter USER_DECLARED_METHODS
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.ReflectionUtils.<clinit>())
+    |               NEW org.springframework.util.ReflectionUtils$1   (line 607)
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.ReflectionUtils$1.<init> ()V
+    |               PUTSTATIC org.springframework.util.ReflectionUtils.COPYABLE_FIELDS Lorg/springframework/util/ReflectionUtils$FieldFilter;
+    |               NEW org.springframework.util.ReflectionUtils$2   (line 618)
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.ReflectionUtils$2.<init> ()V
+    |               PUTSTATIC org.springframework.util.ReflectionUtils.NON_BRIDGED_METHODS Lorg/springframework/util/ReflectionUtils$MethodFilter;
+    |               NEW org.springframework.util.ReflectionUtils$3   (line 630)
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.ReflectionUtils$3.<init> ()V
+    |               PUTSTATIC org.springframework.util.ReflectionUtils.USER_DECLARED_METHODS Lorg/springframework/util/ReflectionUtils$MethodFilter;
+    |               RETURN   (line 42)
+    staticinitialization(void org.springframework.util.ReflectionUtils.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/ReflectionUtils; this   (line 42)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.ReflectionUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.ReflectionUtils.<init>())
+  end public void <init>()
+
+  public static java.lang.reflect.Field findField(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 52)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.findField (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Field;
+                    ARETURN
+  end public static java.lang.reflect.Field findField(Class, String)
+
+  public static java.lang.reflect.Field findField(Class, String, Class):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 65)
+                    LDC "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name   (line 66)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/Class; type
+                    IFNONNULL L0
+                    ICONST_0
+                    GOTO L1
+                L0: ICONST_1
+                L1: LDC "Either name or type of the field must be specified"
+                    INVOKESTATIC org.springframework.util.Assert.isTrue (ZLjava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 67)
+                    ASTORE_3
+                    GOTO L8   (line 68)
+                L2: ALOAD_3     // Ljava/lang/Class; searchType   (line 69)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredFields ()[Ljava/lang/reflect/Field;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/lang/reflect/Field; fields   (line 70)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L7
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_1     // Ljava/lang/String; name   (line 71)
+                    IFNULL L4
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L6
+                L4: ALOAD_2     // Ljava/lang/Class; type
+                    IFNULL L5
+                    ALOAD_2     // Ljava/lang/Class; type
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getType ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L6
+                L5: ALOAD 5     // Ljava/lang/reflect/Field; field   (line 72)
+                    ARETURN
+                L6: IINC 6 1   (line 70)
+                L7: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    ALOAD_3     // Ljava/lang/Class; searchType   (line 75)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_3     // Ljava/lang/Class; searchType
+                L8: LDC java.lang.Object   (line 68)
+                    ALOAD_3     // Ljava/lang/Class; searchType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFNE L9
+                    ALOAD_3     // Ljava/lang/Class; searchType
+                    IFNONNULL L2
+                L9: ACONST_NULL   (line 77)
+                    ARETURN
+  end public static java.lang.reflect.Field findField(Class, String, Class)
+
+  public static void setField(java.lang.reflect.Field, Object, Object):
+    catch java.lang.IllegalAccessException -> E0
+    |               ALOAD_0     // Ljava/lang/reflect/Field; field   (line 92)
+    |               ALOAD_1     // Ljava/lang/Object; target
+    |               ALOAD_2     // Ljava/lang/Object; value
+    |               INVOKEVIRTUAL java.lang.reflect.Field.set (Ljava/lang/Object;Ljava/lang/Object;)V
+    catch java.lang.IllegalAccessException -> E0
+                    GOTO L0
+                E0: ASTORE_3   (line 94)
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex   (line 95)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    NEW java.lang.IllegalStateException   (line 96)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Unexpected reflection exception - "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex   (line 97)
+                    INVOKEVIRTUAL java.lang.IllegalAccessException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 96)
+                    ATHROW
+                L0: RETURN   (line 99)
+  end public static void setField(java.lang.reflect.Field, Object, Object)
+
+  public static Object getField(java.lang.reflect.Field, Object):
+    catch java.lang.IllegalAccessException -> E0
+    |               ALOAD_0     // Ljava/lang/reflect/Field; field   (line 113)
+    |               ALOAD_1     // Ljava/lang/Object; target
+    |               INVOKEVIRTUAL java.lang.reflect.Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+    catch java.lang.IllegalAccessException -> E0
+                    ARETURN
+                E0: ASTORE_2   (line 115)
+                    ALOAD_2     // Ljava/lang/IllegalAccessException; ex   (line 116)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    NEW java.lang.IllegalStateException   (line 117)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 118)
+                    DUP
+                    LDC "Unexpected reflection exception - "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.IllegalAccessException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 117)
+                    ATHROW
+  end public static Object getField(java.lang.reflect.Field, Object)
+
+  public static java.lang.reflect.Method findMethod(Class, String):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 131)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ICONST_0
+                    ANEWARRAY java.lang.Class
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.findMethod (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+                    ARETURN
+  end public static java.lang.reflect.Method findMethod(Class, String)
+
+  public static transient java.lang.reflect.Method findMethod(Class, String, Class[]):
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 145)
+                    LDC "Class must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; name   (line 146)
+                    LDC "Method name must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 147)
+                    ASTORE_3
+                    GOTO L7   (line 148)
+                L0: ALOAD_3     // Ljava/lang/Class; searchType   (line 149)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFEQ L1
+                    ALOAD_3     // Ljava/lang/Class; searchType
+                    INVOKEVIRTUAL java.lang.Class.getMethods ()[Ljava/lang/reflect/Method;
+                    GOTO L2
+                L1: ALOAD_3     // Ljava/lang/Class; searchType
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                L2: ASTORE 4
+                    ALOAD 4     // [Ljava/lang/reflect/Method; methods   (line 150)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L6
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_1     // Ljava/lang/String; name   (line 151)
+                    ALOAD 5     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L5
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes   (line 152)
+                    IFNULL L4
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes
+                    ALOAD 5     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    INVOKESTATIC java.util.Arrays.equals ([Ljava/lang/Object;[Ljava/lang/Object;)Z
+                    IFEQ L5
+                L4: ALOAD 5     // Ljava/lang/reflect/Method; method   (line 153)
+                    ARETURN
+                L5: IINC 6 1   (line 150)
+                L6: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    ALOAD_3     // Ljava/lang/Class; searchType   (line 156)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_3     // Ljava/lang/Class; searchType
+                L7: ALOAD_3     // Ljava/lang/Class; searchType   (line 148)
+                    IFNONNULL L0
+                    ACONST_NULL   (line 158)
+                    ARETURN
+  end public static transient java.lang.reflect.Method findMethod(Class, String, Class[])
+
+  public static Object invokeMethod(java.lang.reflect.Method, Object):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 171)
+                    ALOAD_1     // Ljava/lang/Object; target
+                    ICONST_0
+                    ANEWARRAY java.lang.Object
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.invokeMethod (Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public static Object invokeMethod(java.lang.reflect.Method, Object)
+
+  public static transient Object invokeMethod(java.lang.reflect.Method, Object, Object[]):
+    catch java.lang.Exception -> E0
+    |               ALOAD_0     // Ljava/lang/reflect/Method; method   (line 186)
+    |               ALOAD_1     // Ljava/lang/Object; target
+    |               ALOAD_2     // [Ljava/lang/Object; args
+    |               INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    catch java.lang.Exception -> E0
+                    ARETURN
+                E0: ASTORE_3   (line 188)
+                    ALOAD_3     // Ljava/lang/Exception; ex   (line 189)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    NEW java.lang.IllegalStateException   (line 191)
+                    DUP
+                    LDC "Should never get here"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public static transient Object invokeMethod(java.lang.reflect.Method, Object, Object[])
+
+  public static Object invokeJdbcMethod(java.lang.reflect.Method, Object) throws java.sql.SQLException:
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 204)
+                    ALOAD_1     // Ljava/lang/Object; target
+                    ICONST_0
+                    ANEWARRAY java.lang.Object
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.invokeJdbcMethod (Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public static Object invokeJdbcMethod(java.lang.reflect.Method, Object) throws java.sql.SQLException
+
+  public static transient Object invokeJdbcMethod(java.lang.reflect.Method, Object, Object[]) throws java.sql.SQLException:
+    catch java.lang.reflect.InvocationTargetException -> E1
+    | catch java.lang.IllegalAccessException -> E0
+    | |             ALOAD_0     // Ljava/lang/reflect/Method; method   (line 219)
+    | |             ALOAD_1     // Ljava/lang/Object; target
+    | |             ALOAD_2     // [Ljava/lang/Object; args
+    | |             INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    | catch java.lang.IllegalAccessException -> E0
+    catch java.lang.reflect.InvocationTargetException -> E1
+                    ARETURN
+                E0: ASTORE_3   (line 221)
+                    ALOAD_3     // Ljava/lang/IllegalAccessException; ex   (line 222)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleReflectionException (Ljava/lang/Exception;)V
+                    GOTO L1
+                E1: ASTORE_3   (line 224)
+                    ALOAD_3     // Ljava/lang/reflect/InvocationTargetException; ex   (line 225)
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INSTANCEOF java.sql.SQLException
+                    IFEQ L0
+                    ALOAD_3     // Ljava/lang/reflect/InvocationTargetException; ex   (line 226)
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    CHECKCAST java.sql.SQLException
+                    ATHROW
+                L0: ALOAD_3     // Ljava/lang/reflect/InvocationTargetException; ex   (line 228)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleInvocationTargetException (Ljava/lang/reflect/InvocationTargetException;)V
+                L1: NEW java.lang.IllegalStateException   (line 230)
+                    DUP
+                    LDC "Should never get here"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public static transient Object invokeJdbcMethod(java.lang.reflect.Method, Object, Object[]) throws java.sql.SQLException
+
+  public static void handleReflectionException(Exception):
+                    ALOAD_0     // Ljava/lang/Exception; ex   (line 242)
+                    INSTANCEOF java.lang.NoSuchMethodException
+                    IFEQ L0
+                    NEW java.lang.IllegalStateException   (line 243)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Method not found: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Exception; ex
+                    INVOKEVIRTUAL java.lang.Exception.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Ljava/lang/Exception; ex   (line 245)
+                    INSTANCEOF java.lang.IllegalAccessException
+                    IFEQ L1
+                    NEW java.lang.IllegalStateException   (line 246)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not access method: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Exception; ex
+                    INVOKEVIRTUAL java.lang.Exception.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Exception; ex   (line 248)
+                    INSTANCEOF java.lang.reflect.InvocationTargetException
+                    IFEQ L2
+                    ALOAD_0     // Ljava/lang/Exception; ex   (line 249)
+                    CHECKCAST java.lang.reflect.InvocationTargetException
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleInvocationTargetException (Ljava/lang/reflect/InvocationTargetException;)V
+                L2: ALOAD_0     // Ljava/lang/Exception; ex   (line 251)
+                    INSTANCEOF java.lang.RuntimeException
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/Exception; ex   (line 252)
+                    CHECKCAST java.lang.RuntimeException
+                    ATHROW
+                L3: ALOAD_0     // Ljava/lang/Exception; ex   (line 254)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleUnexpectedException (Ljava/lang/Throwable;)V
+                    RETURN   (line 255)
+  end public static void handleReflectionException(Exception)
+
+  public static void handleInvocationTargetException(java.lang.reflect.InvocationTargetException):
+                    ALOAD_0     // Ljava/lang/reflect/InvocationTargetException; ex   (line 265)
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.rethrowRuntimeException (Ljava/lang/Throwable;)V
+                    RETURN   (line 266)
+  end public static void handleInvocationTargetException(java.lang.reflect.InvocationTargetException)
+
+  public static void rethrowRuntimeException(Throwable):
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 280)
+                    INSTANCEOF java.lang.RuntimeException
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 281)
+                    CHECKCAST java.lang.RuntimeException
+                    ATHROW
+                L0: ALOAD_0     // Ljava/lang/Throwable; ex   (line 283)
+                    INSTANCEOF java.lang.Error
+                    IFEQ L1
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 284)
+                    CHECKCAST java.lang.Error
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Throwable; ex   (line 286)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleUnexpectedException (Ljava/lang/Throwable;)V
+                    RETURN   (line 287)
+  end public static void rethrowRuntimeException(Throwable)
+
+  public static void rethrowException(Throwable) throws java.lang.Exception:
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 301)
+                    INSTANCEOF java.lang.Exception
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 302)
+                    CHECKCAST java.lang.Exception
+                    ATHROW
+                L0: ALOAD_0     // Ljava/lang/Throwable; ex   (line 304)
+                    INSTANCEOF java.lang.Error
+                    IFEQ L1
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 305)
+                    CHECKCAST java.lang.Error
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Throwable; ex   (line 307)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.handleUnexpectedException (Ljava/lang/Throwable;)V
+                    RETURN   (line 308)
+  end public static void rethrowException(Throwable) throws java.lang.Exception
+
+  private static void handleUnexpectedException(Throwable):
+                    NEW java.lang.IllegalStateException   (line 315)
+                    DUP
+                    LDC "Unexpected exception thrown"
+                    ALOAD_0     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+  end private static void handleUnexpectedException(Throwable)
+
+  public static boolean declaresException(java.lang.reflect.Method, Class):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 328)
+                    LDC "Method must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 329)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getExceptionTypes ()[Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/Class; declaredExceptions   (line 330)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L0: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Class; declaredException   (line 331)
+                    ALOAD_1     // Ljava/lang/Class; exceptionType
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L1
+                    ICONST_1   (line 332)
+                    IRETURN
+                L1: IINC 4 1   (line 330)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L0
+                    ICONST_0   (line 335)
+                    IRETURN
+  end public static boolean declaresException(java.lang.reflect.Method, Class)
+
+  public static boolean isPublicStaticFinal(java.lang.reflect.Field):
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 343)
+                    INVOKEVIRTUAL java.lang.reflect.Field.getModifiers ()I
+                    ISTORE_1
+                    ILOAD_1     // I modifiers   (line 344)
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ILOAD_1     // I modifiers
+                    INVOKESTATIC java.lang.reflect.Modifier.isStatic (I)Z
+                    IFEQ L0
+                    ILOAD_1     // I modifiers
+                    INVOKESTATIC java.lang.reflect.Modifier.isFinal (I)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isPublicStaticFinal(java.lang.reflect.Field)
+
+  public static boolean isEqualsMethod(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 352)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    LDC_W "equals"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                L0: ICONST_0   (line 353)
+                    IRETURN
+                L1: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 355)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_1     // [Ljava/lang/Class; paramTypes   (line 356)
+                    ARRAYLENGTH
+                    ICONST_1
+                    IF_ICMPNE L2
+                    ALOAD_1     // [Ljava/lang/Class; paramTypes
+                    ICONST_0
+                    AALOAD
+                    LDC java.lang.Object
+                    IF_ACMPNE L2
+                    ICONST_1
+                    IRETURN
+                L2: ICONST_0
+                    IRETURN
+  end public static boolean isEqualsMethod(java.lang.reflect.Method)
+
+  public static boolean isHashCodeMethod(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 364)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    LDC_W "hashCode"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ARRAYLENGTH
+                    IFNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isHashCodeMethod(java.lang.reflect.Method)
+
+  public static boolean isToStringMethod(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 372)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    LDC_W "toString"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ARRAYLENGTH
+                    IFNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isToStringMethod(java.lang.reflect.Method)
+
+  public static void makeAccessible(java.lang.reflect.Field):
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 384)
+                    INVOKEVIRTUAL java.lang.reflect.Field.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 385)
+                    INVOKEVIRTUAL java.lang.reflect.Field.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isFinal (I)Z
+                    IFEQ L1
+                L0: ALOAD_0     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.isAccessible ()Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Field; field   (line 386)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.reflect.Field.setAccessible (Z)V
+                L1: RETURN   (line 388)
+  end public static void makeAccessible(java.lang.reflect.Field)
+
+  public static void makeAccessible(java.lang.reflect.Method):
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 399)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFNE L1
+                L0: ALOAD_0     // Ljava/lang/reflect/Method; method   (line 400)
+                    INVOKEVIRTUAL java.lang.reflect.Method.isAccessible ()Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Method; method   (line 401)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.reflect.Method.setAccessible (Z)V
+                L1: RETURN   (line 403)
+  end public static void makeAccessible(java.lang.reflect.Method)
+
+  public static void makeAccessible(java.lang.reflect.Constructor):
+                    ALOAD_0     // Ljava/lang/reflect/Constructor; ctor   (line 414)
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/reflect/Constructor; ctor
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.getDeclaringClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isPublic (I)Z
+                    IFNE L1
+                L0: ALOAD_0     // Ljava/lang/reflect/Constructor; ctor   (line 415)
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.isAccessible ()Z
+                    IFNE L1
+                    ALOAD_0     // Ljava/lang/reflect/Constructor; ctor   (line 416)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.reflect.Constructor.setAccessible (Z)V
+                L1: RETURN   (line 418)
+  end public static void makeAccessible(java.lang.reflect.Constructor)
+
+  public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 430)
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;Lorg/springframework/util/ReflectionUtils$MethodFilter;)V
+                    RETURN   (line 431)
+  end public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback) throws java.lang.IllegalArgumentException
+
+  public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback, org.springframework.util.ReflectionUtils$MethodFilter) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 446)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredMethods ()[Ljava/lang/reflect/Method;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/reflect/Method; methods   (line 447)
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L3
+                L0: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf   (line 448)
+                    IFNULL L1
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf
+                    ALOAD 4     // Ljava/lang/reflect/Method; method
+                    INVOKEINTERFACE org.springframework.util.ReflectionUtils$MethodFilter.matches (Ljava/lang/reflect/Method;)Z
+                    IFNE L1
+                    GOTO L2   (line 449)
+    catch java.lang.IllegalAccessException -> E0
+    |           L1: ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc   (line 452)
+    |               ALOAD 4     // Ljava/lang/reflect/Method; method
+    |               INVOKEINTERFACE org.springframework.util.ReflectionUtils$MethodCallback.doWith (Ljava/lang/reflect/Method;)V
+    catch java.lang.IllegalAccessException -> E0
+                    GOTO L2
+                E0: ASTORE 8   (line 454)
+                    NEW java.lang.IllegalStateException   (line 455)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Shouldn't be illegal to access method '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "': "   (line 456)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 8     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 455)
+                    ATHROW
+                L2: IINC 5 1   (line 447)
+                L3: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L0
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 459)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    IFNULL L4
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 460)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;Lorg/springframework/util/ReflectionUtils$MethodFilter;)V
+                    GOTO L7
+                L4: ALOAD_0     // Ljava/lang/Class; clazz   (line 462)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFEQ L7
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 463)
+                    INVOKEVIRTUAL java.lang.Class.getInterfaces ()[Ljava/lang/Class;
+                    DUP
+                    ASTORE 7
+                    ARRAYLENGTH
+                    ISTORE 6
+                    ICONST_0
+                    ISTORE 5
+                    GOTO L6
+                L5: ALOAD 7
+                    ILOAD 5
+                    AALOAD
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; superIfc   (line 464)
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$MethodCallback; mc
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$MethodFilter; mf
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;Lorg/springframework/util/ReflectionUtils$MethodFilter;)V
+                    IINC 5 1   (line 463)
+                L6: ILOAD 5
+                    ILOAD 6
+                    IF_ICMPLT L5
+                L7: RETURN   (line 467)
+  end public static void doWithMethods(Class, org.springframework.util.ReflectionUtils$MethodCallback, org.springframework.util.ReflectionUtils$MethodFilter) throws java.lang.IllegalArgumentException
+
+  public static java.lang.reflect.Method[] getAllDeclaredMethods(Class) throws java.lang.IllegalArgumentException:
+                    NEW java.util.ArrayList   (line 474)
+                    DUP
+                    BIPUSH 32
+                    INVOKESPECIAL java.util.ArrayList.<init> (I)V
+                    ASTORE_1
+                    ALOAD_0     // Ljava/lang/Class; leafClass   (line 475)
+                    NEW org.springframework.util.ReflectionUtils$4
+                    DUP
+                    ALOAD_1     // Ljava/util/List; methods
+                    INVOKESPECIAL org.springframework.util.ReflectionUtils$4.<init> (Ljava/util/List;)V
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithMethods (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$MethodCallback;)V
+                    ALOAD_1     // Ljava/util/List; methods   (line 480)
+                    ALOAD_1     // Ljava/util/List; methods
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY java.lang.reflect.Method
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.reflect.Method;
+                    ARETURN
+  end public static java.lang.reflect.Method[] getAllDeclaredMethods(Class) throws java.lang.IllegalArgumentException
+
+  public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 490)
+                    ALOAD_1     // Lorg/springframework/util/ReflectionUtils$FieldCallback; fc
+                    ACONST_NULL
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithFields (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$FieldCallback;Lorg/springframework/util/ReflectionUtils$FieldFilter;)V
+                    RETURN   (line 491)
+  end public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback) throws java.lang.IllegalArgumentException
+
+  public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback, org.springframework.util.ReflectionUtils$FieldFilter) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Class; clazz   (line 504)
+                    ASTORE_3
+                L0: ALOAD_3     // Ljava/lang/Class; targetClass   (line 506)
+                    INVOKEVIRTUAL java.lang.Class.getDeclaredFields ()[Ljava/lang/reflect/Field;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/lang/reflect/Field; fields   (line 507)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L4
+                L1: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$FieldFilter; ff   (line 509)
+                    IFNULL L2
+                    ALOAD_2     // Lorg/springframework/util/ReflectionUtils$FieldFilter; ff
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEINTERFACE org.springframework.util.ReflectionUtils$FieldFilter.matches (Ljava/lang/reflect/Field;)Z
+                    IFNE L2
+                    GOTO L3   (line 510)
+    catch java.lang.IllegalAccessException -> E0
+    |           L2: ALOAD_1     // Lorg/springframework/util/ReflectionUtils$FieldCallback; fc   (line 513)
+    |               ALOAD 5     // Ljava/lang/reflect/Field; field
+    |               INVOKEINTERFACE org.springframework.util.ReflectionUtils$FieldCallback.doWith (Ljava/lang/reflect/Field;)V
+    catch java.lang.IllegalAccessException -> E0
+                    GOTO L3
+                E0: ASTORE 9   (line 515)
+                    NEW java.lang.IllegalStateException   (line 516)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 517)
+                    DUP
+                    LDC_W "Shouldn't be illegal to access field '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 5     // Ljava/lang/reflect/Field; field
+                    INVOKEVIRTUAL java.lang.reflect.Field.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "': "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 9     // Ljava/lang/IllegalAccessException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V   (line 516)
+                    ATHROW
+                L3: IINC 6 1   (line 507)
+                L4: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L1
+                    ALOAD_3     // Ljava/lang/Class; targetClass   (line 520)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE_3     // Ljava/lang/Class; targetClass
+                    ALOAD_3     // Ljava/lang/Class; targetClass   (line 522)
+                    IFNULL L5
+                    ALOAD_3     // Ljava/lang/Class; targetClass
+                    LDC java.lang.Object
+                    IF_ACMPNE L0
+                L5: RETURN   (line 523)
+  end public static void doWithFields(Class, org.springframework.util.ReflectionUtils$FieldCallback, org.springframework.util.ReflectionUtils$FieldFilter) throws java.lang.IllegalArgumentException
+
+  public static void shallowCopyFieldState(Object, Object) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Ljava/lang/Object; src   (line 532)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalArgumentException   (line 533)
+                    DUP
+                    LDC_W "Source for field copy cannot be null"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_1     // Ljava/lang/Object; dest   (line 535)
+                    IFNONNULL L1
+                    NEW java.lang.IllegalArgumentException   (line 536)
+                    DUP
+                    LDC_W "Destination for field copy cannot be null"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_0     // Ljava/lang/Object; src   (line 538)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/Object; dest
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L2
+                    NEW java.lang.IllegalArgumentException   (line 539)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Destination class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; dest
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] must be same or subclass as source class ["   (line 540)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Ljava/lang/Object; src
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 539)
+                    ATHROW
+                L2: ALOAD_0     // Ljava/lang/Object; src   (line 542)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    NEW org.springframework.util.ReflectionUtils$5
+                    DUP
+                    ALOAD_0     // Ljava/lang/Object; src
+                    ALOAD_1     // Ljava/lang/Object; dest
+                    INVOKESPECIAL org.springframework.util.ReflectionUtils$5.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    GETSTATIC org.springframework.util.ReflectionUtils.COPYABLE_FIELDS Lorg/springframework/util/ReflectionUtils$FieldFilter;   (line 548)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.doWithFields (Ljava/lang/Class;Lorg/springframework/util/ReflectionUtils$FieldCallback;Lorg/springframework/util/ReflectionUtils$FieldFilter;)V   (line 542)
+                    RETURN   (line 549)
+  end public static void shallowCopyFieldState(Object, Object) throws java.lang.IllegalArgumentException
+end public abstract class org.springframework.util.ReflectionUtils
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.Constants.<init>(Constants.java:66)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.<clinit>(XmlBeanDefinitionReader.java:100)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:82)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

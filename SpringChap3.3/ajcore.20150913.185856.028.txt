@@ -1,0 +1,1503 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185856.028.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.aop.config.ConfigBeanDefinitionParser
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.aop.config.ConfigBeanDefinitionParser
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.aop.config.ConfigBeanDefinitionParser
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.aop.config.ConfigBeanDefinitionParser
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.aop.config.ConfigBeanDefinitionParser
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+ class org.springframework.aop.config.ConfigBeanDefinitionParser extends java.lang.Object implements org.springframework.beans.factory.xml.BeanDefinitionParser:
+  private static final String ASPECT = "aspect"
+  private static final String EXPRESSION = "expression"
+  private static final String ID = "id"
+  private static final String POINTCUT = "pointcut"
+  private static final String ADVICE_BEAN_NAME = "adviceBeanName"
+  private static final String ADVISOR = "advisor"
+  private static final String ADVICE_REF = "advice-ref"
+  private static final String POINTCUT_REF = "pointcut-ref"
+  private static final String REF = "ref"
+  private static final String BEFORE = "before"
+  private static final String DECLARE_PARENTS = "declare-parents"
+  private static final String TYPE_PATTERN = "types-matching"
+  private static final String DEFAULT_IMPL = "default-impl"
+  private static final String DELEGATE_REF = "delegate-ref"
+  private static final String IMPLEMENT_INTERFACE = "implement-interface"
+  private static final String AFTER = "after"
+  private static final String AFTER_RETURNING_ELEMENT = "after-returning"
+  private static final String AFTER_THROWING_ELEMENT = "after-throwing"
+  private static final String AROUND = "around"
+  private static final String RETURNING = "returning"
+  private static final String RETURNING_PROPERTY = "returningName"
+  private static final String THROWING = "throwing"
+  private static final String THROWING_PROPERTY = "throwingName"
+  private static final String ARG_NAMES = "arg-names"
+  private static final String ARG_NAMES_PROPERTY = "argumentNames"
+  private static final String ASPECT_NAME_PROPERTY = "aspectName"
+  private static final String DECLARATION_ORDER_PROPERTY = "declarationOrder"
+  private static final String ORDER_PROPERTY = "order"
+  private static final int METHOD_INDEX = 0
+  private static final int POINTCUT_INDEX = 1
+  private static final int ASPECT_INSTANCE_FACTORY_INDEX = 2
+  private org.springframework.beans.factory.parsing.ParseState parseState
+  void <init>():
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 61)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.aop.config.ConfigBeanDefinitionParser.<init>())
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 95)
+    |               NEW org.springframework.beans.factory.parsing.ParseState
+    |               DUP
+    |               INVOKESPECIAL org.springframework.beans.factory.parsing.ParseState.<init> ()V
+    |               PUTFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+    |               RETURN   (line 61)
+    constructor-execution(void org.springframework.aop.config.ConfigBeanDefinitionParser.<init>())
+  end void <init>()
+
+  public org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    NEW org.springframework.beans.factory.parsing.CompositeComponentDefinition   (line 100)
+                    DUP
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEINTERFACE org.w3c.dom.Element.getTagName ()Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKESPECIAL org.springframework.beans.factory.parsing.CompositeComponentDefinition.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+                    ASTORE_3   (line 99)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 101)
+                    ALOAD_3     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; compositeDef
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.pushContainingComponent (Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition;)V
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 103)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.configureAutoProxyCreator (Lorg/springframework/beans/factory/xml/ParserContext;Lorg/w3c/dom/Element;)V
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 105)
+                    INVOKESTATIC org.springframework.util.xml.DomUtils.getChildElements (Lorg/w3c/dom/Element;)Ljava/util/List;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/util/List; childElts   (line 106)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L3
+                L0: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.w3c.dom.Element
+                    ASTORE 5
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 107)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getDelegate ()Lorg/springframework/beans/factory/xml/BeanDefinitionParserDelegate;
+                    ALOAD 5     // Lorg/w3c/dom/Element; elt
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.getLocalName (Lorg/w3c/dom/Node;)Ljava/lang/String;
+                    ASTORE 7
+                    LDC "pointcut"   (line 108)
+                    ALOAD 7     // Ljava/lang/String; localName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 109)
+                    ALOAD 5     // Lorg/w3c/dom/Element; elt
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parsePointcut (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    POP
+                    GOTO L3
+                L1: LDC "advisor"   (line 111)
+                    ALOAD 7     // Ljava/lang/String; localName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 112)
+                    ALOAD 5     // Lorg/w3c/dom/Element; elt
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parseAdvisor (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)V
+                    GOTO L3
+                L2: LDC "aspect"   (line 114)
+                    ALOAD 7     // Ljava/lang/String; localName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 115)
+                    ALOAD 5     // Lorg/w3c/dom/Element; elt
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parseAspect (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)V
+                L3: ALOAD 6   (line 106)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 119)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.popAndRegisterContainingComponent ()V
+                    ACONST_NULL   (line 120)
+                    ARETURN
+  end public org.springframework.beans.factory.config.BeanDefinition parse(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  private void configureAutoProxyCreator(org.springframework.beans.factory.xml.ParserContext, org.w3c.dom.Element):
+                    ALOAD_1     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 130)
+                    ALOAD_2     // Lorg/w3c/dom/Element; element
+                    INVOKESTATIC org.springframework.aop.config.AopNamespaceUtils.registerAspectJAutoProxyCreatorIfNecessary (Lorg/springframework/beans/factory/xml/ParserContext;Lorg/w3c/dom/Element;)V
+                    RETURN   (line 131)
+  end private void configureAutoProxyCreator(org.springframework.beans.factory.xml.ParserContext, org.w3c.dom.Element)
+
+  private void parseAdvisor(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 139)
+                    ALOAD_1     // Lorg/w3c/dom/Element; advisorElement
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.createAdvisorBeanDefinition (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ASTORE_3
+                    ALOAD_1     // Lorg/w3c/dom/Element; advisorElement   (line 140)
+                    LDC "id"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+    finally -> E0
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 143)
+    |               GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+    |               NEW org.springframework.aop.config.AdvisorEntry
+    |               DUP
+    |               ALOAD 4     // Ljava/lang/String; id
+    |               INVOKESPECIAL org.springframework.aop.config.AdvisorEntry.<init> (Ljava/lang/String;)V
+    |               INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.push (Lorg/springframework/beans/factory/parsing/ParseState$Entry;)V
+    |               ALOAD 4     // Ljava/lang/String; id   (line 144)
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/String; advisorBeanName   (line 145)
+    |               INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+    |               IFEQ L0
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 146)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getRegistry ()Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;
+    |               ALOAD 5     // Ljava/lang/String; advisorBeanName
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; advisorDef
+    |               INVOKEINTERFACE org.springframework.beans.factory.support.BeanDefinitionRegistry.registerBeanDefinition (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)V
+    |               GOTO L1
+    |           L0: ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 149)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; advisorDef
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.registerWithGeneratedName (Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/String;
+    |               ASTORE 5     // Ljava/lang/String; advisorBeanName
+    |           L1: ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 152)
+    |               ALOAD_1     // Lorg/w3c/dom/Element; advisorElement
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parsePointcutProperty (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Ljava/lang/Object;
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/Object; pointcut   (line 153)
+    |               INSTANCEOF org.springframework.beans.factory.config.BeanDefinition
+    |               IFEQ L2
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; advisorDef   (line 154)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+    |               LDC "pointcut"
+    |               ALOAD 6     // Ljava/lang/Object; pointcut
+    |               INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+    |               POP
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 155)
+    |               NEW org.springframework.aop.config.AdvisorComponentDefinition   (line 156)
+    |               DUP
+    |               ALOAD 5     // Ljava/lang/String; advisorBeanName
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; advisorDef
+    |               ALOAD 6     // Ljava/lang/Object; pointcut
+    |               CHECKCAST org.springframework.beans.factory.config.BeanDefinition
+    |               INVOKESPECIAL org.springframework.aop.config.AdvisorComponentDefinition.<init> (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/config/BeanDefinition;)V
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.registerComponent (Lorg/springframework/beans/factory/parsing/ComponentDefinition;)V   (line 155)
+    |               GOTO L3
+    |           L2: ALOAD 6     // Ljava/lang/Object; pointcut   (line 158)
+    |               INSTANCEOF java.lang.String
+    |               IFEQ L3
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; advisorDef   (line 159)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+    |               LDC "pointcut"
+    |               NEW org.springframework.beans.factory.config.RuntimeBeanReference
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/Object; pointcut
+    |               CHECKCAST java.lang.String
+    |               INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanReference.<init> (Ljava/lang/String;)V
+    |               INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+    |               POP
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 160)
+    |               NEW org.springframework.aop.config.AdvisorComponentDefinition   (line 161)
+    |               DUP
+    |               ALOAD 5     // Ljava/lang/String; advisorBeanName
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; advisorDef
+    |               INVOKESPECIAL org.springframework.aop.config.AdvisorComponentDefinition.<init> (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)V
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.registerComponent (Lorg/springframework/beans/factory/parsing/ComponentDefinition;)V   (line 160)
+    |               GOTO L3
+    finally -> E0
+                E0: ASTORE 7   (line 164)
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 165)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    ALOAD 7   (line 166)
+                    ATHROW
+                L3: ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 165)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    RETURN   (line 167)
+  end private void parseAdvisor(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  private org.springframework.beans.factory.support.AbstractBeanDefinition createAdvisorBeanDefinition(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 174)
+                    DUP
+                    LDC_W org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor
+                    INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 175)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; advisorElement
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setSource (Ljava/lang/Object;)V
+                    ALOAD_1     // Lorg/w3c/dom/Element; advisorElement   (line 177)
+                    LDC "advice-ref"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; adviceRef   (line 178)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 179)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    LDC_W "'advice-ref' attribute contains empty value."   (line 180)
+                    ALOAD_1     // Lorg/w3c/dom/Element; advisorElement
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.snapshot ()Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/parsing/ParseState;)V   (line 179)
+                    GOTO L1
+                L0: ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 183)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "adviceBeanName"   (line 184)
+                    NEW org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    DUP
+                    ALOAD 4     // Ljava/lang/String; adviceRef
+                    INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanNameReference.<init> (Ljava/lang/String;)V
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;   (line 183)
+                    POP
+                L1: ALOAD_1     // Lorg/w3c/dom/Element; advisorElement   (line 187)
+                    LDC "order"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 188)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "order"   (line 189)
+                    ALOAD_1     // Lorg/w3c/dom/Element; advisorElement
+                    LDC "order"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;   (line 188)
+                    POP
+                L2: ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 192)
+                    ARETURN
+  end private org.springframework.beans.factory.support.AbstractBeanDefinition createAdvisorBeanDefinition(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  private void parseAspect(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_1     // Lorg/w3c/dom/Element; aspectElement   (line 196)
+                    LDC "id"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_1     // Lorg/w3c/dom/Element; aspectElement   (line 197)
+                    LDC "ref"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 200)
+    |               GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+    |               NEW org.springframework.aop.config.AspectEntry
+    |               DUP
+    |               ALOAD_3     // Ljava/lang/String; aspectId
+    |               ALOAD 4     // Ljava/lang/String; aspectName
+    |               INVOKESPECIAL org.springframework.aop.config.AspectEntry.<init> (Ljava/lang/String;Ljava/lang/String;)V
+    |               INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.push (Lorg/springframework/beans/factory/parsing/ParseState$Entry;)V
+    |               NEW java.util.ArrayList   (line 201)
+    |               DUP
+    |               INVOKESPECIAL java.util.ArrayList.<init> ()V
+    |               ASTORE 5
+    |               NEW java.util.ArrayList   (line 202)
+    |               DUP
+    |               INVOKESPECIAL java.util.ArrayList.<init> ()V
+    |               ASTORE 6
+    |               ALOAD_1     // Lorg/w3c/dom/Element; aspectElement   (line 204)
+    |               LDC "declare-parents"
+    |               INVOKESTATIC org.springframework.util.xml.DomUtils.getChildElementsByTagName (Lorg/w3c/dom/Element;Ljava/lang/String;)Ljava/util/List;
+    |               ASTORE 7
+    |               ICONST_0   (line 205)
+    |               ISTORE 8
+    |               GOTO L1
+    |           L0: ALOAD 7     // Ljava/util/List; declareParents   (line 206)
+    |               ILOAD 8     // I i
+    |               INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+    |               CHECKCAST org.w3c.dom.Element
+    |               ASTORE 9
+    |               ALOAD 5     // Ljava/util/List; beanDefinitions   (line 207)
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+    |               ALOAD 9     // Lorg/w3c/dom/Element; declareParentsElement
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parseDeclareParents (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |               IINC 8 1     // I i   (line 205)
+    |           L1: ILOAD 8     // I i
+    |               ALOAD 7     // Ljava/util/List; declareParents
+    |               INVOKEINTERFACE java.util.List.size ()I
+    |               IF_ICMPLT L0
+    |               ALOAD_1     // Lorg/w3c/dom/Element; aspectElement   (line 212)
+    |               INVOKEINTERFACE org.w3c.dom.Element.getChildNodes ()Lorg/w3c/dom/NodeList;
+    |               ASTORE 8
+    |               ICONST_0   (line 213)
+    |               ISTORE 9
+    |               ICONST_0   (line 214)
+    |               ISTORE 10
+    |               GOTO L6
+    |           L2: ALOAD 8     // Lorg/w3c/dom/NodeList; nodeList   (line 215)
+    |               ILOAD 10     // I i
+    |               INVOKEINTERFACE org.w3c.dom.NodeList.item (I)Lorg/w3c/dom/Node;
+    |               ASTORE 11
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 216)
+    |               ALOAD 11     // Lorg/w3c/dom/Node; node
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.isAdviceNode (Lorg/w3c/dom/Node;Lorg/springframework/beans/factory/xml/ParserContext;)Z
+    |               IFEQ L5
+    |               ILOAD 9     // Z adviceFoundAlready   (line 217)
+    |               IFNE L4
+    |               ICONST_1   (line 218)
+    |               ISTORE 9     // Z adviceFoundAlready
+    |               ALOAD 4     // Ljava/lang/String; aspectName   (line 219)
+    |               INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+    |               IFNE L3
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 220)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+    |               LDC_W "<aspect> tag needs aspect bean reference via 'ref' attribute when declaring advices."   (line 221)
+    |               ALOAD_1     // Lorg/w3c/dom/Element; aspectElement   (line 222)
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+    |               GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.snapshot ()Lorg/springframework/beans/factory/parsing/ParseState;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/parsing/ParseState;)V   (line 220)
+    finally -> E1
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 245)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    RETURN   (line 223)
+    finally -> E1
+    |           L3: ALOAD 6     // Ljava/util/List; beanReferences   (line 225)
+    |               NEW org.springframework.beans.factory.config.RuntimeBeanReference
+    |               DUP
+    |               ALOAD 4     // Ljava/lang/String; aspectName
+    |               INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanReference.<init> (Ljava/lang/String;)V
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L4: ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 227)
+    |               ALOAD 4     // Ljava/lang/String; aspectName   (line 228)
+    |               ILOAD 10     // I i
+    |               ALOAD_1     // Lorg/w3c/dom/Element; aspectElement
+    |               ALOAD 11     // Lorg/w3c/dom/Node; node
+    |               CHECKCAST org.w3c.dom.Element
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               ALOAD 5     // Ljava/util/List; beanDefinitions
+    |               ALOAD 6     // Ljava/util/List; beanReferences
+    |               INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parseAdvice (Ljava/lang/String;ILorg/w3c/dom/Element;Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;Ljava/util/List;Ljava/util/List;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;   (line 227)
+    |               ASTORE 12
+    |               ALOAD 5     // Ljava/util/List; beanDefinitions   (line 229)
+    |               ALOAD 12     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; advisorDefinition
+    |               INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L5: IINC 10 1     // I i   (line 214)
+    |           L6: ILOAD 10     // I i
+    |               ALOAD 8     // Lorg/w3c/dom/NodeList; nodeList
+    |               INVOKEINTERFACE org.w3c.dom.NodeList.getLength ()I
+    |               IF_ICMPLT L2
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 233)
+    |               ALOAD_1     // Lorg/w3c/dom/Element; aspectElement   (line 234)
+    |               ALOAD_3     // Ljava/lang/String; aspectId
+    |               ALOAD 5     // Ljava/util/List; beanDefinitions
+    |               ALOAD 6     // Ljava/util/List; beanReferences
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.createAspectComponentDefinition (Lorg/w3c/dom/Element;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Lorg/springframework/beans/factory/xml/ParserContext;)Lorg/springframework/aop/config/AspectComponentDefinition;   (line 233)
+    |               ASTORE 10
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 235)
+    |               ALOAD 10     // Lorg/springframework/aop/config/AspectComponentDefinition; aspectComponentDefinition
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.pushContainingComponent (Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition;)V
+    |               ALOAD_1     // Lorg/w3c/dom/Element; aspectElement   (line 237)
+    |               LDC "pointcut"
+    |               INVOKESTATIC org.springframework.util.xml.DomUtils.getChildElementsByTagName (Lorg/w3c/dom/Element;Ljava/lang/String;)Ljava/util/List;
+    |               ASTORE 11
+    |               ALOAD 11     // Ljava/util/List; pointcuts   (line 238)
+    |               INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+    |               ASTORE 13
+    |               GOTO L8
+    |           L7: ALOAD 13
+    |               INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+    |               CHECKCAST org.w3c.dom.Element
+    |               ASTORE 12
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 239)
+    |               ALOAD 12     // Lorg/w3c/dom/Element; pointcutElement
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parsePointcut (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+    |               POP
+    |           L8: ALOAD 13   (line 238)
+    |               INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+    |               IFNE L7
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 242)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.popAndRegisterContainingComponent ()V
+    |               GOTO L9
+    finally -> E1
+                E1: ASTORE 14   (line 244)
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 245)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    ALOAD 14   (line 246)
+                    ATHROW
+                L9: ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 245)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    RETURN   (line 247)
+  end private void parseAspect(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  private org.springframework.aop.config.AspectComponentDefinition createAspectComponentDefinition(org.w3c.dom.Element, String, java.util.List, java.util.List, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_3     // Ljava/util/List; beanDefs   (line 253)
+                    ALOAD_3     // Ljava/util/List; beanDefs
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY org.springframework.beans.factory.config.BeanDefinition
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.beans.factory.config.BeanDefinition;
+                    ASTORE 6
+                    ALOAD 4     // Ljava/util/List; beanRefs   (line 254)
+                    ALOAD 4     // Ljava/util/List; beanRefs
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY org.springframework.beans.factory.config.BeanReference
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.beans.factory.config.BeanReference;
+                    ASTORE 7
+                    ALOAD 5     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 255)
+                    ALOAD_1     // Lorg/w3c/dom/Element; aspectElement
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 8
+                    NEW org.springframework.aop.config.AspectComponentDefinition   (line 256)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; aspectId
+                    ALOAD 6     // [Lorg/springframework/beans/factory/config/BeanDefinition; beanDefArray
+                    ALOAD 7     // [Lorg/springframework/beans/factory/config/BeanReference; beanRefArray
+                    ALOAD 8     // Ljava/lang/Object; source
+                    INVOKESPECIAL org.springframework.aop.config.AspectComponentDefinition.<init> (Ljava/lang/String;[Lorg/springframework/beans/factory/config/BeanDefinition;[Lorg/springframework/beans/factory/config/BeanReference;Ljava/lang/Object;)V
+                    ARETURN
+  end private org.springframework.aop.config.AspectComponentDefinition createAspectComponentDefinition(org.w3c.dom.Element, String, java.util.List, java.util.List, org.springframework.beans.factory.xml.ParserContext)
+
+  private boolean isAdviceNode(org.w3c.dom.Node, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_1     // Lorg/w3c/dom/Node; aNode   (line 265)
+                    INSTANCEOF org.w3c.dom.Element
+                    IFNE L0
+                    ICONST_0   (line 266)
+                    IRETURN
+                L0: ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 269)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getDelegate ()Lorg/springframework/beans/factory/xml/BeanDefinitionParserDelegate;
+                    ALOAD_1     // Lorg/w3c/dom/Node; aNode
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.getLocalName (Lorg/w3c/dom/Node;)Ljava/lang/String;
+                    ASTORE_3
+                    LDC "before"   (line 270)
+                    ALOAD_3     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    LDC "after"
+                    ALOAD_3     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    LDC "after-returning"
+                    ALOAD_3     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    LDC "after-throwing"   (line 271)
+                    ALOAD_3     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    LDC "around"
+                    ALOAD_3     // Ljava/lang/String; name
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ICONST_0
+                    IRETURN
+                L1: ICONST_1
+                    IRETURN   (line 270)
+  end private boolean isAdviceNode(org.w3c.dom.Node, org.springframework.beans.factory.xml.ParserContext)
+
+  private org.springframework.beans.factory.support.AbstractBeanDefinition parseDeclareParents(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    LDC_W org.springframework.aop.aspectj.DeclareParentsAdvisor   (line 281)
+                    INVOKESTATIC org.springframework.beans.factory.support.BeanDefinitionBuilder.rootBeanDefinition (Ljava/lang/Class;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 282)
+                    ALOAD_1     // Lorg/w3c/dom/Element; declareParentsElement
+                    LDC "implement-interface"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addConstructorArgValue (Ljava/lang/Object;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 283)
+                    ALOAD_1     // Lorg/w3c/dom/Element; declareParentsElement
+                    LDC "types-matching"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addConstructorArgValue (Ljava/lang/Object;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                    ALOAD_1     // Lorg/w3c/dom/Element; declareParentsElement   (line 285)
+                    LDC "default-impl"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_1     // Lorg/w3c/dom/Element; declareParentsElement   (line 286)
+                    LDC "delegate-ref"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 4     // Ljava/lang/String; defaultImpl   (line 288)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD 5     // Ljava/lang/String; delegateRef
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 289)
+                    ALOAD 4     // Ljava/lang/String; defaultImpl
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addConstructorArgValue (Ljava/lang/Object;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                    GOTO L2
+                L0: ALOAD 5     // Ljava/lang/String; delegateRef   (line 291)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD 4     // Ljava/lang/String; defaultImpl
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 292)
+                    ALOAD 5     // Ljava/lang/String; delegateRef
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.addConstructorArgReference (Ljava/lang/String;)Lorg/springframework/beans/factory/support/BeanDefinitionBuilder;
+                    POP
+                    GOTO L2
+                L1: ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 295)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    LDC_W "Exactly one of the default-impl or delegate-ref attributes must be specified"   (line 296)
+                    ALOAD_1     // Lorg/w3c/dom/Element; declareParentsElement   (line 297)
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.snapshot ()Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/parsing/ParseState;)V   (line 295)
+                L2: ALOAD_3     // Lorg/springframework/beans/factory/support/BeanDefinitionBuilder; builder   (line 300)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionBuilder.getBeanDefinition ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ASTORE 6
+                    ALOAD 6     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition   (line 301)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; declareParentsElement
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setSource (Ljava/lang/Object;)V
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 302)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    ALOAD 6     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.registerWithGeneratedName (Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/String;
+                    POP
+                    ALOAD 6     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; definition   (line 303)
+                    ARETURN
+  end private org.springframework.beans.factory.support.AbstractBeanDefinition parseDeclareParents(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  private org.springframework.beans.factory.support.AbstractBeanDefinition parseAdvice(String, int, org.w3c.dom.Element, org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext, java.util.List, java.util.List):
+    finally -> E0
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 317)
+    |               GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+    |               NEW org.springframework.aop.config.AdviceEntry
+    |               DUP
+    |               ALOAD 5     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getDelegate ()Lorg/springframework/beans/factory/xml/BeanDefinitionParserDelegate;
+    |               ALOAD 4     // Lorg/w3c/dom/Element; adviceElement
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.getLocalName (Lorg/w3c/dom/Node;)Ljava/lang/String;
+    |               INVOKESPECIAL org.springframework.aop.config.AdviceEntry.<init> (Ljava/lang/String;)V
+    |               INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.push (Lorg/springframework/beans/factory/parsing/ParseState$Entry;)V
+    |               NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 320)
+    |               DUP
+    |               LDC_W org.springframework.aop.config.MethodLocatingFactoryBean
+    |               INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+    |               ASTORE 8
+    |               ALOAD 8     // Lorg/springframework/beans/factory/support/RootBeanDefinition; methodDefinition   (line 321)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+    |               LDC_W "targetBeanName"
+    |               ALOAD_1     // Ljava/lang/String; aspectName
+    |               INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+    |               POP
+    |               ALOAD 8     // Lorg/springframework/beans/factory/support/RootBeanDefinition; methodDefinition   (line 322)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+    |               LDC_W "methodName"
+    |               ALOAD 4     // Lorg/w3c/dom/Element; adviceElement
+    |               LDC_W "method"
+    |               INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    |               INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+    |               POP
+    |               ALOAD 8     // Lorg/springframework/beans/factory/support/RootBeanDefinition; methodDefinition   (line 323)
+    |               ICONST_1
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setSynthetic (Z)V
+    |               NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 327)
+    |               DUP
+    |               LDC_W org.springframework.aop.config.SimpleBeanFactoryAwareAspectInstanceFactory
+    |               INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+    |               ASTORE 9   (line 326)
+    |               ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; aspectFactoryDef   (line 328)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+    |               LDC_W "aspectBeanName"
+    |               ALOAD_1     // Ljava/lang/String; aspectName
+    |               INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+    |               POP
+    |               ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; aspectFactoryDef   (line 329)
+    |               ICONST_1
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setSynthetic (Z)V
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 332)
+    |               ALOAD 4     // Lorg/w3c/dom/Element; adviceElement   (line 333)
+    |               ALOAD 5     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               ALOAD_1     // Ljava/lang/String; aspectName
+    |               ILOAD_2     // I order
+    |               ALOAD 8     // Lorg/springframework/beans/factory/support/RootBeanDefinition; methodDefinition
+    |               ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; aspectFactoryDef
+    |               ALOAD 6     // Ljava/util/List; beanDefinitions   (line 334)
+    |               ALOAD 7     // Ljava/util/List; beanReferences
+    |               INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.createAdviceDefinition (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;Ljava/lang/String;ILorg/springframework/beans/factory/support/RootBeanDefinition;Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/util/List;Ljava/util/List;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;   (line 332)
+    |               ASTORE 10
+    |               NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 337)
+    |               DUP
+    |               LDC_W org.springframework.aop.aspectj.AspectJPointcutAdvisor
+    |               INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+    |               ASTORE 11
+    |               ALOAD 11     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 338)
+    |               ALOAD 5     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               ALOAD 4     // Lorg/w3c/dom/Element; adviceElement
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setSource (Ljava/lang/Object;)V
+    |               ALOAD 11     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 339)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getConstructorArgumentValues ()Lorg/springframework/beans/factory/config/ConstructorArgumentValues;
+    |               ALOAD 10     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; adviceDef
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.addGenericArgumentValue (Ljava/lang/Object;)V
+    |               ALOAD_3     // Lorg/w3c/dom/Element; aspectElement   (line 340)
+    |               LDC "order"
+    |               INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+    |               IFEQ L0
+    |               ALOAD 11     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 341)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+    |               LDC "order"   (line 342)
+    |               ALOAD_3     // Lorg/w3c/dom/Element; aspectElement
+    |               LDC "order"
+    |               INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    |               INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;   (line 341)
+    |               POP
+    |           L0: ALOAD 5     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 346)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+    |               ALOAD 11     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.registerWithGeneratedName (Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/String;
+    |               POP
+    |               ALOAD 11     // Lorg/springframework/beans/factory/support/RootBeanDefinition; advisorDefinition   (line 348)
+    |               ASTORE 13
+    finally -> E0
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 351)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    ALOAD 13   (line 348)
+                    ARETURN
+                E0: ASTORE 12   (line 350)
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 351)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    ALOAD 12   (line 352)
+                    ATHROW
+  end private org.springframework.beans.factory.support.AbstractBeanDefinition parseAdvice(String, int, org.w3c.dom.Element, org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext, java.util.List, java.util.List)
+
+  private org.springframework.beans.factory.support.AbstractBeanDefinition createAdviceDefinition(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext, String, int, org.springframework.beans.factory.support.RootBeanDefinition, org.springframework.beans.factory.support.RootBeanDefinition, java.util.List, java.util.List):
+                    NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 366)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.getAdviceClass (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Ljava/lang/Class;
+                    INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+                    ASTORE 9
+                    ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 367)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setSource (Ljava/lang/Object;)V
+                    ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 369)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "aspectName"
+                    ALOAD_3     // Ljava/lang/String; aspectName
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 370)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "declarationOrder"
+                    ILOAD 4     // I order
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement   (line 372)
+                    LDC "returning"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 373)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "returningName"   (line 374)
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement
+                    LDC "returning"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;   (line 373)
+                    POP
+                L0: ALOAD_1     // Lorg/w3c/dom/Element; adviceElement   (line 376)
+                    LDC "throwing"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 377)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "throwingName"   (line 378)
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement
+                    LDC "throwing"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;   (line 377)
+                    POP
+                L1: ALOAD_1     // Lorg/w3c/dom/Element; adviceElement   (line 380)
+                    LDC "arg-names"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 381)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "argumentNames"   (line 382)
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement
+                    LDC "arg-names"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;   (line 381)
+                    POP
+                L2: ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 385)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getConstructorArgumentValues ()Lorg/springframework/beans/factory/config/ConstructorArgumentValues;
+                    ASTORE 10
+                    ALOAD 10     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cav   (line 386)
+                    ICONST_0
+                    ALOAD 5     // Lorg/springframework/beans/factory/support/RootBeanDefinition; methodDef
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.addIndexedArgumentValue (ILjava/lang/Object;)V
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 388)
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    INVOKESPECIAL org.springframework.aop.config.ConfigBeanDefinitionParser.parsePointcutProperty (Lorg/w3c/dom/Element;Lorg/springframework/beans/factory/xml/ParserContext;)Ljava/lang/Object;
+                    ASTORE 11
+                    ALOAD 11     // Ljava/lang/Object; pointcut   (line 389)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinition
+                    IFEQ L3
+                    ALOAD 10     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cav   (line 390)
+                    ICONST_1
+                    ALOAD 11     // Ljava/lang/Object; pointcut
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.addIndexedArgumentValue (ILjava/lang/Object;)V
+                    ALOAD 7     // Ljava/util/List; beanDefinitions   (line 391)
+                    ALOAD 11     // Ljava/lang/Object; pointcut
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinition
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L4
+                L3: ALOAD 11     // Ljava/lang/Object; pointcut   (line 393)
+                    INSTANCEOF java.lang.String
+                    IFEQ L4
+                    NEW org.springframework.beans.factory.config.RuntimeBeanReference   (line 394)
+                    DUP
+                    ALOAD 11     // Ljava/lang/Object; pointcut
+                    CHECKCAST java.lang.String
+                    INVOKESPECIAL org.springframework.beans.factory.config.RuntimeBeanReference.<init> (Ljava/lang/String;)V
+                    ASTORE 12
+                    ALOAD 10     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cav   (line 395)
+                    ICONST_1
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; pointcutRef
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.addIndexedArgumentValue (ILjava/lang/Object;)V
+                    ALOAD 8     // Ljava/util/List; beanReferences   (line 396)
+                    ALOAD 12     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; pointcutRef
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L4: ALOAD 10     // Lorg/springframework/beans/factory/config/ConstructorArgumentValues; cav   (line 399)
+                    ICONST_2
+                    ALOAD 6     // Lorg/springframework/beans/factory/support/RootBeanDefinition; aspectFactoryDef
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.ConstructorArgumentValues.addIndexedArgumentValue (ILjava/lang/Object;)V
+                    ALOAD 9     // Lorg/springframework/beans/factory/support/RootBeanDefinition; adviceDefinition   (line 401)
+                    ARETURN
+  end private org.springframework.beans.factory.support.AbstractBeanDefinition createAdviceDefinition(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext, String, int, org.springframework.beans.factory.support.RootBeanDefinition, org.springframework.beans.factory.support.RootBeanDefinition, java.util.List, java.util.List)
+
+  private Class getAdviceClass(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 408)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getDelegate ()Lorg/springframework/beans/factory/xml/BeanDefinitionParserDelegate;
+                    ALOAD_1     // Lorg/w3c/dom/Element; adviceElement
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.getLocalName (Lorg/w3c/dom/Node;)Ljava/lang/String;
+                    ASTORE_3
+                    LDC "before"   (line 409)
+                    ALOAD_3     // Ljava/lang/String; elementName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    LDC_W org.springframework.aop.aspectj.AspectJMethodBeforeAdvice   (line 410)
+                    ARETURN
+                L0: LDC "after"   (line 412)
+                    ALOAD_3     // Ljava/lang/String; elementName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    LDC_W org.springframework.aop.aspectj.AspectJAfterAdvice   (line 413)
+                    ARETURN
+                L1: LDC "after-returning"   (line 415)
+                    ALOAD_3     // Ljava/lang/String; elementName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    LDC_W org.springframework.aop.aspectj.AspectJAfterReturningAdvice   (line 416)
+                    ARETURN
+                L2: LDC "after-throwing"   (line 418)
+                    ALOAD_3     // Ljava/lang/String; elementName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    LDC_W org.springframework.aop.aspectj.AspectJAfterThrowingAdvice   (line 419)
+                    ARETURN
+                L3: LDC "around"   (line 421)
+                    ALOAD_3     // Ljava/lang/String; elementName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L4
+                    LDC_W org.springframework.aop.aspectj.AspectJAroundAdvice   (line 422)
+                    ARETURN
+                L4: NEW java.lang.IllegalArgumentException   (line 425)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Unknown advice kind ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/String; elementName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end private Class getAdviceClass(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  private org.springframework.beans.factory.support.AbstractBeanDefinition parsePointcut(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_1     // Lorg/w3c/dom/Element; pointcutElement   (line 434)
+                    LDC "id"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_1     // Lorg/w3c/dom/Element; pointcutElement   (line 435)
+                    LDC "expression"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ACONST_NULL   (line 437)
+                    ASTORE 5
+    finally -> E0
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 440)
+    |               GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+    |               NEW org.springframework.aop.config.PointcutEntry
+    |               DUP
+    |               ALOAD_3     // Ljava/lang/String; id
+    |               INVOKESPECIAL org.springframework.aop.config.PointcutEntry.<init> (Ljava/lang/String;)V
+    |               INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.push (Lorg/springframework/beans/factory/parsing/ParseState$Entry;)V
+    |               ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 441)
+    |               ALOAD 4     // Ljava/lang/String; expression
+    |               INVOKEVIRTUAL org.springframework.aop.config.ConfigBeanDefinitionParser.createPointcutDefinition (Ljava/lang/String;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+    |               ASTORE 5     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition
+    |               ALOAD 5     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition   (line 442)
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+    |               ALOAD_1     // Lorg/w3c/dom/Element; pointcutElement
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setSource (Ljava/lang/Object;)V
+    |               ALOAD_3     // Ljava/lang/String; id   (line 444)
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/String; pointcutBeanName   (line 445)
+    |               INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+    |               IFEQ L0
+    |               ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 446)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getRegistry ()Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;
+    |               ALOAD 6     // Ljava/lang/String; pointcutBeanName
+    |               ALOAD 5     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition
+    |               INVOKEINTERFACE org.springframework.beans.factory.support.BeanDefinitionRegistry.registerBeanDefinition (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)V
+    |               GOTO L1
+    |           L0: ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 449)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+    |               ALOAD 5     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.registerWithGeneratedName (Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/String;
+    |               ASTORE 6     // Ljava/lang/String; pointcutBeanName
+    |           L1: ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 452)
+    |               NEW org.springframework.aop.config.PointcutComponentDefinition   (line 453)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/String; pointcutBeanName
+    |               ALOAD 5     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition
+    |               ALOAD 4     // Ljava/lang/String; expression
+    |               INVOKESPECIAL org.springframework.aop.config.PointcutComponentDefinition.<init> (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;Ljava/lang/String;)V
+    |               INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.registerComponent (Lorg/springframework/beans/factory/parsing/ComponentDefinition;)V   (line 452)
+    |               GOTO L2
+    finally -> E0
+                E0: ASTORE 7   (line 455)
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 456)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    ALOAD 7   (line 457)
+                    ATHROW
+                L2: ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 456)
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.pop ()V
+                    ALOAD 5     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition   (line 459)
+                    ARETURN
+  end private org.springframework.beans.factory.support.AbstractBeanDefinition parsePointcut(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  private Object parsePointcutProperty(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext):
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 469)
+                    LDC "pointcut"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    LDC "pointcut-ref"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 470)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    LDC_W "Cannot define both 'pointcut' and 'pointcut-ref' on <advisor> tag."   (line 471)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 472)
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.snapshot ()Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/parsing/ParseState;)V   (line 470)
+                    ACONST_NULL   (line 473)
+                    ARETURN
+                L0: ALOAD_1     // Lorg/w3c/dom/Element; element   (line 475)
+                    LDC "pointcut"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 477)
+                    LDC "pointcut"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this   (line 478)
+                    ALOAD_3     // Ljava/lang/String; expression
+                    INVOKEVIRTUAL org.springframework.aop.config.ConfigBeanDefinitionParser.createPointcutDefinition (Ljava/lang/String;)Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
+                    ASTORE 4
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition   (line 479)
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.extractSource (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanDefinition.setSource (Ljava/lang/Object;)V
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/AbstractBeanDefinition; pointcutDefinition   (line 480)
+                    ARETURN
+                L1: ALOAD_1     // Lorg/w3c/dom/Element; element   (line 482)
+                    LDC "pointcut-ref"
+                    INVOKEINTERFACE org.w3c.dom.Element.hasAttribute (Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 483)
+                    LDC "pointcut-ref"
+                    INVOKEINTERFACE org.w3c.dom.Element.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/String; pointcutRef   (line 484)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 485)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    LDC_W "'pointcut-ref' attribute contains empty value."   (line 486)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.snapshot ()Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/parsing/ParseState;)V   (line 485)
+                    ACONST_NULL   (line 487)
+                    ARETURN
+                L2: ALOAD_3     // Ljava/lang/String; pointcutRef   (line 489)
+                    ARETURN
+                L3: ALOAD_2     // Lorg/springframework/beans/factory/xml/ParserContext; parserContext   (line 492)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.ParserContext.getReaderContext ()Lorg/springframework/beans/factory/xml/XmlReaderContext;
+                    LDC_W "Must define one of 'pointcut' or 'pointcut-ref' on <advisor> tag."   (line 493)
+                    ALOAD_1     // Lorg/w3c/dom/Element; element   (line 494)
+                    ALOAD_0     // Lorg/springframework/aop/config/ConfigBeanDefinitionParser; this
+                    GETFIELD org.springframework.aop.config.ConfigBeanDefinitionParser.parseState Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.ParseState.snapshot ()Lorg/springframework/beans/factory/parsing/ParseState;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.error (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/parsing/ParseState;)V   (line 492)
+                    ACONST_NULL   (line 495)
+                    ARETURN
+  end private Object parsePointcutProperty(org.w3c.dom.Element, org.springframework.beans.factory.xml.ParserContext)
+
+  protected org.springframework.beans.factory.support.AbstractBeanDefinition createPointcutDefinition(String):
+                    NEW org.springframework.beans.factory.support.RootBeanDefinition   (line 504)
+                    DUP
+                    LDC_W org.springframework.aop.aspectj.AspectJExpressionPointcut
+                    INVOKESPECIAL org.springframework.beans.factory.support.RootBeanDefinition.<init> (Ljava/lang/Class;)V
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 505)
+                    LDC_W "prototype"
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setScope (Ljava/lang/String;)V
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 506)
+                    ICONST_1
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.setSynthetic (Z)V
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 507)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getPropertyValues ()Lorg/springframework/beans/MutablePropertyValues;
+                    LDC "expression"
+                    ALOAD_1     // Ljava/lang/String; expression
+                    INVOKEVIRTUAL org.springframework.beans.MutablePropertyValues.add (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/beans/MutablePropertyValues;
+                    POP
+                    ALOAD_2     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 508)
+                    ARETURN
+  end protected org.springframework.beans.factory.support.AbstractBeanDefinition createPointcutDefinition(String)
+
+end  class org.springframework.aop.config.ConfigBeanDefinitionParser
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.aop.config.AopNamespaceHandler.init(AopNamespaceHandler.java:64)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:130)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1330)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1325)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.parsing.CompositeComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.parsing.CompositeComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.parsing.CompositeComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.parsing.CompositeComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.parsing.CompositeComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.factory.parsing.CompositeComponentDefinition extends org.springframework.beans.factory.parsing.AbstractComponentDefinition:
+  private final String name
+  private final Object source
+  private final java.util.List nestedComponents [Signature(Ljava/util/List<Lorg/springframework/beans/factory/parsing/ComponentDefinition;>;)]
+  public void <init>(String, Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 47)
+                    INVOKESPECIAL org.springframework.beans.factory.parsing.AbstractComponentDefinition.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.parsing.CompositeComponentDefinition.<init>(java.lang.String, java.lang.Object))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 39)
+    |               NEW java.util.LinkedList
+    |               DUP
+    |               INVOKESPECIAL java.util.LinkedList.<init> ()V
+    |               PUTFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.nestedComponents Ljava/util/List;
+    |               ALOAD_1     // Ljava/lang/String; name   (line 48)
+    |               LDC "Name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 49)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               PUTFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.name Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 50)
+    |               ALOAD_2     // Ljava/lang/Object; source
+    |               PUTFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.source Ljava/lang/Object;
+    |               RETURN   (line 51)
+    constructor-execution(void org.springframework.beans.factory.parsing.CompositeComponentDefinition.<init>(java.lang.String, java.lang.Object))
+  end public void <init>(String, Object)
+
+  public String getName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 55)
+                    GETFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.name Ljava/lang/String;
+                    ARETURN
+  end public String getName()
+
+  public Object getSource():
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 59)
+                    GETFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.source Ljava/lang/Object;
+                    ARETURN
+  end public Object getSource()
+
+  public void addNestedComponent(org.springframework.beans.factory.parsing.ComponentDefinition):
+                    ALOAD_1     // Lorg/springframework/beans/factory/parsing/ComponentDefinition; component   (line 68)
+                    LDC "ComponentDefinition must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 69)
+                    GETFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.nestedComponents Ljava/util/List;
+                    ALOAD_1     // Lorg/springframework/beans/factory/parsing/ComponentDefinition; component
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 70)
+  end public void addNestedComponent(org.springframework.beans.factory.parsing.ComponentDefinition)
+
+  public org.springframework.beans.factory.parsing.ComponentDefinition[] getNestedComponents():
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this   (line 77)
+                    GETFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.nestedComponents Ljava/util/List;
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/CompositeComponentDefinition; this
+                    GETFIELD org.springframework.beans.factory.parsing.CompositeComponentDefinition.nestedComponents Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.size ()I
+                    ANEWARRAY org.springframework.beans.factory.parsing.ComponentDefinition
+                    INVOKEINTERFACE java.util.List.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.beans.factory.parsing.ComponentDefinition;
+                    ARETURN
+  end public org.springframework.beans.factory.parsing.ComponentDefinition[] getNestedComponents()
+
+end public class org.springframework.beans.factory.parsing.CompositeComponentDefinition
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.aop.config.AopNamespaceHandler.init(AopNamespaceHandler.java:64)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:130)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1330)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1325)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.parsing.AbstractComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.parsing.AbstractComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.parsing.AbstractComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.parsing.AbstractComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.parsing.AbstractComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public abstract class org.springframework.beans.factory.parsing.AbstractComponentDefinition extends java.lang.Object implements org.springframework.beans.factory.parsing.ComponentDefinition:
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/AbstractComponentDefinition; this   (line 33)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.parsing.AbstractComponentDefinition.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.beans.factory.parsing.AbstractComponentDefinition.<init>())
+  end public void <init>()
+
+  public String getDescription():
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/AbstractComponentDefinition; this   (line 39)
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.AbstractComponentDefinition.getName ()Ljava/lang/String;
+                    ARETURN
+  end public String getDescription()
+
+  public org.springframework.beans.factory.config.BeanDefinition[] getBeanDefinitions():
+                    ICONST_0   (line 46)
+                    ANEWARRAY org.springframework.beans.factory.config.BeanDefinition
+                    ARETURN
+  end public org.springframework.beans.factory.config.BeanDefinition[] getBeanDefinitions()
+
+  public org.springframework.beans.factory.config.BeanDefinition[] getInnerBeanDefinitions():
+                    ICONST_0   (line 53)
+                    ANEWARRAY org.springframework.beans.factory.config.BeanDefinition
+                    ARETURN
+  end public org.springframework.beans.factory.config.BeanDefinition[] getInnerBeanDefinitions()
+
+  public org.springframework.beans.factory.config.BeanReference[] getBeanReferences():
+                    ICONST_0   (line 60)
+                    ANEWARRAY org.springframework.beans.factory.config.BeanReference
+                    ARETURN
+  end public org.springframework.beans.factory.config.BeanReference[] getBeanReferences()
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/beans/factory/parsing/AbstractComponentDefinition; this   (line 68)
+                    INVOKEVIRTUAL org.springframework.beans.factory.parsing.AbstractComponentDefinition.getDescription ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public abstract class org.springframework.beans.factory.parsing.AbstractComponentDefinition
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.aop.config.AopNamespaceHandler.init(AopNamespaceHandler.java:64)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:130)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1330)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1325)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.aop.config.AspectComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.aop.config.AspectComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.aop.config.AspectComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.aop.config.AspectComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.aop.config.AspectComponentDefinition
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

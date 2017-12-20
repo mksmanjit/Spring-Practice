@@ -1,0 +1,730 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.181454.165.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public abstract class org.springframework.beans.factory.support.FactoryBeanRegistrySupport extends org.springframework.beans.factory.support.DefaultSingletonBeanRegistry:
+  private final java.util.Map factoryBeanObjectCache [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 43)
+                    INVOKESPECIAL org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.FactoryBeanRegistrySupport.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 46)
+    |               NEW java.util.concurrent.ConcurrentHashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.concurrent.ConcurrentHashMap.<init> ()V
+    |               PUTFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+    |               RETURN   (line 43)
+    constructor-execution(void org.springframework.beans.factory.support.FactoryBeanRegistrySupport.<init>())
+  end public void <init>()
+
+  protected Class getTypeForFactoryBean(org.springframework.beans.factory.FactoryBean):
+    catch java.lang.Throwable -> E1
+    |               INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 57)
+    |               IFNULL L0
+    |               NEW org.springframework.beans.factory.support.FactoryBeanRegistrySupport$1   (line 58)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+    |               ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factoryBean
+    |               INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport$1.<init> (Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport;Lorg/springframework/beans/factory/FactoryBean;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 62)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getAccessControlContext ()Ljava/security/AccessControlContext;
+    |               INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;   (line 58)
+    |               CHECKCAST java.lang.Class
+    catch java.lang.Throwable -> E1
+                    ARETURN
+    catch java.lang.Throwable -> E1
+    |           L0: ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factoryBean   (line 65)
+    |               INVOKEINTERFACE org.springframework.beans.factory.FactoryBean.getObjectType ()Ljava/lang/Class;
+    catch java.lang.Throwable -> E1
+                    ARETURN
+                E1: ASTORE_2   (line 68)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 70)
+                    GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.logger Lorg/apache/commons/logging/Log;
+                    LDC "FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet"
+                    ALOAD_2     // Ljava/lang/Throwable; ex   (line 71)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 70)
+                    ACONST_NULL   (line 72)
+                    ARETURN
+  end protected Class getTypeForFactoryBean(org.springframework.beans.factory.FactoryBean)
+
+  protected Object getCachedObjectForFactoryBean(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 84)
+                    GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; object   (line 85)
+                    GETSTATIC org.springframework.beans.factory.support.FactoryBeanRegistrySupport.NULL_OBJECT Ljava/lang/Object;
+                    IF_ACMPEQ L0
+                    ALOAD_2     // Ljava/lang/Object; object
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ARETURN
+  end protected Object getCachedObjectForFactoryBean(String)
+
+  protected Object getObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean):
+                    ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory   (line 98)
+                    INVOKEINTERFACE org.springframework.beans.factory.FactoryBean.isSingleton ()Z
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.containsSingleton (Ljava/lang/String;)Z
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 99)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getSingletonMutex ()Ljava/lang/Object;
+                    DUP
+                    ASTORE 4
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 100)
+    |               GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/Object; object   (line 101)
+    |               IFNONNULL L2
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 102)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               ILOAD_3     // Z shouldPostProcess
+    |               INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean (Lorg/springframework/beans/factory/FactoryBean;Ljava/lang/String;Z)Ljava/lang/Object;
+    |               ASTORE 5     // Ljava/lang/Object; object
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 103)
+    |               GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               ALOAD 5     // Ljava/lang/Object; object
+    |               IFNULL L0
+    |               ALOAD 5     // Ljava/lang/Object; object
+    |               GOTO L1
+    |           L0: GETSTATIC org.springframework.beans.factory.support.FactoryBeanRegistrySupport.NULL_OBJECT Ljava/lang/Object;
+    |           L1: INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L2: ALOAD 5     // Ljava/lang/Object; object   (line 105)
+    |               GETSTATIC org.springframework.beans.factory.support.FactoryBeanRegistrySupport.NULL_OBJECT Ljava/lang/Object;
+    |               IF_ACMPEQ L3
+    |               ALOAD 5     // Ljava/lang/Object; object
+    |               GOTO L4
+    |           L3: ACONST_NULL
+    |           L4: ALOAD 4
+    |               MONITOREXIT
+    finally -> E1
+                    ARETURN
+    finally -> E1
+    |           E1: ALOAD 4   (line 99)
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L5: ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 109)
+                    ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ILOAD_3     // Z shouldPostProcess
+                    INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean (Lorg/springframework/beans/factory/FactoryBean;Ljava/lang/String;Z)Ljava/lang/Object;
+                    ARETURN
+  end protected Object getObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean)
+
+  private Object doGetObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean) throws org.springframework.beans.factory.BeanCreationException:
+    catch java.lang.Throwable -> E2
+    | catch org.springframework.beans.factory.FactoryBeanNotInitializedException -> E1
+    | |             INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 128)
+    | |             IFNULL L0
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 129)
+    | |             INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getAccessControlContext ()Ljava/security/AccessControlContext;
+    | |             ASTORE 5
+    | | catch java.security.PrivilegedActionException -> E0
+    | | |           NEW org.springframework.beans.factory.support.FactoryBeanRegistrySupport$2   (line 131)
+    | | |           DUP
+    | | |           ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+    | | |           ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory
+    | | |           INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport$2.<init> (Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport;Lorg/springframework/beans/factory/FactoryBean;)V
+    | | |           ALOAD 5     // Ljava/security/AccessControlContext; acc   (line 135)
+    | | |           INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;   (line 131)
+    | | |           ASTORE 4
+    | | catch java.security.PrivilegedActionException -> E0
+    | |             GOTO L1
+    | |         E0: ASTORE 6   (line 137)
+    | |             ALOAD 6     // Ljava/security/PrivilegedActionException; pae   (line 138)
+    | |             INVOKEVIRTUAL java.security.PrivilegedActionException.getException ()Ljava/lang/Exception;
+    | |             ATHROW
+    | |         L0: ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory   (line 142)
+    | |             INVOKEINTERFACE org.springframework.beans.factory.FactoryBean.getObject ()Ljava/lang/Object;
+    | |             ASTORE 4
+    | catch org.springframework.beans.factory.FactoryBeanNotInitializedException -> E1
+    catch java.lang.Throwable -> E2
+                    GOTO L1
+                E1: ASTORE 5   (line 145)
+                    NEW org.springframework.beans.factory.BeanCurrentlyInCreationException   (line 146)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ALOAD 5     // Lorg/springframework/beans/factory/FactoryBeanNotInitializedException; ex
+                    INVOKEVIRTUAL org.springframework.beans.factory.FactoryBeanNotInitializedException.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCurrentlyInCreationException.<init> (Ljava/lang/String;Ljava/lang/String;)V
+                    ATHROW
+                E2: ASTORE 5   (line 148)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 149)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    LDC "FactoryBean threw exception on object creation"
+                    ALOAD 5     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+                L1: ALOAD 4     // Ljava/lang/Object; object   (line 155)
+                    IFNONNULL L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.isSingletonCurrentlyInCreation (Ljava/lang/String;)Z
+                    IFEQ L2
+                    NEW org.springframework.beans.factory.BeanCurrentlyInCreationException   (line 156)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName   (line 157)
+                    LDC "FactoryBean which is currently in creation returned null from getObject"
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCurrentlyInCreationException.<init> (Ljava/lang/String;Ljava/lang/String;)V   (line 156)
+                    ATHROW
+                L2: ALOAD 4     // Ljava/lang/Object; object   (line 160)
+                    IFNULL L3
+                    ILOAD_3     // Z shouldPostProcess
+                    IFEQ L3
+    catch java.lang.Throwable -> E3
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 162)
+    |               ALOAD 4     // Ljava/lang/Object; object
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.postProcessObjectFromFactoryBean (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    |               ASTORE 4     // Ljava/lang/Object; object
+    catch java.lang.Throwable -> E3
+                    GOTO L3
+                E3: ASTORE 5   (line 164)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 165)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    LDC "Post-processing of the FactoryBean's object failed"
+                    ALOAD 5     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+                L3: ALOAD 4     // Ljava/lang/Object; object   (line 169)
+                    ARETURN
+  end private Object doGetObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean) throws org.springframework.beans.factory.BeanCreationException
+
+  protected Object postProcessObjectFromFactoryBean(Object, String) throws org.springframework.beans.BeansException:
+                    ALOAD_1     // Ljava/lang/Object; object   (line 183)
+                    ARETURN
+  end protected Object postProcessObjectFromFactoryBean(Object, String) throws org.springframework.beans.BeansException
+
+  protected org.springframework.beans.factory.FactoryBean getFactoryBean(String, Object) throws org.springframework.beans.BeansException:
+                    ALOAD_2     // Ljava/lang/Object; beanInstance   (line 194)
+                    INSTANCEOF org.springframework.beans.factory.FactoryBean
+                    IFNE L0
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 195)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    NEW java.lang.StringBuilder   (line 196)
+                    DUP
+                    LDC "Bean instance of type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/Object; beanInstance
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "] is not a FactoryBean"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;)V   (line 195)
+                    ATHROW
+                L0: ALOAD_2     // Ljava/lang/Object; beanInstance   (line 198)
+                    CHECKCAST org.springframework.beans.factory.FactoryBean
+                    ARETURN
+  end protected org.springframework.beans.factory.FactoryBean getFactoryBean(String, Object) throws org.springframework.beans.BeansException
+
+  protected void removeSingleton(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 206)
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    INVOKESPECIAL org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.removeSingleton (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 207)
+                    GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    RETURN   (line 208)
+  end protected void removeSingleton(String)
+
+  protected java.security.AccessControlContext getAccessControlContext():
+                    INVOKESTATIC java.security.AccessController.getContext ()Ljava/security/AccessControlContext;   (line 217)
+                    ARETURN
+  end protected java.security.AccessControlContext getAccessControlContext()
+
+end public abstract class org.springframework.beans.factory.support.FactoryBeanRegistrySupport
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.createBeanFactory(AbstractRefreshableApplicationContext.java:194)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:127)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public abstract class org.springframework.beans.factory.support.FactoryBeanRegistrySupport extends org.springframework.beans.factory.support.DefaultSingletonBeanRegistry:
+  private final java.util.Map factoryBeanObjectCache [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 43)
+                    INVOKESPECIAL org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.FactoryBeanRegistrySupport.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 46)
+    |               NEW java.util.concurrent.ConcurrentHashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.concurrent.ConcurrentHashMap.<init> ()V
+    |               PUTFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+    |               RETURN   (line 43)
+    constructor-execution(void org.springframework.beans.factory.support.FactoryBeanRegistrySupport.<init>())
+  end public void <init>()
+
+  protected Class getTypeForFactoryBean(org.springframework.beans.factory.FactoryBean):
+    catch java.lang.Throwable -> E1
+    |               INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 57)
+    |               IFNULL L0
+    |               NEW org.springframework.beans.factory.support.FactoryBeanRegistrySupport$1   (line 58)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+    |               ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factoryBean
+    |               INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport$1.<init> (Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport;Lorg/springframework/beans/factory/FactoryBean;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 62)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getAccessControlContext ()Ljava/security/AccessControlContext;
+    |               INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;   (line 58)
+    |               CHECKCAST java.lang.Class
+    catch java.lang.Throwable -> E1
+                    ARETURN
+    catch java.lang.Throwable -> E1
+    |           L0: ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factoryBean   (line 65)
+    |               INVOKEINTERFACE org.springframework.beans.factory.FactoryBean.getObjectType ()Ljava/lang/Class;
+    catch java.lang.Throwable -> E1
+                    ARETURN
+                E1: ASTORE_2   (line 68)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 70)
+                    GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.logger Lorg/apache/commons/logging/Log;
+                    LDC "FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet"
+                    ALOAD_2     // Ljava/lang/Throwable; ex   (line 71)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 70)
+                    ACONST_NULL   (line 72)
+                    ARETURN
+  end protected Class getTypeForFactoryBean(org.springframework.beans.factory.FactoryBean)
+
+  protected Object getCachedObjectForFactoryBean(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 84)
+                    GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; object   (line 85)
+                    GETSTATIC org.springframework.beans.factory.support.FactoryBeanRegistrySupport.NULL_OBJECT Ljava/lang/Object;
+                    IF_ACMPEQ L0
+                    ALOAD_2     // Ljava/lang/Object; object
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ARETURN
+  end protected Object getCachedObjectForFactoryBean(String)
+
+  protected Object getObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean):
+                    ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory   (line 98)
+                    INVOKEINTERFACE org.springframework.beans.factory.FactoryBean.isSingleton ()Z
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.containsSingleton (Ljava/lang/String;)Z
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 99)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getSingletonMutex ()Ljava/lang/Object;
+                    DUP
+                    ASTORE 4
+                    MONITORENTER
+    finally -> E1
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 100)
+    |               GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/Object; object   (line 101)
+    |               IFNONNULL L2
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 102)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               ILOAD_3     // Z shouldPostProcess
+    |               INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean (Lorg/springframework/beans/factory/FactoryBean;Ljava/lang/String;Z)Ljava/lang/Object;
+    |               ASTORE 5     // Ljava/lang/Object; object
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 103)
+    |               GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               ALOAD 5     // Ljava/lang/Object; object
+    |               IFNULL L0
+    |               ALOAD 5     // Ljava/lang/Object; object
+    |               GOTO L1
+    |           L0: GETSTATIC org.springframework.beans.factory.support.FactoryBeanRegistrySupport.NULL_OBJECT Ljava/lang/Object;
+    |           L1: INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L2: ALOAD 5     // Ljava/lang/Object; object   (line 105)
+    |               GETSTATIC org.springframework.beans.factory.support.FactoryBeanRegistrySupport.NULL_OBJECT Ljava/lang/Object;
+    |               IF_ACMPEQ L3
+    |               ALOAD 5     // Ljava/lang/Object; object
+    |               GOTO L4
+    |           L3: ACONST_NULL
+    |           L4: ALOAD 4
+    |               MONITOREXIT
+    finally -> E1
+                    ARETURN
+    finally -> E1
+    |           E1: ALOAD 4   (line 99)
+    |               MONITOREXIT
+    finally -> E1
+                    ATHROW
+                L5: ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 109)
+                    ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ILOAD_3     // Z shouldPostProcess
+                    INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean (Lorg/springframework/beans/factory/FactoryBean;Ljava/lang/String;Z)Ljava/lang/Object;
+                    ARETURN
+  end protected Object getObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean)
+
+  private Object doGetObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean) throws org.springframework.beans.factory.BeanCreationException:
+    catch java.lang.Throwable -> E2
+    | catch org.springframework.beans.factory.FactoryBeanNotInitializedException -> E1
+    | |             INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 128)
+    | |             IFNULL L0
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 129)
+    | |             INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getAccessControlContext ()Ljava/security/AccessControlContext;
+    | |             ASTORE 5
+    | | catch java.security.PrivilegedActionException -> E0
+    | | |           NEW org.springframework.beans.factory.support.FactoryBeanRegistrySupport$2   (line 131)
+    | | |           DUP
+    | | |           ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+    | | |           ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory
+    | | |           INVOKESPECIAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport$2.<init> (Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport;Lorg/springframework/beans/factory/FactoryBean;)V
+    | | |           ALOAD 5     // Ljava/security/AccessControlContext; acc   (line 135)
+    | | |           INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;   (line 131)
+    | | |           ASTORE 4
+    | | catch java.security.PrivilegedActionException -> E0
+    | |             GOTO L1
+    | |         E0: ASTORE 6   (line 137)
+    | |             ALOAD 6     // Ljava/security/PrivilegedActionException; pae   (line 138)
+    | |             INVOKEVIRTUAL java.security.PrivilegedActionException.getException ()Ljava/lang/Exception;
+    | |             ATHROW
+    | |         L0: ALOAD_1     // Lorg/springframework/beans/factory/FactoryBean; factory   (line 142)
+    | |             INVOKEINTERFACE org.springframework.beans.factory.FactoryBean.getObject ()Ljava/lang/Object;
+    | |             ASTORE 4
+    | catch org.springframework.beans.factory.FactoryBeanNotInitializedException -> E1
+    catch java.lang.Throwable -> E2
+                    GOTO L1
+                E1: ASTORE 5   (line 145)
+                    NEW org.springframework.beans.factory.BeanCurrentlyInCreationException   (line 146)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ALOAD 5     // Lorg/springframework/beans/factory/FactoryBeanNotInitializedException; ex
+                    INVOKEVIRTUAL org.springframework.beans.factory.FactoryBeanNotInitializedException.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCurrentlyInCreationException.<init> (Ljava/lang/String;Ljava/lang/String;)V
+                    ATHROW
+                E2: ASTORE 5   (line 148)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 149)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    LDC "FactoryBean threw exception on object creation"
+                    ALOAD 5     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+                L1: ALOAD 4     // Ljava/lang/Object; object   (line 155)
+                    IFNONNULL L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.isSingletonCurrentlyInCreation (Ljava/lang/String;)Z
+                    IFEQ L2
+                    NEW org.springframework.beans.factory.BeanCurrentlyInCreationException   (line 156)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName   (line 157)
+                    LDC "FactoryBean which is currently in creation returned null from getObject"
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCurrentlyInCreationException.<init> (Ljava/lang/String;Ljava/lang/String;)V   (line 156)
+                    ATHROW
+                L2: ALOAD 4     // Ljava/lang/Object; object   (line 160)
+                    IFNULL L3
+                    ILOAD_3     // Z shouldPostProcess
+                    IFEQ L3
+    catch java.lang.Throwable -> E3
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 162)
+    |               ALOAD 4     // Ljava/lang/Object; object
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.FactoryBeanRegistrySupport.postProcessObjectFromFactoryBean (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    |               ASTORE 4     // Ljava/lang/Object; object
+    catch java.lang.Throwable -> E3
+                    GOTO L3
+                E3: ASTORE 5   (line 164)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 165)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    LDC "Post-processing of the FactoryBean's object failed"
+                    ALOAD 5     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+                L3: ALOAD 4     // Ljava/lang/Object; object   (line 169)
+                    ARETURN
+  end private Object doGetObjectFromFactoryBean(org.springframework.beans.factory.FactoryBean, String, boolean) throws org.springframework.beans.factory.BeanCreationException
+
+  protected Object postProcessObjectFromFactoryBean(Object, String) throws org.springframework.beans.BeansException:
+                    ALOAD_1     // Ljava/lang/Object; object   (line 183)
+                    ARETURN
+  end protected Object postProcessObjectFromFactoryBean(Object, String) throws org.springframework.beans.BeansException
+
+  protected org.springframework.beans.factory.FactoryBean getFactoryBean(String, Object) throws org.springframework.beans.BeansException:
+                    ALOAD_2     // Ljava/lang/Object; beanInstance   (line 194)
+                    INSTANCEOF org.springframework.beans.factory.FactoryBean
+                    IFNE L0
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 195)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    NEW java.lang.StringBuilder   (line 196)
+                    DUP
+                    LDC "Bean instance of type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/Object; beanInstance
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "] is not a FactoryBean"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;)V   (line 195)
+                    ATHROW
+                L0: ALOAD_2     // Ljava/lang/Object; beanInstance   (line 198)
+                    CHECKCAST org.springframework.beans.factory.FactoryBean
+                    ARETURN
+  end protected org.springframework.beans.factory.FactoryBean getFactoryBean(String, Object) throws org.springframework.beans.BeansException
+
+  protected void removeSingleton(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 206)
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    INVOKESPECIAL org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.removeSingleton (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/FactoryBeanRegistrySupport; this   (line 207)
+                    GETFIELD org.springframework.beans.factory.support.FactoryBeanRegistrySupport.factoryBeanObjectCache Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; beanName
+                    INVOKEINTERFACE java.util.Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                    RETURN   (line 208)
+  end protected void removeSingleton(String)
+
+  protected java.security.AccessControlContext getAccessControlContext():
+                    INVOKESTATIC java.security.AccessController.getContext ()Ljava/security/AccessControlContext;   (line 217)
+                    ARETURN
+  end protected java.security.AccessControlContext getAccessControlContext()
+
+end public abstract class org.springframework.beans.factory.support.FactoryBeanRegistrySupport
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.createBeanFactory(AbstractRefreshableApplicationContext.java:194)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:127)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

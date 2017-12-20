@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/asm-3.3.1.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/aspectjrt-1.6.11.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/aspectjweaver-1.6.11.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/cglib-2.2.2.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/spring-aop-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/spring-asm-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/spring-beans-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/spring-context-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/spring-core-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Latest/SpringJar/extra Jar/spring-expression-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

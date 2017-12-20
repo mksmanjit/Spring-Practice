@@ -1,0 +1,612 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185854.780.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver extends java.lang.Object implements org.springframework.beans.factory.xml.NamespaceHandlerResolver:
+  public static final String DEFAULT_HANDLER_MAPPINGS_LOCATION = "META-INF/spring.handlers"
+  protected final org.apache.commons.logging.Log logger
+  private final ClassLoader classLoader
+  private final String handlerMappingsLocation
+  private volatile java.util.Map handlerMappings [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 78)
+                    ACONST_NULL
+                    LDC "META-INF/spring.handlers"
+                    INVOKESPECIAL org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init> (Ljava/lang/ClassLoader;Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init>())
+    |               RETURN   (line 79)
+    constructor-execution(void org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init>())
+  end public void <init>()
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 89)
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    LDC "META-INF/spring.handlers"
+                    INVOKESPECIAL org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init> (Ljava/lang/ClassLoader;Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init>(java.lang.ClassLoader))
+    |               RETURN   (line 90)
+    constructor-execution(void org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void <init>(ClassLoader, String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 99)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init>(java.lang.ClassLoader, java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 58)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_2     // Ljava/lang/String; handlerMappingsLocation   (line 100)
+    |               LDC "Handler mappings location must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 101)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 102)
+    |               ALOAD_2     // Ljava/lang/String; handlerMappingsLocation
+    |               PUTFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.handlerMappingsLocation Ljava/lang/String;
+    |               RETURN   (line 103)
+    constructor-execution(void org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.<init>(java.lang.ClassLoader, java.lang.String))
+  end public void <init>(ClassLoader, String)
+
+  public org.springframework.beans.factory.xml.NamespaceHandler resolve(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 113)
+                    INVOKESPECIAL org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.getHandlerMappings ()Ljava/util/Map;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Map; handlerMappings   (line 114)
+                    ALOAD_1     // Ljava/lang/String; namespaceUri
+                    INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_3     // Ljava/lang/Object; handlerOrClassName   (line 115)
+                    IFNONNULL L0
+                    ACONST_NULL   (line 116)
+                    ARETURN
+                L0: ALOAD_3     // Ljava/lang/Object; handlerOrClassName   (line 118)
+                    INSTANCEOF org.springframework.beans.factory.xml.NamespaceHandler
+                    IFEQ L1
+                    ALOAD_3     // Ljava/lang/Object; handlerOrClassName   (line 119)
+                    CHECKCAST org.springframework.beans.factory.xml.NamespaceHandler
+                    ARETURN
+                L1: ALOAD_3     // Ljava/lang/Object; handlerOrClassName   (line 122)
+                    CHECKCAST java.lang.String
+                    ASTORE 4
+    catch java.lang.LinkageError -> E1
+    | catch java.lang.ClassNotFoundException -> E0
+    | |             ALOAD 4     // Ljava/lang/String; className   (line 124)
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this
+    | |             GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.classLoader Ljava/lang/ClassLoader;
+    | |             INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    | |             ASTORE 5
+    | |             LDC org.springframework.beans.factory.xml.NamespaceHandler   (line 125)
+    | |             ALOAD 5     // Ljava/lang/Class; handlerClass
+    | |             INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+    | |             IFNE L2
+    | |             NEW org.springframework.beans.FatalBeanException   (line 126)
+    | |             DUP
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC "Class ["
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD 4     // Ljava/lang/String; className
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "] for namespace ["
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             ALOAD_1     // Ljava/lang/String; namespaceUri
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "] does not implement the ["   (line 127)
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC org.springframework.beans.factory.xml.NamespaceHandler
+    | |             INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             LDC "] interface"
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKESPECIAL org.springframework.beans.FatalBeanException.<init> (Ljava/lang/String;)V   (line 126)
+    | |             ATHROW
+    | |         L2: ALOAD 5     // Ljava/lang/Class; handlerClass   (line 129)
+    | |             INVOKESTATIC org.springframework.beans.BeanUtils.instantiateClass (Ljava/lang/Class;)Ljava/lang/Object;
+    | |             CHECKCAST org.springframework.beans.factory.xml.NamespaceHandler
+    | |             ASTORE 6
+    | |             ALOAD 6     // Lorg/springframework/beans/factory/xml/NamespaceHandler; namespaceHandler   (line 130)
+    | |             INVOKEINTERFACE org.springframework.beans.factory.xml.NamespaceHandler.init ()V
+    | |             ALOAD_2     // Ljava/util/Map; handlerMappings   (line 131)
+    | |             ALOAD_1     // Ljava/lang/String; namespaceUri
+    | |             ALOAD 6     // Lorg/springframework/beans/factory/xml/NamespaceHandler; namespaceHandler
+    | |             INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    | |             POP
+    | |             ALOAD 6     // Lorg/springframework/beans/factory/xml/NamespaceHandler; namespaceHandler   (line 132)
+    | catch java.lang.ClassNotFoundException -> E0
+    catch java.lang.LinkageError -> E1
+                    ARETURN
+                E0: ASTORE 5   (line 134)
+                    NEW org.springframework.beans.FatalBeanException   (line 135)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "NamespaceHandler class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/String; className
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "] for namespace ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; namespaceUri   (line 136)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "] not found"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 5     // Ljava/lang/ClassNotFoundException; ex
+                    INVOKESPECIAL org.springframework.beans.FatalBeanException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V   (line 135)
+                    ATHROW
+                E1: ASTORE 5   (line 138)
+                    NEW org.springframework.beans.FatalBeanException   (line 139)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid NamespaceHandler class ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/lang/String; className
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "] for namespace ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; namespaceUri   (line 140)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]: problem with handler class file or dependent class"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 5     // Ljava/lang/LinkageError; err
+                    INVOKESPECIAL org.springframework.beans.FatalBeanException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V   (line 139)
+                    ATHROW
+  end public org.springframework.beans.factory.xml.NamespaceHandler resolve(String)
+
+  private java.util.Map getHandlerMappings():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 149)
+                    GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.handlerMappings Ljava/util/Map;
+                    IFNONNULL L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 150)
+                    DUP
+                    ASTORE_1
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 151)
+    |               GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.handlerMappings Ljava/util/Map;
+    |               IFNONNULL L1
+    | catch java.io.IOException -> E0
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 154)
+    | |             GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.handlerMappingsLocation Ljava/lang/String;
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this
+    | |             GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.classLoader Ljava/lang/ClassLoader;
+    | |             INVOKESTATIC org.springframework.core.io.support.PropertiesLoaderUtils.loadAllProperties (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/util/Properties;
+    | |             ASTORE_2   (line 153)
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 155)
+    | |             GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.logger Lorg/apache/commons/logging/Log;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    | |             IFEQ L0
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 156)
+    | |             GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.logger Lorg/apache/commons/logging/Log;
+    | |             NEW java.lang.StringBuilder
+    | |             DUP
+    | |             LDC "Loaded NamespaceHandler mappings: "
+    | |             INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    | |             ALOAD_2     // Ljava/util/Properties; mappings
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    | |             INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    | |         L0: NEW java.util.concurrent.ConcurrentHashMap   (line 158)
+    | |             DUP
+    | |             INVOKESPECIAL java.util.concurrent.ConcurrentHashMap.<init> ()V
+    | |             ASTORE_3
+    | |             ALOAD_2     // Ljava/util/Properties; mappings   (line 159)
+    | |             ALOAD_3     // Ljava/util/Map; handlerMappings
+    | |             INVOKESTATIC org.springframework.util.CollectionUtils.mergePropertiesIntoMap (Ljava/util/Properties;Ljava/util/Map;)V
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 160)
+    | |             ALOAD_3     // Ljava/util/Map; handlerMappings
+    | |             PUTFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.handlerMappings Ljava/util/Map;
+    | catch java.io.IOException -> E0
+    |               GOTO L1
+    |           E0: ASTORE_2   (line 162)
+    |               NEW java.lang.IllegalStateException   (line 163)
+    |               DUP
+    |               NEW java.lang.StringBuilder   (line 164)
+    |               DUP
+    |               LDC "Unable to load NamespaceHandler mappings from location ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this
+    |               GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.handlerMappingsLocation Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               ALOAD_2     // Ljava/io/IOException; ex
+    |               INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V   (line 163)
+    |               ATHROW
+    |           L1: ALOAD_1   (line 150)
+    |               MONITOREXIT
+    finally -> E2
+                    GOTO L2
+    finally -> E2
+    |           E2: ALOAD_1
+    |               MONITOREXIT
+    finally -> E2
+                    ATHROW
+                L2: ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this   (line 169)
+                    GETFIELD org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.handlerMappings Ljava/util/Map;
+                    ARETURN
+  end private java.util.Map getHandlerMappings()
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 175)
+                    DUP
+                    LDC "NamespaceHandlerResolver using mappings "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver; this
+                    INVOKESPECIAL org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.getHandlerMappings ()Ljava/util/Map;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.createDefaultNamespaceHandlerResolver(XmlBeanDefinitionReader.java:524)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.createReaderContext(XmlBeanDefinitionReader.java:513)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.xml.XmlReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.xml.XmlReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.xml.XmlReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.xml.XmlReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.xml.XmlReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.beans.factory.xml.XmlReaderContext extends org.springframework.beans.factory.parsing.ReaderContext:
+  private final org.springframework.beans.factory.xml.XmlBeanDefinitionReader reader
+  private final org.springframework.beans.factory.xml.NamespaceHandlerResolver namespaceHandlerResolver
+  public void <init>(org.springframework.core.io.Resource, org.springframework.beans.factory.parsing.ProblemReporter, org.springframework.beans.factory.parsing.ReaderEventListener, org.springframework.beans.factory.parsing.SourceExtractor, org.springframework.beans.factory.xml.XmlBeanDefinitionReader, org.springframework.beans.factory.xml.NamespaceHandlerResolver):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 49)
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; resource
+                    ALOAD_2     // Lorg/springframework/beans/factory/parsing/ProblemReporter; problemReporter
+                    ALOAD_3     // Lorg/springframework/beans/factory/parsing/ReaderEventListener; eventListener
+                    ALOAD 4     // Lorg/springframework/beans/factory/parsing/SourceExtractor; sourceExtractor
+                    INVOKESPECIAL org.springframework.beans.factory.parsing.ReaderContext.<init> (Lorg/springframework/core/io/Resource;Lorg/springframework/beans/factory/parsing/ProblemReporter;Lorg/springframework/beans/factory/parsing/ReaderEventListener;Lorg/springframework/beans/factory/parsing/SourceExtractor;)V
+    constructor-execution(void org.springframework.beans.factory.xml.XmlReaderContext.<init>(org.springframework.core.io.Resource, org.springframework.beans.factory.parsing.ProblemReporter, org.springframework.beans.factory.parsing.ReaderEventListener, org.springframework.beans.factory.parsing.SourceExtractor, org.springframework.beans.factory.xml.XmlBeanDefinitionReader, org.springframework.beans.factory.xml.NamespaceHandlerResolver))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 50)
+    |               ALOAD 5     // Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader; reader
+    |               PUTFIELD org.springframework.beans.factory.xml.XmlReaderContext.reader Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 51)
+    |               ALOAD 6     // Lorg/springframework/beans/factory/xml/NamespaceHandlerResolver; namespaceHandlerResolver
+    |               PUTFIELD org.springframework.beans.factory.xml.XmlReaderContext.namespaceHandlerResolver Lorg/springframework/beans/factory/xml/NamespaceHandlerResolver;
+    |               RETURN   (line 52)
+    constructor-execution(void org.springframework.beans.factory.xml.XmlReaderContext.<init>(org.springframework.core.io.Resource, org.springframework.beans.factory.parsing.ProblemReporter, org.springframework.beans.factory.parsing.ReaderEventListener, org.springframework.beans.factory.parsing.SourceExtractor, org.springframework.beans.factory.xml.XmlBeanDefinitionReader, org.springframework.beans.factory.xml.NamespaceHandlerResolver))
+  end public void <init>(org.springframework.core.io.Resource, org.springframework.beans.factory.parsing.ProblemReporter, org.springframework.beans.factory.parsing.ReaderEventListener, org.springframework.beans.factory.parsing.SourceExtractor, org.springframework.beans.factory.xml.XmlBeanDefinitionReader, org.springframework.beans.factory.xml.NamespaceHandlerResolver)
+
+  public final org.springframework.beans.factory.xml.XmlBeanDefinitionReader getReader():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 56)
+                    GETFIELD org.springframework.beans.factory.xml.XmlReaderContext.reader Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;
+                    ARETURN
+  end public final org.springframework.beans.factory.xml.XmlBeanDefinitionReader getReader()
+
+  public final org.springframework.beans.factory.support.BeanDefinitionRegistry getRegistry():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 60)
+                    GETFIELD org.springframework.beans.factory.xml.XmlReaderContext.reader Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlBeanDefinitionReader.getRegistry ()Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;
+                    ARETURN
+  end public final org.springframework.beans.factory.support.BeanDefinitionRegistry getRegistry()
+
+  public final org.springframework.core.io.ResourceLoader getResourceLoader():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 64)
+                    GETFIELD org.springframework.beans.factory.xml.XmlReaderContext.reader Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlBeanDefinitionReader.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    ARETURN
+  end public final org.springframework.core.io.ResourceLoader getResourceLoader()
+
+  public final ClassLoader getBeanClassLoader():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 68)
+                    GETFIELD org.springframework.beans.factory.xml.XmlReaderContext.reader Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlBeanDefinitionReader.getBeanClassLoader ()Ljava/lang/ClassLoader;
+                    ARETURN
+  end public final ClassLoader getBeanClassLoader()
+
+  public final org.springframework.beans.factory.xml.NamespaceHandlerResolver getNamespaceHandlerResolver():
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 72)
+                    GETFIELD org.springframework.beans.factory.xml.XmlReaderContext.namespaceHandlerResolver Lorg/springframework/beans/factory/xml/NamespaceHandlerResolver;
+                    ARETURN
+  end public final org.springframework.beans.factory.xml.NamespaceHandlerResolver getNamespaceHandlerResolver()
+
+  public String generateBeanName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 77)
+                    GETFIELD org.springframework.beans.factory.xml.XmlReaderContext.reader Lorg/springframework/beans/factory/xml/XmlBeanDefinitionReader;
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlBeanDefinitionReader.getBeanNameGenerator ()Lorg/springframework/beans/factory/support/BeanNameGenerator;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.getRegistry ()Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;
+                    INVOKEINTERFACE org.springframework.beans.factory.support.BeanNameGenerator.generateBeanName (Lorg/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)Ljava/lang/String;
+                    ARETURN
+  end public String generateBeanName(org.springframework.beans.factory.config.BeanDefinition)
+
+  public String registerWithGeneratedName(org.springframework.beans.factory.config.BeanDefinition):
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 81)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.generateBeanName (Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/xml/XmlReaderContext; this   (line 82)
+                    INVOKEVIRTUAL org.springframework.beans.factory.xml.XmlReaderContext.getRegistry ()Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;
+                    ALOAD_2     // Ljava/lang/String; generatedName
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    INVOKEINTERFACE org.springframework.beans.factory.support.BeanDefinitionRegistry.registerBeanDefinition (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)V
+                    ALOAD_2     // Ljava/lang/String; generatedName   (line 83)
+                    ARETURN
+  end public String registerWithGeneratedName(org.springframework.beans.factory.config.BeanDefinition)
+
+end public class org.springframework.beans.factory.xml.XmlReaderContext
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.createReaderContext(XmlBeanDefinitionReader.java:515)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.parsing.ReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.parsing.ReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.parsing.ReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.parsing.ReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.parsing.ReaderContext
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

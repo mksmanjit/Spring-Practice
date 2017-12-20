@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/lang
+        http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
+	
+	<bean id="coconut" class="foo.Coconut">
+		<property name="lime" ref="lime"/>
+	</bean>
+	
+	<!-- <lang:jruby id="lime" script-source="Lime.rb"
+		script-interfaces="foo.Lime"/> -->
+		<!-- <lang:groovy id="lime" script-source="Lime.groovy"/> -->
+		<!-- <lang:bsh id="lime" script-source="Lime.bsh"
+		script-interfaces="foo.Lime" refresh-check-delay="5000"/> -->
+		<lang:bsh id="lime" script-interfaces="foo.Lime" refresh-check-delay="5000">
+			<lang:inline-script>
+				<![CDATA[
+					void drink(){
+						System.out.println("Called the doctor woke him up from Inline Bash!");
+					}
+				]]>
+			</lang:inline-script>
+		</lang:bsh>
+	
+</beans>

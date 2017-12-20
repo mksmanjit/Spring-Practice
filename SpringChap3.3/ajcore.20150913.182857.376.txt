@@ -1,0 +1,306 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.182857.376.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.factory.support.LookupOverride extends org.springframework.beans.factory.support.MethodOverride:
+  private final String beanName
+  public void <init>(String, String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 46)
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESPECIAL org.springframework.beans.factory.support.MethodOverride.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.support.LookupOverride.<init>(java.lang.String, java.lang.String))
+    |               ALOAD_2     // Ljava/lang/String; beanName   (line 47)
+    |               LDC "Bean name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 48)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+    |               RETURN   (line 49)
+    constructor-execution(void org.springframework.beans.factory.support.LookupOverride.<init>(java.lang.String, java.lang.String))
+  end public void <init>(String, String)
+
+  public String getBeanName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 55)
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    ARETURN
+  end public String getBeanName()
+
+  public boolean matches(java.lang.reflect.Method):
+                    ALOAD_1     // Ljava/lang/reflect/Method; method   (line 64)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.LookupOverride.getMethodName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ARRAYLENGTH
+                    IFNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean matches(java.lang.reflect.Method)
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 70)
+                    DUP
+                    LDC "LookupOverride for method '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.LookupOverride.getMethodName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'; will return bean '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  public boolean equals(Object):
+                    ALOAD_1     // Ljava/lang/Object; other   (line 75)
+                    INSTANCEOF org.springframework.beans.factory.support.LookupOverride
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    ALOAD_1     // Ljava/lang/Object; other
+                    INVOKESPECIAL org.springframework.beans.factory.support.MethodOverride.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 76)
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/Object; other
+                    CHECKCAST org.springframework.beans.factory.support.LookupOverride
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN   (line 75)
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    BIPUSH 29   (line 81)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    INVOKESPECIAL org.springframework.beans.factory.support.MethodOverride.hashCode ()I
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode (Ljava/lang/Object;)I
+                    IADD
+                    IRETURN
+  end public int hashCode()
+
+end public class org.springframework.beans.factory.support.LookupOverride
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.factory.support.LookupOverride extends org.springframework.beans.factory.support.MethodOverride:
+  private final String beanName
+  public void <init>(String, String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 46)
+                    ALOAD_1     // Ljava/lang/String; methodName
+                    INVOKESPECIAL org.springframework.beans.factory.support.MethodOverride.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.support.LookupOverride.<init>(java.lang.String, java.lang.String))
+    |               ALOAD_2     // Ljava/lang/String; beanName   (line 47)
+    |               LDC "Bean name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 48)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+    |               RETURN   (line 49)
+    constructor-execution(void org.springframework.beans.factory.support.LookupOverride.<init>(java.lang.String, java.lang.String))
+  end public void <init>(String, String)
+
+  public String getBeanName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 55)
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    ARETURN
+  end public String getBeanName()
+
+  public boolean matches(java.lang.reflect.Method):
+                    ALOAD_1     // Ljava/lang/reflect/Method; method   (line 64)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.LookupOverride.getMethodName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/reflect/Method; method
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ARRAYLENGTH
+                    IFNE L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean matches(java.lang.reflect.Method)
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 70)
+                    DUP
+                    LDC "LookupOverride for method '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.LookupOverride.getMethodName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'; will return bean '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  public boolean equals(Object):
+                    ALOAD_1     // Ljava/lang/Object; other   (line 75)
+                    INSTANCEOF org.springframework.beans.factory.support.LookupOverride
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    ALOAD_1     // Ljava/lang/Object; other
+                    INVOKESPECIAL org.springframework.beans.factory.support.MethodOverride.equals (Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this   (line 76)
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/Object; other
+                    CHECKCAST org.springframework.beans.factory.support.LookupOverride
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN   (line 75)
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    BIPUSH 29   (line 81)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    INVOKESPECIAL org.springframework.beans.factory.support.MethodOverride.hashCode ()I
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/LookupOverride; this
+                    GETFIELD org.springframework.beans.factory.support.LookupOverride.beanName Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode (Ljava/lang/Object;)I
+                    IADD
+                    IRETURN
+  end public int hashCode()
+
+end public class org.springframework.beans.factory.support.LookupOverride
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.createHelper(DefaultBeanDefinitionDocumentReader.java:98)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:90)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

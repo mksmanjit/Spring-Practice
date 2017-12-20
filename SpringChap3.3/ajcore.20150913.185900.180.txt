@@ -1,0 +1,796 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185900.180.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.support.DisposableBeanAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.support.DisposableBeanAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.support.DisposableBeanAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.support.DisposableBeanAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.support.DisposableBeanAdapter
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+ class org.springframework.beans.factory.support.DisposableBeanAdapter extends java.lang.Object implements org.springframework.beans.factory.DisposableBean, java.lang.Runnable, java.io.Serializable:
+  private static final org.apache.commons.logging.Log logger
+  private final Object bean
+  private final String beanName
+  private final boolean invokeDisposableBean
+  private final boolean nonPublicAccessAllowed
+  private String destroyMethodName
+  private transient java.lang.reflect.Method destroyMethod
+  private java.util.List beanPostProcessors [Signature(Ljava/util/List<Lorg/springframework/beans/factory/config/DestructionAwareBeanPostProcessor;>;)]
+  private final java.security.AccessControlContext acc
+  static void <clinit>():
+    staticinitialization(void org.springframework.beans.factory.support.DisposableBeanAdapter.<clinit>())
+    |               LDC org.springframework.beans.factory.support.DisposableBeanAdapter   (line 59)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;
+    |               RETURN   (line 57)
+    staticinitialization(void org.springframework.beans.factory.support.DisposableBeanAdapter.<clinit>())
+  end static void <clinit>()
+
+  public void <init>(Object, String, org.springframework.beans.factory.support.RootBeanDefinition, java.util.List, java.security.AccessControlContext):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 86)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.DisposableBeanAdapter.<init>(java.lang.Object, java.lang.String, org.springframework.beans.factory.support.RootBeanDefinition, java.util.List, java.security.AccessControlContext))
+    |               ALOAD_1     // Ljava/lang/Object; bean   (line 89)
+    |               LDC "Disposable bean must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 90)
+    |               ALOAD_1     // Ljava/lang/Object; bean
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 91)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 92)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 93)
+    |               GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+    |               INSTANCEOF org.springframework.beans.factory.DisposableBean
+    |               IFEQ L0
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition
+    |               LDC "destroy"
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isExternallyManagedDestroyMethod (Ljava/lang/String;)Z
+    |               IFNE L0
+    |               ICONST_1
+    |               GOTO L1
+    |           L0: ICONST_0
+    |           L1: PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.invokeDisposableBean Z   (line 92)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 94)
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isNonPublicAccessAllowed ()Z
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.nonPublicAccessAllowed Z
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 95)
+    |               ALOAD 5     // Ljava/security/AccessControlContext; acc
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.acc Ljava/security/AccessControlContext;
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 97)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getDestroyMethodName ()Ljava/lang/String;
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/lang/String; destroyMethodName   (line 98)
+    |               IFNULL L5
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    |               GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.invokeDisposableBean Z
+    |               IFEQ L2
+    |               LDC "destroy"
+    |               ALOAD 6     // Ljava/lang/String; destroyMethodName
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L5
+    |           L2: ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 99)
+    |               ALOAD 6     // Ljava/lang/String; destroyMethodName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isExternallyManagedDestroyMethod (Ljava/lang/String;)Z
+    |               IFNE L5
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 100)
+    |               ALOAD 6     // Ljava/lang/String; destroyMethodName
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 101)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    |               INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.determineDestroyMethod ()Ljava/lang/reflect/Method;
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethod Ljava/lang/reflect/Method;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 102)
+    |               GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethod Ljava/lang/reflect/Method;
+    |               IFNONNULL L3
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/RootBeanDefinition; beanDefinition   (line 103)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isEnforceDestroyMethod ()Z
+    |               IFEQ L5
+    |               NEW org.springframework.beans.factory.support.BeanDefinitionValidationException   (line 104)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC "Couldn't find a destroy method named '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 6     // Ljava/lang/String; destroyMethodName   (line 105)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' on bean with name '"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "'"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValidationException.<init> (Ljava/lang/String;)V   (line 104)
+    |               ATHROW
+    |           L3: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 109)
+    |               GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethod Ljava/lang/reflect/Method;
+    |               INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+    |               ASTORE 7
+    |               ALOAD 7     // [Ljava/lang/Class; paramTypes   (line 110)
+    |               ARRAYLENGTH
+    |               ICONST_1
+    |               IF_ICMPLE L4
+    |               NEW org.springframework.beans.factory.support.BeanDefinitionValidationException   (line 111)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC "Method '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 6     // Ljava/lang/String; destroyMethodName
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' of bean '"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD_2     // Ljava/lang/String; beanName   (line 112)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' has more than one parameter - not supported as destroy method"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValidationException.<init> (Ljava/lang/String;)V   (line 111)
+    |               ATHROW
+    |           L4: ALOAD 7     // [Ljava/lang/Class; paramTypes   (line 114)
+    |               ARRAYLENGTH
+    |               ICONST_1
+    |               IF_ICMPNE L5
+    |               ALOAD 7     // [Ljava/lang/Class; paramTypes
+    |               ICONST_0
+    |               AALOAD
+    |               GETSTATIC java.lang.Boolean.TYPE Ljava/lang/Class;
+    |               INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+    |               IFNE L5
+    |               NEW org.springframework.beans.factory.support.BeanDefinitionValidationException   (line 115)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC "Method '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 6     // Ljava/lang/String; destroyMethodName
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' of bean '"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD_2     // Ljava/lang/String; beanName   (line 116)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "' has a non-boolean parameter - not supported as destroy method"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValidationException.<init> (Ljava/lang/String;)V   (line 115)
+    |               ATHROW
+    |           L5: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 120)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    |               ALOAD 4     // Ljava/util/List; postProcessors
+    |               INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.filterPostProcessors (Ljava/util/List;)Ljava/util/List;
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanPostProcessors Ljava/util/List;
+    |               RETURN   (line 121)
+    constructor-execution(void org.springframework.beans.factory.support.DisposableBeanAdapter.<init>(java.lang.Object, java.lang.String, org.springframework.beans.factory.support.RootBeanDefinition, java.util.List, java.security.AccessControlContext))
+  end public void <init>(Object, String, org.springframework.beans.factory.support.RootBeanDefinition, java.util.List, java.security.AccessControlContext)
+
+  private void <init>(Object, String, boolean, boolean, String, java.util.List):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 126)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.DisposableBeanAdapter.<init>(java.lang.Object, java.lang.String, boolean, boolean, java.lang.String, java.util.List))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 130)
+    |               ALOAD_1     // Ljava/lang/Object; bean
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 131)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 132)
+    |               ILOAD_3     // Z invokeDisposableBean
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.invokeDisposableBean Z
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 133)
+    |               ILOAD 4     // Z nonPublicAccessAllowed
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.nonPublicAccessAllowed Z
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 134)
+    |               ALOAD 5     // Ljava/lang/String; destroyMethodName
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 135)
+    |               ALOAD 6     // Ljava/util/List; postProcessors
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanPostProcessors Ljava/util/List;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 136)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.acc Ljava/security/AccessControlContext;
+    |               RETURN   (line 137)
+    constructor-execution(void org.springframework.beans.factory.support.DisposableBeanAdapter.<init>(java.lang.Object, java.lang.String, boolean, boolean, java.lang.String, java.util.List))
+  end private void <init>(Object, String, boolean, boolean, String, java.util.List)
+
+  private java.util.List filterPostProcessors(java.util.List):
+                    ACONST_NULL   (line 146)
+                    ASTORE_2
+                    ALOAD_1     // Ljava/util/List; postProcessors   (line 147)
+                    IFNULL L2
+                    ALOAD_1     // Ljava/util/List; postProcessors
+                    INVOKEINTERFACE java.util.List.isEmpty ()Z
+                    IFNE L2
+                    NEW java.util.ArrayList   (line 148)
+                    DUP
+                    ALOAD_1     // Ljava/util/List; postProcessors
+                    INVOKEINTERFACE java.util.List.size ()I
+                    INVOKESPECIAL java.util.ArrayList.<init> (I)V
+                    ASTORE_2     // Ljava/util/List; filteredPostProcessors
+                    ALOAD_1     // Ljava/util/List; postProcessors   (line 149)
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L1
+                L0: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.BeanPostProcessor
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanPostProcessor; postProcessor   (line 150)
+                    INSTANCEOF org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor
+                    IFEQ L1
+                    ALOAD_2     // Ljava/util/List; filteredPostProcessors   (line 151)
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanPostProcessor; postProcessor
+                    CHECKCAST org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L1: ALOAD 4   (line 149)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ALOAD_2     // Ljava/util/List; filteredPostProcessors   (line 155)
+                    ARETURN
+  end private java.util.List filterPostProcessors(java.util.List)
+
+  public void run():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 160)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.DisposableBeanAdapter.destroy ()V
+                    RETURN   (line 161)
+  end public void run()
+
+  public void destroy():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 164)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanPostProcessors Ljava/util/List;
+                    IFNULL L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanPostProcessors Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.isEmpty ()Z
+                    IFNE L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 165)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanPostProcessors Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE_2
+                    GOTO L1
+                L0: ALOAD_2
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor
+                    ASTORE_1
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/DestructionAwareBeanPostProcessor; processor   (line 166)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor.postProcessBeforeDestruction (Ljava/lang/Object;Ljava/lang/String;)V
+                L1: ALOAD_2   (line 165)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 170)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.invokeDisposableBean Z
+                    IFEQ L6
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 171)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L3
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 172)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invoking destroy() on bean with name '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    catch java.lang.Throwable -> E0
+    |           L3: INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 175)
+    |               IFNULL L4
+    |               NEW org.springframework.beans.factory.support.DisposableBeanAdapter$1   (line 176)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    |               INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter$1.<init> (Lorg/springframework/beans/factory/support/DisposableBeanAdapter;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 181)
+    |               GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.acc Ljava/security/AccessControlContext;
+    |               INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;   (line 176)
+    |               POP
+    |               GOTO L6
+    |           L4: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 184)
+    |               GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+    |               CHECKCAST org.springframework.beans.factory.DisposableBean
+    |               INVOKEINTERFACE org.springframework.beans.factory.DisposableBean.destroy ()V
+    catch java.lang.Throwable -> E0
+                    GOTO L6
+                E0: ASTORE_1   (line 187)
+                    NEW java.lang.StringBuilder   (line 188)
+                    DUP
+                    LDC "Invocation of destroy method failed on bean with name '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_2
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 189)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L5
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 190)
+                    ALOAD_2     // Ljava/lang/String; msg
+                    ALOAD_1     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    GOTO L6
+                L5: GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 193)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; msg
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Throwable; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                L6: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 198)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethod Ljava/lang/reflect/Method;
+                    IFNULL L7
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 199)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethod Ljava/lang/reflect/Method;
+                    INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod (Ljava/lang/reflect/Method;)V
+                    GOTO L8
+                L7: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 201)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+                    IFNULL L8
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 202)
+                    INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.determineDestroyMethod ()Ljava/lang/reflect/Method;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/reflect/Method; methodToCall   (line 203)
+                    IFNULL L8
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 204)
+                    ALOAD_1     // Ljava/lang/reflect/Method; methodToCall
+                    INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod (Ljava/lang/reflect/Method;)V
+                L8: RETURN   (line 207)
+  end public void destroy()
+
+  private java.lang.reflect.Method determineDestroyMethod():
+    catch java.lang.IllegalArgumentException -> E1
+    |               INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 212)
+    |               IFNULL L0
+    |               NEW org.springframework.beans.factory.support.DisposableBeanAdapter$2   (line 213)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    |               INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter$2.<init> (Lorg/springframework/beans/factory/support/DisposableBeanAdapter;)V
+    |               INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.reflect.Method
+    catch java.lang.IllegalArgumentException -> E1
+                    ARETURN
+    catch java.lang.IllegalArgumentException -> E1
+    |           L0: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 220)
+    |               INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.findDestroyMethod ()Ljava/lang/reflect/Method;
+    catch java.lang.IllegalArgumentException -> E1
+                    ARETURN
+                E1: ASTORE_1   (line 223)
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValidationException   (line 224)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Couldn't find a unique destroy method on bean with name '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 225)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/IllegalArgumentException; ex
+                    INVOKEVIRTUAL java.lang.IllegalArgumentException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValidationException.<init> (Ljava/lang/String;)V   (line 224)
+                    ATHROW
+  end private java.lang.reflect.Method determineDestroyMethod()
+
+  private java.lang.reflect.Method findDestroyMethod():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 230)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.nonPublicAccessAllowed Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 231)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+                    INVOKESTATIC org.springframework.beans.BeanUtils.findMethodWithMinimalParameters (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Method;
+                    GOTO L1
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 232)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getMethods ()[Ljava/lang/reflect/Method;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+                    INVOKESTATIC org.springframework.beans.BeanUtils.findMethodWithMinimalParameters ([Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/reflect/Method;
+                L1: ARETURN   (line 230)
+  end private java.lang.reflect.Method findDestroyMethod()
+
+  private void invokeCustomDestroyMethod(java.lang.reflect.Method):
+                    ALOAD_1     // Ljava/lang/reflect/Method; destroyMethod   (line 242)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes   (line 243)
+                    ARRAYLENGTH
+                    ANEWARRAY java.lang.Object
+                    ASTORE_3
+                    ALOAD_2     // [Ljava/lang/Class; paramTypes   (line 244)
+                    ARRAYLENGTH
+                    ICONST_1
+                    IF_ICMPNE L0
+                    ALOAD_3     // [Ljava/lang/Object; args   (line 245)
+                    ICONST_0
+                    GETSTATIC java.lang.Boolean.TRUE Ljava/lang/Boolean;
+                    AASTORE
+                L0: GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 247)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L1
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 248)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Invoking destroy method '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' on bean with name '"   (line 249)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 248)
+    catch java.lang.Throwable -> E2
+    | catch java.lang.reflect.InvocationTargetException -> E1
+    | |         L1: INVOKESTATIC java.lang.System.getSecurityManager ()Ljava/lang/SecurityManager;   (line 252)
+    | |             IFNULL L2
+    | |             NEW org.springframework.beans.factory.support.DisposableBeanAdapter$3   (line 253)
+    | |             DUP
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    | |             ALOAD_1     // Ljava/lang/reflect/Method; destroyMethod
+    | |             INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter$3.<init> (Lorg/springframework/beans/factory/support/DisposableBeanAdapter;Ljava/lang/reflect/Method;)V
+    | |             INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedAction;)Ljava/lang/Object;
+    | |             POP
+    | | catch java.security.PrivilegedActionException -> E0
+    | | |           NEW org.springframework.beans.factory.support.DisposableBeanAdapter$4   (line 260)
+    | | |           DUP
+    | | |           ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    | | |           ALOAD_1     // Ljava/lang/reflect/Method; destroyMethod
+    | | |           ALOAD_3     // [Ljava/lang/Object; args
+    | | |           INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter$4.<init> (Lorg/springframework/beans/factory/support/DisposableBeanAdapter;Ljava/lang/reflect/Method;[Ljava/lang/Object;)V
+    | | |           ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 265)
+    | | |           GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.acc Ljava/security/AccessControlContext;
+    | | |           INVOKESTATIC java.security.AccessController.doPrivileged (Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;   (line 260)
+    | | |           POP
+    | | catch java.security.PrivilegedActionException -> E0
+    | |             GOTO L4
+    | |         E0: ASTORE 4   (line 267)
+    | |             ALOAD 4     // Ljava/security/PrivilegedActionException; pax   (line 268)
+    | |             INVOKEVIRTUAL java.security.PrivilegedActionException.getException ()Ljava/lang/Exception;
+    | |             CHECKCAST java.lang.reflect.InvocationTargetException
+    | |             ATHROW
+    | |         L2: ALOAD_1     // Ljava/lang/reflect/Method; destroyMethod   (line 272)
+    | |             INVOKESTATIC org.springframework.util.ReflectionUtils.makeAccessible (Ljava/lang/reflect/Method;)V
+    | |             ALOAD_1     // Ljava/lang/reflect/Method; destroyMethod   (line 273)
+    | |             ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+    | |             GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+    | |             ALOAD_3     // [Ljava/lang/Object; args
+    | |             INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    | |             POP
+    | catch java.lang.reflect.InvocationTargetException -> E1
+    catch java.lang.Throwable -> E2
+                    GOTO L4
+                E1: ASTORE 4   (line 276)
+                    NEW java.lang.StringBuilder   (line 277)
+                    DUP
+                    LDC_W "Invocation of destroy method '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "' failed on bean with name '"   (line 278)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 277)
+                    ASTORE 5
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 279)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L3
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 280)
+                    ALOAD 5     // Ljava/lang/String; msg
+                    ALOAD 4     // Ljava/lang/reflect/InvocationTargetException; ex
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    GOTO L4
+                L3: GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 283)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD 5     // Ljava/lang/String; msg
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Ljava/lang/reflect/InvocationTargetException; ex
+                    INVOKEVIRTUAL java.lang.reflect.InvocationTargetException.getTargetException ()Ljava/lang/Throwable;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                    GOTO L4
+                E2: ASTORE 4   (line 286)
+                    GETSTATIC org.springframework.beans.factory.support.DisposableBeanAdapter.logger Lorg/apache/commons/logging/Log;   (line 287)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Couldn't invoke destroy method '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' on bean with name '"   (line 288)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 4     // Ljava/lang/Throwable; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.error (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 287)
+                L4: RETURN   (line 290)
+  end private void invokeCustomDestroyMethod(java.lang.reflect.Method)
+
+  protected Object writeReplace():
+                    ACONST_NULL   (line 298)
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 299)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanPostProcessors Ljava/util/List;
+                    IFNULL L2
+                    NEW java.util.ArrayList   (line 300)
+                    DUP
+                    INVOKESPECIAL java.util.ArrayList.<init> ()V
+                    ASTORE_1     // Ljava/util/List; serializablePostProcessors
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 301)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanPostProcessors Ljava/util/List;
+                    INVOKEINTERFACE java.util.List.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor
+                    ASTORE_2
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/DestructionAwareBeanPostProcessor; postProcessor   (line 302)
+                    INSTANCEOF java.io.Serializable
+                    IFEQ L1
+                    ALOAD_1     // Ljava/util/List; serializablePostProcessors   (line 303)
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/DestructionAwareBeanPostProcessor; postProcessor
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z
+                    POP
+                L1: ALOAD_3   (line 301)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: NEW org.springframework.beans.factory.support.DisposableBeanAdapter   (line 307)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.beanName Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.invokeDisposableBean Z
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this   (line 308)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.nonPublicAccessAllowed Z
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/DisposableBeanAdapter; this
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.destroyMethodName Ljava/lang/String;
+                    ALOAD_1     // Ljava/util/List; serializablePostProcessors
+                    INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.<init> (Ljava/lang/Object;Ljava/lang/String;ZZLjava/lang/String;Ljava/util/List;)V   (line 307)
+                    ARETURN
+  end protected Object writeReplace()
+
+  static Object access$0(org.springframework.beans.factory.support.DisposableBeanAdapter):
+                    ALOAD_0   (line 61)
+                    GETFIELD org.springframework.beans.factory.support.DisposableBeanAdapter.bean Ljava/lang/Object;
+                    ARETURN
+  end static Object access$0(org.springframework.beans.factory.support.DisposableBeanAdapter)
+
+  static java.lang.reflect.Method access$1(org.springframework.beans.factory.support.DisposableBeanAdapter):
+                    ALOAD_0   (line 229)
+                    INVOKESPECIAL org.springframework.beans.factory.support.DisposableBeanAdapter.findDestroyMethod ()Ljava/lang/reflect/Method;
+                    ARETURN
+  end static java.lang.reflect.Method access$1(org.springframework.beans.factory.support.DisposableBeanAdapter)
+end  class org.springframework.beans.factory.support.DisposableBeanAdapter
+ -- (ClassFormatException) File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:402)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:467)
+	at org.aspectj.weaver.World.resolve(World.java:308)
+	at org.aspectj.weaver.World.resolve(World.java:218)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:268)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:201)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:203)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:183)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.registerDisposableBeanIfNecessary(AbstractBeanFactory.java:1480)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.context.support.DefaultLifecycleProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.context.support.DefaultLifecycleProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.context.support.DefaultLifecycleProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.context.support.DefaultLifecycleProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.context.support.DefaultLifecycleProcessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

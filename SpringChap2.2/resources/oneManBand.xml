@@ -1,0 +1,47 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+	<bean id="oneManBandProp" class="foo.OneManBandProp">
+		<property name="instruments">
+		  <props>
+			<prop key="GUITAR">STRUM STRUM STRUM</prop>
+			<prop key="HARMONICA">HUM HUM HUM</prop>
+			<prop key="PIANO">PIANO PIANO PIANO</prop>
+		 </props>
+		</property>
+	</bean>
+	<bean id="oneManBandMap" class="foo.OneManBandMap">
+		<property name="instruments">
+			<map>
+				<entry key="GUITAR" value-ref="guitar"/>
+				<entry key="HARMONICA" value-ref="harmonica"/>
+				<entry key="PIANO" value-ref="piano"/>
+			</map>
+		</property>
+	</bean>
+	<bean id="oneManBand" class="foo.OneManBand">
+		<property name="instruments">
+			<list>
+				<ref bean="guitar"/>
+				<ref bean="harmonica"/>
+				<ref bean="piano"/>
+				<ref bean="piano"/>
+				<value>manjit</value>
+			</list>
+			<!-- <set>
+				<ref bean="guitar"/>
+				<ref bean="harmonica"/>
+				<ref bean="piano"/>
+				<ref bean="piano"/>
+			</set> -->
+		</property>
+	</bean>
+	<bean id="guitar" class="foo.Guitar"/>
+	<bean id="harmonica" class="foo.Harmonica"/>
+	<bean id="piano" class="foo.Piano"/>
+</beans>

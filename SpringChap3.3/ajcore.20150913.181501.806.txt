@@ -1,0 +1,1572 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.181501.806.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+ class org.springframework.beans.factory.support.BeanDefinitionValueResolver extends java.lang.Object:
+  private final org.springframework.beans.factory.support.AbstractBeanFactory beanFactory
+  private final String beanName
+  private final org.springframework.beans.factory.config.BeanDefinition beanDefinition
+  private final org.springframework.beans.TypeConverter typeConverter
+  public void <init>(org.springframework.beans.factory.support.AbstractBeanFactory, String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 74)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.BeanDefinitionValueResolver.<init>(org.springframework.beans.factory.support.AbstractBeanFactory, java.lang.String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 77)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/support/AbstractBeanFactory; beanFactory
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 78)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 79)
+    |               ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 80)
+    |               ALOAD 4     // Lorg/springframework/beans/TypeConverter; typeConverter
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.typeConverter Lorg/springframework/beans/TypeConverter;
+    |               RETURN   (line 81)
+    constructor-execution(void org.springframework.beans.factory.support.BeanDefinitionValueResolver.<init>(org.springframework.beans.factory.support.AbstractBeanFactory, java.lang.String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter))
+  end public void <init>(org.springframework.beans.factory.support.AbstractBeanFactory, String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter)
+
+  public Object resolveValueIfNecessary(Object, Object):
+                    ALOAD_2     // Ljava/lang/Object; value   (line 104)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanReference
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/Object; value   (line 105)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanReference
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 106)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference (Ljava/lang/Object;Lorg/springframework/beans/factory/config/RuntimeBeanReference;)Ljava/lang/Object;
+                    ARETURN
+                L0: ALOAD_2     // Ljava/lang/Object; value   (line 108)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    IFEQ L2
+                    ALOAD_2     // Ljava/lang/Object; value   (line 109)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanNameReference.getBeanName ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 110)
+                    ALOAD_3     // Ljava/lang/String; refName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; refName
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 111)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_3     // Ljava/lang/String; refName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IFNE L1
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 112)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 113)
+                    DUP
+                    LDC "Invalid bean name '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/String; refName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' in bean reference for "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;)V   (line 112)
+                    ATHROW
+                L1: ALOAD_3     // Ljava/lang/String; refName   (line 115)
+                    ARETURN
+                L2: ALOAD_2     // Ljava/lang/Object; value   (line 117)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinitionHolder
+                    IFEQ L3
+                    ALOAD_2     // Ljava/lang/Object; value   (line 119)
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinitionHolder
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 120)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; bdHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanName ()Ljava/lang/String;
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; bdHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanDefinition ()Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean (Ljava/lang/Object;Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ARETURN
+                L3: ALOAD_2     // Ljava/lang/Object; value   (line 122)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinition
+                    IFEQ L4
+                    ALOAD_2     // Ljava/lang/Object; value   (line 124)
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinition
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 125)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    LDC "(inner bean)"
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinition; bd
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean (Ljava/lang/Object;Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ARETURN
+                L4: ALOAD_2     // Ljava/lang/Object; value   (line 127)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedArray
+                    IFEQ L7
+                    ALOAD_2     // Ljava/lang/Object; value   (line 129)
+                    CHECKCAST org.springframework.beans.factory.support.ManagedArray
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/ManagedArray; array   (line 130)
+                    GETFIELD org.springframework.beans.factory.support.ManagedArray.resolvedElementType Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementType   (line 131)
+                    IFNONNULL L6
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/ManagedArray; array   (line 132)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.ManagedArray.getElementTypeName ()Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 5     // Ljava/lang/String; elementTypeName   (line 133)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L5
+    catch java.lang.Throwable -> E0
+    |               ALOAD 5     // Ljava/lang/String; elementTypeName   (line 135)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBeanClassLoader ()Ljava/lang/ClassLoader;
+    |               INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    |               ASTORE 4     // Ljava/lang/Class; elementType
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/ManagedArray; array   (line 136)
+    |               ALOAD 4     // Ljava/lang/Class; elementType
+    |               PUTFIELD org.springframework.beans.factory.support.ManagedArray.resolvedElementType Ljava/lang/Class;
+    catch java.lang.Throwable -> E0
+                    GOTO L6
+                E0: ASTORE 6   (line 138)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 140)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 141)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 142)
+                    DUP
+                    LDC "Error resolving array type for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 6     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 140)
+                    ATHROW
+                L5: LDC java.lang.Object   (line 146)
+                    ASTORE 4     // Ljava/lang/Class; elementType
+                L6: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 149)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.List
+                    ALOAD 4     // Ljava/lang/Class; elementType
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedArray (Ljava/lang/Object;Ljava/util/List;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+                L7: ALOAD_2     // Ljava/lang/Object; value   (line 151)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedList
+                    IFEQ L8
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 153)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.List
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList (Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;
+                    ARETURN
+                L8: ALOAD_2     // Ljava/lang/Object; value   (line 155)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedSet
+                    IFEQ L9
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 157)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Set
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedSet (Ljava/lang/Object;Ljava/util/Set;)Ljava/util/Set;
+                    ARETURN
+                L9: ALOAD_2     // Ljava/lang/Object; value   (line 159)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedMap
+                    IFEQ L10
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 161)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Map
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap (Ljava/lang/Object;Ljava/util/Map;)Ljava/util/Map;
+                    ARETURN
+               L10: ALOAD_2     // Ljava/lang/Object; value   (line 163)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedProperties
+                    IFEQ L15
+                    ALOAD_2     // Ljava/lang/Object; value   (line 164)
+                    CHECKCAST java.util.Properties
+                    ASTORE_3
+                    NEW java.util.Properties   (line 165)
+                    DUP
+                    INVOKESPECIAL java.util.Properties.<init> ()V
+                    ASTORE 4
+                    ALOAD_3     // Ljava/util/Properties; original   (line 166)
+                    INVOKEVIRTUAL java.util.Properties.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L14
+               L11: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 5
+                    ALOAD 5     // Ljava/util/Map$Entry; propEntry   (line 167)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    ASTORE 7
+                    ALOAD 5     // Ljava/util/Map$Entry; propEntry   (line 168)
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    ASTORE 8
+                    ALOAD 7     // Ljava/lang/Object; propKey   (line 169)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L12
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 170)
+                    ALOAD 7     // Ljava/lang/Object; propKey
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Object;
+                    ASTORE 7     // Ljava/lang/Object; propKey
+               L12: ALOAD 8     // Ljava/lang/Object; propValue   (line 172)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L13
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 173)
+                    ALOAD 8     // Ljava/lang/Object; propValue
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Object;
+                    ASTORE 8     // Ljava/lang/Object; propValue
+               L13: ALOAD 4     // Ljava/util/Properties; copy   (line 175)
+                    ALOAD 7     // Ljava/lang/Object; propKey
+                    ALOAD 8     // Ljava/lang/Object; propValue
+                    INVOKEVIRTUAL java.util.Properties.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+               L14: ALOAD 6   (line 166)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L11
+                    ALOAD 4     // Ljava/util/Properties; copy   (line 177)
+                    ARETURN
+               L15: ALOAD_2     // Ljava/lang/Object; value   (line 179)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L17
+                    ALOAD_2     // Ljava/lang/Object; value   (line 181)
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 182)
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Object;
+                    ASTORE 4
+    catch java.lang.Throwable -> E2
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 184)
+    |               ALOAD_3     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveTargetType (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Class;
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/Class; resolvedTargetType   (line 185)
+    |               IFNULL L16
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 186)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.typeConverter Lorg/springframework/beans/TypeConverter;
+    |               ALOAD 4     // Ljava/lang/Object; valueObject
+    |               ALOAD 5     // Ljava/lang/Class; resolvedTargetType
+    |               INVOKEINTERFACE org.springframework.beans.TypeConverter.convertIfNecessary (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+    catch java.lang.Throwable -> E2
+                    ARETURN
+    catch java.lang.Throwable -> E2
+    |          L16: ALOAD 4     // Ljava/lang/Object; valueObject   (line 189)
+    catch java.lang.Throwable -> E2
+                    ARETURN
+                E2: ASTORE 5   (line 192)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 194)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 195)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 196)
+                    DUP
+                    LDC "Error converting typed String value for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 5     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 194)
+                    ATHROW
+               L17: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 200)
+                    ALOAD_2     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public Object resolveValueIfNecessary(Object, Object)
+
+  protected Object evaluate(org.springframework.beans.factory.config.TypedStringValue):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 210)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getValue ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; result   (line 211)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getValue ()Ljava/lang/String;
+                    IF_ACMPEQ L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 212)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setDynamic ()V
+                L0: ALOAD_2     // Ljava/lang/Object; result   (line 214)
+                    ARETURN
+  end protected Object evaluate(org.springframework.beans.factory.config.TypedStringValue)
+
+  protected Object evaluate(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 223)
+                    INSTANCEOF java.lang.String
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 224)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.lang.String
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 227)
+                    ARETURN
+  end protected Object evaluate(Object)
+
+  protected Class resolveTargetType(org.springframework.beans.factory.config.TypedStringValue) throws java.lang.ClassNotFoundException:
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 239)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.hasTargetType ()Z
+                    IFEQ L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 240)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getTargetType ()Ljava/lang/Class;
+                    ARETURN
+                L0: ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 242)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBeanClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.resolveTargetType (Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ARETURN
+  end protected Class resolveTargetType(org.springframework.beans.factory.config.TypedStringValue) throws java.lang.ClassNotFoundException
+
+  private Object resolveInnerBean(Object, String, org.springframework.beans.factory.config.BeanDefinition):
+                    ACONST_NULL   (line 253)
+                    ASTORE 4
+    catch org.springframework.beans.BeansException -> E1
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 255)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_2     // Ljava/lang/String; innerBeanName
+    |               ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinition; innerBd
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getMergedBeanDefinition (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/config/BeanDefinition;)Lorg/springframework/beans/factory/support/RootBeanDefinition;
+    |               ASTORE 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+    |               ALOAD_2     // Ljava/lang/String; innerBeanName   (line 258)
+    |               ASTORE 5
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 259)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isSingleton ()Z
+    |               IFEQ L0
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 260)
+    |               ALOAD_2     // Ljava/lang/String; innerBeanName
+    |               INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.adaptInnerBeanName (Ljava/lang/String;)Ljava/lang/String;
+    |               ASTORE 5     // Ljava/lang/String; actualInnerBeanName
+    |           L0: ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 263)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getDependsOn ()[Ljava/lang/String;
+    |               ASTORE 6
+    |               ALOAD 6     // [Ljava/lang/String; dependsOn   (line 264)
+    |               IFNULL L3
+    |               ALOAD 6     // [Ljava/lang/String; dependsOn   (line 265)
+    |               DUP
+    |               ASTORE 10
+    |               ARRAYLENGTH
+    |               ISTORE 9
+    |               ICONST_0
+    |               ISTORE 8
+    |               GOTO L2
+    |           L1: ALOAD 10
+    |               ILOAD 8
+    |               AALOAD
+    |               ASTORE 7
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 266)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 7     // Ljava/lang/String; dependsOnBean
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+    |               POP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 267)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 7     // Ljava/lang/String; dependsOnBean
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.registerDependentBean (Ljava/lang/String;Ljava/lang/String;)V
+    |               IINC 8 1   (line 265)
+    |           L2: ILOAD 8
+    |               ILOAD 9
+    |               IF_ICMPLT L1
+    |           L3: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 270)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+    |               ACONST_NULL
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.createBean (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;
+    |               ASTORE 7
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 271)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.registerContainedBean (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD 7     // Ljava/lang/Object; innerBean   (line 272)
+    |               INSTANCEOF org.springframework.beans.factory.FactoryBean
+    |               IFEQ L8
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 273)
+    |               IFNULL L4
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isSynthetic ()Z
+    |               IFEQ L4
+    |               ICONST_1
+    |               GOTO L5
+    |           L4: ICONST_0
+    |           L5: ISTORE 8
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 274)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 7     // Ljava/lang/Object; innerBean
+    |               CHECKCAST org.springframework.beans.factory.FactoryBean
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               ILOAD 8     // Z synthetic
+    |               IFEQ L6
+    |               ICONST_0
+    |               GOTO L7
+    |           L6: ICONST_1
+    |           L7: INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getObjectFromFactoryBean (Lorg/springframework/beans/factory/FactoryBean;Ljava/lang/String;Z)Ljava/lang/Object;
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+    catch org.springframework.beans.BeansException -> E1
+    |           L8: ALOAD 7     // Ljava/lang/Object; innerBean   (line 277)
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+                E1: ASTORE 5   (line 280)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 281)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 282)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 283)
+                    DUP
+                    LDC_W "Cannot create inner bean '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; innerBeanName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "' "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 284)
+                    IFNULL L9
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getBeanClassName ()Ljava/lang/String;
+                    IFNULL L9
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "of type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getBeanClassName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    GOTO L10
+                L9: LDC_W ""
+               L10: INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "while setting "   (line 285)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 283)
+                    ALOAD 5     // Lorg/springframework/beans/BeansException; ex   (line 285)
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 281)
+                    ATHROW
+  end private Object resolveInnerBean(Object, String, org.springframework.beans.factory.config.BeanDefinition)
+
+  private String adaptInnerBeanName(String):
+                    ALOAD_1     // Ljava/lang/String; innerBeanName   (line 296)
+                    ASTORE_2
+                    ICONST_0   (line 297)
+                    ISTORE_3
+                    GOTO L1   (line 298)
+                L0: IINC_3 1     // I counter   (line 299)
+                    NEW java.lang.StringBuilder   (line 300)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; innerBeanName
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "#"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ILOAD_3     // I counter
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_2     // Ljava/lang/String; actualInnerBeanName
+                L1: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 298)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_2     // Ljava/lang/String; actualInnerBeanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.isBeanNameInUse (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_2     // Ljava/lang/String; actualInnerBeanName   (line 302)
+                    ARETURN
+  end private String adaptInnerBeanName(String)
+
+  private Object resolveReference(Object, org.springframework.beans.factory.config.RuntimeBeanReference):
+    catch org.springframework.beans.BeansException -> E1
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref   (line 310)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+    |               ASTORE_3
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 311)
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Ljava/lang/Object;)Ljava/lang/Object;
+    |               INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+    |               ASTORE_3     // Ljava/lang/String; refName
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref   (line 312)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.isToParent ()Z
+    |               IFEQ L1
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 313)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+    |               IFNONNULL L0
+    |               NEW org.springframework.beans.factory.BeanCreationException   (line 314)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 315)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               NEW java.lang.StringBuilder   (line 316)
+    |               DUP
+    |               LDC_W "Can't resolve reference to bean '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC_W "' in parent factory: no parent factory available"   (line 317)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 316)
+    |               INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V   (line 314)
+    |               ATHROW
+    |           L0: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 319)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEINTERFACE org.springframework.beans.factory.BeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+    catch org.springframework.beans.BeansException -> E1
+    |           L1: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 322)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+    |               ASTORE 4
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 323)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.registerDependentBean (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD 4     // Ljava/lang/Object; bean   (line 324)
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+                E1: ASTORE_3   (line 327)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 328)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 329)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 330)
+                    DUP
+                    LDC_W "Cannot resolve reference to bean '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "' while setting "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_3     // Lorg/springframework/beans/BeansException; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 328)
+                    ATHROW
+  end private Object resolveReference(Object, org.springframework.beans.factory.config.RuntimeBeanReference)
+
+  private Object resolveManagedArray(Object, java.util.List, Class):
+                    ALOAD_3     // Ljava/lang/Class; elementType   (line 338)
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    ASTORE 4
+                    ICONST_0   (line 339)
+                    ISTORE 5
+                    GOTO L1
+                L0: ALOAD 4     // Ljava/lang/Object; resolved   (line 340)
+                    ILOAD 5     // I i
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 341)
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ILOAD 5     // I i
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD_2     // Ljava/util/List; ml
+                    ILOAD 5     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKESTATIC java.lang.reflect.Array.set (Ljava/lang/Object;ILjava/lang/Object;)V   (line 340)
+                    IINC 5 1     // I i   (line 339)
+                L1: ILOAD 5     // I i
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    ALOAD 4     // Ljava/lang/Object; resolved   (line 343)
+                    ARETURN
+  end private Object resolveManagedArray(Object, java.util.List, Class)
+
+  private java.util.List resolveManagedList(Object, java.util.List):
+                    NEW java.util.ArrayList   (line 350)
+                    DUP
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    INVOKESPECIAL java.util.ArrayList.<init> (I)V
+                    ASTORE_3
+                    ICONST_0   (line 351)
+                    ISTORE 4
+                    GOTO L1
+                L0: ALOAD_3     // Ljava/util/List; resolved   (line 352)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 353)
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ILOAD 4     // I i
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD_2     // Ljava/util/List; ml
+                    ILOAD 4     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z   (line 352)
+                    POP
+                    IINC 4 1     // I i   (line 351)
+                L1: ILOAD 4     // I i
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    ALOAD_3     // Ljava/util/List; resolved   (line 355)
+                    ARETURN
+  end private java.util.List resolveManagedList(Object, java.util.List)
+
+  private java.util.Set resolveManagedSet(Object, java.util.Set):
+                    NEW java.util.LinkedHashSet   (line 362)
+                    DUP
+                    ALOAD_2     // Ljava/util/Set; ms
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE_3
+                    ICONST_0   (line 363)
+                    ISTORE 4
+                    ALOAD_2     // Ljava/util/Set; ms   (line 364)
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L1
+                L0: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 5
+                    ALOAD_3     // Ljava/util/Set; resolved   (line 365)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ILOAD 4     // I i
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD 5     // Ljava/lang/Object; m
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC 4 1     // I i   (line 366)
+                L1: ALOAD 6   (line 364)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_3     // Ljava/util/Set; resolved   (line 368)
+                    ARETURN
+  end private java.util.Set resolveManagedSet(Object, java.util.Set)
+
+  private java.util.Map resolveManagedMap(Object, java.util.Map):
+                    NEW java.util.LinkedHashMap   (line 375)
+                    DUP
+                    ALOAD_2     // Ljava/util/Map; mm
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> (I)V
+                    ASTORE_3
+                    ALOAD_2     // Ljava/util/Map; mm   (line 376)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L1
+                L0: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 377)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 378)
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName   (line 379)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;   (line 378)
+                    ASTORE 7
+                    ALOAD_3     // Ljava/util/Map; resolved   (line 380)
+                    ALOAD 6     // Ljava/lang/Object; resolvedKey
+                    ALOAD 7     // Ljava/lang/Object; resolvedValue
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L1: ALOAD 5   (line 376)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_3     // Ljava/util/Map; resolved   (line 382)
+                    ARETURN
+  end private java.util.Map resolveManagedMap(Object, java.util.Map)
+
+end  class org.springframework.beans.factory.support.BeanDefinitionValueResolver
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+ class org.springframework.beans.factory.support.BeanDefinitionValueResolver extends java.lang.Object:
+  private final org.springframework.beans.factory.support.AbstractBeanFactory beanFactory
+  private final String beanName
+  private final org.springframework.beans.factory.config.BeanDefinition beanDefinition
+  private final org.springframework.beans.TypeConverter typeConverter
+  public void <init>(org.springframework.beans.factory.support.AbstractBeanFactory, String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 74)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.BeanDefinitionValueResolver.<init>(org.springframework.beans.factory.support.AbstractBeanFactory, java.lang.String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 77)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/support/AbstractBeanFactory; beanFactory
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 78)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 79)
+    |               ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 80)
+    |               ALOAD 4     // Lorg/springframework/beans/TypeConverter; typeConverter
+    |               PUTFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.typeConverter Lorg/springframework/beans/TypeConverter;
+    |               RETURN   (line 81)
+    constructor-execution(void org.springframework.beans.factory.support.BeanDefinitionValueResolver.<init>(org.springframework.beans.factory.support.AbstractBeanFactory, java.lang.String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter))
+  end public void <init>(org.springframework.beans.factory.support.AbstractBeanFactory, String, org.springframework.beans.factory.config.BeanDefinition, org.springframework.beans.TypeConverter)
+
+  public Object resolveValueIfNecessary(Object, Object):
+                    ALOAD_2     // Ljava/lang/Object; value   (line 104)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanReference
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/Object; value   (line 105)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanReference
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 106)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference (Ljava/lang/Object;Lorg/springframework/beans/factory/config/RuntimeBeanReference;)Ljava/lang/Object;
+                    ARETURN
+                L0: ALOAD_2     // Ljava/lang/Object; value   (line 108)
+                    INSTANCEOF org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    IFEQ L2
+                    ALOAD_2     // Ljava/lang/Object; value   (line 109)
+                    CHECKCAST org.springframework.beans.factory.config.RuntimeBeanNameReference
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanNameReference.getBeanName ()Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 110)
+                    ALOAD_3     // Ljava/lang/String; refName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; refName
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 111)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_3     // Ljava/lang/String; refName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.containsBean (Ljava/lang/String;)Z
+                    IFNE L1
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 112)
+                    DUP
+                    NEW java.lang.StringBuilder   (line 113)
+                    DUP
+                    LDC "Invalid bean name '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/lang/String; refName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "' in bean reference for "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;)V   (line 112)
+                    ATHROW
+                L1: ALOAD_3     // Ljava/lang/String; refName   (line 115)
+                    ARETURN
+                L2: ALOAD_2     // Ljava/lang/Object; value   (line 117)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinitionHolder
+                    IFEQ L3
+                    ALOAD_2     // Ljava/lang/Object; value   (line 119)
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinitionHolder
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 120)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; bdHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanName ()Ljava/lang/String;
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; bdHolder
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanDefinition ()Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean (Ljava/lang/Object;Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ARETURN
+                L3: ALOAD_2     // Ljava/lang/Object; value   (line 122)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinition
+                    IFEQ L4
+                    ALOAD_2     // Ljava/lang/Object; value   (line 124)
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinition
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 125)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    LDC "(inner bean)"
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinition; bd
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean (Ljava/lang/Object;Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ARETURN
+                L4: ALOAD_2     // Ljava/lang/Object; value   (line 127)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedArray
+                    IFEQ L7
+                    ALOAD_2     // Ljava/lang/Object; value   (line 129)
+                    CHECKCAST org.springframework.beans.factory.support.ManagedArray
+                    ASTORE_3
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/ManagedArray; array   (line 130)
+                    GETFIELD org.springframework.beans.factory.support.ManagedArray.resolvedElementType Ljava/lang/Class;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Class; elementType   (line 131)
+                    IFNONNULL L6
+                    ALOAD_3     // Lorg/springframework/beans/factory/support/ManagedArray; array   (line 132)
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.ManagedArray.getElementTypeName ()Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 5     // Ljava/lang/String; elementTypeName   (line 133)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L5
+    catch java.lang.Throwable -> E0
+    |               ALOAD 5     // Ljava/lang/String; elementTypeName   (line 135)
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBeanClassLoader ()Ljava/lang/ClassLoader;
+    |               INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    |               ASTORE 4     // Ljava/lang/Class; elementType
+    |               ALOAD_3     // Lorg/springframework/beans/factory/support/ManagedArray; array   (line 136)
+    |               ALOAD 4     // Ljava/lang/Class; elementType
+    |               PUTFIELD org.springframework.beans.factory.support.ManagedArray.resolvedElementType Ljava/lang/Class;
+    catch java.lang.Throwable -> E0
+                    GOTO L6
+                E0: ASTORE 6   (line 138)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 140)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 141)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 142)
+                    DUP
+                    LDC "Error resolving array type for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 6     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 140)
+                    ATHROW
+                L5: LDC java.lang.Object   (line 146)
+                    ASTORE 4     // Ljava/lang/Class; elementType
+                L6: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 149)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.List
+                    ALOAD 4     // Ljava/lang/Class; elementType
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedArray (Ljava/lang/Object;Ljava/util/List;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+                L7: ALOAD_2     // Ljava/lang/Object; value   (line 151)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedList
+                    IFEQ L8
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 153)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.List
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList (Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;
+                    ARETURN
+                L8: ALOAD_2     // Ljava/lang/Object; value   (line 155)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedSet
+                    IFEQ L9
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 157)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Set
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedSet (Ljava/lang/Object;Ljava/util/Set;)Ljava/util/Set;
+                    ARETURN
+                L9: ALOAD_2     // Ljava/lang/Object; value   (line 159)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedMap
+                    IFEQ L10
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 161)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD_2     // Ljava/lang/Object; value
+                    CHECKCAST java.util.Map
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap (Ljava/lang/Object;Ljava/util/Map;)Ljava/util/Map;
+                    ARETURN
+               L10: ALOAD_2     // Ljava/lang/Object; value   (line 163)
+                    INSTANCEOF org.springframework.beans.factory.support.ManagedProperties
+                    IFEQ L15
+                    ALOAD_2     // Ljava/lang/Object; value   (line 164)
+                    CHECKCAST java.util.Properties
+                    ASTORE_3
+                    NEW java.util.Properties   (line 165)
+                    DUP
+                    INVOKESPECIAL java.util.Properties.<init> ()V
+                    ASTORE 4
+                    ALOAD_3     // Ljava/util/Properties; original   (line 166)
+                    INVOKEVIRTUAL java.util.Properties.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L14
+               L11: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 5
+                    ALOAD 5     // Ljava/util/Map$Entry; propEntry   (line 167)
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    ASTORE 7
+                    ALOAD 5     // Ljava/util/Map$Entry; propEntry   (line 168)
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    ASTORE 8
+                    ALOAD 7     // Ljava/lang/Object; propKey   (line 169)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L12
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 170)
+                    ALOAD 7     // Ljava/lang/Object; propKey
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Object;
+                    ASTORE 7     // Ljava/lang/Object; propKey
+               L12: ALOAD 8     // Ljava/lang/Object; propValue   (line 172)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L13
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 173)
+                    ALOAD 8     // Ljava/lang/Object; propValue
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Object;
+                    ASTORE 8     // Ljava/lang/Object; propValue
+               L13: ALOAD 4     // Ljava/util/Properties; copy   (line 175)
+                    ALOAD 7     // Ljava/lang/Object; propKey
+                    ALOAD 8     // Ljava/lang/Object; propValue
+                    INVOKEVIRTUAL java.util.Properties.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+               L14: ALOAD 6   (line 166)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L11
+                    ALOAD 4     // Ljava/util/Properties; copy   (line 177)
+                    ARETURN
+               L15: ALOAD_2     // Ljava/lang/Object; value   (line 179)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFEQ L17
+                    ALOAD_2     // Ljava/lang/Object; value   (line 181)
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 182)
+                    ALOAD_3     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Object;
+                    ASTORE 4
+    catch java.lang.Throwable -> E2
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 184)
+    |               ALOAD_3     // Lorg/springframework/beans/factory/config/TypedStringValue; typedStringValue
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveTargetType (Lorg/springframework/beans/factory/config/TypedStringValue;)Ljava/lang/Class;
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/Class; resolvedTargetType   (line 185)
+    |               IFNULL L16
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 186)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.typeConverter Lorg/springframework/beans/TypeConverter;
+    |               ALOAD 4     // Ljava/lang/Object; valueObject
+    |               ALOAD 5     // Ljava/lang/Class; resolvedTargetType
+    |               INVOKEINTERFACE org.springframework.beans.TypeConverter.convertIfNecessary (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+    catch java.lang.Throwable -> E2
+                    ARETURN
+    catch java.lang.Throwable -> E2
+    |          L16: ALOAD 4     // Ljava/lang/Object; valueObject   (line 189)
+    catch java.lang.Throwable -> E2
+                    ARETURN
+                E2: ASTORE 5   (line 192)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 194)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 195)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 196)
+                    DUP
+                    LDC "Error converting typed String value for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 5     // Ljava/lang/Throwable; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 194)
+                    ATHROW
+               L17: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 200)
+                    ALOAD_2     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public Object resolveValueIfNecessary(Object, Object)
+
+  protected Object evaluate(org.springframework.beans.factory.config.TypedStringValue):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 210)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getValue ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; result   (line 211)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getValue ()Ljava/lang/String;
+                    IF_ACMPEQ L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 212)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setDynamic ()V
+                L0: ALOAD_2     // Ljava/lang/Object; result   (line 214)
+                    ARETURN
+  end protected Object evaluate(org.springframework.beans.factory.config.TypedStringValue)
+
+  protected Object evaluate(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 223)
+                    INSTANCEOF java.lang.String
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 224)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_1     // Ljava/lang/Object; value
+                    CHECKCAST java.lang.String
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Object;
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 227)
+                    ARETURN
+  end protected Object evaluate(Object)
+
+  protected Class resolveTargetType(org.springframework.beans.factory.config.TypedStringValue) throws java.lang.ClassNotFoundException:
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 239)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.hasTargetType ()Z
+                    IFEQ L0
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 240)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getTargetType ()Ljava/lang/Class;
+                    ARETURN
+                L0: ALOAD_1     // Lorg/springframework/beans/factory/config/TypedStringValue; value   (line 242)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBeanClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.resolveTargetType (Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ARETURN
+  end protected Class resolveTargetType(org.springframework.beans.factory.config.TypedStringValue) throws java.lang.ClassNotFoundException
+
+  private Object resolveInnerBean(Object, String, org.springframework.beans.factory.config.BeanDefinition):
+                    ACONST_NULL   (line 253)
+                    ASTORE 4
+    catch org.springframework.beans.BeansException -> E1
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 255)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_2     // Ljava/lang/String; innerBeanName
+    |               ALOAD_3     // Lorg/springframework/beans/factory/config/BeanDefinition; innerBd
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getMergedBeanDefinition (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/config/BeanDefinition;)Lorg/springframework/beans/factory/support/RootBeanDefinition;
+    |               ASTORE 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+    |               ALOAD_2     // Ljava/lang/String; innerBeanName   (line 258)
+    |               ASTORE 5
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 259)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isSingleton ()Z
+    |               IFEQ L0
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 260)
+    |               ALOAD_2     // Ljava/lang/String; innerBeanName
+    |               INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.adaptInnerBeanName (Ljava/lang/String;)Ljava/lang/String;
+    |               ASTORE 5     // Ljava/lang/String; actualInnerBeanName
+    |           L0: ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 263)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getDependsOn ()[Ljava/lang/String;
+    |               ASTORE 6
+    |               ALOAD 6     // [Ljava/lang/String; dependsOn   (line 264)
+    |               IFNULL L3
+    |               ALOAD 6     // [Ljava/lang/String; dependsOn   (line 265)
+    |               DUP
+    |               ASTORE 10
+    |               ARRAYLENGTH
+    |               ISTORE 9
+    |               ICONST_0
+    |               ISTORE 8
+    |               GOTO L2
+    |           L1: ALOAD 10
+    |               ILOAD 8
+    |               AALOAD
+    |               ASTORE 7
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 266)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 7     // Ljava/lang/String; dependsOnBean
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+    |               POP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 267)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 7     // Ljava/lang/String; dependsOnBean
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.registerDependentBean (Ljava/lang/String;Ljava/lang/String;)V
+    |               IINC 8 1   (line 265)
+    |           L2: ILOAD 8
+    |               ILOAD 9
+    |               IF_ICMPLT L1
+    |           L3: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 270)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+    |               ACONST_NULL
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.createBean (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;
+    |               ASTORE 7
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 271)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.registerContainedBean (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD 7     // Ljava/lang/Object; innerBean   (line 272)
+    |               INSTANCEOF org.springframework.beans.factory.FactoryBean
+    |               IFEQ L8
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 273)
+    |               IFNULL L4
+    |               ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.isSynthetic ()Z
+    |               IFEQ L4
+    |               ICONST_1
+    |               GOTO L5
+    |           L4: ICONST_0
+    |           L5: ISTORE 8
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 274)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD 7     // Ljava/lang/Object; innerBean
+    |               CHECKCAST org.springframework.beans.factory.FactoryBean
+    |               ALOAD 5     // Ljava/lang/String; actualInnerBeanName
+    |               ILOAD 8     // Z synthetic
+    |               IFEQ L6
+    |               ICONST_0
+    |               GOTO L7
+    |           L6: ICONST_1
+    |           L7: INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getObjectFromFactoryBean (Lorg/springframework/beans/factory/FactoryBean;Ljava/lang/String;Z)Ljava/lang/Object;
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+    catch org.springframework.beans.BeansException -> E1
+    |           L8: ALOAD 7     // Ljava/lang/Object; innerBean   (line 277)
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+                E1: ASTORE 5   (line 280)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 281)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 282)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 283)
+                    DUP
+                    LDC_W "Cannot create inner bean '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; innerBeanName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "' "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd   (line 284)
+                    IFNULL L9
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getBeanClassName ()Ljava/lang/String;
+                    IFNULL L9
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "of type ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Lorg/springframework/beans/factory/support/RootBeanDefinition; mbd
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.RootBeanDefinition.getBeanClassName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    GOTO L10
+                L9: LDC_W ""
+               L10: INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "while setting "   (line 285)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 283)
+                    ALOAD 5     // Lorg/springframework/beans/BeansException; ex   (line 285)
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 281)
+                    ATHROW
+  end private Object resolveInnerBean(Object, String, org.springframework.beans.factory.config.BeanDefinition)
+
+  private String adaptInnerBeanName(String):
+                    ALOAD_1     // Ljava/lang/String; innerBeanName   (line 296)
+                    ASTORE_2
+                    ICONST_0   (line 297)
+                    ISTORE_3
+                    GOTO L1   (line 298)
+                L0: IINC_3 1     // I counter   (line 299)
+                    NEW java.lang.StringBuilder   (line 300)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; innerBeanName
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "#"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ILOAD_3     // I counter
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_2     // Ljava/lang/String; actualInnerBeanName
+                L1: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 298)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+                    ALOAD_2     // Ljava/lang/String; actualInnerBeanName
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.isBeanNameInUse (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_2     // Ljava/lang/String; actualInnerBeanName   (line 302)
+                    ARETURN
+  end private String adaptInnerBeanName(String)
+
+  private Object resolveReference(Object, org.springframework.beans.factory.config.RuntimeBeanReference):
+    catch org.springframework.beans.BeansException -> E1
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref   (line 310)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+    |               ASTORE_3
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 311)
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate (Ljava/lang/Object;)Ljava/lang/Object;
+    |               INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+    |               ASTORE_3     // Ljava/lang/String; refName
+    |               ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref   (line 312)
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.isToParent ()Z
+    |               IFEQ L1
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 313)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+    |               IFNONNULL L0
+    |               NEW org.springframework.beans.factory.BeanCreationException   (line 314)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 315)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               NEW java.lang.StringBuilder   (line 316)
+    |               DUP
+    |               LDC_W "Can't resolve reference to bean '"
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC_W "' in parent factory: no parent factory available"   (line 317)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;   (line 316)
+    |               INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V   (line 314)
+    |               ATHROW
+    |           L0: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 319)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getParentBeanFactory ()Lorg/springframework/beans/factory/BeanFactory;
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEINTERFACE org.springframework.beans.factory.BeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+    catch org.springframework.beans.BeansException -> E1
+    |           L1: ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 322)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+    |               ASTORE 4
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 323)
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanFactory Lorg/springframework/beans/factory/support/AbstractBeanFactory;
+    |               ALOAD_3     // Ljava/lang/String; refName
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+    |               GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AbstractBeanFactory.registerDependentBean (Ljava/lang/String;Ljava/lang/String;)V
+    |               ALOAD 4     // Ljava/lang/Object; bean   (line 324)
+    catch org.springframework.beans.BeansException -> E1
+                    ARETURN
+                E1: ASTORE_3   (line 327)
+                    NEW org.springframework.beans.factory.BeanCreationException   (line 328)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 329)
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getResourceDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    GETFIELD org.springframework.beans.factory.support.BeanDefinitionValueResolver.beanName Ljava/lang/String;
+                    NEW java.lang.StringBuilder   (line 330)
+                    DUP
+                    LDC_W "Cannot resolve reference to bean '"
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/RuntimeBeanReference; ref
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.RuntimeBeanReference.getBeanName ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "' while setting "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_3     // Lorg/springframework/beans/BeansException; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanCreationException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V   (line 328)
+                    ATHROW
+  end private Object resolveReference(Object, org.springframework.beans.factory.config.RuntimeBeanReference)
+
+  private Object resolveManagedArray(Object, java.util.List, Class):
+                    ALOAD_3     // Ljava/lang/Class; elementType   (line 338)
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    ASTORE 4
+                    ICONST_0   (line 339)
+                    ISTORE 5
+                    GOTO L1
+                L0: ALOAD 4     // Ljava/lang/Object; resolved   (line 340)
+                    ILOAD 5     // I i
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 341)
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ILOAD 5     // I i
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD_2     // Ljava/util/List; ml
+                    ILOAD 5     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKESTATIC java.lang.reflect.Array.set (Ljava/lang/Object;ILjava/lang/Object;)V   (line 340)
+                    IINC 5 1     // I i   (line 339)
+                L1: ILOAD 5     // I i
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    ALOAD 4     // Ljava/lang/Object; resolved   (line 343)
+                    ARETURN
+  end private Object resolveManagedArray(Object, java.util.List, Class)
+
+  private java.util.List resolveManagedList(Object, java.util.List):
+                    NEW java.util.ArrayList   (line 350)
+                    DUP
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    INVOKESPECIAL java.util.ArrayList.<init> (I)V
+                    ASTORE_3
+                    ICONST_0   (line 351)
+                    ISTORE 4
+                    GOTO L1
+                L0: ALOAD_3     // Ljava/util/List; resolved   (line 352)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 353)
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ILOAD 4     // I i
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD_2     // Ljava/util/List; ml
+                    ILOAD 4     // I i
+                    INVOKEINTERFACE java.util.List.get (I)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.List.add (Ljava/lang/Object;)Z   (line 352)
+                    POP
+                    IINC 4 1     // I i   (line 351)
+                L1: ILOAD 4     // I i
+                    ALOAD_2     // Ljava/util/List; ml
+                    INVOKEINTERFACE java.util.List.size ()I
+                    IF_ICMPLT L0
+                    ALOAD_3     // Ljava/util/List; resolved   (line 355)
+                    ARETURN
+  end private java.util.List resolveManagedList(Object, java.util.List)
+
+  private java.util.Set resolveManagedSet(Object, java.util.Set):
+                    NEW java.util.LinkedHashSet   (line 362)
+                    DUP
+                    ALOAD_2     // Ljava/util/Set; ms
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE_3
+                    ICONST_0   (line 363)
+                    ISTORE 4
+                    ALOAD_2     // Ljava/util/Set; ms   (line 364)
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L1
+                L0: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 5
+                    ALOAD_3     // Ljava/util/Set; resolved   (line 365)
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ILOAD 4     // I i
+                    INVOKESTATIC java.lang.Integer.valueOf (I)Ljava/lang/Integer;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD 5     // Ljava/lang/Object; m
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC 4 1     // I i   (line 366)
+                L1: ALOAD 6   (line 364)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_3     // Ljava/util/Set; resolved   (line 368)
+                    ARETURN
+  end private java.util.Set resolveManagedSet(Object, java.util.Set)
+
+  private java.util.Map resolveManagedMap(Object, java.util.Map):
+                    NEW java.util.LinkedHashMap   (line 375)
+                    DUP
+                    ALOAD_2     // Ljava/util/Map; mm
+                    INVOKEINTERFACE java.util.Map.size ()I
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> (I)V
+                    ASTORE_3
+                    ALOAD_2     // Ljava/util/Map; mm   (line 376)
+                    INVOKEINTERFACE java.util.Map.entrySet ()Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 5
+                    GOTO L1
+                L0: ALOAD 5
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.util.Map$Entry
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 377)
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/BeanDefinitionValueResolver; this   (line 378)
+                    NEW org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName   (line 379)
+                    DUP
+                    ALOAD_1     // Ljava/lang/Object; argName
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getKey ()Ljava/lang/Object;
+                    INVOKESPECIAL org.springframework.beans.factory.support.BeanDefinitionValueResolver$KeyedArgName.<init> (Ljava/lang/Object;Ljava/lang/Object;)V
+                    ALOAD 4     // Ljava/util/Map$Entry; entry
+                    INVOKEINTERFACE java.util.Map$Entry.getValue ()Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;   (line 378)
+                    ASTORE 7
+                    ALOAD_3     // Ljava/util/Map; resolved   (line 380)
+                    ALOAD 6     // Ljava/lang/Object; resolvedKey
+                    ALOAD 7     // Ljava/lang/Object; resolvedValue
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L1: ALOAD 5   (line 376)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                    ALOAD_3     // Ljava/util/Map; resolved   (line 382)
+                    ARETURN
+  end private java.util.Map resolveManagedMap(Object, java.util.Map)
+
+end  class org.springframework.beans.factory.support.BeanDefinitionValueResolver
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:597)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:441)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:983)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:879)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

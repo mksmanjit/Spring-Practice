@@ -1,0 +1,680 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185856.458.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.factory.config.TypedStringValue extends java.lang.Object implements org.springframework.beans.BeanMetadataElement:
+  private String value
+  private volatile Object targetType
+  private Object source
+  private String specifiedTypeName
+  private volatile boolean dynamic
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 54)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 55)
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+    |               RETURN   (line 56)
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(String, Class):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 64)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.Class))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 65)
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 66)
+    |               ALOAD_2     // Ljava/lang/Class; targetType
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setTargetType (Ljava/lang/Class;)V
+    |               RETURN   (line 67)
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.Class))
+  end public void <init>(String, Class)
+
+  public void <init>(String, String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 75)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 76)
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 77)
+    |               ALOAD_2     // Ljava/lang/String; targetTypeName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setTargetTypeName (Ljava/lang/String;)V
+    |               RETURN   (line 78)
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.String))
+  end public void <init>(String, String)
+
+  public void setValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 88)
+                    ALOAD_1     // Ljava/lang/String; value
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    RETURN   (line 89)
+  end public void setValue(String)
+
+  public String getValue():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 95)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    ARETURN
+  end public String getValue()
+
+  public void setTargetType(Class):
+                    ALOAD_1     // Ljava/lang/Class; targetType   (line 105)
+                    LDC "'targetType' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 106)
+                    ALOAD_1     // Ljava/lang/Class; targetType
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    RETURN   (line 107)
+  end public void setTargetType(Class)
+
+  public Class getTargetType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 113)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 114)
+                    INSTANCEOF java.lang.Class
+                    IFNE L0
+                    NEW java.lang.IllegalStateException   (line 115)
+                    DUP
+                    LDC "Typed String value does not carry a resolved target type"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 117)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+  end public Class getTargetType()
+
+  public void setTargetTypeName(String):
+                    ALOAD_1     // Ljava/lang/String; targetTypeName   (line 124)
+                    LDC "'targetTypeName' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 125)
+                    ALOAD_1     // Ljava/lang/String; targetTypeName
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    RETURN   (line 126)
+  end public void setTargetTypeName(String)
+
+  public String getTargetTypeName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 132)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 133)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 134)
+                    CHECKCAST java.lang.Class
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 137)
+                    CHECKCAST java.lang.String
+                    ARETURN
+  end public String getTargetTypeName()
+
+  public boolean hasTargetType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 145)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INSTANCEOF java.lang.Class
+                    IRETURN
+  end public boolean hasTargetType()
+
+  public Class resolveTargetType(ClassLoader) throws java.lang.ClassNotFoundException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 157)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    IFNONNULL L0
+                    ACONST_NULL   (line 158)
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 160)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getTargetTypeName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 161)
+                    ALOAD_2     // Ljava/lang/Class; resolvedClass
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ALOAD_2     // Ljava/lang/Class; resolvedClass   (line 162)
+                    ARETURN
+  end public Class resolveTargetType(ClassLoader) throws java.lang.ClassNotFoundException
+
+  public void setSource(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 171)
+                    ALOAD_1     // Ljava/lang/Object; source
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.source Ljava/lang/Object;
+                    RETURN   (line 172)
+  end public void setSource(Object)
+
+  public Object getSource():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 175)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.source Ljava/lang/Object;
+                    ARETURN
+  end public Object getSource()
+
+  public void setSpecifiedTypeName(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 182)
+                    ALOAD_1     // Ljava/lang/String; specifiedTypeName
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.specifiedTypeName Ljava/lang/String;
+                    RETURN   (line 183)
+  end public void setSpecifiedTypeName(String)
+
+  public String getSpecifiedTypeName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 189)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.specifiedTypeName Ljava/lang/String;
+                    ARETURN
+  end public String getSpecifiedTypeName()
+
+  public void setDynamic():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 197)
+                    ICONST_1
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.dynamic Z
+                    RETURN   (line 198)
+  end public void setDynamic()
+
+  public boolean isDynamic():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 204)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.dynamic Z
+                    IRETURN
+  end public boolean isDynamic()
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 210)
+                    ALOAD_1     // Ljava/lang/Object; other
+                    IF_ACMPNE L0
+                    ICONST_1   (line 211)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; other   (line 213)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFNE L1
+                    ICONST_0   (line 214)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; other   (line 216)
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 217)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; otherValue
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 218)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; otherValue
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1
+                    IRETURN
+                L2: ICONST_0
+                    IRETURN   (line 217)
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 223)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode (Ljava/lang/Object;)I
+                    BIPUSH 29
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode (Ljava/lang/Object;)I
+                    IADD
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 228)
+                    DUP
+                    LDC "TypedStringValue: value ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "], target type ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.factory.config.TypedStringValue
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyValue(BeanDefinitionParserDelegate.java:929)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElement(BeanDefinitionParserDelegate.java:832)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElements(BeanDefinitionParserDelegate.java:697)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:482)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:396)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:365)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:258)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:153)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:132)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.factory.config.TypedStringValue extends java.lang.Object implements org.springframework.beans.BeanMetadataElement:
+  private String value
+  private volatile Object targetType
+  private Object source
+  private String specifiedTypeName
+  private volatile boolean dynamic
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 54)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 55)
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+    |               RETURN   (line 56)
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(String, Class):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 64)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.Class))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 65)
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 66)
+    |               ALOAD_2     // Ljava/lang/Class; targetType
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setTargetType (Ljava/lang/Class;)V
+    |               RETURN   (line 67)
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.Class))
+  end public void <init>(String, Class)
+
+  public void <init>(String, String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 75)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 76)
+    |               ALOAD_1     // Ljava/lang/String; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setValue (Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 77)
+    |               ALOAD_2     // Ljava/lang/String; targetTypeName
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.setTargetTypeName (Ljava/lang/String;)V
+    |               RETURN   (line 78)
+    constructor-execution(void org.springframework.beans.factory.config.TypedStringValue.<init>(java.lang.String, java.lang.String))
+  end public void <init>(String, String)
+
+  public void setValue(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 88)
+                    ALOAD_1     // Ljava/lang/String; value
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    RETURN   (line 89)
+  end public void setValue(String)
+
+  public String getValue():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 95)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    ARETURN
+  end public String getValue()
+
+  public void setTargetType(Class):
+                    ALOAD_1     // Ljava/lang/Class; targetType   (line 105)
+                    LDC "'targetType' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 106)
+                    ALOAD_1     // Ljava/lang/Class; targetType
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    RETURN   (line 107)
+  end public void setTargetType(Class)
+
+  public Class getTargetType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 113)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 114)
+                    INSTANCEOF java.lang.Class
+                    IFNE L0
+                    NEW java.lang.IllegalStateException   (line 115)
+                    DUP
+                    LDC "Typed String value does not carry a resolved target type"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 117)
+                    CHECKCAST java.lang.Class
+                    ARETURN
+  end public Class getTargetType()
+
+  public void setTargetTypeName(String):
+                    ALOAD_1     // Ljava/lang/String; targetTypeName   (line 124)
+                    LDC "'targetTypeName' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 125)
+                    ALOAD_1     // Ljava/lang/String; targetTypeName
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    RETURN   (line 126)
+  end public void setTargetTypeName(String)
+
+  public String getTargetTypeName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 132)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 133)
+                    INSTANCEOF java.lang.Class
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 134)
+                    CHECKCAST java.lang.Class
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/Object; targetTypeValue   (line 137)
+                    CHECKCAST java.lang.String
+                    ARETURN
+  end public String getTargetTypeName()
+
+  public boolean hasTargetType():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 145)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INSTANCEOF java.lang.Class
+                    IRETURN
+  end public boolean hasTargetType()
+
+  public Class resolveTargetType(ClassLoader) throws java.lang.ClassNotFoundException:
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 157)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    IFNONNULL L0
+                    ACONST_NULL   (line 158)
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 160)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.TypedStringValue.getTargetTypeName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 161)
+                    ALOAD_2     // Ljava/lang/Class; resolvedClass
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ALOAD_2     // Ljava/lang/Class; resolvedClass   (line 162)
+                    ARETURN
+  end public Class resolveTargetType(ClassLoader) throws java.lang.ClassNotFoundException
+
+  public void setSource(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 171)
+                    ALOAD_1     // Ljava/lang/Object; source
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.source Ljava/lang/Object;
+                    RETURN   (line 172)
+  end public void setSource(Object)
+
+  public Object getSource():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 175)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.source Ljava/lang/Object;
+                    ARETURN
+  end public Object getSource()
+
+  public void setSpecifiedTypeName(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 182)
+                    ALOAD_1     // Ljava/lang/String; specifiedTypeName
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.specifiedTypeName Ljava/lang/String;
+                    RETURN   (line 183)
+  end public void setSpecifiedTypeName(String)
+
+  public String getSpecifiedTypeName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 189)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.specifiedTypeName Ljava/lang/String;
+                    ARETURN
+  end public String getSpecifiedTypeName()
+
+  public void setDynamic():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 197)
+                    ICONST_1
+                    PUTFIELD org.springframework.beans.factory.config.TypedStringValue.dynamic Z
+                    RETURN   (line 198)
+  end public void setDynamic()
+
+  public boolean isDynamic():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 204)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.dynamic Z
+                    IRETURN
+  end public boolean isDynamic()
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 210)
+                    ALOAD_1     // Ljava/lang/Object; other
+                    IF_ACMPNE L0
+                    ICONST_1   (line 211)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; other   (line 213)
+                    INSTANCEOF org.springframework.beans.factory.config.TypedStringValue
+                    IFNE L1
+                    ICONST_0   (line 214)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; other   (line 216)
+                    CHECKCAST org.springframework.beans.factory.config.TypedStringValue
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 217)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; otherValue
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 218)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/TypedStringValue; otherValue
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1
+                    IRETURN
+                L2: ICONST_0
+                    IRETURN   (line 217)
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this   (line 223)
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode (Ljava/lang/Object;)I
+                    BIPUSH 29
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode (Ljava/lang/Object;)I
+                    IADD
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    NEW java.lang.StringBuilder   (line 228)
+                    DUP
+                    LDC "TypedStringValue: value ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.value Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "], target type ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/TypedStringValue; this
+                    GETFIELD org.springframework.beans.factory.config.TypedStringValue.targetType Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.beans.factory.config.TypedStringValue
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyValue(BeanDefinitionParserDelegate.java:929)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElement(BeanDefinitionParserDelegate.java:832)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElements(BeanDefinitionParserDelegate.java:697)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:482)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:396)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:365)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:258)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:153)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:132)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

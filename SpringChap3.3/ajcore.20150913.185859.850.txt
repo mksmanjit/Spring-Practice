@@ -1,0 +1,514 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185859.850.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.util.MethodInvoker
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.util.MethodInvoker
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.util.MethodInvoker
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.util.MethodInvoker
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.util.MethodInvoker
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.util.MethodInvoker extends java.lang.Object:
+  private Class targetClass
+  private Object targetObject
+  private String targetMethod
+  private String staticMethod
+  private Object[] arguments
+  private java.lang.reflect.Method methodObject
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 41)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.MethodInvoker.<init>())
+    |               ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 51)
+    |               ICONST_0
+    |               ANEWARRAY java.lang.Object
+    |               PUTFIELD org.springframework.util.MethodInvoker.arguments [Ljava/lang/Object;
+    |               RETURN   (line 41)
+    constructor-execution(void org.springframework.util.MethodInvoker.<init>())
+  end public void <init>()
+
+  public void setTargetClass(Class):
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 65)
+                    ALOAD_1     // Ljava/lang/Class; targetClass
+                    PUTFIELD org.springframework.util.MethodInvoker.targetClass Ljava/lang/Class;
+                    RETURN   (line 66)
+  end public void setTargetClass(Class)
+
+  public Class getTargetClass():
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 72)
+                    GETFIELD org.springframework.util.MethodInvoker.targetClass Ljava/lang/Class;
+                    ARETURN
+  end public Class getTargetClass()
+
+  public void setTargetObject(Object):
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 83)
+                    ALOAD_1     // Ljava/lang/Object; targetObject
+                    PUTFIELD org.springframework.util.MethodInvoker.targetObject Ljava/lang/Object;
+                    ALOAD_1     // Ljava/lang/Object; targetObject   (line 84)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 85)
+                    ALOAD_1     // Ljava/lang/Object; targetObject
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    PUTFIELD org.springframework.util.MethodInvoker.targetClass Ljava/lang/Class;
+                L0: RETURN   (line 87)
+  end public void setTargetObject(Object)
+
+  public Object getTargetObject():
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 93)
+                    GETFIELD org.springframework.util.MethodInvoker.targetObject Ljava/lang/Object;
+                    ARETURN
+  end public Object getTargetObject()
+
+  public void setTargetMethod(String):
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 104)
+                    ALOAD_1     // Ljava/lang/String; targetMethod
+                    PUTFIELD org.springframework.util.MethodInvoker.targetMethod Ljava/lang/String;
+                    RETURN   (line 105)
+  end public void setTargetMethod(String)
+
+  public String getTargetMethod():
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 111)
+                    GETFIELD org.springframework.util.MethodInvoker.targetMethod Ljava/lang/String;
+                    ARETURN
+  end public String getTargetMethod()
+
+  public void setStaticMethod(String):
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 122)
+                    ALOAD_1     // Ljava/lang/String; staticMethod
+                    PUTFIELD org.springframework.util.MethodInvoker.staticMethod Ljava/lang/String;
+                    RETURN   (line 123)
+  end public void setStaticMethod(String)
+
+  public void setArguments(Object[]):
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 130)
+                    ALOAD_1     // [Ljava/lang/Object; arguments
+                    IFNULL L0
+                    ALOAD_1     // [Ljava/lang/Object; arguments
+                    GOTO L1
+                L0: ICONST_0
+                    ANEWARRAY java.lang.Object
+                L1: PUTFIELD org.springframework.util.MethodInvoker.arguments [Ljava/lang/Object;
+                    RETURN   (line 131)
+  end public void setArguments(Object[])
+
+  public Object[] getArguments():
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 137)
+                    GETFIELD org.springframework.util.MethodInvoker.arguments [Ljava/lang/Object;
+                    ARETURN
+  end public Object[] getArguments()
+
+  public void prepare() throws java.lang.ClassNotFoundException, java.lang.NoSuchMethodException:
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 148)
+                    GETFIELD org.springframework.util.MethodInvoker.staticMethod Ljava/lang/String;
+                    IFNULL L2
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 149)
+                    GETFIELD org.springframework.util.MethodInvoker.staticMethod Ljava/lang/String;
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (I)I
+                    ISTORE_1
+                    ILOAD_1     // I lastDotIndex   (line 150)
+                    ICONST_M1
+                    IF_ICMPEQ L0
+                    ILOAD_1     // I lastDotIndex
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this
+                    GETFIELD org.springframework.util.MethodInvoker.staticMethod Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IF_ICMPNE L1
+                L0: NEW java.lang.IllegalArgumentException   (line 151)
+                    DUP
+                    LDC "staticMethod must be a fully qualified class plus method name: e.g. 'example.MyExampleClass.myExampleMethod'"   (line 152)
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V   (line 151)
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 155)
+                    GETFIELD org.springframework.util.MethodInvoker.staticMethod Ljava/lang/String;
+                    ICONST_0
+                    ILOAD_1     // I lastDotIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 156)
+                    GETFIELD org.springframework.util.MethodInvoker.staticMethod Ljava/lang/String;
+                    ILOAD_1     // I lastDotIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 157)
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this
+                    ALOAD_2     // Ljava/lang/String; className
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.resolveClassName (Ljava/lang/String;)Ljava/lang/Class;
+                    PUTFIELD org.springframework.util.MethodInvoker.targetClass Ljava/lang/Class;
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 158)
+                    ALOAD_3     // Ljava/lang/String; methodName
+                    PUTFIELD org.springframework.util.MethodInvoker.targetMethod Ljava/lang/String;
+                L2: ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 161)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getTargetClass ()Ljava/lang/Class;
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 162)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getTargetMethod ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/Class; targetClass   (line 163)
+                    IFNONNULL L3
+                    NEW java.lang.IllegalArgumentException   (line 164)
+                    DUP
+                    LDC "Either 'targetClass' or 'targetObject' is required"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L3: ALOAD_2     // Ljava/lang/String; targetMethod   (line 166)
+                    IFNONNULL L4
+                    NEW java.lang.IllegalArgumentException   (line 167)
+                    DUP
+                    LDC "Property 'targetMethod' is required"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L4: ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 170)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getArguments ()[Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_3     // [Ljava/lang/Object; arguments   (line 171)
+                    ARRAYLENGTH
+                    ANEWARRAY java.lang.Class
+                    ASTORE 4
+                    ICONST_0   (line 172)
+                    ISTORE 5
+                    GOTO L8
+                L5: ALOAD 4     // [Ljava/lang/Class; argTypes   (line 173)
+                    ILOAD 5     // I i
+                    ALOAD_3     // [Ljava/lang/Object; arguments
+                    ILOAD 5     // I i
+                    AALOAD
+                    IFNULL L6
+                    ALOAD_3     // [Ljava/lang/Object; arguments
+                    ILOAD 5     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    GOTO L7
+                L6: LDC java.lang.Object
+                L7: AASTORE
+                    IINC 5 1     // I i   (line 172)
+                L8: ILOAD 5     // I i
+                    ALOAD_3     // [Ljava/lang/Object; arguments
+                    ARRAYLENGTH
+                    IF_ICMPLT L5
+    catch java.lang.NoSuchMethodException -> E0
+    |               ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 178)
+    |               ALOAD_1     // Ljava/lang/Class; targetClass
+    |               ALOAD_2     // Ljava/lang/String; targetMethod
+    |               ALOAD 4     // [Ljava/lang/Class; argTypes
+    |               INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    |               PUTFIELD org.springframework.util.MethodInvoker.methodObject Ljava/lang/reflect/Method;
+    catch java.lang.NoSuchMethodException -> E0
+                    GOTO L9
+                E0: ASTORE 5   (line 180)
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 182)
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.findMatchingMethod ()Ljava/lang/reflect/Method;
+                    PUTFIELD org.springframework.util.MethodInvoker.methodObject Ljava/lang/reflect/Method;
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 183)
+                    GETFIELD org.springframework.util.MethodInvoker.methodObject Ljava/lang/reflect/Method;
+                    IFNONNULL L9
+                    ALOAD 5     // Ljava/lang/NoSuchMethodException; ex   (line 184)
+                    ATHROW
+                L9: RETURN   (line 187)
+  end public void prepare() throws java.lang.ClassNotFoundException, java.lang.NoSuchMethodException
+
+  protected Class resolveClassName(String) throws java.lang.ClassNotFoundException:
+                    ALOAD_1     // Ljava/lang/String; className   (line 198)
+                    INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+                    INVOKESTATIC org.springframework.util.ClassUtils.forName (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+                    ARETURN
+  end protected Class resolveClassName(String) throws java.lang.ClassNotFoundException
+
+  protected java.lang.reflect.Method findMatchingMethod():
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 209)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getTargetMethod ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 210)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getArguments ()[Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/Object; arguments   (line 211)
+                    ARRAYLENGTH
+                    ISTORE_3
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 213)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getTargetClass ()Ljava/lang/Class;
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.getAllDeclaredMethods (Ljava/lang/Class;)[Ljava/lang/reflect/Method;
+                    ASTORE 4
+                    LDC 2147483647   (line 214)
+                    ISTORE 5
+                    ACONST_NULL   (line 215)
+                    ASTORE 6
+                    ALOAD 4     // [Ljava/lang/reflect/Method; candidates   (line 217)
+                    DUP
+                    ASTORE 10
+                    ARRAYLENGTH
+                    ISTORE 9
+                    ICONST_0
+                    ISTORE 8
+                    GOTO L2
+                L0: ALOAD 10
+                    ILOAD 8
+                    AALOAD
+                    ASTORE 7
+                    ALOAD 7     // Ljava/lang/reflect/Method; candidate   (line 218)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; targetMethod
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD 7     // Ljava/lang/reflect/Method; candidate   (line 219)
+                    INVOKEVIRTUAL java.lang.reflect.Method.getParameterTypes ()[Ljava/lang/Class;
+                    ASTORE 11
+                    ALOAD 11     // [Ljava/lang/Class; paramTypes   (line 220)
+                    ARRAYLENGTH
+                    ILOAD_3     // I argCount
+                    IF_ICMPNE L1
+                    ALOAD 11     // [Ljava/lang/Class; paramTypes   (line 221)
+                    ALOAD_2     // [Ljava/lang/Object; arguments
+                    INVOKESTATIC org.springframework.util.MethodInvoker.getTypeDifferenceWeight ([Ljava/lang/Class;[Ljava/lang/Object;)I
+                    ISTORE 12
+                    ILOAD 12     // I typeDiffWeight   (line 222)
+                    ILOAD 5     // I minTypeDiffWeight
+                    IF_ICMPGE L1
+                    ILOAD 12     // I typeDiffWeight   (line 223)
+                    ISTORE 5     // I minTypeDiffWeight
+                    ALOAD 7     // Ljava/lang/reflect/Method; candidate   (line 224)
+                    ASTORE 6     // Ljava/lang/reflect/Method; matchingMethod
+                L1: IINC 8 1   (line 217)
+                L2: ILOAD 8
+                    ILOAD 9
+                    IF_ICMPLT L0
+                    ALOAD 6     // Ljava/lang/reflect/Method; matchingMethod   (line 230)
+                    ARETURN
+  end protected java.lang.reflect.Method findMatchingMethod()
+
+  public java.lang.reflect.Method getPreparedMethod() throws java.lang.IllegalStateException:
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 242)
+                    GETFIELD org.springframework.util.MethodInvoker.methodObject Ljava/lang/reflect/Method;
+                    IFNONNULL L0
+                    NEW java.lang.IllegalStateException   (line 243)
+                    DUP
+                    LDC "prepare() must be called prior to invoke() on MethodInvoker"
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 245)
+                    GETFIELD org.springframework.util.MethodInvoker.methodObject Ljava/lang/reflect/Method;
+                    ARETURN
+  end public java.lang.reflect.Method getPreparedMethod() throws java.lang.IllegalStateException
+
+  public boolean isPrepared():
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 253)
+                    GETFIELD org.springframework.util.MethodInvoker.methodObject Ljava/lang/reflect/Method;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean isPrepared()
+
+  public Object invoke() throws java.lang.reflect.InvocationTargetException, java.lang.IllegalAccessException:
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 267)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getTargetObject ()Ljava/lang/Object;
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this   (line 268)
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getPreparedMethod ()Ljava/lang/reflect/Method;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/Object; targetObject   (line 269)
+                    IFNONNULL L0
+                    ALOAD_2     // Ljava/lang/reflect/Method; preparedMethod
+                    INVOKEVIRTUAL java.lang.reflect.Method.getModifiers ()I
+                    INVOKESTATIC java.lang.reflect.Modifier.isStatic (I)Z
+                    IFNE L0
+                    NEW java.lang.IllegalArgumentException   (line 270)
+                    DUP
+                    LDC "Target method must not be non-static without a target"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_2     // Ljava/lang/reflect/Method; preparedMethod   (line 272)
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.makeAccessible (Ljava/lang/reflect/Method;)V
+                    ALOAD_2     // Ljava/lang/reflect/Method; preparedMethod   (line 273)
+                    ALOAD_1     // Ljava/lang/Object; targetObject
+                    ALOAD_0     // Lorg/springframework/util/MethodInvoker; this
+                    INVOKEVIRTUAL org.springframework.util.MethodInvoker.getArguments ()[Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.reflect.Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    ARETURN
+  end public Object invoke() throws java.lang.reflect.InvocationTargetException, java.lang.IllegalAccessException
+
+  public static int getTypeDifferenceWeight(Class[], Object[]):
+                    ICONST_0   (line 295)
+                    ISTORE_2
+                    ICONST_0   (line 296)
+                    ISTORE_3
+                    GOTO L7
+                L0: ALOAD_0     // [Ljava/lang/Class; paramTypes   (line 297)
+                    ILOAD_3     // I i
+                    AALOAD
+                    ALOAD_1     // [Ljava/lang/Object; args
+                    ILOAD_3     // I i
+                    AALOAD
+                    INVOKESTATIC org.springframework.util.ClassUtils.isAssignableValue (Ljava/lang/Class;Ljava/lang/Object;)Z
+                    IFNE L1
+                    LDC 2147483647   (line 298)
+                    IRETURN
+                L1: ALOAD_1     // [Ljava/lang/Object; args   (line 300)
+                    ILOAD_3     // I i
+                    AALOAD
+                    IFNULL L6
+                    ALOAD_0     // [Ljava/lang/Class; paramTypes   (line 301)
+                    ILOAD_3     // I i
+                    AALOAD
+                    ASTORE 4
+                    ALOAD_1     // [Ljava/lang/Object; args   (line 302)
+                    ILOAD_3     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE 5
+                    GOTO L5   (line 303)
+                L2: ALOAD 4     // Ljava/lang/Class; paramType   (line 304)
+                    ALOAD 5     // Ljava/lang/Class; superClass
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    IINC_2 2     // I result   (line 305)
+                    ACONST_NULL   (line 306)
+                    ASTORE 5     // Ljava/lang/Class; superClass
+                    GOTO L5
+                L3: ALOAD 4     // Ljava/lang/Class; paramType   (line 308)
+                    ALOAD 5     // Ljava/lang/Class; superClass
+                    INVOKESTATIC org.springframework.util.ClassUtils.isAssignable (Ljava/lang/Class;Ljava/lang/Class;)Z
+                    IFEQ L4
+                    IINC_2 2     // I result   (line 309)
+                    ALOAD 5     // Ljava/lang/Class; superClass   (line 310)
+                    INVOKEVIRTUAL java.lang.Class.getSuperclass ()Ljava/lang/Class;
+                    ASTORE 5     // Ljava/lang/Class; superClass
+                    GOTO L5
+                L4: ACONST_NULL   (line 313)
+                    ASTORE 5     // Ljava/lang/Class; superClass
+                L5: ALOAD 5     // Ljava/lang/Class; superClass   (line 303)
+                    IFNONNULL L2
+                    ALOAD 4     // Ljava/lang/Class; paramType   (line 316)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFEQ L6
+                    IINC_2 1     // I result   (line 317)
+                L6: IINC_3 1     // I i   (line 296)
+                L7: ILOAD_3     // I i
+                    ALOAD_0     // [Ljava/lang/Class; paramTypes
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    ILOAD_2     // I result   (line 321)
+                    IRETURN
+  end public static int getTypeDifferenceWeight(Class[], Object[])
+
+end public class org.springframework.util.MethodInvoker
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.beans.factory.wiring.BeanConfigurerSupport
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.beans.factory.wiring.BeanConfigurerSupport
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.beans.factory.wiring.BeanConfigurerSupport
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.beans.factory.wiring.BeanConfigurerSupport
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.beans.factory.wiring.BeanConfigurerSupport
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

@@ -1,0 +1,1250 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185854.191.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.core.io.AbstractResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.core.io.AbstractResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.core.io.AbstractResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.core.io.AbstractResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.core.io.AbstractResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public abstract class org.springframework.core.io.AbstractResource extends java.lang.Object implements org.springframework.core.io.Resource:
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 41)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.AbstractResource.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.core.io.AbstractResource.<init>())
+  end public void <init>()
+
+  public boolean exists():
+    catch java.io.IOException -> E0
+    |               ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 51)
+    |               INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getFile ()Ljava/io/File;
+    |               INVOKEVIRTUAL java.io.File.exists ()Z
+    catch java.io.IOException -> E0
+                    IRETURN
+                E0: POP   (line 53)
+    catch java.lang.Throwable -> E1
+    |               ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 56)
+    |               INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getInputStream ()Ljava/io/InputStream;
+    |               ASTORE_1
+    |               ALOAD_1     // Ljava/io/InputStream; is   (line 57)
+    |               INVOKEVIRTUAL java.io.InputStream.close ()V
+    catch java.lang.Throwable -> E1
+                    ICONST_1   (line 58)
+                    IRETURN
+                E1: POP   (line 60)
+                    ICONST_0   (line 61)
+                    IRETURN
+  end public boolean exists()
+
+  public boolean isReadable():
+                    ICONST_1   (line 70)
+                    IRETURN
+  end public boolean isReadable()
+
+  public boolean isOpen():
+                    ICONST_0   (line 77)
+                    IRETURN
+  end public boolean isOpen()
+
+  public java.net.URL getURL() throws java.io.IOException:
+                    NEW java.io.FileNotFoundException   (line 85)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC " cannot be resolved to URL"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.FileNotFoundException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public java.net.URL getURL() throws java.io.IOException
+
+  public java.net.URI getURI() throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 93)
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getURL ()Ljava/net/URL;
+                    ASTORE_1
+    catch java.net.URISyntaxException -> E0
+    |               ALOAD_1     // Ljava/net/URL; url   (line 95)
+    |               INVOKESTATIC org.springframework.util.ResourceUtils.toURI (Ljava/net/URL;)Ljava/net/URI;
+    catch java.net.URISyntaxException -> E0
+                    ARETURN
+                E0: ASTORE_2   (line 97)
+                    NEW org.springframework.core.NestedIOException   (line 98)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid URI ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/net/URL; url
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/net/URISyntaxException; ex
+                    INVOKESPECIAL org.springframework.core.NestedIOException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+  end public java.net.URI getURI() throws java.io.IOException
+
+  public java.io.File getFile() throws java.io.IOException:
+                    NEW java.io.FileNotFoundException   (line 107)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC " cannot be resolved to absolute file path"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.FileNotFoundException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public java.io.File getFile() throws java.io.IOException
+
+  public long contentLength() throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 116)
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getFile ()Ljava/io/File;
+                    INVOKEVIRTUAL java.io.File.length ()J
+                    LRETURN
+  end public long contentLength() throws java.io.IOException
+
+  public long lastModified() throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 125)
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getFileForLastModifiedCheck ()Ljava/io/File;
+                    INVOKEVIRTUAL java.io.File.lastModified ()J
+                    LSTORE_1
+                    LLOAD_1     // J lastModified   (line 126)
+                    LCONST_0
+                    LCMP
+                    IFNE L0
+                    NEW java.io.FileNotFoundException   (line 127)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC " cannot be resolved in the file system for resolving its last-modified timestamp"   (line 128)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.FileNotFoundException.<init> (Ljava/lang/String;)V   (line 127)
+                    ATHROW
+                L0: LLOAD_1     // J lastModified   (line 130)
+                    LRETURN
+  end public long lastModified() throws java.io.IOException
+
+  protected java.io.File getFileForLastModifiedCheck() throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 141)
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getFile ()Ljava/io/File;
+                    ARETURN
+  end protected java.io.File getFileForLastModifiedCheck() throws java.io.IOException
+
+  public org.springframework.core.io.Resource createRelative(String) throws java.io.IOException:
+                    NEW java.io.FileNotFoundException   (line 149)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Cannot create a relative resource for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.io.FileNotFoundException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public org.springframework.core.io.Resource createRelative(String) throws java.io.IOException
+
+  public String getFilename() throws java.lang.IllegalStateException:
+                    NEW java.lang.IllegalStateException   (line 157)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC " does not have a filename"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalStateException.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end public String getFilename() throws java.lang.IllegalStateException
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 167)
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  public boolean equals(Object):
+                    ALOAD_1     // Ljava/lang/Object; obj   (line 176)
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this
+                    IF_ACMPEQ L1
+                    ALOAD_1     // Ljava/lang/Object; obj   (line 177)
+                    INSTANCEOF org.springframework.core.io.Resource
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    CHECKCAST org.springframework.core.io.Resource
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getDescription ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                L0: ICONST_0
+                    IRETURN
+                L1: ICONST_1
+                    IRETURN   (line 176)
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/core/io/AbstractResource; this   (line 186)
+                    INVOKEVIRTUAL org.springframework.core.io.AbstractResource.getDescription ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.hashCode ()I
+                    IRETURN
+  end public int hashCode()
+
+end public abstract class org.springframework.core.io.AbstractResource
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.io.DefaultResourceLoader.getResourceByPath(DefaultResourceLoader.java:117)
+	at org.springframework.core.io.DefaultResourceLoader.getResource(DefaultResourceLoader.java:100)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:284)
+	at org.springframework.context.support.AbstractApplicationContext.getResources(AbstractApplicationContext.java:1227)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:177)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.core.NestedIOException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.core.NestedIOException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.core.NestedIOException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.core.NestedIOException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.core.NestedIOException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.core.NestedIOException extends java.io.IOException:
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.NestedIOException.<clinit>())
+    |               LDC org.springframework.core.NestedExceptionUtils   (line 43)
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+    |               POP
+    |               RETURN   (line 38)
+    staticinitialization(void org.springframework.core.NestedIOException.<clinit>())
+  end static void <clinit>()
+
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/core/NestedIOException; this   (line 52)
+                    ALOAD_1     // Ljava/lang/String; msg
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.core.NestedIOException.<init>(java.lang.String))
+    |               RETURN   (line 53)
+    constructor-execution(void org.springframework.core.NestedIOException.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(String, Throwable):
+                    ALOAD_0     // Lorg/springframework/core/NestedIOException; this   (line 62)
+                    ALOAD_1     // Ljava/lang/String; msg
+                    INVOKESPECIAL java.io.IOException.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.core.NestedIOException.<init>(java.lang.String, java.lang.Throwable))
+    |               ALOAD_0     // Lorg/springframework/core/NestedIOException; this   (line 63)
+    |               ALOAD_2     // Ljava/lang/Throwable; cause
+    |               INVOKEVIRTUAL org.springframework.core.NestedIOException.initCause (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    |               POP
+    |               RETURN   (line 64)
+    constructor-execution(void org.springframework.core.NestedIOException.<init>(java.lang.String, java.lang.Throwable))
+  end public void <init>(String, Throwable)
+
+  public String getMessage():
+                    ALOAD_0     // Lorg/springframework/core/NestedIOException; this   (line 73)
+                    INVOKESPECIAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/core/NestedIOException; this
+                    INVOKEVIRTUAL org.springframework.core.NestedIOException.getCause ()Ljava/lang/Throwable;
+                    INVOKESTATIC org.springframework.core.NestedExceptionUtils.buildMessage (Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;
+                    ARETURN
+  end public String getMessage()
+end public class org.springframework.core.NestedIOException
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.io.DefaultResourceLoader.getResourceByPath(DefaultResourceLoader.java:117)
+	at org.springframework.core.io.DefaultResourceLoader.getResource(DefaultResourceLoader.java:100)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:284)
+	at org.springframework.context.support.AbstractApplicationContext.getResources(AbstractApplicationContext.java:1227)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:177)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.util.CollectionUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.util.CollectionUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.util.CollectionUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.util.CollectionUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.util.CollectionUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public abstract class org.springframework.util.CollectionUtils extends java.lang.Object:
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/CollectionUtils; this   (line 35)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.CollectionUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.CollectionUtils.<init>())
+  end public void <init>()
+
+  public static boolean isEmpty(java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 44)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/util/Collection; collection
+                    INVOKEINTERFACE java.util.Collection.isEmpty ()Z
+                    IFNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end public static boolean isEmpty(java.util.Collection)
+
+  public static boolean isEmpty(java.util.Map):
+                    ALOAD_0     // Ljava/util/Map; map   (line 54)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/util/Map; map
+                    INVOKEINTERFACE java.util.Map.isEmpty ()Z
+                    IFNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end public static boolean isEmpty(java.util.Map)
+
+  public static java.util.List arrayToList(Object):
+                    ALOAD_0     // Ljava/lang/Object; source   (line 67)
+                    INVOKESTATIC org.springframework.util.ObjectUtils.toObjectArray (Ljava/lang/Object;)[Ljava/lang/Object;
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    ARETURN
+  end public static java.util.List arrayToList(Object)
+
+  public static void mergeArrayIntoCollection(Object, java.util.Collection):
+                    ALOAD_1     // Ljava/util/Collection; collection   (line 77)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalArgumentException   (line 78)
+                    DUP
+                    LDC "Collection must not be null"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Ljava/lang/Object; array   (line 80)
+                    INVOKESTATIC org.springframework.util.ObjectUtils.toObjectArray (Ljava/lang/Object;)[Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // [Ljava/lang/Object; arr   (line 81)
+                    DUP
+                    ASTORE 6
+                    ARRAYLENGTH
+                    ISTORE 5
+                    ICONST_0
+                    ISTORE 4
+                    GOTO L2
+                L1: ALOAD 6
+                    ILOAD 4
+                    AALOAD
+                    ASTORE_3
+                    ALOAD_1     // Ljava/util/Collection; collection   (line 82)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC 4 1   (line 81)
+                L2: ILOAD 4
+                    ILOAD 5
+                    IF_ICMPLT L1
+                    RETURN   (line 84)
+  end public static void mergeArrayIntoCollection(Object, java.util.Collection)
+
+  public static void mergePropertiesIntoMap(java.util.Properties, java.util.Map):
+                    ALOAD_1     // Ljava/util/Map; map   (line 96)
+                    IFNONNULL L0
+                    NEW java.lang.IllegalArgumentException   (line 97)
+                    DUP
+                    LDC "Map must not be null"
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Ljava/util/Properties; props   (line 99)
+                    IFNULL L4
+                    ALOAD_0     // Ljava/util/Properties; props   (line 100)
+                    INVOKEVIRTUAL java.util.Properties.propertyNames ()Ljava/util/Enumeration;
+                    ASTORE_2
+                    GOTO L3
+                L1: ALOAD_2     // Ljava/util/Enumeration; en   (line 101)
+                    INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+                    CHECKCAST java.lang.String
+                    ASTORE_3
+                    ALOAD_0     // Ljava/util/Properties; props   (line 102)
+                    ALOAD_3     // Ljava/lang/String; key
+                    INVOKEVIRTUAL java.util.Properties.getProperty (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/Object; value   (line 103)
+                    IFNONNULL L2
+                    ALOAD_0     // Ljava/util/Properties; props   (line 105)
+                    ALOAD_3     // Ljava/lang/String; key
+                    INVOKEVIRTUAL java.util.Properties.get (Ljava/lang/Object;)Ljava/lang/Object;
+                    ASTORE 4     // Ljava/lang/Object; value
+                L2: ALOAD_1     // Ljava/util/Map; map   (line 107)
+                    ALOAD_3     // Ljava/lang/String; key
+                    ALOAD 4     // Ljava/lang/Object; value
+                    INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+                    POP
+                L3: ALOAD_2     // Ljava/util/Enumeration; en   (line 100)
+                    INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+                    IFNE L1
+                L4: RETURN   (line 110)
+  end public static void mergePropertiesIntoMap(java.util.Properties, java.util.Map)
+
+  public static boolean contains(java.util.Iterator, Object):
+                    ALOAD_0     // Ljava/util/Iterator; iterator   (line 120)
+                    IFNULL L2
+                    GOTO L1   (line 121)
+                L0: ALOAD_0     // Ljava/util/Iterator; iterator   (line 122)
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; candidate   (line 123)
+                    ALOAD_1     // Ljava/lang/Object; element
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ICONST_1   (line 124)
+                    IRETURN
+                L1: ALOAD_0     // Ljava/util/Iterator; iterator   (line 121)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ICONST_0   (line 128)
+                    IRETURN
+  end public static boolean contains(java.util.Iterator, Object)
+
+  public static boolean contains(java.util.Enumeration, Object):
+                    ALOAD_0     // Ljava/util/Enumeration; enumeration   (line 138)
+                    IFNULL L2
+                    GOTO L1   (line 139)
+                L0: ALOAD_0     // Ljava/util/Enumeration; enumeration   (line 140)
+                    INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; candidate   (line 141)
+                    ALOAD_1     // Ljava/lang/Object; element
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ICONST_1   (line 142)
+                    IRETURN
+                L1: ALOAD_0     // Ljava/util/Enumeration; enumeration   (line 139)
+                    INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+                    IFNE L0
+                L2: ICONST_0   (line 146)
+                    IRETURN
+  end public static boolean contains(java.util.Enumeration, Object)
+
+  public static boolean containsInstance(java.util.Collection, Object):
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 158)
+                    IFNULL L2
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 159)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L1
+                L0: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; candidate   (line 160)
+                    ALOAD_1     // Ljava/lang/Object; element
+                    IF_ACMPNE L1
+                    ICONST_1   (line 161)
+                    IRETURN
+                L1: ALOAD_3   (line 159)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L0
+                L2: ICONST_0   (line 165)
+                    IRETURN
+  end public static boolean containsInstance(java.util.Collection, Object)
+
+  public static boolean containsAny(java.util.Collection, java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; source   (line 176)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/util/Collection; candidates
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFEQ L1
+                L0: ICONST_0   (line 177)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/util/Collection; candidates   (line 179)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L3
+                L2: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_0     // Ljava/util/Collection; source   (line 180)
+                    ALOAD_2     // Ljava/lang/Object; candidate
+                    INVOKEINTERFACE java.util.Collection.contains (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ICONST_1   (line 181)
+                    IRETURN
+                L3: ALOAD_3   (line 179)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    ICONST_0   (line 184)
+                    IRETURN
+  end public static boolean containsAny(java.util.Collection, java.util.Collection)
+
+  public static Object findFirstMatch(java.util.Collection, java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; source   (line 197)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/util/Collection; candidates
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFEQ L1
+                L0: ACONST_NULL   (line 198)
+                    ARETURN
+                L1: ALOAD_1     // Ljava/util/Collection; candidates   (line 200)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L3
+                L2: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_0     // Ljava/util/Collection; source   (line 201)
+                    ALOAD_2     // Ljava/lang/Object; candidate
+                    INVOKEINTERFACE java.util.Collection.contains (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ALOAD_2     // Ljava/lang/Object; candidate   (line 202)
+                    ARETURN
+                L3: ALOAD_3   (line 200)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L2
+                    ACONST_NULL   (line 205)
+                    ARETURN
+  end public static Object findFirstMatch(java.util.Collection, java.util.Collection)
+
+  public static Object findValueOfType(java.util.Collection, Class):
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 217)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFEQ L0
+                    ACONST_NULL   (line 218)
+                    ARETURN
+                L0: ACONST_NULL   (line 220)
+                    ASTORE_2
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 221)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L4
+                L1: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_3
+                    ALOAD_1     // Ljava/lang/Class; type   (line 222)
+                    IFNULL L2
+                    ALOAD_1     // Ljava/lang/Class; type
+                    ALOAD_3     // Ljava/lang/Object; element
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    IFEQ L4
+                L2: ALOAD_2     // Ljava/lang/Object; value   (line 223)
+                    IFNULL L3
+                    ACONST_NULL   (line 225)
+                    ARETURN
+                L3: ALOAD_3     // Ljava/lang/Object; element   (line 227)
+                    ASTORE_2     // Ljava/lang/Object; value
+                L4: ALOAD 4   (line 221)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD_2     // Ljava/lang/Object; value   (line 230)
+                    ARETURN
+  end public static Object findValueOfType(java.util.Collection, Class)
+
+  public static Object findValueOfType(java.util.Collection, Class[]):
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 243)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFNE L0
+                    ALOAD_1     // [Ljava/lang/Class; types
+                    INVOKESTATIC org.springframework.util.ObjectUtils.isEmpty ([Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ACONST_NULL   (line 244)
+                    ARETURN
+                L1: ALOAD_1     // [Ljava/lang/Class; types   (line 246)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L4
+                L2: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 247)
+                    ALOAD_2     // Ljava/lang/Class; type
+                    INVOKESTATIC org.springframework.util.CollectionUtils.findValueOfType (Ljava/util/Collection;Ljava/lang/Class;)Ljava/lang/Object;
+                    ASTORE 6
+                    ALOAD 6     // Ljava/lang/Object; value   (line 248)
+                    IFNULL L3
+                    ALOAD 6     // Ljava/lang/Object; value   (line 249)
+                    ARETURN
+                L3: IINC_3 1   (line 246)
+                L4: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L2
+                    ACONST_NULL   (line 252)
+                    ARETURN
+  end public static Object findValueOfType(java.util.Collection, Class[])
+
+  public static boolean hasUniqueObject(java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 262)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFEQ L0
+                    ICONST_0   (line 263)
+                    IRETURN
+                L0: ICONST_0   (line 265)
+                    ISTORE_1
+                    ACONST_NULL   (line 266)
+                    ASTORE_2
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 267)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                    GOTO L3
+                L1: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_3
+                    ILOAD_1     // Z hasCandidate   (line 268)
+                    IFNE L2
+                    ICONST_1   (line 269)
+                    ISTORE_1     // Z hasCandidate
+                    ALOAD_3     // Ljava/lang/Object; elem   (line 270)
+                    ASTORE_2     // Ljava/lang/Object; candidate
+                    GOTO L3
+                L2: ALOAD_2     // Ljava/lang/Object; candidate   (line 272)
+                    ALOAD_3     // Ljava/lang/Object; elem
+                    IF_ACMPEQ L3
+                    ICONST_0   (line 273)
+                    IRETURN
+                L3: ALOAD 4   (line 267)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ICONST_1   (line 276)
+                    IRETURN
+  end public static boolean hasUniqueObject(java.util.Collection)
+
+  public static Class findCommonElementType(java.util.Collection):
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 286)
+                    INVOKESTATIC org.springframework.util.CollectionUtils.isEmpty (Ljava/util/Collection;)Z
+                    IFEQ L0
+                    ACONST_NULL   (line 287)
+                    ARETURN
+                L0: ACONST_NULL   (line 289)
+                    ASTORE_1
+                    ALOAD_0     // Ljava/util/Collection; collection   (line 290)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE_3
+                    GOTO L3
+                L1: ALOAD_3
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; val   (line 291)
+                    IFNULL L3
+                    ALOAD_1     // Ljava/lang/Class; candidate   (line 292)
+                    IFNONNULL L2
+                    ALOAD_2     // Ljava/lang/Object; val   (line 293)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE_1     // Ljava/lang/Class; candidate
+                    GOTO L3
+                L2: ALOAD_1     // Ljava/lang/Class; candidate   (line 295)
+                    ALOAD_2     // Ljava/lang/Object; val
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    IF_ACMPEQ L3
+                    ACONST_NULL   (line 296)
+                    ARETURN
+                L3: ALOAD_3   (line 290)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD_1     // Ljava/lang/Class; candidate   (line 300)
+                    ARETURN
+  end public static Class findCommonElementType(java.util.Collection)
+
+  public static java.util.Iterator toIterator(java.util.Enumeration):
+                    NEW org.springframework.util.CollectionUtils$EnumerationIterator   (line 309)
+                    DUP
+                    ALOAD_0     // Ljava/util/Enumeration; enumeration
+                    INVOKESPECIAL org.springframework.util.CollectionUtils$EnumerationIterator.<init> (Ljava/util/Enumeration;)V
+                    ARETURN
+  end public static java.util.Iterator toIterator(java.util.Enumeration)
+
+end public abstract class org.springframework.util.CollectionUtils
+ -- (ClassFormatException) File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:402)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:467)
+	at org.aspectj.weaver.World.resolve(World.java:308)
+	at org.aspectj.weaver.World.resolve(World.java:218)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.StringUtils.collectionToDelimitedString(StringUtils.java:1047)
+	at org.springframework.util.StringUtils.collectionToDelimitedString(StringUtils.java:1069)
+	at org.springframework.util.StringUtils.cleanPath(StringUtils.java:632)
+	at org.springframework.core.io.ClassPathResource.<init>(ClassPathResource.java:76)
+	at org.springframework.core.io.DefaultResourceLoader$ClassPathContextResource.<init>(DefaultResourceLoader.java:128)
+	at org.springframework.core.io.DefaultResourceLoader.getResourceByPath(DefaultResourceLoader.java:117)
+	at org.springframework.core.io.DefaultResourceLoader.getResource(DefaultResourceLoader.java:100)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:284)
+	at org.springframework.context.support.AbstractApplicationContext.getResources(AbstractApplicationContext.java:1227)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:177)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.core.io.support.EncodedResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.core.io.support.EncodedResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.core.io.support.EncodedResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.core.io.support.EncodedResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.core.io.support.EncodedResource
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.core.io.support.EncodedResource extends java.lang.Object:
+  private final org.springframework.core.io.Resource resource
+  private final String encoding
+  public void <init>(org.springframework.core.io.Resource):
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 51)
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; resource
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.core.io.support.EncodedResource.<init> (Lorg/springframework/core/io/Resource;Ljava/lang/String;)V
+    constructor-execution(void org.springframework.core.io.support.EncodedResource.<init>(org.springframework.core.io.Resource))
+    |               RETURN   (line 52)
+    constructor-execution(void org.springframework.core.io.support.EncodedResource.<init>(org.springframework.core.io.Resource))
+  end public void <init>(org.springframework.core.io.Resource)
+
+  public void <init>(org.springframework.core.io.Resource, String):
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 60)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.EncodedResource.<init>(org.springframework.core.io.Resource, java.lang.String))
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; resource   (line 61)
+    |               LDC "Resource must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 62)
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; resource
+    |               PUTFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 63)
+    |               ALOAD_2     // Ljava/lang/String; encoding
+    |               PUTFIELD org.springframework.core.io.support.EncodedResource.encoding Ljava/lang/String;
+    |               RETURN   (line 64)
+    constructor-execution(void org.springframework.core.io.support.EncodedResource.<init>(org.springframework.core.io.Resource, java.lang.String))
+  end public void <init>(org.springframework.core.io.Resource, String)
+
+  public final org.springframework.core.io.Resource getResource():
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 71)
+                    GETFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+                    ARETURN
+  end public final org.springframework.core.io.Resource getResource()
+
+  public final String getEncoding():
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 79)
+                    GETFIELD org.springframework.core.io.support.EncodedResource.encoding Ljava/lang/String;
+                    ARETURN
+  end public final String getEncoding()
+
+  public java.io.Reader getReader() throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 88)
+                    GETFIELD org.springframework.core.io.support.EncodedResource.encoding Ljava/lang/String;
+                    IFNULL L0
+                    NEW java.io.InputStreamReader   (line 89)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this
+                    GETFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getInputStream ()Ljava/io/InputStream;
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this
+                    GETFIELD org.springframework.core.io.support.EncodedResource.encoding Ljava/lang/String;
+                    INVOKESPECIAL java.io.InputStreamReader.<init> (Ljava/io/InputStream;Ljava/lang/String;)V
+                    ARETURN
+                L0: NEW java.io.InputStreamReader   (line 92)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this
+                    GETFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getInputStream ()Ljava/io/InputStream;
+                    INVOKESPECIAL java.io.InputStreamReader.<init> (Ljava/io/InputStream;)V
+                    ARETURN
+  end public java.io.Reader getReader() throws java.io.IOException
+
+  public boolean equals(Object):
+                    ALOAD_1     // Ljava/lang/Object; obj   (line 99)
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this
+                    IF_ACMPNE L0
+                    ICONST_1   (line 100)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; obj   (line 102)
+                    INSTANCEOF org.springframework.core.io.support.EncodedResource
+                    IFEQ L2
+                    ALOAD_1     // Ljava/lang/Object; obj   (line 103)
+                    CHECKCAST org.springframework.core.io.support.EncodedResource
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 104)
+                    GETFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+                    ALOAD_2     // Lorg/springframework/core/io/support/EncodedResource; otherRes
+                    GETFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 105)
+                    GETFIELD org.springframework.core.io.support.EncodedResource.encoding Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/core/io/support/EncodedResource; otherRes
+                    GETFIELD org.springframework.core.io.support.EncodedResource.encoding Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L1
+                    ICONST_1
+                    IRETURN
+                L1: ICONST_0
+                    IRETURN   (line 104)
+                L2: ICONST_0   (line 107)
+                    IRETURN
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 112)
+                    GETFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    IRETURN
+  end public int hashCode()
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/core/io/support/EncodedResource; this   (line 117)
+                    GETFIELD org.springframework.core.io.support.EncodedResource.resource Lorg/springframework/core/io/Resource;
+                    INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+end public class org.springframework.core.io.support.EncodedResource
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.core.io.support.PropertiesLoaderUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.core.io.support.PropertiesLoaderUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.core.io.support.PropertiesLoaderUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.core.io.support.PropertiesLoaderUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.core.io.support.PropertiesLoaderUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

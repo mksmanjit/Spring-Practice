@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+	
+<bean id="baseSaxophonist" class="foo.OneManBand" abstract="true">
+	<property name="song" value="Jingle Bells"/>
+	<property name="instrument" ref="sexaphone" />
+</bean>
+<bean id="sexaphone" class="foo.Saxophone"/>
+
+<bean id="kenny" parent="baseSaxophonist"/>
+<bean id="david" parent="baseSaxophonist">
+	<property name="song" value="Mary had a little lamb"/>
+</bean>
+
+<bean id="basePerformer" abstract="true">
+	<property name="song" value="Somewhere over the Rainbow"/>
+</bean>
+
+<bean id="taylor" class="foo.OneManBand" parent="basePerformer">
+	<property name="instrument" ref="sexaphone"/>
+</bean>
+
+</beans>

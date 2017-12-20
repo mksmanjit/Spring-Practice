@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"  value="${hibernate.connection.driver_class}"></property>
+		<property name="url" value="${hibernate.connection.url}"></property>
+		<property name="username" value="${hibernate.connection.username}"></property>
+		<property name="password" value="${hibernate.connection.password}"></property>
+	</bean>
+	
+	<bean id="mysessionFactory"	class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		
+		<property name="mappingResources">
+		<list>
+		<value>employee.hbm.xml</value>
+		</list>
+		</property>
+		
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+				<prop key="hibernate.show_sql">${show_sql}</prop>
+				
+			</props>
+		</property>
+	</bean>
+	
+	<!-- <bean id="template" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	<property name="sessionFactory" ref="mysessionFactory"></property>
+	</bean> -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="mysessionFactory"></property>
+	</bean>
+	
+	<bean id="empDaoTarget" class="foo.EmployeeDaoImpl">
+	<property name="sessionFactory" ref="mysessionFactory"></property>
+	</bean>
+	
+	<bean id="empDao" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="target" ref="empDaoTarget"/>
+		<property name="proxyInterfaces" value="foo.IEmployeeDao"/>
+		<property name="transactionManager" ref="transactionManager"/>
+		
+		<property name="transactionAttributes">
+			<props>
+			<!--(+) in exception means don't roll Back (-) in exception means roll back  -->
+				<prop key="save*">PROPAGATION_REQUIRED,-IOException,+NullPointerException</prop>
+				<prop key="*">PROPAGATION_SUPPORTS,readOnly,-IOException</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>hibernate.properties</value>
+			</list>
+		</property>
+	</bean>
+	</beans>

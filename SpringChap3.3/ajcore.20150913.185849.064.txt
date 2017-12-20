@@ -1,0 +1,1988 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185849.064.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.core.io.support.PathMatchingResourcePatternResolver extends java.lang.Object implements org.springframework.core.io.support.ResourcePatternResolver:
+  private static final org.apache.commons.logging.Log logger
+  private static java.lang.reflect.Method equinoxResolveMethod
+  private final org.springframework.core.io.ResourceLoader resourceLoader
+  private org.springframework.util.PathMatcher pathMatcher
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<clinit>())
+    |               LDC org.springframework.core.io.support.PathMatchingResourcePatternResolver   (line 169)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;
+    | catch java.lang.Throwable -> E0
+    | |             LDC org.springframework.core.io.support.PathMatchingResourcePatternResolver   (line 176)
+    | |             INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+    | |             LDC "org.eclipse.core.runtime.FileLocator"   (line 177)
+    | |             INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;   (line 176)
+    | |             ASTORE_0
+    | |             ALOAD_0     // Ljava/lang/Class; fileLocatorClass   (line 178)
+    | |             LDC "resolve"
+    | |             ICONST_1
+    | |             ANEWARRAY java.lang.Class
+    | |             DUP
+    | |             ICONST_0
+    | |             LDC java.net.URL
+    | |             AASTORE
+    | |             INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    | |             PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+    | |             GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 179)
+    | |             LDC "Found Equinox FileLocator for OSGi bundle URL resolution"
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    | catch java.lang.Throwable -> E0
+    |               GOTO L0
+    |           E0: POP   (line 181)
+    |               ACONST_NULL   (line 182)
+    |               PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+    |           L0: RETURN   (line 167)
+    staticinitialization(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 197)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 198)
+    |               NEW org.springframework.core.io.DefaultResourceLoader
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 199)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>())
+  end public void <init>()
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 208)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 209)
+    |               NEW org.springframework.core.io.DefaultResourceLoader
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> (Ljava/lang/ClassLoader;)V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 210)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void <init>(org.springframework.core.io.ResourceLoader):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 218)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(org.springframework.core.io.ResourceLoader))
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader   (line 219)
+    |               LDC "ResourceLoader must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 220)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 221)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(org.springframework.core.io.ResourceLoader))
+  end public void <init>(org.springframework.core.io.ResourceLoader)
+
+  public org.springframework.core.io.ResourceLoader getResourceLoader():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 228)
+                    GETFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+                    ARETURN
+  end public org.springframework.core.io.ResourceLoader getResourceLoader()
+
+  public ClassLoader getClassLoader():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 236)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getClassLoader ()Ljava/lang/ClassLoader;
+                    ARETURN
+  end public ClassLoader getClassLoader()
+
+  public void setPathMatcher(org.springframework.util.PathMatcher):
+                    ALOAD_1     // Lorg/springframework/util/PathMatcher; pathMatcher   (line 245)
+                    LDC "PathMatcher must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 246)
+                    ALOAD_1     // Lorg/springframework/util/PathMatcher; pathMatcher
+                    PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+                    RETURN   (line 247)
+  end public void setPathMatcher(org.springframework.util.PathMatcher)
+
+  public org.springframework.util.PathMatcher getPathMatcher():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 253)
+                    GETFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+                    ARETURN
+  end public org.springframework.util.PathMatcher getPathMatcher()
+
+  public org.springframework.core.io.Resource getResource(String):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 258)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    ALOAD_1     // Ljava/lang/String; location
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getResource (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+                    ARETURN
+  end public org.springframework.core.io.Resource getResource(String)
+
+  public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 262)
+                    LDC "Location pattern must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 263)
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 265)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 267)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 271)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findAllClassPathResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L1: ALOAD_1     // Ljava/lang/String; locationPattern   (line 277)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_1
+                    IADD
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 278)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    ILOAD_2     // I prefixEnd
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 280)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L2: ICONST_1   (line 284)
+                    ANEWARRAY org.springframework.core.io.Resource
+                    DUP
+                    ICONST_0
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getResource (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+                    AASTORE
+                    ARETURN
+  end public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException
+
+  protected org.springframework.core.io.Resource[] findAllClassPathResources(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; location   (line 299)
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; path   (line 300)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/String; path   (line 301)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_2     // Ljava/lang/String; path
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 303)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getClassLoader ()Ljava/lang/ClassLoader;
+                    ALOAD_2     // Ljava/lang/String; path
+                    INVOKEVIRTUAL java.lang.ClassLoader.getResources (Ljava/lang/String;)Ljava/util/Enumeration;
+                    ASTORE_3
+                    NEW java.util.LinkedHashSet   (line 304)
+                    DUP
+                    BIPUSH 16
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    GOTO L2   (line 305)
+                L1: ALOAD_3     // Ljava/util/Enumeration; resourceUrls   (line 306)
+                    INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+                    CHECKCAST java.net.URL
+                    ASTORE 5
+                    ALOAD 4     // Ljava/util/Set; result   (line 307)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 5     // Ljava/net/URL; url
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.convertClassLoaderURL (Ljava/net/URL;)Lorg/springframework/core/io/Resource;
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L2: ALOAD_3     // Ljava/util/Enumeration; resourceUrls   (line 305)
+                    INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/util/Set; result   (line 309)
+                    ALOAD 4     // Ljava/util/Set; result
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY org.springframework.core.io.Resource
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.core.io.Resource;
+                    ARETURN
+  end protected org.springframework.core.io.Resource[] findAllClassPathResources(String) throws java.io.IOException
+
+  protected org.springframework.core.io.Resource convertClassLoaderURL(java.net.URL):
+                    NEW org.springframework.core.io.UrlResource   (line 321)
+                    DUP
+                    ALOAD_1     // Ljava/net/URL; url
+                    INVOKESPECIAL org.springframework.core.io.UrlResource.<init> (Ljava/net/URL;)V
+                    ARETURN
+  end protected org.springframework.core.io.Resource convertClassLoaderURL(java.net.URL)
+
+  protected org.springframework.core.io.Resource[] findPathMatchingResources(String) throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 336)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.determineRootDir (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 337)
+                    ALOAD_2     // Ljava/lang/String; rootDirPath
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 338)
+                    ALOAD_2     // Ljava/lang/String; rootDirPath
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ASTORE 4
+                    NEW java.util.LinkedHashSet   (line 339)
+                    DUP
+                    BIPUSH 16
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 5
+                    ALOAD 4     // [Lorg/springframework/core/io/Resource; rootDirResources   (line 340)
+                    DUP
+                    ASTORE 9
+                    ARRAYLENGTH
+                    ISTORE 8
+                    ICONST_0
+                    ISTORE 7
+                    GOTO L4
+                L0: ALOAD 9
+                    ILOAD 7
+                    AALOAD
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 341)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.resolveRootDirResource (Lorg/springframework/core/io/Resource;)Lorg/springframework/core/io/Resource;
+                    ASTORE 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 342)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.isJarResource (Lorg/springframework/core/io/Resource;)Z
+                    IFEQ L1
+                    ALOAD 5     // Ljava/util/Set; result   (line 343)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingJarResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    GOTO L3
+                L1: ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource   (line 345)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.getProtocol ()Ljava/lang/String;
+                    LDC "vfs"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD 5     // Ljava/util/Set; result   (line 346)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    INVOKESTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver$VfsResourceMatchingDelegate.findMatchingResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;Lorg/springframework/util/PathMatcher;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    GOTO L3
+                L2: ALOAD 5     // Ljava/util/Set; result   (line 349)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingFileResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                L3: IINC 7 1   (line 340)
+                L4: ILOAD 7
+                    ILOAD 8
+                    IF_ICMPLT L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 352)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 353)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Resolved location pattern ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] to resources "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 5     // Ljava/util/Set; result
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L5: ALOAD 5     // Ljava/util/Set; result   (line 355)
+                    ALOAD 5     // Ljava/util/Set; result
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY org.springframework.core.io.Resource
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.core.io.Resource;
+                    ARETURN
+  end protected org.springframework.core.io.Resource[] findPathMatchingResources(String) throws java.io.IOException
+
+  protected String determineRootDir(String):
+                    ALOAD_1     // Ljava/lang/String; location   (line 371)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_1
+                    IADD
+                    ISTORE_2
+                    ALOAD_1     // Ljava/lang/String; location   (line 372)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE_3
+                    GOTO L1   (line 373)
+                L0: ALOAD_1     // Ljava/lang/String; location   (line 374)
+                    BIPUSH 47
+                    ILOAD_3     // I rootDirEnd
+                    ICONST_2
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (II)I
+                    ICONST_1
+                    IADD
+                    ISTORE_3     // I rootDirEnd
+                L1: ILOAD_3     // I rootDirEnd   (line 373)
+                    ILOAD_2     // I prefixEnd
+                    IF_ICMPLE L2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; location
+                    ILOAD_2     // I prefixEnd
+                    ILOAD_3     // I rootDirEnd
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFNE L0
+                L2: ILOAD_3     // I rootDirEnd   (line 376)
+                    IFNE L3
+                    ILOAD_2     // I prefixEnd   (line 377)
+                    ISTORE_3     // I rootDirEnd
+                L3: ALOAD_1     // Ljava/lang/String; location   (line 379)
+                    ICONST_0
+                    ILOAD_3     // I rootDirEnd
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ARETURN
+  end protected String determineRootDir(String)
+
+  protected org.springframework.core.io.Resource resolveRootDirResource(org.springframework.core.io.Resource) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;   (line 392)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; original   (line 393)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/net/URL; url   (line 394)
+                    INVOKEVIRTUAL java.net.URL.getProtocol ()Ljava/lang/String;
+                    LDC_W "bundle"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.core.io.UrlResource   (line 395)
+                    DUP
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+                    ACONST_NULL
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_2     // Ljava/net/URL; url
+                    AASTORE
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.invokeMethod (Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.net.URL
+                    INVOKESPECIAL org.springframework.core.io.UrlResource.<init> (Ljava/net/URL;)V
+                    ARETURN
+                L0: ALOAD_1     // Lorg/springframework/core/io/Resource; original   (line 398)
+                    ARETURN
+  end protected org.springframework.core.io.Resource resolveRootDirResource(org.springframework.core.io.Resource) throws java.io.IOException
+
+  protected boolean isJarResource(org.springframework.core.io.Resource) throws java.io.IOException:
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; resource   (line 413)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKESTATIC org.springframework.util.ResourceUtils.isJarURL (Ljava/net/URL;)Z
+                    IRETURN
+  end protected boolean isJarResource(org.springframework.core.io.Resource) throws java.io.IOException
+
+  protected java.util.Set doFindPathMatchingJarResources(org.springframework.core.io.Resource, String) throws java.io.IOException:
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 429)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.openConnection ()Ljava/net/URLConnection;
+                    ASTORE_3
+                    ICONST_0   (line 433)
+                    ISTORE 7
+                    ALOAD_3     // Ljava/net/URLConnection; con   (line 435)
+                    INSTANCEOF java.net.JarURLConnection
+                    IFEQ L2
+                    ALOAD_3     // Ljava/net/URLConnection; con   (line 437)
+                    CHECKCAST java.net.JarURLConnection
+                    ASTORE 8
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 438)
+                    ICONST_0
+                    INVOKEVIRTUAL java.net.JarURLConnection.setUseCaches (Z)V
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 439)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarFile ()Ljava/util/jar/JarFile;
+                    ASTORE 4
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 440)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarFileURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.toExternalForm ()Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 441)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarEntry ()Ljava/util/jar/JarEntry;
+                    ASTORE 9
+                    ALOAD 9     // Ljava/util/jar/JarEntry; jarEntry   (line 442)
+                    IFNULL L0
+                    ALOAD 9     // Ljava/util/jar/JarEntry; jarEntry
+                    INVOKEVIRTUAL java.util.jar.JarEntry.getName ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC_W ""
+                L1: ASTORE 6
+                    GOTO L5
+                L2: ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 449)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.getFile ()Ljava/lang/String;
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 450)
+                    LDC_W "!/"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 9
+                    ILOAD 9     // I separatorIndex   (line 451)
+                    ICONST_M1
+                    IF_ICMPEQ L3
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 452)
+                    ICONST_0
+                    ILOAD 9     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 453)
+                    ILOAD 9     // I separatorIndex
+                    LDC_W "!/"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 454)
+                    ALOAD 5     // Ljava/lang/String; jarFileUrl
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getJarFile (Ljava/lang/String;)Ljava/util/jar/JarFile;
+                    ASTORE 4
+                    GOTO L4
+                L3: NEW java.util.jar.JarFile   (line 457)
+                    DUP
+                    ALOAD 8     // Ljava/lang/String; urlFile
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ASTORE 4
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 458)
+                    ASTORE 5
+                    LDC_W ""   (line 459)
+                    ASTORE 6
+                L4: ICONST_1   (line 461)
+                    ISTORE 7     // Z newJarFile
+    finally -> E0
+    |           L5: GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 465)
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L6
+    |               GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 466)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC_W "Looking for matching resources in jar file ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 5     // Ljava/lang/String; jarFileUrl
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC_W "]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    |           L6: LDC_W ""   (line 468)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L7
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               LDC "/"
+    |               INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+    |               IFNE L7
+    |               NEW java.lang.StringBuilder   (line 471)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               LDC "/"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               ASTORE 6     // Ljava/lang/String; rootEntryPath
+    |           L7: NEW java.util.LinkedHashSet   (line 473)
+    |               DUP
+    |               BIPUSH 8
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+    |               ASTORE 8
+    |               ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 474)
+    |               INVOKEVIRTUAL java.util.jar.JarFile.entries ()Ljava/util/Enumeration;
+    |               ASTORE 9
+    |               GOTO L9
+    |           L8: ALOAD 9     // Ljava/util/Enumeration; entries   (line 475)
+    |               INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+    |               CHECKCAST java.util.jar.JarEntry
+    |               ASTORE 10
+    |               ALOAD 10     // Ljava/util/jar/JarEntry; entry   (line 476)
+    |               INVOKEVIRTUAL java.util.jar.JarEntry.getName ()Ljava/lang/String;
+    |               ASTORE 11
+    |               ALOAD 11     // Ljava/lang/String; entryPath   (line 477)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFEQ L9
+    |               ALOAD 11     // Ljava/lang/String; entryPath   (line 478)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.length ()I
+    |               INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+    |               ASTORE 12
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 479)
+    |               INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+    |               ALOAD_2     // Ljava/lang/String; subPattern
+    |               ALOAD 12     // Ljava/lang/String; relativePath
+    |               INVOKEINTERFACE org.springframework.util.PathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+    |               IFEQ L9
+    |               ALOAD 8     // Ljava/util/Set; result   (line 480)
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource
+    |               ALOAD 12     // Ljava/lang/String; relativePath
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.createRelative (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L9: ALOAD 9     // Ljava/util/Enumeration; entries   (line 474)
+    |               INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+    |               IFNE L8
+    |               ALOAD 8     // Ljava/util/Set; result   (line 484)
+    |               ASTORE 14
+    finally -> E0
+                    ILOAD 7     // Z newJarFile   (line 489)
+                    IFEQ L10
+                    ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 490)
+                    INVOKEVIRTUAL java.util.jar.JarFile.close ()V
+               L10: ALOAD 14   (line 484)
+                    ARETURN
+                E0: ASTORE 13   (line 486)
+                    ILOAD 7     // Z newJarFile   (line 489)
+                    IFEQ L11
+                    ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 490)
+                    INVOKEVIRTUAL java.util.jar.JarFile.close ()V
+               L11: ALOAD 13   (line 492)
+                    ATHROW
+  end protected java.util.Set doFindPathMatchingJarResources(org.springframework.core.io.Resource, String) throws java.io.IOException
+
+  protected java.util.jar.JarFile getJarFile(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl   (line 499)
+                    LDC_W "file:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+    catch java.net.URISyntaxException -> E0
+    |               NEW java.util.jar.JarFile   (line 501)
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/String; jarFileUrl
+    |               INVOKESTATIC org.springframework.util.ResourceUtils.toURI (Ljava/lang/String;)Ljava/net/URI;
+    |               INVOKEVIRTUAL java.net.URI.getSchemeSpecificPart ()Ljava/lang/String;
+    |               INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+    catch java.net.URISyntaxException -> E0
+                    ARETURN
+                E0: POP   (line 503)
+                    NEW java.util.jar.JarFile   (line 505)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl
+                    LDC_W "file:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ARETURN
+                L0: NEW java.util.jar.JarFile   (line 509)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ARETURN
+  end protected java.util.jar.JarFile getJarFile(String) throws java.io.IOException
+
+  protected java.util.Set doFindPathMatchingFileResources(org.springframework.core.io.Resource, String) throws java.io.IOException:
+    catch java.io.IOException -> E0
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 528)
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getFile ()Ljava/io/File;
+    |               INVOKEVIRTUAL java.io.File.getAbsoluteFile ()Ljava/io/File;
+    |               ASTORE_3
+    catch java.io.IOException -> E0
+                    GOTO L1
+                E0: ASTORE 4   (line 530)
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 531)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 532)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot search for matching files underneath "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W " because it does not correspond to a directory in the file system"   (line 533)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 4     // Ljava/io/IOException; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 532)
+                L0: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 535)
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 537)
+                    ALOAD_3     // Ljava/io/File; rootDir
+                    ALOAD_2     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources (Ljava/io/File;Ljava/lang/String;)Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set doFindPathMatchingFileResources(org.springframework.core.io.Resource, String) throws java.io.IOException
+
+  protected java.util.Set doFindMatchingFileSystemResources(java.io.File, String) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 551)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 552)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Looking for matching resources in directory tree ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getPath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 554)
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    ALOAD_2     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.retrieveMatchingFiles (Ljava/io/File;Ljava/lang/String;)Ljava/util/Set;
+                    ASTORE_3
+                    NEW java.util.LinkedHashSet   (line 555)
+                    DUP
+                    ALOAD_3     // Ljava/util/Set; matchingFiles
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    ALOAD_3     // Ljava/util/Set; matchingFiles   (line 556)
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L2
+                L1: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.io.File
+                    ASTORE 5
+                    ALOAD 4     // Ljava/util/Set; result   (line 557)
+                    NEW org.springframework.core.io.FileSystemResource
+                    DUP
+                    ALOAD 5     // Ljava/io/File; file
+                    INVOKESPECIAL org.springframework.core.io.FileSystemResource.<init> (Ljava/io/File;)V
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L2: ALOAD 6   (line 556)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/util/Set; result   (line 559)
+                    ARETURN
+  end protected java.util.Set doFindMatchingFileSystemResources(java.io.File, String) throws java.io.IOException
+
+  protected java.util.Set retrieveMatchingFiles(java.io.File, String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/io/File; rootDir   (line 572)
+                    INVOKEVIRTUAL java.io.File.exists ()Z
+                    IFNE L1
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 574)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 575)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because it does not exist"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 577)
+                    ARETURN
+                L1: ALOAD_1     // Ljava/io/File; rootDir   (line 579)
+                    INVOKEVIRTUAL java.io.File.isDirectory ()Z
+                    IFNE L3
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 581)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L2
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 582)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because it does not denote a directory"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                L2: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 584)
+                    ARETURN
+                L3: ALOAD_1     // Ljava/io/File; rootDir   (line 586)
+                    INVOKEVIRTUAL java.io.File.canRead ()Z
+                    IFNE L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 587)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L4
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 588)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot search for matching files underneath directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because the application is not allowed to read the directory"   (line 589)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V   (line 588)
+                L4: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 591)
+                    ARETURN
+                L5: ALOAD_1     // Ljava/io/File; rootDir   (line 593)
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; pattern   (line 594)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L6
+                    NEW java.lang.StringBuilder   (line 595)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; fullPattern
+                L6: NEW java.lang.StringBuilder   (line 597)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; fullPattern
+                    NEW java.util.LinkedHashSet   (line 598)
+                    DUP
+                    BIPUSH 8
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 599)
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    ALOAD 4     // Ljava/util/Set; result
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles (Ljava/lang/String;Ljava/io/File;Ljava/util/Set;)V
+                    ALOAD 4     // Ljava/util/Set; result   (line 600)
+                    ARETURN
+  end protected java.util.Set retrieveMatchingFiles(java.io.File, String) throws java.io.IOException
+
+  protected void doRetrieveMatchingFiles(String, java.io.File, java.util.Set) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 613)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 614)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Searching directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] for files matching pattern ["   (line 615)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 614)
+                L0: ALOAD_2     // Ljava/io/File; dir   (line 617)
+                    INVOKEVIRTUAL java.io.File.listFiles ()[Ljava/io/File;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/io/File; dirContents   (line 618)
+                    IFNONNULL L2
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 619)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L1
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 620)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Could not retrieve contents of directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                L1: RETURN   (line 622)
+                L2: ALOAD 4     // [Ljava/io/File; dirContents   (line 624)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L7
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD 5     // Ljava/io/File; content   (line 625)
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 9
+                    ALOAD 5     // Ljava/io/File; content   (line 626)
+                    INVOKEVIRTUAL java.io.File.isDirectory ()Z
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD 9     // Ljava/lang/String; currPath
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.matchStart (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L5
+                    ALOAD 5     // Ljava/io/File; content   (line 627)
+                    INVOKEVIRTUAL java.io.File.canRead ()Z
+                    IFNE L4
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 628)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 629)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping subdirectory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because the application is not allowed to read the directory"   (line 630)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 629)
+                    GOTO L5
+                L4: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 634)
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    ALOAD 5     // Ljava/io/File; content
+                    ALOAD_3     // Ljava/util/Set; result
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles (Ljava/lang/String;Ljava/io/File;Ljava/util/Set;)V
+                L5: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 637)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    ALOAD 9     // Ljava/lang/String; currPath
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L6
+                    ALOAD_3     // Ljava/util/Set; result   (line 638)
+                    ALOAD 5     // Ljava/io/File; content
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L6: IINC 6 1   (line 624)
+                L7: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    RETURN   (line 641)
+  end protected void doRetrieveMatchingFiles(String, java.io.File, java.util.Set) throws java.io.IOException
+end public class org.springframework.core.io.support.PathMatchingResourcePatternResolver
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.getResourcePatternResolver(AbstractApplicationContext.java:350)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:222)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.core.io.support.PathMatchingResourcePatternResolver extends java.lang.Object implements org.springframework.core.io.support.ResourcePatternResolver:
+  private static final org.apache.commons.logging.Log logger
+  private static java.lang.reflect.Method equinoxResolveMethod
+  private final org.springframework.core.io.ResourceLoader resourceLoader
+  private org.springframework.util.PathMatcher pathMatcher
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<clinit>())
+    |               LDC org.springframework.core.io.support.PathMatchingResourcePatternResolver   (line 169)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;
+    | catch java.lang.Throwable -> E0
+    | |             LDC org.springframework.core.io.support.PathMatchingResourcePatternResolver   (line 176)
+    | |             INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+    | |             LDC "org.eclipse.core.runtime.FileLocator"   (line 177)
+    | |             INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;   (line 176)
+    | |             ASTORE_0
+    | |             ALOAD_0     // Ljava/lang/Class; fileLocatorClass   (line 178)
+    | |             LDC "resolve"
+    | |             ICONST_1
+    | |             ANEWARRAY java.lang.Class
+    | |             DUP
+    | |             ICONST_0
+    | |             LDC java.net.URL
+    | |             AASTORE
+    | |             INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    | |             PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+    | |             GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 179)
+    | |             LDC "Found Equinox FileLocator for OSGi bundle URL resolution"
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    | catch java.lang.Throwable -> E0
+    |               GOTO L0
+    |           E0: POP   (line 181)
+    |               ACONST_NULL   (line 182)
+    |               PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+    |           L0: RETURN   (line 167)
+    staticinitialization(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 197)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 198)
+    |               NEW org.springframework.core.io.DefaultResourceLoader
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 199)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>())
+  end public void <init>()
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 208)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 209)
+    |               NEW org.springframework.core.io.DefaultResourceLoader
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> (Ljava/lang/ClassLoader;)V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 210)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void <init>(org.springframework.core.io.ResourceLoader):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 218)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(org.springframework.core.io.ResourceLoader))
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader   (line 219)
+    |               LDC "ResourceLoader must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 220)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 221)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(org.springframework.core.io.ResourceLoader))
+  end public void <init>(org.springframework.core.io.ResourceLoader)
+
+  public org.springframework.core.io.ResourceLoader getResourceLoader():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 228)
+                    GETFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+                    ARETURN
+  end public org.springframework.core.io.ResourceLoader getResourceLoader()
+
+  public ClassLoader getClassLoader():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 236)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getClassLoader ()Ljava/lang/ClassLoader;
+                    ARETURN
+  end public ClassLoader getClassLoader()
+
+  public void setPathMatcher(org.springframework.util.PathMatcher):
+                    ALOAD_1     // Lorg/springframework/util/PathMatcher; pathMatcher   (line 245)
+                    LDC "PathMatcher must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 246)
+                    ALOAD_1     // Lorg/springframework/util/PathMatcher; pathMatcher
+                    PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+                    RETURN   (line 247)
+  end public void setPathMatcher(org.springframework.util.PathMatcher)
+
+  public org.springframework.util.PathMatcher getPathMatcher():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 253)
+                    GETFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+                    ARETURN
+  end public org.springframework.util.PathMatcher getPathMatcher()
+
+  public org.springframework.core.io.Resource getResource(String):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 258)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    ALOAD_1     // Ljava/lang/String; location
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getResource (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+                    ARETURN
+  end public org.springframework.core.io.Resource getResource(String)
+
+  public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 262)
+                    LDC "Location pattern must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 263)
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 265)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 267)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 271)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findAllClassPathResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L1: ALOAD_1     // Ljava/lang/String; locationPattern   (line 277)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_1
+                    IADD
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 278)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    ILOAD_2     // I prefixEnd
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 280)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L2: ICONST_1   (line 284)
+                    ANEWARRAY org.springframework.core.io.Resource
+                    DUP
+                    ICONST_0
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getResource (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+                    AASTORE
+                    ARETURN
+  end public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException
+
+  protected org.springframework.core.io.Resource[] findAllClassPathResources(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; location   (line 299)
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; path   (line 300)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/String; path   (line 301)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_2     // Ljava/lang/String; path
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 303)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getClassLoader ()Ljava/lang/ClassLoader;
+                    ALOAD_2     // Ljava/lang/String; path
+                    INVOKEVIRTUAL java.lang.ClassLoader.getResources (Ljava/lang/String;)Ljava/util/Enumeration;
+                    ASTORE_3
+                    NEW java.util.LinkedHashSet   (line 304)
+                    DUP
+                    BIPUSH 16
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    GOTO L2   (line 305)
+                L1: ALOAD_3     // Ljava/util/Enumeration; resourceUrls   (line 306)
+                    INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+                    CHECKCAST java.net.URL
+                    ASTORE 5
+                    ALOAD 4     // Ljava/util/Set; result   (line 307)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 5     // Ljava/net/URL; url
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.convertClassLoaderURL (Ljava/net/URL;)Lorg/springframework/core/io/Resource;
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L2: ALOAD_3     // Ljava/util/Enumeration; resourceUrls   (line 305)
+                    INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/util/Set; result   (line 309)
+                    ALOAD 4     // Ljava/util/Set; result
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY org.springframework.core.io.Resource
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.core.io.Resource;
+                    ARETURN
+  end protected org.springframework.core.io.Resource[] findAllClassPathResources(String) throws java.io.IOException
+
+  protected org.springframework.core.io.Resource convertClassLoaderURL(java.net.URL):
+                    NEW org.springframework.core.io.UrlResource   (line 321)
+                    DUP
+                    ALOAD_1     // Ljava/net/URL; url
+                    INVOKESPECIAL org.springframework.core.io.UrlResource.<init> (Ljava/net/URL;)V
+                    ARETURN
+  end protected org.springframework.core.io.Resource convertClassLoaderURL(java.net.URL)
+
+  protected org.springframework.core.io.Resource[] findPathMatchingResources(String) throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 336)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.determineRootDir (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 337)
+                    ALOAD_2     // Ljava/lang/String; rootDirPath
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 338)
+                    ALOAD_2     // Ljava/lang/String; rootDirPath
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ASTORE 4
+                    NEW java.util.LinkedHashSet   (line 339)
+                    DUP
+                    BIPUSH 16
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 5
+                    ALOAD 4     // [Lorg/springframework/core/io/Resource; rootDirResources   (line 340)
+                    DUP
+                    ASTORE 9
+                    ARRAYLENGTH
+                    ISTORE 8
+                    ICONST_0
+                    ISTORE 7
+                    GOTO L4
+                L0: ALOAD 9
+                    ILOAD 7
+                    AALOAD
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 341)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.resolveRootDirResource (Lorg/springframework/core/io/Resource;)Lorg/springframework/core/io/Resource;
+                    ASTORE 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 342)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.isJarResource (Lorg/springframework/core/io/Resource;)Z
+                    IFEQ L1
+                    ALOAD 5     // Ljava/util/Set; result   (line 343)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingJarResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    GOTO L3
+                L1: ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource   (line 345)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.getProtocol ()Ljava/lang/String;
+                    LDC "vfs"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD 5     // Ljava/util/Set; result   (line 346)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    INVOKESTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver$VfsResourceMatchingDelegate.findMatchingResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;Lorg/springframework/util/PathMatcher;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    GOTO L3
+                L2: ALOAD 5     // Ljava/util/Set; result   (line 349)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingFileResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                L3: IINC 7 1   (line 340)
+                L4: ILOAD 7
+                    ILOAD 8
+                    IF_ICMPLT L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 352)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 353)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Resolved location pattern ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] to resources "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 5     // Ljava/util/Set; result
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L5: ALOAD 5     // Ljava/util/Set; result   (line 355)
+                    ALOAD 5     // Ljava/util/Set; result
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY org.springframework.core.io.Resource
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.core.io.Resource;
+                    ARETURN
+  end protected org.springframework.core.io.Resource[] findPathMatchingResources(String) throws java.io.IOException
+
+  protected String determineRootDir(String):
+                    ALOAD_1     // Ljava/lang/String; location   (line 371)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_1
+                    IADD
+                    ISTORE_2
+                    ALOAD_1     // Ljava/lang/String; location   (line 372)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE_3
+                    GOTO L1   (line 373)
+                L0: ALOAD_1     // Ljava/lang/String; location   (line 374)
+                    BIPUSH 47
+                    ILOAD_3     // I rootDirEnd
+                    ICONST_2
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (II)I
+                    ICONST_1
+                    IADD
+                    ISTORE_3     // I rootDirEnd
+                L1: ILOAD_3     // I rootDirEnd   (line 373)
+                    ILOAD_2     // I prefixEnd
+                    IF_ICMPLE L2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; location
+                    ILOAD_2     // I prefixEnd
+                    ILOAD_3     // I rootDirEnd
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFNE L0
+                L2: ILOAD_3     // I rootDirEnd   (line 376)
+                    IFNE L3
+                    ILOAD_2     // I prefixEnd   (line 377)
+                    ISTORE_3     // I rootDirEnd
+                L3: ALOAD_1     // Ljava/lang/String; location   (line 379)
+                    ICONST_0
+                    ILOAD_3     // I rootDirEnd
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ARETURN
+  end protected String determineRootDir(String)
+
+  protected org.springframework.core.io.Resource resolveRootDirResource(org.springframework.core.io.Resource) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;   (line 392)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; original   (line 393)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/net/URL; url   (line 394)
+                    INVOKEVIRTUAL java.net.URL.getProtocol ()Ljava/lang/String;
+                    LDC_W "bundle"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.core.io.UrlResource   (line 395)
+                    DUP
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+                    ACONST_NULL
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_2     // Ljava/net/URL; url
+                    AASTORE
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.invokeMethod (Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.net.URL
+                    INVOKESPECIAL org.springframework.core.io.UrlResource.<init> (Ljava/net/URL;)V
+                    ARETURN
+                L0: ALOAD_1     // Lorg/springframework/core/io/Resource; original   (line 398)
+                    ARETURN
+  end protected org.springframework.core.io.Resource resolveRootDirResource(org.springframework.core.io.Resource) throws java.io.IOException
+
+  protected boolean isJarResource(org.springframework.core.io.Resource) throws java.io.IOException:
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; resource   (line 413)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKESTATIC org.springframework.util.ResourceUtils.isJarURL (Ljava/net/URL;)Z
+                    IRETURN
+  end protected boolean isJarResource(org.springframework.core.io.Resource) throws java.io.IOException
+
+  protected java.util.Set doFindPathMatchingJarResources(org.springframework.core.io.Resource, String) throws java.io.IOException:
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 429)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.openConnection ()Ljava/net/URLConnection;
+                    ASTORE_3
+                    ICONST_0   (line 433)
+                    ISTORE 7
+                    ALOAD_3     // Ljava/net/URLConnection; con   (line 435)
+                    INSTANCEOF java.net.JarURLConnection
+                    IFEQ L2
+                    ALOAD_3     // Ljava/net/URLConnection; con   (line 437)
+                    CHECKCAST java.net.JarURLConnection
+                    ASTORE 8
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 438)
+                    ICONST_0
+                    INVOKEVIRTUAL java.net.JarURLConnection.setUseCaches (Z)V
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 439)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarFile ()Ljava/util/jar/JarFile;
+                    ASTORE 4
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 440)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarFileURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.toExternalForm ()Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 441)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarEntry ()Ljava/util/jar/JarEntry;
+                    ASTORE 9
+                    ALOAD 9     // Ljava/util/jar/JarEntry; jarEntry   (line 442)
+                    IFNULL L0
+                    ALOAD 9     // Ljava/util/jar/JarEntry; jarEntry
+                    INVOKEVIRTUAL java.util.jar.JarEntry.getName ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC_W ""
+                L1: ASTORE 6
+                    GOTO L5
+                L2: ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 449)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.getFile ()Ljava/lang/String;
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 450)
+                    LDC_W "!/"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 9
+                    ILOAD 9     // I separatorIndex   (line 451)
+                    ICONST_M1
+                    IF_ICMPEQ L3
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 452)
+                    ICONST_0
+                    ILOAD 9     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 453)
+                    ILOAD 9     // I separatorIndex
+                    LDC_W "!/"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 454)
+                    ALOAD 5     // Ljava/lang/String; jarFileUrl
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getJarFile (Ljava/lang/String;)Ljava/util/jar/JarFile;
+                    ASTORE 4
+                    GOTO L4
+                L3: NEW java.util.jar.JarFile   (line 457)
+                    DUP
+                    ALOAD 8     // Ljava/lang/String; urlFile
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ASTORE 4
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 458)
+                    ASTORE 5
+                    LDC_W ""   (line 459)
+                    ASTORE 6
+                L4: ICONST_1   (line 461)
+                    ISTORE 7     // Z newJarFile
+    finally -> E0
+    |           L5: GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 465)
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L6
+    |               GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 466)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC_W "Looking for matching resources in jar file ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 5     // Ljava/lang/String; jarFileUrl
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC_W "]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    |           L6: LDC_W ""   (line 468)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L7
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               LDC "/"
+    |               INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+    |               IFNE L7
+    |               NEW java.lang.StringBuilder   (line 471)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               LDC "/"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               ASTORE 6     // Ljava/lang/String; rootEntryPath
+    |           L7: NEW java.util.LinkedHashSet   (line 473)
+    |               DUP
+    |               BIPUSH 8
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+    |               ASTORE 8
+    |               ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 474)
+    |               INVOKEVIRTUAL java.util.jar.JarFile.entries ()Ljava/util/Enumeration;
+    |               ASTORE 9
+    |               GOTO L9
+    |           L8: ALOAD 9     // Ljava/util/Enumeration; entries   (line 475)
+    |               INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+    |               CHECKCAST java.util.jar.JarEntry
+    |               ASTORE 10
+    |               ALOAD 10     // Ljava/util/jar/JarEntry; entry   (line 476)
+    |               INVOKEVIRTUAL java.util.jar.JarEntry.getName ()Ljava/lang/String;
+    |               ASTORE 11
+    |               ALOAD 11     // Ljava/lang/String; entryPath   (line 477)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFEQ L9
+    |               ALOAD 11     // Ljava/lang/String; entryPath   (line 478)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.length ()I
+    |               INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+    |               ASTORE 12
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 479)
+    |               INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+    |               ALOAD_2     // Ljava/lang/String; subPattern
+    |               ALOAD 12     // Ljava/lang/String; relativePath
+    |               INVOKEINTERFACE org.springframework.util.PathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+    |               IFEQ L9
+    |               ALOAD 8     // Ljava/util/Set; result   (line 480)
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource
+    |               ALOAD 12     // Ljava/lang/String; relativePath
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.createRelative (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L9: ALOAD 9     // Ljava/util/Enumeration; entries   (line 474)
+    |               INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+    |               IFNE L8
+    |               ALOAD 8     // Ljava/util/Set; result   (line 484)
+    |               ASTORE 14
+    finally -> E0
+                    ILOAD 7     // Z newJarFile   (line 489)
+                    IFEQ L10
+                    ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 490)
+                    INVOKEVIRTUAL java.util.jar.JarFile.close ()V
+               L10: ALOAD 14   (line 484)
+                    ARETURN
+                E0: ASTORE 13   (line 486)
+                    ILOAD 7     // Z newJarFile   (line 489)
+                    IFEQ L11
+                    ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 490)
+                    INVOKEVIRTUAL java.util.jar.JarFile.close ()V
+               L11: ALOAD 13   (line 492)
+                    ATHROW
+  end protected java.util.Set doFindPathMatchingJarResources(org.springframework.core.io.Resource, String) throws java.io.IOException
+
+  protected java.util.jar.JarFile getJarFile(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl   (line 499)
+                    LDC_W "file:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+    catch java.net.URISyntaxException -> E0
+    |               NEW java.util.jar.JarFile   (line 501)
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/String; jarFileUrl
+    |               INVOKESTATIC org.springframework.util.ResourceUtils.toURI (Ljava/lang/String;)Ljava/net/URI;
+    |               INVOKEVIRTUAL java.net.URI.getSchemeSpecificPart ()Ljava/lang/String;
+    |               INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+    catch java.net.URISyntaxException -> E0
+                    ARETURN
+                E0: POP   (line 503)
+                    NEW java.util.jar.JarFile   (line 505)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl
+                    LDC_W "file:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ARETURN
+                L0: NEW java.util.jar.JarFile   (line 509)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ARETURN
+  end protected java.util.jar.JarFile getJarFile(String) throws java.io.IOException
+
+  protected java.util.Set doFindPathMatchingFileResources(org.springframework.core.io.Resource, String) throws java.io.IOException:
+    catch java.io.IOException -> E0
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 528)
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getFile ()Ljava/io/File;
+    |               INVOKEVIRTUAL java.io.File.getAbsoluteFile ()Ljava/io/File;
+    |               ASTORE_3
+    catch java.io.IOException -> E0
+                    GOTO L1
+                E0: ASTORE 4   (line 530)
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 531)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 532)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot search for matching files underneath "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W " because it does not correspond to a directory in the file system"   (line 533)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 4     // Ljava/io/IOException; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 532)
+                L0: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 535)
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 537)
+                    ALOAD_3     // Ljava/io/File; rootDir
+                    ALOAD_2     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources (Ljava/io/File;Ljava/lang/String;)Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set doFindPathMatchingFileResources(org.springframework.core.io.Resource, String) throws java.io.IOException
+
+  protected java.util.Set doFindMatchingFileSystemResources(java.io.File, String) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 551)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 552)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Looking for matching resources in directory tree ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getPath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 554)
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    ALOAD_2     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.retrieveMatchingFiles (Ljava/io/File;Ljava/lang/String;)Ljava/util/Set;
+                    ASTORE_3
+                    NEW java.util.LinkedHashSet   (line 555)
+                    DUP
+                    ALOAD_3     // Ljava/util/Set; matchingFiles
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    ALOAD_3     // Ljava/util/Set; matchingFiles   (line 556)
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L2
+                L1: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.io.File
+                    ASTORE 5
+                    ALOAD 4     // Ljava/util/Set; result   (line 557)
+                    NEW org.springframework.core.io.FileSystemResource
+                    DUP
+                    ALOAD 5     // Ljava/io/File; file
+                    INVOKESPECIAL org.springframework.core.io.FileSystemResource.<init> (Ljava/io/File;)V
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L2: ALOAD 6   (line 556)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/util/Set; result   (line 559)
+                    ARETURN
+  end protected java.util.Set doFindMatchingFileSystemResources(java.io.File, String) throws java.io.IOException
+
+  protected java.util.Set retrieveMatchingFiles(java.io.File, String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/io/File; rootDir   (line 572)
+                    INVOKEVIRTUAL java.io.File.exists ()Z
+                    IFNE L1
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 574)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 575)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because it does not exist"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 577)
+                    ARETURN
+                L1: ALOAD_1     // Ljava/io/File; rootDir   (line 579)
+                    INVOKEVIRTUAL java.io.File.isDirectory ()Z
+                    IFNE L3
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 581)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L2
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 582)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because it does not denote a directory"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                L2: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 584)
+                    ARETURN
+                L3: ALOAD_1     // Ljava/io/File; rootDir   (line 586)
+                    INVOKEVIRTUAL java.io.File.canRead ()Z
+                    IFNE L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 587)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L4
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 588)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot search for matching files underneath directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because the application is not allowed to read the directory"   (line 589)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V   (line 588)
+                L4: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 591)
+                    ARETURN
+                L5: ALOAD_1     // Ljava/io/File; rootDir   (line 593)
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; pattern   (line 594)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L6
+                    NEW java.lang.StringBuilder   (line 595)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; fullPattern
+                L6: NEW java.lang.StringBuilder   (line 597)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; fullPattern
+                    NEW java.util.LinkedHashSet   (line 598)
+                    DUP
+                    BIPUSH 8
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 599)
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    ALOAD 4     // Ljava/util/Set; result
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles (Ljava/lang/String;Ljava/io/File;Ljava/util/Set;)V
+                    ALOAD 4     // Ljava/util/Set; result   (line 600)
+                    ARETURN
+  end protected java.util.Set retrieveMatchingFiles(java.io.File, String) throws java.io.IOException
+
+  protected void doRetrieveMatchingFiles(String, java.io.File, java.util.Set) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 613)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 614)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Searching directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] for files matching pattern ["   (line 615)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 614)
+                L0: ALOAD_2     // Ljava/io/File; dir   (line 617)
+                    INVOKEVIRTUAL java.io.File.listFiles ()[Ljava/io/File;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/io/File; dirContents   (line 618)
+                    IFNONNULL L2
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 619)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L1
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 620)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Could not retrieve contents of directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                L1: RETURN   (line 622)
+                L2: ALOAD 4     // [Ljava/io/File; dirContents   (line 624)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L7
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD 5     // Ljava/io/File; content   (line 625)
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 9
+                    ALOAD 5     // Ljava/io/File; content   (line 626)
+                    INVOKEVIRTUAL java.io.File.isDirectory ()Z
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD 9     // Ljava/lang/String; currPath
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.matchStart (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L5
+                    ALOAD 5     // Ljava/io/File; content   (line 627)
+                    INVOKEVIRTUAL java.io.File.canRead ()Z
+                    IFNE L4
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 628)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 629)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping subdirectory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because the application is not allowed to read the directory"   (line 630)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 629)
+                    GOTO L5
+                L4: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 634)
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    ALOAD 5     // Ljava/io/File; content
+                    ALOAD_3     // Ljava/util/Set; result
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles (Ljava/lang/String;Ljava/io/File;Ljava/util/Set;)V
+                L5: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 637)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    ALOAD 9     // Ljava/lang/String; currPath
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L6
+                    ALOAD_3     // Ljava/util/Set; result   (line 638)
+                    ALOAD 5     // Ljava/io/File; content
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L6: IINC 6 1   (line 624)
+                L7: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    RETURN   (line 641)
+  end protected void doRetrieveMatchingFiles(String, java.io.File, java.util.Set) throws java.io.IOException
+end public class org.springframework.core.io.support.PathMatchingResourcePatternResolver
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.getResourcePatternResolver(AbstractApplicationContext.java:350)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:222)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

@@ -1,0 +1,2508 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.181634.254.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.util.ObjectUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.util.ObjectUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.util.ObjectUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.util.ObjectUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.util.ObjectUtils
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public abstract class org.springframework.util.ObjectUtils extends java.lang.Object:
+  private static final int INITIAL_HASH = 7
+  private static final int MULTIPLIER = 31
+  private static final String EMPTY_STRING = ""
+  private static final String NULL_STRING = "null"
+  private static final String ARRAY_START = "{"
+  private static final String ARRAY_END = "}"
+  private static final String EMPTY_ARRAY = "{}"
+  private static final String ARRAY_ELEMENT_SEPARATOR = ", "
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/ObjectUtils; this   (line 38)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.ObjectUtils.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.util.ObjectUtils.<init>())
+  end public void <init>()
+
+  public static boolean isCheckedException(Throwable):
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 61)
+                    INSTANCEOF java.lang.RuntimeException
+                    IFNE L0
+                    ALOAD_0     // Ljava/lang/Throwable; ex
+                    INSTANCEOF java.lang.Error
+                    IFEQ L1
+                L0: ICONST_0
+                    GOTO L2
+                L1: ICONST_1
+                L2: IRETURN
+  end public static boolean isCheckedException(Throwable)
+
+  public static boolean isCompatibleWithThrowsClause(Throwable, Class[]):
+                    ALOAD_0     // Ljava/lang/Throwable; ex   (line 72)
+                    INVOKESTATIC org.springframework.util.ObjectUtils.isCheckedException (Ljava/lang/Throwable;)Z
+                    IFNE L0
+                    ICONST_1   (line 73)
+                    IRETURN
+                L0: ALOAD_1     // [Ljava/lang/Class; declaredExceptions   (line 75)
+                    IFNULL L4
+                    ICONST_0   (line 76)
+                    ISTORE_2
+                    GOTO L3   (line 77)
+                L1: ALOAD_1     // [Ljava/lang/Class; declaredExceptions   (line 78)
+                    ILOAD_2     // I i
+                    AALOAD
+                    ALOAD_0     // Ljava/lang/Throwable; ex
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L2
+                    ICONST_1   (line 79)
+                    IRETURN
+                L2: IINC_2 1     // I i   (line 81)
+                L3: ILOAD_2     // I i   (line 77)
+                    ALOAD_1     // [Ljava/lang/Class; declaredExceptions
+                    ARRAYLENGTH
+                    IF_ICMPLT L1
+                L4: ICONST_0   (line 84)
+                    IRETURN
+  end public static boolean isCompatibleWithThrowsClause(Throwable, Class[])
+
+  public static boolean isArray(Object):
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 93)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Object; obj
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public static boolean isArray(Object)
+
+  public static boolean isEmpty(Object[]):
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 102)
+                    IFNULL L0
+                    ALOAD_0     // [Ljava/lang/Object; array
+                    ARRAYLENGTH
+                    IFEQ L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end public static boolean isEmpty(Object[])
+
+  public static boolean containsElement(Object[], Object):
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 113)
+                    IFNONNULL L0
+                    ICONST_0   (line 114)
+                    IRETURN
+                L0: ALOAD_0     // [Ljava/lang/Object; array   (line 116)
+                    DUP
+                    ASTORE 5
+                    ARRAYLENGTH
+                    ISTORE 4
+                    ICONST_0
+                    ISTORE_3
+                    GOTO L3
+                L1: ALOAD 5
+                    ILOAD_3
+                    AALOAD
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; arrayEle   (line 117)
+                    ALOAD_1     // Ljava/lang/Object; element
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1   (line 118)
+                    IRETURN
+                L2: IINC_3 1   (line 116)
+                L3: ILOAD_3
+                    ILOAD 4
+                    IF_ICMPLT L1
+                    ICONST_0   (line 121)
+                    IRETURN
+  end public static boolean containsElement(Object[], Object)
+
+  public static Object[] addObjectToArray(Object[], Object):
+                    LDC java.lang.Object   (line 132)
+                    ASTORE_2
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 133)
+                    IFNULL L0
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 134)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getComponentType ()Ljava/lang/Class;
+                    ASTORE_2     // Ljava/lang/Class; compType
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/Object; obj   (line 136)
+                    IFNULL L1
+                    ALOAD_1     // Ljava/lang/Object; obj   (line 137)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE_2     // Ljava/lang/Class; compType
+                L1: ALOAD_0     // [Ljava/lang/Object; array   (line 139)
+                    IFNULL L2
+                    ALOAD_0     // [Ljava/lang/Object; array
+                    ARRAYLENGTH
+                    ICONST_1
+                    IADD
+                    GOTO L3
+                L2: ICONST_1
+                L3: ISTORE_3
+                    ALOAD_2     // Ljava/lang/Class; compType   (line 140)
+                    ILOAD_3     // I newArrLength
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.Object;
+                    ASTORE 4
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 141)
+                    IFNULL L4
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 142)
+                    ICONST_0
+                    ALOAD 4     // [Ljava/lang/Object; newArr
+                    ICONST_0
+                    ALOAD_0     // [Ljava/lang/Object; array
+                    ARRAYLENGTH
+                    INVOKESTATIC java.lang.System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
+                L4: ALOAD 4     // [Ljava/lang/Object; newArr   (line 144)
+                    ALOAD 4     // [Ljava/lang/Object; newArr
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    ALOAD_1     // Ljava/lang/Object; obj
+                    AASTORE
+                    ALOAD 4     // [Ljava/lang/Object; newArr   (line 145)
+                    ARETURN
+  end public static Object[] addObjectToArray(Object[], Object)
+
+  public static Object[] toObjectArray(Object):
+                    ALOAD_0     // Ljava/lang/Object; source   (line 158)
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L0
+                    ALOAD_0     // Ljava/lang/Object; source   (line 159)
+                    CHECKCAST [Ljava.lang.Object;
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Object; source   (line 161)
+                    IFNONNULL L1
+                    ICONST_0   (line 162)
+                    ANEWARRAY java.lang.Object
+                    ARETURN
+                L1: ALOAD_0     // Ljava/lang/Object; source   (line 164)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFNE L2
+                    NEW java.lang.IllegalArgumentException   (line 165)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Source is not an array: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Ljava/lang/Object; source
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L2: ALOAD_0     // Ljava/lang/Object; source   (line 167)
+                    INVOKESTATIC java.lang.reflect.Array.getLength (Ljava/lang/Object;)I
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 168)
+                    IFNE L3
+                    ICONST_0   (line 169)
+                    ANEWARRAY java.lang.Object
+                    ARETURN
+                L3: ALOAD_0     // Ljava/lang/Object; source   (line 171)
+                    ICONST_0
+                    INVOKESTATIC java.lang.reflect.Array.get (Ljava/lang/Object;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Class; wrapperType   (line 172)
+                    ILOAD_1     // I length
+                    INVOKESTATIC java.lang.reflect.Array.newInstance (Ljava/lang/Class;I)Ljava/lang/Object;
+                    CHECKCAST [Ljava.lang.Object;
+                    ASTORE_3
+                    ICONST_0   (line 173)
+                    ISTORE 4
+                    GOTO L5
+                L4: ALOAD_3     // [Ljava/lang/Object; newArray   (line 174)
+                    ILOAD 4     // I i
+                    ALOAD_0     // Ljava/lang/Object; source
+                    ILOAD 4     // I i
+                    INVOKESTATIC java.lang.reflect.Array.get (Ljava/lang/Object;I)Ljava/lang/Object;
+                    AASTORE
+                    IINC 4 1     // I i   (line 173)
+                L5: ILOAD 4     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L4
+                    ALOAD_3     // [Ljava/lang/Object; newArray   (line 176)
+                    ARETURN
+  end public static Object[] toObjectArray(Object)
+
+  public static boolean nullSafeEquals(Object, Object):
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 196)
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    IF_ACMPNE L0
+                    ICONST_1   (line 197)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/Object; o1   (line 199)
+                    IFNULL L1
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    IFNONNULL L2
+                L1: ICONST_0   (line 200)
+                    IRETURN
+                L2: ALOAD_0     // Ljava/lang/Object; o1   (line 202)
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L3
+                    ICONST_1   (line 203)
+                    IRETURN
+                L3: ALOAD_0     // Ljava/lang/Object; o1   (line 205)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L12
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L12
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 206)
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L4
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L4
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 207)
+                    CHECKCAST [Ljava.lang.Object;
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [Ljava.lang.Object;
+                    INVOKESTATIC java.util.Arrays.equals ([Ljava/lang/Object;[Ljava/lang/Object;)Z
+                    IRETURN
+                L4: ALOAD_0     // Ljava/lang/Object; o1   (line 209)
+                    INSTANCEOF [Z
+                    IFEQ L5
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [Z
+                    IFEQ L5
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 210)
+                    CHECKCAST [Z
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [Z
+                    INVOKESTATIC java.util.Arrays.equals ([Z[Z)Z
+                    IRETURN
+                L5: ALOAD_0     // Ljava/lang/Object; o1   (line 212)
+                    INSTANCEOF [B
+                    IFEQ L6
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [B
+                    IFEQ L6
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 213)
+                    CHECKCAST [B
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [B
+                    INVOKESTATIC java.util.Arrays.equals ([B[B)Z
+                    IRETURN
+                L6: ALOAD_0     // Ljava/lang/Object; o1   (line 215)
+                    INSTANCEOF [C
+                    IFEQ L7
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [C
+                    IFEQ L7
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 216)
+                    CHECKCAST [C
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [C
+                    INVOKESTATIC java.util.Arrays.equals ([C[C)Z
+                    IRETURN
+                L7: ALOAD_0     // Ljava/lang/Object; o1   (line 218)
+                    INSTANCEOF [D
+                    IFEQ L8
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [D
+                    IFEQ L8
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 219)
+                    CHECKCAST [D
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [D
+                    INVOKESTATIC java.util.Arrays.equals ([D[D)Z
+                    IRETURN
+                L8: ALOAD_0     // Ljava/lang/Object; o1   (line 221)
+                    INSTANCEOF [F
+                    IFEQ L9
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [F
+                    IFEQ L9
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 222)
+                    CHECKCAST [F
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [F
+                    INVOKESTATIC java.util.Arrays.equals ([F[F)Z
+                    IRETURN
+                L9: ALOAD_0     // Ljava/lang/Object; o1   (line 224)
+                    INSTANCEOF [I
+                    IFEQ L10
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [I
+                    IFEQ L10
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 225)
+                    CHECKCAST [I
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [I
+                    INVOKESTATIC java.util.Arrays.equals ([I[I)Z
+                    IRETURN
+               L10: ALOAD_0     // Ljava/lang/Object; o1   (line 227)
+                    INSTANCEOF [J
+                    IFEQ L11
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [J
+                    IFEQ L11
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 228)
+                    CHECKCAST [J
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [J
+                    INVOKESTATIC java.util.Arrays.equals ([J[J)Z
+                    IRETURN
+               L11: ALOAD_0     // Ljava/lang/Object; o1   (line 230)
+                    INSTANCEOF [S
+                    IFEQ L12
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    INSTANCEOF [S
+                    IFEQ L12
+                    ALOAD_0     // Ljava/lang/Object; o1   (line 231)
+                    CHECKCAST [S
+                    ALOAD_1     // Ljava/lang/Object; o2
+                    CHECKCAST [S
+                    INVOKESTATIC java.util.Arrays.equals ([S[S)Z
+                    IRETURN
+               L12: ICONST_0   (line 234)
+                    IRETURN
+  end public static boolean nullSafeEquals(Object, Object)
+
+  public static int nullSafeHashCode(Object):
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 254)
+                    IFNONNULL L0
+                    ICONST_0   (line 255)
+                    IRETURN
+                L0: ALOAD_0     // Ljava/lang/Object; obj   (line 257)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L9
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 258)
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L1
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 259)
+                    CHECKCAST [Ljava.lang.Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([Ljava/lang/Object;)I
+                    IRETURN
+                L1: ALOAD_0     // Ljava/lang/Object; obj   (line 261)
+                    INSTANCEOF [Z
+                    IFEQ L2
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 262)
+                    CHECKCAST [Z
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([Z)I
+                    IRETURN
+                L2: ALOAD_0     // Ljava/lang/Object; obj   (line 264)
+                    INSTANCEOF [B
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 265)
+                    CHECKCAST [B
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([B)I
+                    IRETURN
+                L3: ALOAD_0     // Ljava/lang/Object; obj   (line 267)
+                    INSTANCEOF [C
+                    IFEQ L4
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 268)
+                    CHECKCAST [C
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([C)I
+                    IRETURN
+                L4: ALOAD_0     // Ljava/lang/Object; obj   (line 270)
+                    INSTANCEOF [D
+                    IFEQ L5
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 271)
+                    CHECKCAST [D
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([D)I
+                    IRETURN
+                L5: ALOAD_0     // Ljava/lang/Object; obj   (line 273)
+                    INSTANCEOF [F
+                    IFEQ L6
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 274)
+                    CHECKCAST [F
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([F)I
+                    IRETURN
+                L6: ALOAD_0     // Ljava/lang/Object; obj   (line 276)
+                    INSTANCEOF [I
+                    IFEQ L7
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 277)
+                    CHECKCAST [I
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([I)I
+                    IRETURN
+                L7: ALOAD_0     // Ljava/lang/Object; obj   (line 279)
+                    INSTANCEOF [J
+                    IFEQ L8
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 280)
+                    CHECKCAST [J
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([J)I
+                    IRETURN
+                L8: ALOAD_0     // Ljava/lang/Object; obj   (line 282)
+                    INSTANCEOF [S
+                    IFEQ L9
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 283)
+                    CHECKCAST [S
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([S)I
+                    IRETURN
+                L9: ALOAD_0     // Ljava/lang/Object; obj   (line 286)
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    IRETURN
+  end public static int nullSafeHashCode(Object)
+
+  public static int nullSafeHashCode(Object[]):
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 294)
+                    IFNONNULL L0
+                    ICONST_0   (line 295)
+                    IRETURN
+                L0: BIPUSH 7   (line 297)
+                    ISTORE_1
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 298)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 299)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 300)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [Ljava/lang/Object; array
+                    ILOAD_3     // I i
+                    AALOAD
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode (Ljava/lang/Object;)I
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 299)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 302)
+                    IRETURN
+  end public static int nullSafeHashCode(Object[])
+
+  public static int nullSafeHashCode(boolean[]):
+                    ALOAD_0     // [Z array   (line 310)
+                    IFNONNULL L0
+                    ICONST_0   (line 311)
+                    IRETURN
+                L0: BIPUSH 7   (line 313)
+                    ISTORE_1
+                    ALOAD_0     // [Z array   (line 314)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 315)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 316)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [Z array
+                    ILOAD_3     // I i
+                    BALOAD
+                    INVOKESTATIC org.springframework.util.ObjectUtils.hashCode (Z)I
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 315)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 318)
+                    IRETURN
+  end public static int nullSafeHashCode(boolean[])
+
+  public static int nullSafeHashCode(byte[]):
+                    ALOAD_0     // [B array   (line 326)
+                    IFNONNULL L0
+                    ICONST_0   (line 327)
+                    IRETURN
+                L0: BIPUSH 7   (line 329)
+                    ISTORE_1
+                    ALOAD_0     // [B array   (line 330)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 331)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 332)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [B array
+                    ILOAD_3     // I i
+                    BALOAD
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 331)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 334)
+                    IRETURN
+  end public static int nullSafeHashCode(byte[])
+
+  public static int nullSafeHashCode(char[]):
+                    ALOAD_0     // [C array   (line 342)
+                    IFNONNULL L0
+                    ICONST_0   (line 343)
+                    IRETURN
+                L0: BIPUSH 7   (line 345)
+                    ISTORE_1
+                    ALOAD_0     // [C array   (line 346)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 347)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 348)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [C array
+                    ILOAD_3     // I i
+                    CALOAD
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 347)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 350)
+                    IRETURN
+  end public static int nullSafeHashCode(char[])
+
+  public static int nullSafeHashCode(double[]):
+                    ALOAD_0     // [D array   (line 358)
+                    IFNONNULL L0
+                    ICONST_0   (line 359)
+                    IRETURN
+                L0: BIPUSH 7   (line 361)
+                    ISTORE_1
+                    ALOAD_0     // [D array   (line 362)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 363)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 364)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [D array
+                    ILOAD_3     // I i
+                    DALOAD
+                    INVOKESTATIC org.springframework.util.ObjectUtils.hashCode (D)I
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 363)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 366)
+                    IRETURN
+  end public static int nullSafeHashCode(double[])
+
+  public static int nullSafeHashCode(float[]):
+                    ALOAD_0     // [F array   (line 374)
+                    IFNONNULL L0
+                    ICONST_0   (line 375)
+                    IRETURN
+                L0: BIPUSH 7   (line 377)
+                    ISTORE_1
+                    ALOAD_0     // [F array   (line 378)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 379)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 380)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [F array
+                    ILOAD_3     // I i
+                    FALOAD
+                    INVOKESTATIC org.springframework.util.ObjectUtils.hashCode (F)I
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 379)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 382)
+                    IRETURN
+  end public static int nullSafeHashCode(float[])
+
+  public static int nullSafeHashCode(int[]):
+                    ALOAD_0     // [I array   (line 390)
+                    IFNONNULL L0
+                    ICONST_0   (line 391)
+                    IRETURN
+                L0: BIPUSH 7   (line 393)
+                    ISTORE_1
+                    ALOAD_0     // [I array   (line 394)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 395)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 396)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [I array
+                    ILOAD_3     // I i
+                    IALOAD
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 395)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 398)
+                    IRETURN
+  end public static int nullSafeHashCode(int[])
+
+  public static int nullSafeHashCode(long[]):
+                    ALOAD_0     // [J array   (line 406)
+                    IFNONNULL L0
+                    ICONST_0   (line 407)
+                    IRETURN
+                L0: BIPUSH 7   (line 409)
+                    ISTORE_1
+                    ALOAD_0     // [J array   (line 410)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 411)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 412)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [J array
+                    ILOAD_3     // I i
+                    LALOAD
+                    INVOKESTATIC org.springframework.util.ObjectUtils.hashCode (J)I
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 411)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 414)
+                    IRETURN
+  end public static int nullSafeHashCode(long[])
+
+  public static int nullSafeHashCode(short[]):
+                    ALOAD_0     // [S array   (line 422)
+                    IFNONNULL L0
+                    ICONST_0   (line 423)
+                    IRETURN
+                L0: BIPUSH 7   (line 425)
+                    ISTORE_1
+                    ALOAD_0     // [S array   (line 426)
+                    ARRAYLENGTH
+                    ISTORE_2
+                    ICONST_0   (line 427)
+                    ISTORE_3
+                    GOTO L2
+                L1: BIPUSH 31   (line 428)
+                    ILOAD_1     // I hash
+                    IMUL
+                    ALOAD_0     // [S array
+                    ILOAD_3     // I i
+                    SALOAD
+                    IADD
+                    ISTORE_1     // I hash
+                    IINC_3 1     // I i   (line 427)
+                L2: ILOAD_3     // I i
+                    ILOAD_2     // I arraySize
+                    IF_ICMPLT L1
+                    ILOAD_1     // I hash   (line 430)
+                    IRETURN
+  end public static int nullSafeHashCode(short[])
+
+  public static int hashCode(boolean):
+                    ILOAD_0     // Z bool   (line 438)
+                    IFEQ L0
+                    SIPUSH 1231
+                    GOTO L1
+                L0: SIPUSH 1237
+                L1: IRETURN
+  end public static int hashCode(boolean)
+
+  public static int hashCode(double):
+                    DLOAD_0     // D dbl   (line 446)
+                    INVOKESTATIC java.lang.Double.doubleToLongBits (D)J
+                    LSTORE_2
+                    LLOAD_2     // J bits   (line 447)
+                    INVOKESTATIC org.springframework.util.ObjectUtils.hashCode (J)I
+                    IRETURN
+  end public static int hashCode(double)
+
+  public static int hashCode(float):
+                    FLOAD_0     // F flt   (line 455)
+                    INVOKESTATIC java.lang.Float.floatToIntBits (F)I
+                    IRETURN
+  end public static int hashCode(float)
+
+  public static int hashCode(long):
+                    LLOAD_0     // J lng   (line 463)
+                    LLOAD_0     // J lng
+                    BIPUSH 32
+                    LUSHR
+                    LXOR
+                    L2I
+                    IRETURN
+  end public static int hashCode(long)
+
+  public static String identityToString(Object):
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 478)
+                    IFNONNULL L0
+                    LDC ""   (line 479)
+                    ARETURN
+                L0: NEW java.lang.StringBuilder   (line 481)
+                    DUP
+                    ALOAD_0     // Ljava/lang/Object; obj
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC_W "@"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Ljava/lang/Object; obj
+                    INVOKESTATIC org.springframework.util.ObjectUtils.getIdentityHexString (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String identityToString(Object)
+
+  public static String getIdentityHexString(Object):
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 490)
+                    INVOKESTATIC java.lang.System.identityHashCode (Ljava/lang/Object;)I
+                    INVOKESTATIC java.lang.Integer.toHexString (I)Ljava/lang/String;
+                    ARETURN
+  end public static String getIdentityHexString(Object)
+
+  public static String getDisplayString(Object):
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 503)
+                    IFNONNULL L0
+                    LDC ""   (line 504)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Object; obj   (line 506)
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString (Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+  end public static String getDisplayString(Object)
+
+  public static String nullSafeClassName(Object):
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 516)
+                    IFNULL L0
+                    ALOAD_0     // Ljava/lang/Object; obj
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC "null"
+                L1: ARETURN
+  end public static String nullSafeClassName(Object)
+
+  public static String nullSafeToString(Object):
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 527)
+                    IFNONNULL L0
+                    LDC "null"   (line 528)
+                    ARETURN
+                L0: ALOAD_0     // Ljava/lang/Object; obj   (line 530)
+                    INSTANCEOF java.lang.String
+                    IFEQ L1
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 531)
+                    CHECKCAST java.lang.String
+                    ARETURN
+                L1: ALOAD_0     // Ljava/lang/Object; obj   (line 533)
+                    INSTANCEOF [Ljava.lang.Object;
+                    IFEQ L2
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 534)
+                    CHECKCAST [Ljava.lang.Object;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([Ljava/lang/Object;)Ljava/lang/String;
+                    ARETURN
+                L2: ALOAD_0     // Ljava/lang/Object; obj   (line 536)
+                    INSTANCEOF [Z
+                    IFEQ L3
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 537)
+                    CHECKCAST [Z
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([Z)Ljava/lang/String;
+                    ARETURN
+                L3: ALOAD_0     // Ljava/lang/Object; obj   (line 539)
+                    INSTANCEOF [B
+                    IFEQ L4
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 540)
+                    CHECKCAST [B
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([B)Ljava/lang/String;
+                    ARETURN
+                L4: ALOAD_0     // Ljava/lang/Object; obj   (line 542)
+                    INSTANCEOF [C
+                    IFEQ L5
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 543)
+                    CHECKCAST [C
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([C)Ljava/lang/String;
+                    ARETURN
+                L5: ALOAD_0     // Ljava/lang/Object; obj   (line 545)
+                    INSTANCEOF [D
+                    IFEQ L6
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 546)
+                    CHECKCAST [D
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([D)Ljava/lang/String;
+                    ARETURN
+                L6: ALOAD_0     // Ljava/lang/Object; obj   (line 548)
+                    INSTANCEOF [F
+                    IFEQ L7
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 549)
+                    CHECKCAST [F
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([F)Ljava/lang/String;
+                    ARETURN
+                L7: ALOAD_0     // Ljava/lang/Object; obj   (line 551)
+                    INSTANCEOF [I
+                    IFEQ L8
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 552)
+                    CHECKCAST [I
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([I)Ljava/lang/String;
+                    ARETURN
+                L8: ALOAD_0     // Ljava/lang/Object; obj   (line 554)
+                    INSTANCEOF [J
+                    IFEQ L9
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 555)
+                    CHECKCAST [J
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([J)Ljava/lang/String;
+                    ARETURN
+                L9: ALOAD_0     // Ljava/lang/Object; obj   (line 557)
+                    INSTANCEOF [S
+                    IFEQ L10
+                    ALOAD_0     // Ljava/lang/Object; obj   (line 558)
+                    CHECKCAST [S
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeToString ([S)Ljava/lang/String;
+                    ARETURN
+               L10: ALOAD_0     // Ljava/lang/Object; obj   (line 560)
+                    INVOKEVIRTUAL java.lang.Object.toString ()Ljava/lang/String;
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/String; str   (line 561)
+                    IFNULL L11
+                    ALOAD_1     // Ljava/lang/String; str
+                    GOTO L12
+               L11: LDC ""
+               L12: ARETURN
+  end public static String nullSafeToString(Object)
+
+  public static String nullSafeToString(Object[]):
+                    ALOAD_0     // [Ljava/lang/Object; array   (line 574)
+                    IFNONNULL L0
+                    LDC "null"   (line 575)
+                    ARETURN
+                L0: ALOAD_0     // [Ljava/lang/Object; array   (line 577)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 578)
+                    IFNE L1
+                    LDC "{}"   (line 579)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 581)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 582)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 583)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 584)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 587)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 589)
+                    ALOAD_0     // [Ljava/lang/Object; array
+                    ILOAD_3     // I i
+                    AALOAD
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 582)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 591)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 592)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(Object[])
+
+  public static String nullSafeToString(boolean[]):
+                    ALOAD_0     // [Z array   (line 605)
+                    IFNONNULL L0
+                    LDC "null"   (line 606)
+                    ARETURN
+                L0: ALOAD_0     // [Z array   (line 608)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 609)
+                    IFNE L1
+                    LDC "{}"   (line 610)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 612)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 613)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 614)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 615)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 618)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 621)
+                    ALOAD_0     // [Z array
+                    ILOAD_3     // I i
+                    BALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Z)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 613)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 623)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 624)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(boolean[])
+
+  public static String nullSafeToString(byte[]):
+                    ALOAD_0     // [B array   (line 637)
+                    IFNONNULL L0
+                    LDC "null"   (line 638)
+                    ARETURN
+                L0: ALOAD_0     // [B array   (line 640)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 641)
+                    IFNE L1
+                    LDC "{}"   (line 642)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 644)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 645)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 646)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 647)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 650)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 652)
+                    ALOAD_0     // [B array
+                    ILOAD_3     // I i
+                    BALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 645)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 654)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 655)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(byte[])
+
+  public static String nullSafeToString(char[]):
+                    ALOAD_0     // [C array   (line 668)
+                    IFNONNULL L0
+                    LDC "null"   (line 669)
+                    ARETURN
+                L0: ALOAD_0     // [C array   (line 671)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 672)
+                    IFNE L1
+                    LDC "{}"   (line 673)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 675)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 676)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 677)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 678)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 681)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 683)
+                    LDC_W "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // [C array
+                    ILOAD_3     // I i
+                    CALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (C)Ljava/lang/StringBuilder;
+                    LDC_W "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 676)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 685)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 686)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(char[])
+
+  public static String nullSafeToString(double[]):
+                    ALOAD_0     // [D array   (line 699)
+                    IFNONNULL L0
+                    LDC "null"   (line 700)
+                    ARETURN
+                L0: ALOAD_0     // [D array   (line 702)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 703)
+                    IFNE L1
+                    LDC "{}"   (line 704)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 706)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 707)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 708)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 709)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 712)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 715)
+                    ALOAD_0     // [D array
+                    ILOAD_3     // I i
+                    DALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (D)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 707)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 717)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 718)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(double[])
+
+  public static String nullSafeToString(float[]):
+                    ALOAD_0     // [F array   (line 731)
+                    IFNONNULL L0
+                    LDC "null"   (line 732)
+                    ARETURN
+                L0: ALOAD_0     // [F array   (line 734)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 735)
+                    IFNE L1
+                    LDC "{}"   (line 736)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 738)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 739)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 740)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 741)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 744)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 747)
+                    ALOAD_0     // [F array
+                    ILOAD_3     // I i
+                    FALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (F)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 739)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 749)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 750)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(float[])
+
+  public static String nullSafeToString(int[]):
+                    ALOAD_0     // [I array   (line 763)
+                    IFNONNULL L0
+                    LDC "null"   (line 764)
+                    ARETURN
+                L0: ALOAD_0     // [I array   (line 766)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 767)
+                    IFNE L1
+                    LDC "{}"   (line 768)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 770)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 771)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 772)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 773)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 776)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 778)
+                    ALOAD_0     // [I array
+                    ILOAD_3     // I i
+                    IALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 771)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 780)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 781)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(int[])
+
+  public static String nullSafeToString(long[]):
+                    ALOAD_0     // [J array   (line 794)
+                    IFNONNULL L0
+                    LDC "null"   (line 795)
+                    ARETURN
+                L0: ALOAD_0     // [J array   (line 797)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 798)
+                    IFNE L1
+                    LDC "{}"   (line 799)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 801)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 802)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 803)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 804)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 807)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 809)
+                    ALOAD_0     // [J array
+                    ILOAD_3     // I i
+                    LALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (J)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 802)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 811)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 812)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(long[])
+
+  public static String nullSafeToString(short[]):
+                    ALOAD_0     // [S array   (line 825)
+                    IFNONNULL L0
+                    LDC "null"   (line 826)
+                    ARETURN
+                L0: ALOAD_0     // [S array   (line 828)
+                    ARRAYLENGTH
+                    ISTORE_1
+                    ILOAD_1     // I length   (line 829)
+                    IFNE L1
+                    LDC "{}"   (line 830)
+                    ARETURN
+                L1: NEW java.lang.StringBuilder   (line 832)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_2
+                    ICONST_0   (line 833)
+                    ISTORE_3
+                    GOTO L5
+                L2: ILOAD_3     // I i   (line 834)
+                    IFNE L3
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 835)
+                    LDC "{"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    GOTO L4
+                L3: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 838)
+                    LDC ", "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L4: ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 840)
+                    ALOAD_0     // [S array
+                    ILOAD_3     // I i
+                    SALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    POP
+                    IINC_3 1     // I i   (line 833)
+                L5: ILOAD_3     // I i
+                    ILOAD_1     // I length
+                    IF_ICMPLT L2
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 842)
+                    LDC "}"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_2     // Ljava/lang/StringBuilder; sb   (line 843)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public static String nullSafeToString(short[])
+
+end public abstract class org.springframework.util.ObjectUtils
+ -- (ClassFormatException) File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:402)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:111)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:467)
+	at org.aspectj.weaver.World.resolve(World.java:308)
+	at org.aspectj.weaver.World.resolve(World.java:218)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:163)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.core.io.support.PathMatchingResourcePatternResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.core.io.support.PathMatchingResourcePatternResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.core.io.support.PathMatchingResourcePatternResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.core.io.support.PathMatchingResourcePatternResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.core.io.support.PathMatchingResourcePatternResolver
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.core.io.support.PathMatchingResourcePatternResolver extends java.lang.Object implements org.springframework.core.io.support.ResourcePatternResolver:
+  private static final org.apache.commons.logging.Log logger
+  private static java.lang.reflect.Method equinoxResolveMethod
+  private final org.springframework.core.io.ResourceLoader resourceLoader
+  private org.springframework.util.PathMatcher pathMatcher
+  static void <clinit>():
+    staticinitialization(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<clinit>())
+    |               LDC org.springframework.core.io.support.PathMatchingResourcePatternResolver   (line 169)
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;
+    | catch java.lang.Throwable -> E0
+    | |             LDC org.springframework.core.io.support.PathMatchingResourcePatternResolver   (line 176)
+    | |             INVOKEVIRTUAL java.lang.Class.getClassLoader ()Ljava/lang/ClassLoader;
+    | |             LDC "org.eclipse.core.runtime.FileLocator"   (line 177)
+    | |             INVOKEVIRTUAL java.lang.ClassLoader.loadClass (Ljava/lang/String;)Ljava/lang/Class;   (line 176)
+    | |             ASTORE_0
+    | |             ALOAD_0     // Ljava/lang/Class; fileLocatorClass   (line 178)
+    | |             LDC "resolve"
+    | |             ICONST_1
+    | |             ANEWARRAY java.lang.Class
+    | |             DUP
+    | |             ICONST_0
+    | |             LDC java.net.URL
+    | |             AASTORE
+    | |             INVOKEVIRTUAL java.lang.Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    | |             PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+    | |             GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 179)
+    | |             LDC "Found Equinox FileLocator for OSGi bundle URL resolution"
+    | |             INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    | catch java.lang.Throwable -> E0
+    |               GOTO L0
+    |           E0: POP   (line 181)
+    |               ACONST_NULL   (line 182)
+    |               PUTSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+    |           L0: RETURN   (line 167)
+    staticinitialization(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 197)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>())
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 198)
+    |               NEW org.springframework.core.io.DefaultResourceLoader
+    |               DUP
+    |               INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 199)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>())
+  end public void <init>()
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 208)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 209)
+    |               NEW org.springframework.core.io.DefaultResourceLoader
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               INVOKESPECIAL org.springframework.core.io.DefaultResourceLoader.<init> (Ljava/lang/ClassLoader;)V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 210)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void <init>(org.springframework.core.io.ResourceLoader):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 218)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(org.springframework.core.io.ResourceLoader))
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 189)
+    |               NEW org.springframework.util.AntPathMatcher
+    |               DUP
+    |               INVOKESPECIAL org.springframework.util.AntPathMatcher.<init> ()V
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader   (line 219)
+    |               LDC "ResourceLoader must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 220)
+    |               ALOAD_1     // Lorg/springframework/core/io/ResourceLoader; resourceLoader
+    |               PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+    |               RETURN   (line 221)
+    constructor-execution(void org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(org.springframework.core.io.ResourceLoader))
+  end public void <init>(org.springframework.core.io.ResourceLoader)
+
+  public org.springframework.core.io.ResourceLoader getResourceLoader():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 228)
+                    GETFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.resourceLoader Lorg/springframework/core/io/ResourceLoader;
+                    ARETURN
+  end public org.springframework.core.io.ResourceLoader getResourceLoader()
+
+  public ClassLoader getClassLoader():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 236)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getClassLoader ()Ljava/lang/ClassLoader;
+                    ARETURN
+  end public ClassLoader getClassLoader()
+
+  public void setPathMatcher(org.springframework.util.PathMatcher):
+                    ALOAD_1     // Lorg/springframework/util/PathMatcher; pathMatcher   (line 245)
+                    LDC "PathMatcher must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 246)
+                    ALOAD_1     // Lorg/springframework/util/PathMatcher; pathMatcher
+                    PUTFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+                    RETURN   (line 247)
+  end public void setPathMatcher(org.springframework.util.PathMatcher)
+
+  public org.springframework.util.PathMatcher getPathMatcher():
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 253)
+                    GETFIELD org.springframework.core.io.support.PathMatchingResourcePatternResolver.pathMatcher Lorg/springframework/util/PathMatcher;
+                    ARETURN
+  end public org.springframework.util.PathMatcher getPathMatcher()
+
+  public org.springframework.core.io.Resource getResource(String):
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 258)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    ALOAD_1     // Ljava/lang/String; location
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getResource (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+                    ARETURN
+  end public org.springframework.core.io.Resource getResource(String)
+
+  public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 262)
+                    LDC "Location pattern must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 263)
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 265)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 267)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 271)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    LDC "classpath*:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findAllClassPathResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L1: ALOAD_1     // Ljava/lang/String; locationPattern   (line 277)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_1
+                    IADD
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 278)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    ILOAD_2     // I prefixEnd
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 280)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ARETURN
+                L2: ICONST_1   (line 284)
+                    ANEWARRAY org.springframework.core.io.Resource
+                    DUP
+                    ICONST_0
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResourceLoader ()Lorg/springframework/core/io/ResourceLoader;
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEINTERFACE org.springframework.core.io.ResourceLoader.getResource (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+                    AASTORE
+                    ARETURN
+  end public org.springframework.core.io.Resource[] getResources(String) throws java.io.IOException
+
+  protected org.springframework.core.io.Resource[] findAllClassPathResources(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; location   (line 299)
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/String; path   (line 300)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    ALOAD_2     // Ljava/lang/String; path   (line 301)
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_2     // Ljava/lang/String; path
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 303)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getClassLoader ()Ljava/lang/ClassLoader;
+                    ALOAD_2     // Ljava/lang/String; path
+                    INVOKEVIRTUAL java.lang.ClassLoader.getResources (Ljava/lang/String;)Ljava/util/Enumeration;
+                    ASTORE_3
+                    NEW java.util.LinkedHashSet   (line 304)
+                    DUP
+                    BIPUSH 16
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    GOTO L2   (line 305)
+                L1: ALOAD_3     // Ljava/util/Enumeration; resourceUrls   (line 306)
+                    INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+                    CHECKCAST java.net.URL
+                    ASTORE 5
+                    ALOAD 4     // Ljava/util/Set; result   (line 307)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 5     // Ljava/net/URL; url
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.convertClassLoaderURL (Ljava/net/URL;)Lorg/springframework/core/io/Resource;
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L2: ALOAD_3     // Ljava/util/Enumeration; resourceUrls   (line 305)
+                    INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/util/Set; result   (line 309)
+                    ALOAD 4     // Ljava/util/Set; result
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY org.springframework.core.io.Resource
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.core.io.Resource;
+                    ARETURN
+  end protected org.springframework.core.io.Resource[] findAllClassPathResources(String) throws java.io.IOException
+
+  protected org.springframework.core.io.Resource convertClassLoaderURL(java.net.URL):
+                    NEW org.springframework.core.io.UrlResource   (line 321)
+                    DUP
+                    ALOAD_1     // Ljava/net/URL; url
+                    INVOKESPECIAL org.springframework.core.io.UrlResource.<init> (Ljava/net/URL;)V
+                    ARETURN
+  end protected org.springframework.core.io.Resource convertClassLoaderURL(java.net.URL)
+
+  protected org.springframework.core.io.Resource[] findPathMatchingResources(String) throws java.io.IOException:
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 336)
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.determineRootDir (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_1     // Ljava/lang/String; locationPattern   (line 337)
+                    ALOAD_2     // Ljava/lang/String; rootDirPath
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 338)
+                    ALOAD_2     // Ljava/lang/String; rootDirPath
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
+                    ASTORE 4
+                    NEW java.util.LinkedHashSet   (line 339)
+                    DUP
+                    BIPUSH 16
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 5
+                    ALOAD 4     // [Lorg/springframework/core/io/Resource; rootDirResources   (line 340)
+                    DUP
+                    ASTORE 9
+                    ARRAYLENGTH
+                    ISTORE 8
+                    ICONST_0
+                    ISTORE 7
+                    GOTO L4
+                L0: ALOAD 9
+                    ILOAD 7
+                    AALOAD
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 341)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.resolveRootDirResource (Lorg/springframework/core/io/Resource;)Lorg/springframework/core/io/Resource;
+                    ASTORE 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 342)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.isJarResource (Lorg/springframework/core/io/Resource;)Z
+                    IFEQ L1
+                    ALOAD 5     // Ljava/util/Set; result   (line 343)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingJarResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    GOTO L3
+                L1: ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource   (line 345)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.getProtocol ()Ljava/lang/String;
+                    LDC "vfs"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD 5     // Ljava/util/Set; result   (line 346)
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    INVOKESTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver$VfsResourceMatchingDelegate.findMatchingResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;Lorg/springframework/util/PathMatcher;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    GOTO L3
+                L2: ALOAD 5     // Ljava/util/Set; result   (line 349)
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    ALOAD 6     // Lorg/springframework/core/io/Resource; rootDirResource
+                    ALOAD_3     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindPathMatchingFileResources (Lorg/springframework/core/io/Resource;Ljava/lang/String;)Ljava/util/Set;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                L3: IINC 7 1   (line 340)
+                L4: ILOAD 7
+                    ILOAD 8
+                    IF_ICMPLT L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 352)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 353)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Resolved location pattern ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; locationPattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] to resources "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 5     // Ljava/util/Set; result
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L5: ALOAD 5     // Ljava/util/Set; result   (line 355)
+                    ALOAD 5     // Ljava/util/Set; result
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    ANEWARRAY org.springframework.core.io.Resource
+                    INVOKEINTERFACE java.util.Set.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+                    CHECKCAST [Lorg.springframework.core.io.Resource;
+                    ARETURN
+  end protected org.springframework.core.io.Resource[] findPathMatchingResources(String) throws java.io.IOException
+
+  protected String determineRootDir(String):
+                    ALOAD_1     // Ljava/lang/String; location   (line 371)
+                    LDC ":"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ICONST_1
+                    IADD
+                    ISTORE_2
+                    ALOAD_1     // Ljava/lang/String; location   (line 372)
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ISTORE_3
+                    GOTO L1   (line 373)
+                L0: ALOAD_1     // Ljava/lang/String; location   (line 374)
+                    BIPUSH 47
+                    ILOAD_3     // I rootDirEnd
+                    ICONST_2
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.lastIndexOf (II)I
+                    ICONST_1
+                    IADD
+                    ISTORE_3     // I rootDirEnd
+                L1: ILOAD_3     // I rootDirEnd   (line 373)
+                    ILOAD_2     // I prefixEnd
+                    IF_ICMPLE L2
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; location
+                    ILOAD_2     // I prefixEnd
+                    ILOAD_3     // I rootDirEnd
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.isPattern (Ljava/lang/String;)Z
+                    IFNE L0
+                L2: ILOAD_3     // I rootDirEnd   (line 376)
+                    IFNE L3
+                    ILOAD_2     // I prefixEnd   (line 377)
+                    ISTORE_3     // I rootDirEnd
+                L3: ALOAD_1     // Ljava/lang/String; location   (line 379)
+                    ICONST_0
+                    ILOAD_3     // I rootDirEnd
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ARETURN
+  end protected String determineRootDir(String)
+
+  protected org.springframework.core.io.Resource resolveRootDirResource(org.springframework.core.io.Resource) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;   (line 392)
+                    IFNULL L0
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; original   (line 393)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/net/URL; url   (line 394)
+                    INVOKEVIRTUAL java.net.URL.getProtocol ()Ljava/lang/String;
+                    LDC_W "bundle"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.core.io.UrlResource   (line 395)
+                    DUP
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.equinoxResolveMethod Ljava/lang/reflect/Method;
+                    ACONST_NULL
+                    ICONST_1
+                    ANEWARRAY java.lang.Object
+                    DUP
+                    ICONST_0
+                    ALOAD_2     // Ljava/net/URL; url
+                    AASTORE
+                    INVOKESTATIC org.springframework.util.ReflectionUtils.invokeMethod (Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST java.net.URL
+                    INVOKESPECIAL org.springframework.core.io.UrlResource.<init> (Ljava/net/URL;)V
+                    ARETURN
+                L0: ALOAD_1     // Lorg/springframework/core/io/Resource; original   (line 398)
+                    ARETURN
+  end protected org.springframework.core.io.Resource resolveRootDirResource(org.springframework.core.io.Resource) throws java.io.IOException
+
+  protected boolean isJarResource(org.springframework.core.io.Resource) throws java.io.IOException:
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; resource   (line 413)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKESTATIC org.springframework.util.ResourceUtils.isJarURL (Ljava/net/URL;)Z
+                    IRETURN
+  end protected boolean isJarResource(org.springframework.core.io.Resource) throws java.io.IOException
+
+  protected java.util.Set doFindPathMatchingJarResources(org.springframework.core.io.Resource, String) throws java.io.IOException:
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 429)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.openConnection ()Ljava/net/URLConnection;
+                    ASTORE_3
+                    ICONST_0   (line 433)
+                    ISTORE 7
+                    ALOAD_3     // Ljava/net/URLConnection; con   (line 435)
+                    INSTANCEOF java.net.JarURLConnection
+                    IFEQ L2
+                    ALOAD_3     // Ljava/net/URLConnection; con   (line 437)
+                    CHECKCAST java.net.JarURLConnection
+                    ASTORE 8
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 438)
+                    ICONST_0
+                    INVOKEVIRTUAL java.net.JarURLConnection.setUseCaches (Z)V
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 439)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarFile ()Ljava/util/jar/JarFile;
+                    ASTORE 4
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 440)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarFileURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.toExternalForm ()Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 8     // Ljava/net/JarURLConnection; jarCon   (line 441)
+                    INVOKEVIRTUAL java.net.JarURLConnection.getJarEntry ()Ljava/util/jar/JarEntry;
+                    ASTORE 9
+                    ALOAD 9     // Ljava/util/jar/JarEntry; jarEntry   (line 442)
+                    IFNULL L0
+                    ALOAD 9     // Ljava/util/jar/JarEntry; jarEntry
+                    INVOKEVIRTUAL java.util.jar.JarEntry.getName ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC_W ""
+                L1: ASTORE 6
+                    GOTO L5
+                L2: ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 449)
+                    INVOKEINTERFACE org.springframework.core.io.Resource.getURL ()Ljava/net/URL;
+                    INVOKEVIRTUAL java.net.URL.getFile ()Ljava/lang/String;
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 450)
+                    LDC_W "!/"
+                    INVOKEVIRTUAL java.lang.String.indexOf (Ljava/lang/String;)I
+                    ISTORE 9
+                    ILOAD 9     // I separatorIndex   (line 451)
+                    ICONST_M1
+                    IF_ICMPEQ L3
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 452)
+                    ICONST_0
+                    ILOAD 9     // I separatorIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 453)
+                    ILOAD 9     // I separatorIndex
+                    LDC_W "!/"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 454)
+                    ALOAD 5     // Ljava/lang/String; jarFileUrl
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getJarFile (Ljava/lang/String;)Ljava/util/jar/JarFile;
+                    ASTORE 4
+                    GOTO L4
+                L3: NEW java.util.jar.JarFile   (line 457)
+                    DUP
+                    ALOAD 8     // Ljava/lang/String; urlFile
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ASTORE 4
+                    ALOAD 8     // Ljava/lang/String; urlFile   (line 458)
+                    ASTORE 5
+                    LDC_W ""   (line 459)
+                    ASTORE 6
+                L4: ICONST_1   (line 461)
+                    ISTORE 7     // Z newJarFile
+    finally -> E0
+    |           L5: GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 465)
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+    |               IFEQ L6
+    |               GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 466)
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               LDC_W "Looking for matching resources in jar file ["
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               ALOAD 5     // Ljava/lang/String; jarFileUrl
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC_W "]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+    |           L6: LDC_W ""   (line 468)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFNE L7
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               LDC "/"
+    |               INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+    |               IFNE L7
+    |               NEW java.lang.StringBuilder   (line 471)
+    |               DUP
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+    |               LDC "/"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               ASTORE 6     // Ljava/lang/String; rootEntryPath
+    |           L7: NEW java.util.LinkedHashSet   (line 473)
+    |               DUP
+    |               BIPUSH 8
+    |               INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+    |               ASTORE 8
+    |               ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 474)
+    |               INVOKEVIRTUAL java.util.jar.JarFile.entries ()Ljava/util/Enumeration;
+    |               ASTORE 9
+    |               GOTO L9
+    |           L8: ALOAD 9     // Ljava/util/Enumeration; entries   (line 475)
+    |               INVOKEINTERFACE java.util.Enumeration.nextElement ()Ljava/lang/Object;
+    |               CHECKCAST java.util.jar.JarEntry
+    |               ASTORE 10
+    |               ALOAD 10     // Ljava/util/jar/JarEntry; entry   (line 476)
+    |               INVOKEVIRTUAL java.util.jar.JarEntry.getName ()Ljava/lang/String;
+    |               ASTORE 11
+    |               ALOAD 11     // Ljava/lang/String; entryPath   (line 477)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+    |               IFEQ L9
+    |               ALOAD 11     // Ljava/lang/String; entryPath   (line 478)
+    |               ALOAD 6     // Ljava/lang/String; rootEntryPath
+    |               INVOKEVIRTUAL java.lang.String.length ()I
+    |               INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+    |               ASTORE 12
+    |               ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 479)
+    |               INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+    |               ALOAD_2     // Ljava/lang/String; subPattern
+    |               ALOAD 12     // Ljava/lang/String; relativePath
+    |               INVOKEINTERFACE org.springframework.util.PathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+    |               IFEQ L9
+    |               ALOAD 8     // Ljava/util/Set; result   (line 480)
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource
+    |               ALOAD 12     // Ljava/lang/String; relativePath
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.createRelative (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+    |               INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+    |               POP
+    |           L9: ALOAD 9     // Ljava/util/Enumeration; entries   (line 474)
+    |               INVOKEINTERFACE java.util.Enumeration.hasMoreElements ()Z
+    |               IFNE L8
+    |               ALOAD 8     // Ljava/util/Set; result   (line 484)
+    |               ASTORE 14
+    finally -> E0
+                    ILOAD 7     // Z newJarFile   (line 489)
+                    IFEQ L10
+                    ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 490)
+                    INVOKEVIRTUAL java.util.jar.JarFile.close ()V
+               L10: ALOAD 14   (line 484)
+                    ARETURN
+                E0: ASTORE 13   (line 486)
+                    ILOAD 7     // Z newJarFile   (line 489)
+                    IFEQ L11
+                    ALOAD 4     // Ljava/util/jar/JarFile; jarFile   (line 490)
+                    INVOKEVIRTUAL java.util.jar.JarFile.close ()V
+               L11: ALOAD 13   (line 492)
+                    ATHROW
+  end protected java.util.Set doFindPathMatchingJarResources(org.springframework.core.io.Resource, String) throws java.io.IOException
+
+  protected java.util.jar.JarFile getJarFile(String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl   (line 499)
+                    LDC_W "file:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+    catch java.net.URISyntaxException -> E0
+    |               NEW java.util.jar.JarFile   (line 501)
+    |               DUP
+    |               ALOAD_1     // Ljava/lang/String; jarFileUrl
+    |               INVOKESTATIC org.springframework.util.ResourceUtils.toURI (Ljava/lang/String;)Ljava/net/URI;
+    |               INVOKEVIRTUAL java.net.URI.getSchemeSpecificPart ()Ljava/lang/String;
+    |               INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+    catch java.net.URISyntaxException -> E0
+                    ARETURN
+                E0: POP   (line 503)
+                    NEW java.util.jar.JarFile   (line 505)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl
+                    LDC_W "file:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ARETURN
+                L0: NEW java.util.jar.JarFile   (line 509)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; jarFileUrl
+                    INVOKESPECIAL java.util.jar.JarFile.<init> (Ljava/lang/String;)V
+                    ARETURN
+  end protected java.util.jar.JarFile getJarFile(String) throws java.io.IOException
+
+  protected java.util.Set doFindPathMatchingFileResources(org.springframework.core.io.Resource, String) throws java.io.IOException:
+    catch java.io.IOException -> E0
+    |               ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource   (line 528)
+    |               INVOKEINTERFACE org.springframework.core.io.Resource.getFile ()Ljava/io/File;
+    |               INVOKEVIRTUAL java.io.File.getAbsoluteFile ()Ljava/io/File;
+    |               ASTORE_3
+    catch java.io.IOException -> E0
+                    GOTO L1
+                E0: ASTORE 4   (line 530)
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 531)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 532)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot search for matching files underneath "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Lorg/springframework/core/io/Resource; rootDirResource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC_W " because it does not correspond to a directory in the file system"   (line 533)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ALOAD 4     // Ljava/io/IOException; ex
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;Ljava/lang/Throwable;)V   (line 532)
+                L0: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 535)
+                    ARETURN
+                L1: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 537)
+                    ALOAD_3     // Ljava/io/File; rootDir
+                    ALOAD_2     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources (Ljava/io/File;Ljava/lang/String;)Ljava/util/Set;
+                    ARETURN
+  end protected java.util.Set doFindPathMatchingFileResources(org.springframework.core.io.Resource, String) throws java.io.IOException
+
+  protected java.util.Set doFindMatchingFileSystemResources(java.io.File, String) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 551)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 552)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Looking for matching resources in directory tree ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getPath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 554)
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    ALOAD_2     // Ljava/lang/String; subPattern
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.retrieveMatchingFiles (Ljava/io/File;Ljava/lang/String;)Ljava/util/Set;
+                    ASTORE_3
+                    NEW java.util.LinkedHashSet   (line 555)
+                    DUP
+                    ALOAD_3     // Ljava/util/Set; matchingFiles
+                    INVOKEINTERFACE java.util.Set.size ()I
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    ALOAD_3     // Ljava/util/Set; matchingFiles   (line 556)
+                    INVOKEINTERFACE java.util.Set.iterator ()Ljava/util/Iterator;
+                    ASTORE 6
+                    GOTO L2
+                L1: ALOAD 6
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    CHECKCAST java.io.File
+                    ASTORE 5
+                    ALOAD 4     // Ljava/util/Set; result   (line 557)
+                    NEW org.springframework.core.io.FileSystemResource
+                    DUP
+                    ALOAD 5     // Ljava/io/File; file
+                    INVOKESPECIAL org.springframework.core.io.FileSystemResource.<init> (Ljava/io/File;)V
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L2: ALOAD 6   (line 556)
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFNE L1
+                    ALOAD 4     // Ljava/util/Set; result   (line 559)
+                    ARETURN
+  end protected java.util.Set doFindMatchingFileSystemResources(java.io.File, String) throws java.io.IOException
+
+  protected java.util.Set retrieveMatchingFiles(java.io.File, String) throws java.io.IOException:
+                    ALOAD_1     // Ljava/io/File; rootDir   (line 572)
+                    INVOKEVIRTUAL java.io.File.exists ()Z
+                    IFNE L1
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 574)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 575)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because it does not exist"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 577)
+                    ARETURN
+                L1: ALOAD_1     // Ljava/io/File; rootDir   (line 579)
+                    INVOKEVIRTUAL java.io.File.isDirectory ()Z
+                    IFNE L3
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 581)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L2
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 582)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because it does not denote a directory"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                L2: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 584)
+                    ARETURN
+                L3: ALOAD_1     // Ljava/io/File; rootDir   (line 586)
+                    INVOKEVIRTUAL java.io.File.canRead ()Z
+                    IFNE L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 587)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L4
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 588)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Cannot search for matching files underneath directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because the application is not allowed to read the directory"   (line 589)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V   (line 588)
+                L4: INVOKESTATIC java.util.Collections.emptySet ()Ljava/util/Set;   (line 591)
+                    ARETURN
+                L5: ALOAD_1     // Ljava/io/File; rootDir   (line 593)
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; pattern   (line 594)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L6
+                    NEW java.lang.StringBuilder   (line 595)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; fullPattern
+                L6: NEW java.lang.StringBuilder   (line 597)
+                    DUP
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_3     // Ljava/lang/String; fullPattern
+                    NEW java.util.LinkedHashSet   (line 598)
+                    DUP
+                    BIPUSH 8
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 599)
+                    ALOAD_3     // Ljava/lang/String; fullPattern
+                    ALOAD_1     // Ljava/io/File; rootDir
+                    ALOAD 4     // Ljava/util/Set; result
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles (Ljava/lang/String;Ljava/io/File;Ljava/util/Set;)V
+                    ALOAD 4     // Ljava/util/Set; result   (line 600)
+                    ARETURN
+  end protected java.util.Set retrieveMatchingFiles(java.io.File, String) throws java.io.IOException
+
+  protected void doRetrieveMatchingFiles(String, java.io.File, java.util.Set) throws java.io.IOException:
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 613)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 614)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Searching directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] for files matching pattern ["   (line 615)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 614)
+                L0: ALOAD_2     // Ljava/io/File; dir   (line 617)
+                    INVOKEVIRTUAL java.io.File.listFiles ()[Ljava/io/File;
+                    ASTORE 4
+                    ALOAD 4     // [Ljava/io/File; dirContents   (line 618)
+                    IFNONNULL L2
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 619)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isWarnEnabled ()Z
+                    IFEQ L1
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 620)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Could not retrieve contents of directory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.warn (Ljava/lang/Object;)V
+                L1: RETURN   (line 622)
+                L2: ALOAD 4     // [Ljava/io/File; dirContents   (line 624)
+                    DUP
+                    ASTORE 8
+                    ARRAYLENGTH
+                    ISTORE 7
+                    ICONST_0
+                    ISTORE 6
+                    GOTO L7
+                L3: ALOAD 8
+                    ILOAD 6
+                    AALOAD
+                    ASTORE 5
+                    ALOAD 5     // Ljava/io/File; content   (line 625)
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    GETSTATIC java.io.File.separator Ljava/lang/String;
+                    LDC "/"
+                    INVOKESTATIC org.springframework.util.StringUtils.replace (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE 9
+                    ALOAD 5     // Ljava/io/File; content   (line 626)
+                    INVOKEVIRTUAL java.io.File.isDirectory ()Z
+                    IFEQ L5
+                    ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    NEW java.lang.StringBuilder
+                    DUP
+                    ALOAD 9     // Ljava/lang/String; currPath
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.matchStart (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L5
+                    ALOAD 5     // Ljava/io/File; content   (line 627)
+                    INVOKEVIRTUAL java.io.File.canRead ()Z
+                    IFNE L4
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 628)
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L5
+                    GETSTATIC org.springframework.core.io.support.PathMatchingResourcePatternResolver.logger Lorg/apache/commons/logging/Log;   (line 629)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC_W "Skipping subdirectory ["
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/io/File; dir
+                    INVOKEVIRTUAL java.io.File.getAbsolutePath ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC_W "] because the application is not allowed to read the directory"   (line 630)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V   (line 629)
+                    GOTO L5
+                L4: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 634)
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    ALOAD 5     // Ljava/io/File; content
+                    ALOAD_3     // Ljava/util/Set; result
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles (Ljava/lang/String;Ljava/io/File;Ljava/util/Set;)V
+                L5: ALOAD_0     // Lorg/springframework/core/io/support/PathMatchingResourcePatternResolver; this   (line 637)
+                    INVOKEVIRTUAL org.springframework.core.io.support.PathMatchingResourcePatternResolver.getPathMatcher ()Lorg/springframework/util/PathMatcher;
+                    ALOAD_1     // Ljava/lang/String; fullPattern
+                    ALOAD 9     // Ljava/lang/String; currPath
+                    INVOKEINTERFACE org.springframework.util.PathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L6
+                    ALOAD_3     // Ljava/util/Set; result   (line 638)
+                    ALOAD 5     // Ljava/io/File; content
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                L6: IINC 6 1   (line 624)
+                L7: ILOAD 6
+                    ILOAD 7
+                    IF_ICMPLT L3
+                    RETURN   (line 641)
+  end protected void doRetrieveMatchingFiles(String, java.io.File, java.util.Set) throws java.io.IOException
+end public class org.springframework.core.io.support.PathMatchingResourcePatternResolver
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.getResourcePatternResolver(AbstractApplicationContext.java:350)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:222)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.util.PathMatcher
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.util.PathMatcher
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.util.PathMatcher
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.util.PathMatcher
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.util.PathMatcher
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

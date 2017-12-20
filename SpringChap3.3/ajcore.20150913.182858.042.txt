@@ -1,0 +1,264 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.182858.042.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@14dad5dc
+info using configuration file:/E:/Eclipse%20Latest/SpringJar/spring-aspects-4.1.6.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.expression.ExpressionException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.expression.ExpressionException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.expression.ExpressionException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.expression.ExpressionException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.expression.ExpressionException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.expression.ExpressionException extends java.lang.RuntimeException:
+  protected String expressionString
+  protected int position
+  public void <init>(String, String):
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 37)
+                    ALOAD_2     // Ljava/lang/String; message
+                    INVOKESPECIAL java.lang.RuntimeException.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String, java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 38)
+    |               ICONST_M1
+    |               PUTFIELD org.springframework.expression.ExpressionException.position I
+    |               ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 39)
+    |               ALOAD_1     // Ljava/lang/String; expressionString
+    |               PUTFIELD org.springframework.expression.ExpressionException.expressionString Ljava/lang/String;
+    |               RETURN   (line 40)
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String, java.lang.String))
+  end public void <init>(String, String)
+
+  public void <init>(String, int, String):
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 49)
+                    ALOAD_3     // Ljava/lang/String; message
+                    INVOKESPECIAL java.lang.RuntimeException.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String, int, java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 50)
+    |               ILOAD_2     // I position
+    |               PUTFIELD org.springframework.expression.ExpressionException.position I
+    |               ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 51)
+    |               ALOAD_1     // Ljava/lang/String; expressionString
+    |               PUTFIELD org.springframework.expression.ExpressionException.expressionString Ljava/lang/String;
+    |               RETURN   (line 52)
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String, int, java.lang.String))
+  end public void <init>(String, int, String)
+
+  public void <init>(int, String):
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 60)
+                    ALOAD_2     // Ljava/lang/String; message
+                    INVOKESPECIAL java.lang.RuntimeException.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(int, java.lang.String))
+    |               ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 61)
+    |               ILOAD_1     // I position
+    |               PUTFIELD org.springframework.expression.ExpressionException.position I
+    |               RETURN   (line 62)
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(int, java.lang.String))
+  end public void <init>(int, String)
+
+  public void <init>(int, String, Throwable):
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 71)
+                    ALOAD_2     // Ljava/lang/String; message
+                    ALOAD_3     // Ljava/lang/Throwable; cause
+                    INVOKESPECIAL java.lang.RuntimeException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(int, java.lang.String, java.lang.Throwable))
+    |               ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 72)
+    |               ILOAD_1     // I position
+    |               PUTFIELD org.springframework.expression.ExpressionException.position I
+    |               RETURN   (line 73)
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(int, java.lang.String, java.lang.Throwable))
+  end public void <init>(int, String, Throwable)
+
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 80)
+                    ALOAD_1     // Ljava/lang/String; message
+                    INVOKESPECIAL java.lang.RuntimeException.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String))
+    |               RETURN   (line 81)
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(String, Throwable):
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 84)
+                    ALOAD_1     // Ljava/lang/String; message
+                    ALOAD_2     // Ljava/lang/Throwable; cause
+                    INVOKESPECIAL java.lang.RuntimeException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String, java.lang.Throwable))
+    |               RETURN   (line 85)
+    constructor-execution(void org.springframework.expression.ExpressionException.<init>(java.lang.String, java.lang.Throwable))
+  end public void <init>(String, Throwable)
+
+  public String toDetailedString():
+                    NEW java.lang.StringBuilder   (line 88)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 89)
+                    GETFIELD org.springframework.expression.ExpressionException.expressionString Ljava/lang/String;
+                    IFNULL L1
+                    ALOAD_1     // Ljava/lang/StringBuilder; output   (line 90)
+                    LDC "Expression '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; output   (line 91)
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this
+                    GETFIELD org.springframework.expression.ExpressionException.expressionString Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; output   (line 92)
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 93)
+                    GETFIELD org.springframework.expression.ExpressionException.position I
+                    ICONST_M1
+                    IF_ICMPEQ L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; output   (line 94)
+                    LDC " @ "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; output   (line 95)
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this
+                    GETFIELD org.springframework.expression.ExpressionException.position I
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (I)Ljava/lang/StringBuilder;
+                    POP
+                L0: ALOAD_1     // Ljava/lang/StringBuilder; output   (line 97)
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L1: ALOAD_1     // Ljava/lang/StringBuilder; output   (line 99)
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this
+                    INVOKEVIRTUAL org.springframework.expression.ExpressionException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; output   (line 100)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String toDetailedString()
+
+  public final String getExpressionString():
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 104)
+                    GETFIELD org.springframework.expression.ExpressionException.expressionString Ljava/lang/String;
+                    ARETURN
+  end public final String getExpressionString()
+
+  public final int getPosition():
+                    ALOAD_0     // Lorg/springframework/expression/ExpressionException; this   (line 108)
+                    GETFIELD org.springframework.expression.ExpressionException.position I
+                    IRETURN
+  end public final int getPosition()
+
+end public class org.springframework.expression.ExpressionException
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+error can't determine annotations of missing type org.springframework.cache.annotation.CachePut
+when weaving type org.springframework.expression.Expression
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Cacheable
+when weaving type org.springframework.expression.Expression
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.CacheEvict
+when weaving type org.springframework.expression.Expression
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.cache.annotation.Caching
+when weaving type org.springframework.expression.Expression
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.expression.Expression
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]

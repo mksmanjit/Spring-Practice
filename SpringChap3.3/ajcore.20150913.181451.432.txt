@@ -1,0 +1,848 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.181451.432.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.apache.commons.logging.impl.Log4JLogger extends java.lang.Object implements org.apache.commons.logging.Log, java.io.Serializable:
+  private static final String FQCN
+  private transient org.apache.log4j.Logger logger
+  private String name
+  private static org.apache.log4j.Priority traceLevel
+  static Class class$org$apache$commons$logging$impl$Log4JLogger [Synthetic]
+  static Class class$org$apache$log4j$Level [Synthetic]
+  static Class class$org$apache$log4j$Priority [Synthetic]
+  public void <init>():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 100)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>())
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 58)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 61)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               RETURN   (line 101)
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>())
+  end public void <init>()
+
+  public void <init>(String):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 107)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(java.lang.String))
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 58)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 61)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 108)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 109)
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this
+    |               INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               RETURN   (line 110)
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(org.apache.log4j.Logger):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 115)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(org.apache.log4j.Logger))
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 58)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 61)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_1     // Lorg/apache/log4j/Logger; logger   (line 116)
+    |               IFNONNULL L0
+    |               NEW java.lang.IllegalArgumentException   (line 117)
+    |               DUP
+    |               LDC "Warning - null logger in constructor; possible log4j misconfiguration."
+    |               INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+    |               ATHROW
+    |           L0: ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 120)
+    |               ALOAD_1     // Lorg/apache/log4j/Logger; logger
+    |               INVOKEVIRTUAL org.apache.log4j.Category.getName ()Ljava/lang/String;
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 121)
+    |               ALOAD_1     // Lorg/apache/log4j/Logger; logger
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               RETURN   (line 122)
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(org.apache.log4j.Logger))
+  end public void <init>(org.apache.log4j.Logger)
+
+  public void trace(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 152)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 153)
+  end public void trace(Object)
+
+  public void trace(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 166)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 167)
+  end public void trace(Object, Throwable)
+
+  public void debug(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 177)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.DEBUG Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 178)
+  end public void debug(Object)
+
+  public void debug(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 188)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.DEBUG Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 189)
+  end public void debug(Object, Throwable)
+
+  public void info(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 199)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.INFO Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 200)
+  end public void info(Object)
+
+  public void info(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 211)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.INFO Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 212)
+  end public void info(Object, Throwable)
+
+  public void warn(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 222)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.WARN Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 223)
+  end public void warn(Object)
+
+  public void warn(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 234)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.WARN Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 235)
+  end public void warn(Object, Throwable)
+
+  public void error(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 245)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.ERROR Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 246)
+  end public void error(Object)
+
+  public void error(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 257)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.ERROR Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 258)
+  end public void error(Object, Throwable)
+
+  public void fatal(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 268)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.FATAL Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 269)
+  end public void fatal(Object)
+
+  public void fatal(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 280)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.FATAL Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 281)
+  end public void fatal(Object, Throwable)
+
+  public org.apache.log4j.Logger getLogger():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 288)
+                    GETFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 289)
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this
+                    GETFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+                    INVOKESTATIC org.apache.log4j.Logger.getLogger (Ljava/lang/String;)Lorg/apache/log4j/Logger;
+                    PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+                L0: ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 291)
+                    GETFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+                    ARETURN
+  end public org.apache.log4j.Logger getLogger()
+
+  public boolean isDebugEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 299)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isDebugEnabled ()Z
+                    IRETURN
+  end public boolean isDebugEnabled()
+
+  public boolean isErrorEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 307)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.log4j.Priority.ERROR Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isErrorEnabled()
+
+  public boolean isFatalEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 315)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.log4j.Priority.FATAL Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isFatalEnabled()
+
+  public boolean isInfoEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 323)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isInfoEnabled ()Z
+                    IRETURN
+  end public boolean isInfoEnabled()
+
+  public boolean isTraceEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 333)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isTraceEnabled()
+
+  public boolean isWarnEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 340)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.log4j.Priority.WARN Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isWarnEnabled()
+
+  static Class class$(String):
+    catch java.lang.ClassNotFoundException -> E0
+    |               ALOAD_0     // Ljava/lang/String; x0   (line 55)
+    |               INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E0
+                    ARETURN
+                E0: ASTORE_1
+                    NEW java.lang.NoClassDefFoundError
+                    DUP
+                    ALOAD_1     // Ljava/lang/ClassNotFoundException; x1
+                    INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end static Class class$(String)
+
+  static void <clinit>():
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$commons$logging$impl$Log4JLogger Ljava/lang/Class;   (line 55)
+                    IFNONNULL L0
+                    LDC "org.apache.commons.logging.impl.Log4JLogger"
+                    INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+                    DUP
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$commons$logging$impl$Log4JLogger Ljava/lang/Class;
+                    GOTO L1
+                L0: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$commons$logging$impl$Log4JLogger Ljava/lang/Class;
+                L1: INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Priority Ljava/lang/Class;   (line 80)
+                    IFNONNULL L2
+                    LDC "org.apache.log4j.Priority"
+                    INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+                    DUP
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Priority Ljava/lang/Class;
+                    GOTO L3
+                L2: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Priority Ljava/lang/Class;
+                L3: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+                    IFNONNULL L4
+                    LDC "org.apache.log4j.Level"
+                    INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+                    DUP
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+                    GOTO L5
+                L4: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+                L5: INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L6
+                    NEW java.lang.InstantiationError   (line 82)
+                    DUP
+                    LDC "Log4J 1.2 not available"
+                    INVOKESPECIAL java.lang.InstantiationError.<init> (Ljava/lang/String;)V
+                    ATHROW
+    catch java.lang.Exception -> E0
+    |           L6: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;   (line 90)
+    |               IFNONNULL L7
+    |               LDC "org.apache.log4j.Level"
+    |               INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+    |               DUP
+    |               PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+    |               GOTO L8
+    |           L7: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+    |           L8: LDC "TRACE"
+    |               INVOKEVIRTUAL java.lang.Class.getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;
+    |               ACONST_NULL
+    |               INVOKEVIRTUAL java.lang.reflect.Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST org.apache.log4j.Priority
+    |               PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+    catch java.lang.Exception -> E0
+                    GOTO L9   (line 94)
+                E0: ASTORE_0   (line 91)
+                    GETSTATIC org.apache.log4j.Priority.DEBUG Lorg/apache/log4j/Priority;   (line 93)
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                L9: RETURN   (line 95)
+  end static void <clinit>()
+end public class org.apache.commons.logging.impl.Log4JLogger
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.commons.logging.impl.LogFactoryImpl.createLogFromClass(LogFactoryImpl.java:1081)
+	at org.apache.commons.logging.impl.LogFactoryImpl.discoverLogImplementation(LogFactoryImpl.java:914)
+	at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:604)
+	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:336)
+	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:310)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:685)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:160)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.apache.commons.logging.impl.Log4JLogger extends java.lang.Object implements org.apache.commons.logging.Log, java.io.Serializable:
+  private static final String FQCN
+  private transient org.apache.log4j.Logger logger
+  private String name
+  private static org.apache.log4j.Priority traceLevel
+  static Class class$org$apache$commons$logging$impl$Log4JLogger [Synthetic]
+  static Class class$org$apache$log4j$Level [Synthetic]
+  static Class class$org$apache$log4j$Priority [Synthetic]
+  public void <init>():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 100)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>())
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 58)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 61)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               RETURN   (line 101)
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>())
+  end public void <init>()
+
+  public void <init>(String):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 107)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(java.lang.String))
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 58)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 61)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 108)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 109)
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this
+    |               INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               RETURN   (line 110)
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(org.apache.log4j.Logger):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 115)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(org.apache.log4j.Logger))
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 58)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 61)
+    |               ACONST_NULL
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_1     // Lorg/apache/log4j/Logger; logger   (line 116)
+    |               IFNONNULL L0
+    |               NEW java.lang.IllegalArgumentException   (line 117)
+    |               DUP
+    |               LDC "Warning - null logger in constructor; possible log4j misconfiguration."
+    |               INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+    |               ATHROW
+    |           L0: ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 120)
+    |               ALOAD_1     // Lorg/apache/log4j/Logger; logger
+    |               INVOKEVIRTUAL org.apache.log4j.Category.getName ()Ljava/lang/String;
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+    |               ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 121)
+    |               ALOAD_1     // Lorg/apache/log4j/Logger; logger
+    |               PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+    |               RETURN   (line 122)
+    constructor-execution(void org.apache.commons.logging.impl.Log4JLogger.<init>(org.apache.log4j.Logger))
+  end public void <init>(org.apache.log4j.Logger)
+
+  public void trace(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 152)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 153)
+  end public void trace(Object)
+
+  public void trace(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 166)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 167)
+  end public void trace(Object, Throwable)
+
+  public void debug(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 177)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.DEBUG Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 178)
+  end public void debug(Object)
+
+  public void debug(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 188)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.DEBUG Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 189)
+  end public void debug(Object, Throwable)
+
+  public void info(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 199)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.INFO Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 200)
+  end public void info(Object)
+
+  public void info(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 211)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.INFO Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 212)
+  end public void info(Object, Throwable)
+
+  public void warn(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 222)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.WARN Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 223)
+  end public void warn(Object)
+
+  public void warn(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 234)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.WARN Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 235)
+  end public void warn(Object, Throwable)
+
+  public void error(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 245)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.ERROR Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 246)
+  end public void error(Object)
+
+  public void error(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 257)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.ERROR Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 258)
+  end public void error(Object, Throwable)
+
+  public void fatal(Object):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 268)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.FATAL Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 269)
+  end public void fatal(Object)
+
+  public void fatal(Object, Throwable):
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 280)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.log4j.Priority.FATAL Lorg/apache/log4j/Priority;
+                    ALOAD_1     // Ljava/lang/Object; message
+                    ALOAD_2     // Ljava/lang/Throwable; t
+                    INVOKEVIRTUAL org.apache.log4j.Category.log (Ljava/lang/String;Lorg/apache/log4j/Priority;Ljava/lang/Object;Ljava/lang/Throwable;)V
+                    RETURN   (line 281)
+  end public void fatal(Object, Throwable)
+
+  public org.apache.log4j.Logger getLogger():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 288)
+                    GETFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 289)
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this
+                    GETFIELD org.apache.commons.logging.impl.Log4JLogger.name Ljava/lang/String;
+                    INVOKESTATIC org.apache.log4j.Logger.getLogger (Ljava/lang/String;)Lorg/apache/log4j/Logger;
+                    PUTFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+                L0: ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 291)
+                    GETFIELD org.apache.commons.logging.impl.Log4JLogger.logger Lorg/apache/log4j/Logger;
+                    ARETURN
+  end public org.apache.log4j.Logger getLogger()
+
+  public boolean isDebugEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 299)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isDebugEnabled ()Z
+                    IRETURN
+  end public boolean isDebugEnabled()
+
+  public boolean isErrorEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 307)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.log4j.Priority.ERROR Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isErrorEnabled()
+
+  public boolean isFatalEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 315)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.log4j.Priority.FATAL Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isFatalEnabled()
+
+  public boolean isInfoEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 323)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isInfoEnabled ()Z
+                    IRETURN
+  end public boolean isInfoEnabled()
+
+  public boolean isTraceEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 333)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isTraceEnabled()
+
+  public boolean isWarnEnabled():
+                    ALOAD_0     // Lorg/apache/commons/logging/impl/Log4JLogger; this   (line 340)
+                    INVOKEVIRTUAL org.apache.commons.logging.impl.Log4JLogger.getLogger ()Lorg/apache/log4j/Logger;
+                    GETSTATIC org.apache.log4j.Priority.WARN Lorg/apache/log4j/Priority;
+                    INVOKEVIRTUAL org.apache.log4j.Category.isEnabledFor (Lorg/apache/log4j/Priority;)Z
+                    IRETURN
+  end public boolean isWarnEnabled()
+
+  static Class class$(String):
+    catch java.lang.ClassNotFoundException -> E0
+    |               ALOAD_0     // Ljava/lang/String; x0   (line 55)
+    |               INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E0
+                    ARETURN
+                E0: ASTORE_1
+                    NEW java.lang.NoClassDefFoundError
+                    DUP
+                    ALOAD_1     // Ljava/lang/ClassNotFoundException; x1
+                    INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+                    ATHROW
+  end static Class class$(String)
+
+  static void <clinit>():
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$commons$logging$impl$Log4JLogger Ljava/lang/Class;   (line 55)
+                    IFNONNULL L0
+                    LDC "org.apache.commons.logging.impl.Log4JLogger"
+                    INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+                    DUP
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$commons$logging$impl$Log4JLogger Ljava/lang/Class;
+                    GOTO L1
+                L0: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$commons$logging$impl$Log4JLogger Ljava/lang/Class;
+                L1: INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.FQCN Ljava/lang/String;
+                    GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Priority Ljava/lang/Class;   (line 80)
+                    IFNONNULL L2
+                    LDC "org.apache.log4j.Priority"
+                    INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+                    DUP
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Priority Ljava/lang/Class;
+                    GOTO L3
+                L2: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Priority Ljava/lang/Class;
+                L3: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+                    IFNONNULL L4
+                    LDC "org.apache.log4j.Level"
+                    INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+                    DUP
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+                    GOTO L5
+                L4: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+                L5: INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFNE L6
+                    NEW java.lang.InstantiationError   (line 82)
+                    DUP
+                    LDC "Log4J 1.2 not available"
+                    INVOKESPECIAL java.lang.InstantiationError.<init> (Ljava/lang/String;)V
+                    ATHROW
+    catch java.lang.Exception -> E0
+    |           L6: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;   (line 90)
+    |               IFNONNULL L7
+    |               LDC "org.apache.log4j.Level"
+    |               INVOKESTATIC org.apache.commons.logging.impl.Log4JLogger.class$ (Ljava/lang/String;)Ljava/lang/Class;
+    |               DUP
+    |               PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+    |               GOTO L8
+    |           L7: GETSTATIC org.apache.commons.logging.impl.Log4JLogger.class$org$apache$log4j$Level Ljava/lang/Class;
+    |           L8: LDC "TRACE"
+    |               INVOKEVIRTUAL java.lang.Class.getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;
+    |               ACONST_NULL
+    |               INVOKEVIRTUAL java.lang.reflect.Field.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST org.apache.log4j.Priority
+    |               PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+    catch java.lang.Exception -> E0
+                    GOTO L9   (line 94)
+                E0: ASTORE_0   (line 91)
+                    GETSTATIC org.apache.log4j.Priority.DEBUG Lorg/apache/log4j/Priority;   (line 93)
+                    PUTSTATIC org.apache.commons.logging.impl.Log4JLogger.traceLevel Lorg/apache/log4j/Priority;
+                L9: RETURN   (line 95)
+  end static void <clinit>()
+end public class org.apache.commons.logging.impl.Log4JLogger
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.commons.logging.impl.LogFactoryImpl.createLogFromClass(LogFactoryImpl.java:1081)
+	at org.apache.commons.logging.impl.LogFactoryImpl.discoverLogImplementation(LogFactoryImpl.java:914)
+	at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:604)
+	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:336)
+	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:310)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:685)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:160)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

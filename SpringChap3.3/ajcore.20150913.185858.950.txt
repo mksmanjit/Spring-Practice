@@ -1,0 +1,588 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185858.950.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.propertyeditors.URIEditor extends java.beans.PropertyEditorSupport:
+  private final ClassLoader classLoader
+  private final boolean encode
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 62)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 63)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 64)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 65)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>())
+  end public void <init>()
+
+  public void <init>(boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 72)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 73)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 74)
+    |               ILOAD_1     // Z encode
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 75)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(boolean))
+  end public void <init>(boolean)
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 84)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 85)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 86)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 87)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void <init>(ClassLoader, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 96)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader, boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 97)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 98)
+    |               ILOAD_2     // Z encode
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 99)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader, boolean))
+  end public void <init>(ClassLoader, boolean)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_1     // Ljava/lang/String; text   (line 104)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; text   (line 105)
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 106)
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/String; uri
+                    LDC "classpath:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.core.io.ClassPathResource   (line 108)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; uri
+                    LDC "classpath:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+                    INVOKESPECIAL org.springframework.core.io.ClassPathResource.<init> (Ljava/lang/String;Ljava/lang/ClassLoader;)V
+                    ASTORE_3   (line 107)
+    catch java.net.URISyntaxException -> E1
+    | catch java.io.IOException -> E0
+    | |             ALOAD_3     // Lorg/springframework/core/io/ClassPathResource; resource   (line 110)
+    | |             INVOKEVIRTUAL org.springframework.core.io.ClassPathResource.getURL ()Ljava/net/URL;
+    | |             INVOKEVIRTUAL java.net.URL.toString ()Ljava/lang/String;
+    | |             ASTORE 4
+    | |             ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 111)
+    | |             ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+    | |             ALOAD 4     // Ljava/lang/String; url
+    | |             INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.createURI (Ljava/lang/String;)Ljava/net/URI;
+    | |             INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+    | catch java.io.IOException -> E0
+    catch java.net.URISyntaxException -> E1
+                    GOTO L2
+                E0: ASTORE 4   (line 113)
+                    NEW java.lang.IllegalArgumentException   (line 114)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not retrieve URI for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Lorg/springframework/core/io/ClassPathResource; resource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                E1: ASTORE 4   (line 116)
+                    NEW java.lang.IllegalArgumentException   (line 117)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid URI syntax: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/net/URISyntaxException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+    catch java.net.URISyntaxException -> E2
+    |           L0: ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 122)
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+    |               ALOAD_2     // Ljava/lang/String; uri
+    |               INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.createURI (Ljava/lang/String;)Ljava/net/URI;
+    |               INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+    catch java.net.URISyntaxException -> E2
+                    GOTO L2
+                E2: ASTORE_3   (line 124)
+                    NEW java.lang.IllegalArgumentException   (line 125)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid URI syntax: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/net/URISyntaxException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 130)
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+                L2: RETURN   (line 132)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  protected java.net.URI createURI(String) throws java.net.URISyntaxException:
+                    ALOAD_1     // Ljava/lang/String; value   (line 143)
+                    BIPUSH 58
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 144)
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+                    IFEQ L4
+                    ILOAD_2     // I colonIndex
+                    ICONST_M1
+                    IF_ICMPEQ L4
+                    ALOAD_1     // Ljava/lang/String; value   (line 145)
+                    BIPUSH 35
+                    ILOAD_2     // I colonIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.indexOf (II)I
+                    ISTORE_3
+                    ALOAD_1     // Ljava/lang/String; value   (line 146)
+                    ICONST_0
+                    ILOAD_2     // I colonIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; value   (line 147)
+                    ILOAD_2     // I colonIndex
+                    ICONST_1
+                    IADD
+                    ILOAD_3     // I fragmentIndex
+                    IFLE L0
+                    ILOAD_3     // I fragmentIndex
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/String; value
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                L1: INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 5
+                    ILOAD_3     // I fragmentIndex   (line 148)
+                    IFLE L2
+                    ALOAD_1     // Ljava/lang/String; value
+                    ILOAD_3     // I fragmentIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    GOTO L3
+                L2: ACONST_NULL
+                L3: ASTORE 6
+                    NEW java.net.URI   (line 149)
+                    DUP
+                    ALOAD 4     // Ljava/lang/String; scheme
+                    ALOAD 5     // Ljava/lang/String; ssp
+                    ALOAD 6     // Ljava/lang/String; fragment
+                    INVOKESPECIAL java.net.URI.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+                    ARETURN
+                L4: NEW java.net.URI   (line 153)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; value
+                    INVOKESPECIAL java.net.URI.<init> (Ljava/lang/String;)V
+                    ARETURN
+  end protected java.net.URI createURI(String) throws java.net.URISyntaxException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 160)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.net.URI
+                    ASTORE_1
+                    ALOAD_1     // Ljava/net/URI; value   (line 161)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/net/URI; value
+                    INVOKEVIRTUAL java.net.URI.toString ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.URIEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.propertyeditors.URIEditor extends java.beans.PropertyEditorSupport:
+  private final ClassLoader classLoader
+  private final boolean encode
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 62)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>())
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 63)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 64)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 65)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>())
+  end public void <init>()
+
+  public void <init>(boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 72)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 73)
+    |               ACONST_NULL
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 74)
+    |               ILOAD_1     // Z encode
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 75)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(boolean))
+  end public void <init>(boolean)
+
+  public void <init>(ClassLoader):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 84)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 85)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 86)
+    |               ICONST_1
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 87)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader))
+  end public void <init>(ClassLoader)
+
+  public void <init>(ClassLoader, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 96)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader, boolean))
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 97)
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               IFNULL L0
+    |               ALOAD_1     // Ljava/lang/ClassLoader; classLoader
+    |               GOTO L1
+    |           L0: INVOKESTATIC org.springframework.util.ClassUtils.getDefaultClassLoader ()Ljava/lang/ClassLoader;
+    |           L1: PUTFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 98)
+    |               ILOAD_2     // Z encode
+    |               PUTFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+    |               RETURN   (line 99)
+    constructor-execution(void org.springframework.beans.propertyeditors.URIEditor.<init>(java.lang.ClassLoader, boolean))
+  end public void <init>(ClassLoader, boolean)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_1     // Ljava/lang/String; text   (line 104)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L1
+                    ALOAD_1     // Ljava/lang/String; text   (line 105)
+                    INVOKEVIRTUAL java.lang.String.trim ()Ljava/lang/String;
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 106)
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/String; uri
+                    LDC "classpath:"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.core.io.ClassPathResource   (line 108)
+                    DUP
+                    ALOAD_2     // Ljava/lang/String; uri
+                    LDC "classpath:"
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.classLoader Ljava/lang/ClassLoader;
+                    INVOKESPECIAL org.springframework.core.io.ClassPathResource.<init> (Ljava/lang/String;Ljava/lang/ClassLoader;)V
+                    ASTORE_3   (line 107)
+    catch java.net.URISyntaxException -> E1
+    | catch java.io.IOException -> E0
+    | |             ALOAD_3     // Lorg/springframework/core/io/ClassPathResource; resource   (line 110)
+    | |             INVOKEVIRTUAL org.springframework.core.io.ClassPathResource.getURL ()Ljava/net/URL;
+    | |             INVOKEVIRTUAL java.net.URL.toString ()Ljava/lang/String;
+    | |             ASTORE 4
+    | |             ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 111)
+    | |             ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+    | |             ALOAD 4     // Ljava/lang/String; url
+    | |             INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.createURI (Ljava/lang/String;)Ljava/net/URI;
+    | |             INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+    | catch java.io.IOException -> E0
+    catch java.net.URISyntaxException -> E1
+                    GOTO L2
+                E0: ASTORE 4   (line 113)
+                    NEW java.lang.IllegalArgumentException   (line 114)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Could not retrieve URI for "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Lorg/springframework/core/io/ClassPathResource; resource
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 4     // Ljava/io/IOException; ex
+                    INVOKEVIRTUAL java.io.IOException.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                E1: ASTORE 4   (line 116)
+                    NEW java.lang.IllegalArgumentException   (line 117)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid URI syntax: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 4     // Ljava/net/URISyntaxException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+    catch java.net.URISyntaxException -> E2
+    |           L0: ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 122)
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this
+    |               ALOAD_2     // Ljava/lang/String; uri
+    |               INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.createURI (Ljava/lang/String;)Ljava/net/URI;
+    |               INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+    catch java.net.URISyntaxException -> E2
+                    GOTO L2
+                E2: ASTORE_3   (line 124)
+                    NEW java.lang.IllegalArgumentException   (line 125)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Invalid URI syntax: "
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_3     // Ljava/net/URISyntaxException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 130)
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.setValue (Ljava/lang/Object;)V
+                L2: RETURN   (line 132)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  protected java.net.URI createURI(String) throws java.net.URISyntaxException:
+                    ALOAD_1     // Ljava/lang/String; value   (line 143)
+                    BIPUSH 58
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 144)
+                    GETFIELD org.springframework.beans.propertyeditors.URIEditor.encode Z
+                    IFEQ L4
+                    ILOAD_2     // I colonIndex
+                    ICONST_M1
+                    IF_ICMPEQ L4
+                    ALOAD_1     // Ljava/lang/String; value   (line 145)
+                    BIPUSH 35
+                    ILOAD_2     // I colonIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.indexOf (II)I
+                    ISTORE_3
+                    ALOAD_1     // Ljava/lang/String; value   (line 146)
+                    ICONST_0
+                    ILOAD_2     // I colonIndex
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; value   (line 147)
+                    ILOAD_2     // I colonIndex
+                    ICONST_1
+                    IADD
+                    ILOAD_3     // I fragmentIndex
+                    IFLE L0
+                    ILOAD_3     // I fragmentIndex
+                    GOTO L1
+                L0: ALOAD_1     // Ljava/lang/String; value
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                L1: INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 5
+                    ILOAD_3     // I fragmentIndex   (line 148)
+                    IFLE L2
+                    ALOAD_1     // Ljava/lang/String; value
+                    ILOAD_3     // I fragmentIndex
+                    ICONST_1
+                    IADD
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    GOTO L3
+                L2: ACONST_NULL
+                L3: ASTORE 6
+                    NEW java.net.URI   (line 149)
+                    DUP
+                    ALOAD 4     // Ljava/lang/String; scheme
+                    ALOAD 5     // Ljava/lang/String; ssp
+                    ALOAD 6     // Ljava/lang/String; fragment
+                    INVOKESPECIAL java.net.URI.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+                    ARETURN
+                L4: NEW java.net.URI   (line 153)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; value
+                    INVOKESPECIAL java.net.URI.<init> (Ljava/lang/String;)V
+                    ARETURN
+  end protected java.net.URI createURI(String) throws java.net.URISyntaxException
+
+  public String getAsText():
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/URIEditor; this   (line 160)
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.URIEditor.getValue ()Ljava/lang/Object;
+                    CHECKCAST java.net.URI
+                    ASTORE_1
+                    ALOAD_1     // Ljava/net/URI; value   (line 161)
+                    IFNULL L0
+                    ALOAD_1     // Ljava/net/URI; value
+                    INVOKEVIRTUAL java.net.URI.toString ()Ljava/lang/String;
+                    GOTO L1
+                L0: LDC ""
+                L1: ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.URIEditor
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.support.ResourceEditorRegistrar.registerCustomEditors(ResourceEditorRegistrar.java:93)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.registerCustomEditors(AbstractBeanFactory.java:1039)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.initBeanWrapper(AbstractBeanFactory.java:1019)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:983)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:879)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

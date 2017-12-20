@@ -1,0 +1,1606 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.185849.211.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.util.AntPathMatcher extends java.lang.Object implements org.springframework.util.PathMatcher:
+  private static final java.util.regex.Pattern VARIABLE_PATTERN
+  public static final String DEFAULT_PATH_SEPARATOR = "/"
+  private String pathSeparator
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.AntPathMatcher.<clinit>())
+    |               LDC "\{[^/]+?\}"   (line 49)
+    |               INVOKESTATIC java.util.regex.Pattern.compile (Ljava/lang/String;)Ljava/util/regex/Pattern;
+    |               PUTSTATIC org.springframework.util.AntPathMatcher.VARIABLE_PATTERN Ljava/util/regex/Pattern;
+    |               RETURN   (line 47)
+    staticinitialization(void org.springframework.util.AntPathMatcher.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 47)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.AntPathMatcher.<init>())
+    |               ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 54)
+    |               LDC "/"
+    |               PUTFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+    |               RETURN   (line 47)
+    constructor-execution(void org.springframework.util.AntPathMatcher.<init>())
+  end public void <init>()
+
+  public void setPathSeparator(String):
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 59)
+                    ALOAD_1     // Ljava/lang/String; pathSeparator
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; pathSeparator
+                    GOTO L1
+                L0: LDC "/"
+                L1: PUTFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    RETURN   (line 60)
+  end public void setPathSeparator(String)
+
+  public boolean isPattern(String):
+                    ALOAD_1     // Ljava/lang/String; path   (line 64)
+                    BIPUSH 42
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ALOAD_1     // Ljava/lang/String; path
+                    BIPUSH 63
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end public boolean isPattern(String)
+
+  public boolean match(String, String):
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 68)
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; path
+                    ICONST_1
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.doMatch (Ljava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+                    IRETURN
+  end public boolean match(String, String)
+
+  public boolean matchStart(String, String):
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 72)
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; path
+                    ICONST_0
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.doMatch (Ljava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+                    IRETURN
+  end public boolean matchStart(String, String)
+
+  protected boolean doMatch(String, String, boolean, java.util.Map):
+                    ALOAD_2     // Ljava/lang/String; path   (line 87)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IF_ICMPEQ L0
+                    ICONST_0   (line 88)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/String; pattern   (line 91)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD_2     // Ljava/lang/String; path   (line 92)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 6
+                    ICONST_0   (line 94)
+                    ISTORE 7
+                    ALOAD 5     // [Ljava/lang/String; pattDirs   (line 95)
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    ISTORE 8
+                    ICONST_0   (line 96)
+                    ISTORE 9
+                    ALOAD 6     // [Ljava/lang/String; pathDirs   (line 97)
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    ISTORE 10
+                    GOTO L4   (line 100)
+                L1: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 101)
+                    ILOAD 7     // I pattIdxStart
+                    AALOAD
+                    ASTORE 11
+                    LDC "**"   (line 102)
+                    ALOAD 11     // Ljava/lang/String; patDir
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    GOTO L5   (line 103)
+                L2: ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 105)
+                    ALOAD 11     // Ljava/lang/String; patDir
+                    ALOAD 6     // [Ljava/lang/String; pathDirs
+                    ILOAD 9     // I pathIdxStart
+                    AALOAD
+                    ALOAD 4     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher.matchStrings (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+                    IFNE L3
+                    ICONST_0   (line 106)
+                    IRETURN
+                L3: IINC 7 1     // I pattIdxStart   (line 108)
+                    IINC 9 1     // I pathIdxStart   (line 109)
+                L4: ILOAD 7     // I pattIdxStart   (line 100)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPGT L5
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L1
+                L5: ILOAD 9     // I pathIdxStart   (line 112)
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L15
+                    ILOAD 7     // I pattIdxStart   (line 114)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L9
+                    ALOAD_1     // Ljava/lang/String; pattern   (line 115)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L6
+                    ALOAD_2     // Ljava/lang/String; path
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    GOTO L8
+                L6: ALOAD_2     // Ljava/lang/String; path   (line 116)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L7
+                    ICONST_0
+                    GOTO L8
+                L7: ICONST_1
+                L8: IRETURN   (line 115)
+                L9: ILOAD_3     // Z fullMatch   (line 118)
+                    IFNE L10
+                    ICONST_1   (line 119)
+                    IRETURN
+               L10: ILOAD 7     // I pattIdxStart   (line 121)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPNE L11
+                    ALOAD 5     // [Ljava/lang/String; pattDirs
+                    ILOAD 7     // I pattIdxStart
+                    AALOAD
+                    LDC "*"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L11
+                    ALOAD_2     // Ljava/lang/String; path
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L11
+                    ICONST_1   (line 122)
+                    IRETURN
+               L11: ILOAD 7     // I pattIdxStart   (line 124)
+                    ISTORE 11
+                    GOTO L14
+               L12: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 125)
+                    ILOAD 11     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L13
+                    ICONST_0   (line 126)
+                    IRETURN
+               L13: IINC 11 1     // I i   (line 124)
+               L14: ILOAD 11     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L12
+                    ICONST_1   (line 129)
+                    IRETURN
+               L15: ILOAD 7     // I pattIdxStart   (line 131)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L16
+                    ICONST_0   (line 133)
+                    IRETURN
+               L16: ILOAD_3     // Z fullMatch   (line 135)
+                    IFNE L20
+                    LDC "**"
+                    ALOAD 5     // [Ljava/lang/String; pattDirs
+                    ILOAD 7     // I pattIdxStart
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L20
+                    ICONST_1   (line 137)
+                    IRETURN
+               L17: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 142)
+                    ILOAD 8     // I pattIdxEnd
+                    AALOAD
+                    ASTORE 11
+                    ALOAD 11     // Ljava/lang/String; patDir   (line 143)
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L18
+                    GOTO L21   (line 144)
+               L18: ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 146)
+                    ALOAD 11     // Ljava/lang/String; patDir
+                    ALOAD 6     // [Ljava/lang/String; pathDirs
+                    ILOAD 10     // I pathIdxEnd
+                    AALOAD
+                    ALOAD 4     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher.matchStrings (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+                    IFNE L19
+                    ICONST_0   (line 147)
+                    IRETURN
+               L19: IINC 8 -1     // I pattIdxEnd   (line 149)
+                    IINC 10 -1     // I pathIdxEnd   (line 150)
+               L20: ILOAD 7     // I pattIdxStart   (line 141)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPGT L21
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L17
+               L21: ILOAD 9     // I pathIdxStart   (line 152)
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L39
+                    ILOAD 7     // I pattIdxStart   (line 154)
+                    ISTORE 11
+                    GOTO L24
+               L22: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 155)
+                    ILOAD 11     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L23
+                    ICONST_0   (line 156)
+                    IRETURN
+               L23: IINC 11 1     // I i   (line 154)
+               L24: ILOAD 11     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L22
+                    ICONST_1   (line 159)
+                    IRETURN
+               L25: ICONST_M1   (line 163)
+                    ISTORE 11
+                    ILOAD 7     // I pattIdxStart   (line 164)
+                    ICONST_1
+                    IADD
+                    ISTORE 12
+                    GOTO L28
+               L26: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 165)
+                    ILOAD 12     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L27
+                    ILOAD 12     // I i   (line 166)
+                    ISTORE 11     // I patIdxTmp
+                    GOTO L29   (line 167)
+               L27: IINC 12 1     // I i   (line 164)
+               L28: ILOAD 12     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L26
+               L29: ILOAD 11     // I patIdxTmp   (line 170)
+                    ILOAD 7     // I pattIdxStart
+                    ICONST_1
+                    IADD
+                    IF_ICMPNE L30
+                    IINC 7 1     // I pattIdxStart   (line 172)
+                    GOTO L39   (line 173)
+               L30: ILOAD 11     // I patIdxTmp   (line 177)
+                    ILOAD 7     // I pattIdxStart
+                    ISUB
+                    ICONST_1
+                    ISUB
+                    ISTORE 12
+                    ILOAD 10     // I pathIdxEnd   (line 178)
+                    ILOAD 9     // I pathIdxStart
+                    ISUB
+                    ICONST_1
+                    IADD
+                    ISTORE 13
+                    ICONST_M1   (line 179)
+                    ISTORE 14
+                    ICONST_0   (line 182)
+                    ISTORE 15
+                    GOTO L36
+               L31: ICONST_0   (line 183)
+                    ISTORE 16
+                    GOTO L34
+               L32: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 184)
+                    ILOAD 7     // I pattIdxStart
+                    ILOAD 16     // I j
+                    IADD
+                    ICONST_1
+                    IADD
+                    AALOAD
+                    ASTORE 17
+                    ALOAD 6     // [Ljava/lang/String; pathDirs   (line 185)
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 15     // I i
+                    IADD
+                    ILOAD 16     // I j
+                    IADD
+                    AALOAD
+                    ASTORE 18
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 186)
+                    ALOAD 17     // Ljava/lang/String; subPat
+                    ALOAD 18     // Ljava/lang/String; subStr
+                    ALOAD 4     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher.matchStrings (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+                    IFNE L33
+                    GOTO L35   (line 187)
+               L33: IINC 16 1     // I j   (line 183)
+               L34: ILOAD 16     // I j
+                    ILOAD 12     // I patLength
+                    IF_ICMPLT L32
+                    ILOAD 9     // I pathIdxStart   (line 190)
+                    ILOAD 15     // I i
+                    IADD
+                    ISTORE 14     // I foundIdx
+                    GOTO L37   (line 191)
+               L35: IINC 15 1     // I i   (line 182)
+               L36: ILOAD 15     // I i
+                    ILOAD 13     // I strLength
+                    ILOAD 12     // I patLength
+                    ISUB
+                    IF_ICMPLE L31
+               L37: ILOAD 14     // I foundIdx   (line 194)
+                    ICONST_M1
+                    IF_ICMPNE L38
+                    ICONST_0   (line 195)
+                    IRETURN
+               L38: ILOAD 11     // I patIdxTmp   (line 198)
+                    ISTORE 7     // I pattIdxStart
+                    ILOAD 14     // I foundIdx   (line 199)
+                    ILOAD 12     // I patLength
+                    IADD
+                    ISTORE 9     // I pathIdxStart
+               L39: ILOAD 7     // I pattIdxStart   (line 162)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPEQ L40
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L25
+               L40: ILOAD 7     // I pattIdxStart   (line 202)
+                    ISTORE 11
+                    GOTO L43
+               L41: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 203)
+                    ILOAD 11     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L42
+                    ICONST_0   (line 204)
+                    IRETURN
+               L42: IINC 11 1     // I i   (line 202)
+               L43: ILOAD 11     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L41
+                    ICONST_1   (line 208)
+                    IRETURN
+  end protected boolean doMatch(String, String, boolean, java.util.Map)
+
+  private boolean matchStrings(String, String, java.util.Map):
+                    NEW org.springframework.util.AntPathStringMatcher   (line 219)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; str
+                    ALOAD_3     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathStringMatcher.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+                    ASTORE 4
+                    ALOAD 4     // Lorg/springframework/util/AntPathStringMatcher; matcher   (line 220)
+                    INVOKEVIRTUAL org.springframework.util.AntPathStringMatcher.matchStrings ()Z
+                    IRETURN
+  end private boolean matchStrings(String, String, java.util.Map)
+
+  public String extractPathWithinPattern(String, String):
+                    ALOAD_1     // Ljava/lang/String; pattern   (line 237)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; path   (line 238)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 4
+                    NEW java.lang.StringBuilder   (line 240)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE 5
+                    ICONST_0   (line 243)
+                    ISTORE 6
+                    ICONST_0   (line 244)
+                    ISTORE 7
+                    GOTO L5
+                L0: ALOAD_3     // [Ljava/lang/String; patternParts   (line 245)
+                    ILOAD 7     // I i
+                    AALOAD
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/String; patternPart   (line 246)
+                    BIPUSH 42
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPGT L1
+                    ALOAD 8     // Ljava/lang/String; patternPart
+                    BIPUSH 63
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPLE L4
+                L1: ALOAD 4     // [Ljava/lang/String; pathParts
+                    ARRAYLENGTH
+                    ILOAD 7     // I i
+                    ICONST_1
+                    IADD
+                    IF_ICMPLT L4
+                    ILOAD 6     // I puts   (line 247)
+                    IFGT L2
+                    ILOAD 7     // I i
+                    IFNE L3
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L3
+                L2: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 248)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L3: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 250)
+                    ALOAD 4     // [Ljava/lang/String; pathParts
+                    ILOAD 7     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC 6 1     // I puts   (line 251)
+                L4: IINC 7 1     // I i   (line 244)
+                L5: ILOAD 7     // I i
+                    ALOAD_3     // [Ljava/lang/String; patternParts
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    ALOAD_3     // [Ljava/lang/String; patternParts   (line 256)
+                    ARRAYLENGTH
+                    ISTORE 7
+                    GOTO L9
+                L6: ILOAD 6     // I puts   (line 257)
+                    IFGT L7
+                    ILOAD 7     // I i
+                    IFLE L8
+                L7: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 258)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L8: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 260)
+                    ALOAD 4     // [Ljava/lang/String; pathParts
+                    ILOAD 7     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC 7 1     // I i   (line 256)
+                L9: ILOAD 7     // I i
+                    ALOAD 4     // [Ljava/lang/String; pathParts
+                    ARRAYLENGTH
+                    IF_ICMPLT L6
+                    ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 263)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String extractPathWithinPattern(String, String)
+
+  public java.util.Map extractUriTemplateVariables(String, String):
+                    NEW java.util.LinkedHashMap   (line 267)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> ()V
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 268)
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; path
+                    ICONST_1
+                    ALOAD_3     // Ljava/util/Map; variables
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.doMatch (Ljava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+                    ISTORE 4
+                    ILOAD 4     // Z result   (line 269)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Pattern \""
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "\" is not a match for \""
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; path
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "\""
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.Assert.state (ZLjava/lang/String;)V
+                    ALOAD_3     // Ljava/util/Map; variables   (line 270)
+                    ARETURN
+  end public java.util.Map extractUriTemplateVariables(String, String)
+
+  public String combine(String, String):
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 293)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L0
+                    LDC ""   (line 294)
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/String; pattern1   (line 296)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 297)
+                    ARETURN
+                L1: ALOAD_2     // Ljava/lang/String; pattern2   (line 299)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 300)
+                    ARETURN
+                L2: ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 302)
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 303)
+                    ARETURN
+                L3: ALOAD_1     // Ljava/lang/String; pattern1   (line 305)
+                    LDC "/*"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L5
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 306)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L4
+                    NEW java.lang.StringBuilder   (line 308)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L4: NEW java.lang.StringBuilder   (line 312)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L5: ALOAD_1     // Ljava/lang/String; pattern1   (line 315)
+                    LDC "/**"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L7
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 316)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L6
+                    NEW java.lang.StringBuilder   (line 318)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L6: NEW java.lang.StringBuilder   (line 322)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L7: ALOAD_1     // Ljava/lang/String; pattern1   (line 326)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE_3
+                    ILOAD_3     // I dotPos1   (line 327)
+                    ICONST_M1
+                    IF_ICMPNE L10
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 329)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFNE L8
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L9
+                L8: NEW java.lang.StringBuilder   (line 330)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L9: NEW java.lang.StringBuilder   (line 333)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+               L10: ALOAD_1     // Ljava/lang/String; pattern1   (line 336)
+                    ICONST_0
+                    ILOAD_3     // I dotPos1
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 337)
+                    ILOAD_3     // I dotPos1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 340)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE 8
+                    ILOAD 8     // I dotPos2   (line 341)
+                    ICONST_M1
+                    IF_ICMPEQ L11
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 342)
+                    ICONST_0
+                    ILOAD 8     // I dotPos2
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 343)
+                    ILOAD 8     // I dotPos2
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 7
+                    GOTO L12
+               L11: ALOAD_2     // Ljava/lang/String; pattern2   (line 346)
+                    ASTORE 6
+                    LDC ""   (line 347)
+                    ASTORE 7
+               L12: ALOAD 4     // Ljava/lang/String; fileName1   (line 349)
+                    LDC "*"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L13
+                    ALOAD 6     // Ljava/lang/String; fileName2
+                    GOTO L14
+               L13: ALOAD 4     // Ljava/lang/String; fileName1
+               L14: ASTORE 9
+                    ALOAD 5     // Ljava/lang/String; extension1   (line 350)
+                    LDC "*"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L15
+                    ALOAD 7     // Ljava/lang/String; extension2
+                    GOTO L16
+               L15: ALOAD 5     // Ljava/lang/String; extension1
+               L16: ASTORE 10
+                    NEW java.lang.StringBuilder   (line 352)
+                    DUP
+                    ALOAD 9     // Ljava/lang/String; fileName
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 10     // Ljava/lang/String; extension
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String combine(String, String)
+
+  public java.util.Comparator getPatternComparator(String):
+                    NEW org.springframework.util.AntPathMatcher$AntPatternComparator   (line 369)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; path
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher$AntPatternComparator.<init> (Ljava/lang/String;Lorg/springframework/util/AntPathMatcher$AntPatternComparator;)V
+                    ARETURN
+  end public java.util.Comparator getPatternComparator(String)
+
+  static java.util.regex.Pattern access$0():
+                    GETSTATIC org.springframework.util.AntPathMatcher.VARIABLE_PATTERN Ljava/util/regex/Pattern;   (line 49)
+                    ARETURN
+  end static java.util.regex.Pattern access$0()
+end public class org.springframework.util.AntPathMatcher
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:361)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:624)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3116)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2550)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(PathMatchingResourcePatternResolver.java:189)
+	at org.springframework.context.support.AbstractApplicationContext.getResourcePatternResolver(AbstractApplicationContext.java:350)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:222)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.util.AntPathMatcher extends java.lang.Object implements org.springframework.util.PathMatcher:
+  private static final java.util.regex.Pattern VARIABLE_PATTERN
+  public static final String DEFAULT_PATH_SEPARATOR = "/"
+  private String pathSeparator
+  static void <clinit>():
+    staticinitialization(void org.springframework.util.AntPathMatcher.<clinit>())
+    |               LDC "\{[^/]+?\}"   (line 49)
+    |               INVOKESTATIC java.util.regex.Pattern.compile (Ljava/lang/String;)Ljava/util/regex/Pattern;
+    |               PUTSTATIC org.springframework.util.AntPathMatcher.VARIABLE_PATTERN Ljava/util/regex/Pattern;
+    |               RETURN   (line 47)
+    staticinitialization(void org.springframework.util.AntPathMatcher.<clinit>())
+  end static void <clinit>()
+
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 47)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.util.AntPathMatcher.<init>())
+    |               ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 54)
+    |               LDC "/"
+    |               PUTFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+    |               RETURN   (line 47)
+    constructor-execution(void org.springframework.util.AntPathMatcher.<init>())
+  end public void <init>()
+
+  public void setPathSeparator(String):
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 59)
+                    ALOAD_1     // Ljava/lang/String; pathSeparator
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; pathSeparator
+                    GOTO L1
+                L0: LDC "/"
+                L1: PUTFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    RETURN   (line 60)
+  end public void setPathSeparator(String)
+
+  public boolean isPattern(String):
+                    ALOAD_1     // Ljava/lang/String; path   (line 64)
+                    BIPUSH 42
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ALOAD_1     // Ljava/lang/String; path
+                    BIPUSH 63
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    ICONST_0
+                    IRETURN
+                L0: ICONST_1
+                    IRETURN
+  end public boolean isPattern(String)
+
+  public boolean match(String, String):
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 68)
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; path
+                    ICONST_1
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.doMatch (Ljava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+                    IRETURN
+  end public boolean match(String, String)
+
+  public boolean matchStart(String, String):
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 72)
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; path
+                    ICONST_0
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.doMatch (Ljava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+                    IRETURN
+  end public boolean matchStart(String, String)
+
+  protected boolean doMatch(String, String, boolean, java.util.Map):
+                    ALOAD_2     // Ljava/lang/String; path   (line 87)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IF_ICMPEQ L0
+                    ICONST_0   (line 88)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/String; pattern   (line 91)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD_2     // Ljava/lang/String; path   (line 92)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 6
+                    ICONST_0   (line 94)
+                    ISTORE 7
+                    ALOAD 5     // [Ljava/lang/String; pattDirs   (line 95)
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    ISTORE 8
+                    ICONST_0   (line 96)
+                    ISTORE 9
+                    ALOAD 6     // [Ljava/lang/String; pathDirs   (line 97)
+                    ARRAYLENGTH
+                    ICONST_1
+                    ISUB
+                    ISTORE 10
+                    GOTO L4   (line 100)
+                L1: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 101)
+                    ILOAD 7     // I pattIdxStart
+                    AALOAD
+                    ASTORE 11
+                    LDC "**"   (line 102)
+                    ALOAD 11     // Ljava/lang/String; patDir
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    GOTO L5   (line 103)
+                L2: ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 105)
+                    ALOAD 11     // Ljava/lang/String; patDir
+                    ALOAD 6     // [Ljava/lang/String; pathDirs
+                    ILOAD 9     // I pathIdxStart
+                    AALOAD
+                    ALOAD 4     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher.matchStrings (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+                    IFNE L3
+                    ICONST_0   (line 106)
+                    IRETURN
+                L3: IINC 7 1     // I pattIdxStart   (line 108)
+                    IINC 9 1     // I pathIdxStart   (line 109)
+                L4: ILOAD 7     // I pattIdxStart   (line 100)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPGT L5
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L1
+                L5: ILOAD 9     // I pathIdxStart   (line 112)
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L15
+                    ILOAD 7     // I pattIdxStart   (line 114)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L9
+                    ALOAD_1     // Ljava/lang/String; pattern   (line 115)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L6
+                    ALOAD_2     // Ljava/lang/String; path
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    GOTO L8
+                L6: ALOAD_2     // Ljava/lang/String; path   (line 116)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L7
+                    ICONST_0
+                    GOTO L8
+                L7: ICONST_1
+                L8: IRETURN   (line 115)
+                L9: ILOAD_3     // Z fullMatch   (line 118)
+                    IFNE L10
+                    ICONST_1   (line 119)
+                    IRETURN
+               L10: ILOAD 7     // I pattIdxStart   (line 121)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPNE L11
+                    ALOAD 5     // [Ljava/lang/String; pattDirs
+                    ILOAD 7     // I pattIdxStart
+                    AALOAD
+                    LDC "*"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L11
+                    ALOAD_2     // Ljava/lang/String; path
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L11
+                    ICONST_1   (line 122)
+                    IRETURN
+               L11: ILOAD 7     // I pattIdxStart   (line 124)
+                    ISTORE 11
+                    GOTO L14
+               L12: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 125)
+                    ILOAD 11     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L13
+                    ICONST_0   (line 126)
+                    IRETURN
+               L13: IINC 11 1     // I i   (line 124)
+               L14: ILOAD 11     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L12
+                    ICONST_1   (line 129)
+                    IRETURN
+               L15: ILOAD 7     // I pattIdxStart   (line 131)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L16
+                    ICONST_0   (line 133)
+                    IRETURN
+               L16: ILOAD_3     // Z fullMatch   (line 135)
+                    IFNE L20
+                    LDC "**"
+                    ALOAD 5     // [Ljava/lang/String; pattDirs
+                    ILOAD 7     // I pattIdxStart
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L20
+                    ICONST_1   (line 137)
+                    IRETURN
+               L17: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 142)
+                    ILOAD 8     // I pattIdxEnd
+                    AALOAD
+                    ASTORE 11
+                    ALOAD 11     // Ljava/lang/String; patDir   (line 143)
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L18
+                    GOTO L21   (line 144)
+               L18: ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 146)
+                    ALOAD 11     // Ljava/lang/String; patDir
+                    ALOAD 6     // [Ljava/lang/String; pathDirs
+                    ILOAD 10     // I pathIdxEnd
+                    AALOAD
+                    ALOAD 4     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher.matchStrings (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+                    IFNE L19
+                    ICONST_0   (line 147)
+                    IRETURN
+               L19: IINC 8 -1     // I pattIdxEnd   (line 149)
+                    IINC 10 -1     // I pathIdxEnd   (line 150)
+               L20: ILOAD 7     // I pattIdxStart   (line 141)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPGT L21
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L17
+               L21: ILOAD 9     // I pathIdxStart   (line 152)
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L39
+                    ILOAD 7     // I pattIdxStart   (line 154)
+                    ISTORE 11
+                    GOTO L24
+               L22: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 155)
+                    ILOAD 11     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L23
+                    ICONST_0   (line 156)
+                    IRETURN
+               L23: IINC 11 1     // I i   (line 154)
+               L24: ILOAD 11     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L22
+                    ICONST_1   (line 159)
+                    IRETURN
+               L25: ICONST_M1   (line 163)
+                    ISTORE 11
+                    ILOAD 7     // I pattIdxStart   (line 164)
+                    ICONST_1
+                    IADD
+                    ISTORE 12
+                    GOTO L28
+               L26: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 165)
+                    ILOAD 12     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L27
+                    ILOAD 12     // I i   (line 166)
+                    ISTORE 11     // I patIdxTmp
+                    GOTO L29   (line 167)
+               L27: IINC 12 1     // I i   (line 164)
+               L28: ILOAD 12     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L26
+               L29: ILOAD 11     // I patIdxTmp   (line 170)
+                    ILOAD 7     // I pattIdxStart
+                    ICONST_1
+                    IADD
+                    IF_ICMPNE L30
+                    IINC 7 1     // I pattIdxStart   (line 172)
+                    GOTO L39   (line 173)
+               L30: ILOAD 11     // I patIdxTmp   (line 177)
+                    ILOAD 7     // I pattIdxStart
+                    ISUB
+                    ICONST_1
+                    ISUB
+                    ISTORE 12
+                    ILOAD 10     // I pathIdxEnd   (line 178)
+                    ILOAD 9     // I pathIdxStart
+                    ISUB
+                    ICONST_1
+                    IADD
+                    ISTORE 13
+                    ICONST_M1   (line 179)
+                    ISTORE 14
+                    ICONST_0   (line 182)
+                    ISTORE 15
+                    GOTO L36
+               L31: ICONST_0   (line 183)
+                    ISTORE 16
+                    GOTO L34
+               L32: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 184)
+                    ILOAD 7     // I pattIdxStart
+                    ILOAD 16     // I j
+                    IADD
+                    ICONST_1
+                    IADD
+                    AALOAD
+                    ASTORE 17
+                    ALOAD 6     // [Ljava/lang/String; pathDirs   (line 185)
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 15     // I i
+                    IADD
+                    ILOAD 16     // I j
+                    IADD
+                    AALOAD
+                    ASTORE 18
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 186)
+                    ALOAD 17     // Ljava/lang/String; subPat
+                    ALOAD 18     // Ljava/lang/String; subStr
+                    ALOAD 4     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher.matchStrings (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Z
+                    IFNE L33
+                    GOTO L35   (line 187)
+               L33: IINC 16 1     // I j   (line 183)
+               L34: ILOAD 16     // I j
+                    ILOAD 12     // I patLength
+                    IF_ICMPLT L32
+                    ILOAD 9     // I pathIdxStart   (line 190)
+                    ILOAD 15     // I i
+                    IADD
+                    ISTORE 14     // I foundIdx
+                    GOTO L37   (line 191)
+               L35: IINC 15 1     // I i   (line 182)
+               L36: ILOAD 15     // I i
+                    ILOAD 13     // I strLength
+                    ILOAD 12     // I patLength
+                    ISUB
+                    IF_ICMPLE L31
+               L37: ILOAD 14     // I foundIdx   (line 194)
+                    ICONST_M1
+                    IF_ICMPNE L38
+                    ICONST_0   (line 195)
+                    IRETURN
+               L38: ILOAD 11     // I patIdxTmp   (line 198)
+                    ISTORE 7     // I pattIdxStart
+                    ILOAD 14     // I foundIdx   (line 199)
+                    ILOAD 12     // I patLength
+                    IADD
+                    ISTORE 9     // I pathIdxStart
+               L39: ILOAD 7     // I pattIdxStart   (line 162)
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPEQ L40
+                    ILOAD 9     // I pathIdxStart
+                    ILOAD 10     // I pathIdxEnd
+                    IF_ICMPLE L25
+               L40: ILOAD 7     // I pattIdxStart   (line 202)
+                    ISTORE 11
+                    GOTO L43
+               L41: ALOAD 5     // [Ljava/lang/String; pattDirs   (line 203)
+                    ILOAD 11     // I i
+                    AALOAD
+                    LDC "**"
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L42
+                    ICONST_0   (line 204)
+                    IRETURN
+               L42: IINC 11 1     // I i   (line 202)
+               L43: ILOAD 11     // I i
+                    ILOAD 8     // I pattIdxEnd
+                    IF_ICMPLE L41
+                    ICONST_1   (line 208)
+                    IRETURN
+  end protected boolean doMatch(String, String, boolean, java.util.Map)
+
+  private boolean matchStrings(String, String, java.util.Map):
+                    NEW org.springframework.util.AntPathStringMatcher   (line 219)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; str
+                    ALOAD_3     // Ljava/util/Map; uriTemplateVariables
+                    INVOKESPECIAL org.springframework.util.AntPathStringMatcher.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+                    ASTORE 4
+                    ALOAD 4     // Lorg/springframework/util/AntPathStringMatcher; matcher   (line 220)
+                    INVOKEVIRTUAL org.springframework.util.AntPathStringMatcher.matchStrings ()Z
+                    IRETURN
+  end private boolean matchStrings(String, String, java.util.Map)
+
+  public String extractPathWithinPattern(String, String):
+                    ALOAD_1     // Ljava/lang/String; pattern   (line 237)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/String; path   (line 238)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.tokenizeToStringArray (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+                    ASTORE 4
+                    NEW java.lang.StringBuilder   (line 240)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE 5
+                    ICONST_0   (line 243)
+                    ISTORE 6
+                    ICONST_0   (line 244)
+                    ISTORE 7
+                    GOTO L5
+                L0: ALOAD_3     // [Ljava/lang/String; patternParts   (line 245)
+                    ILOAD 7     // I i
+                    AALOAD
+                    ASTORE 8
+                    ALOAD 8     // Ljava/lang/String; patternPart   (line 246)
+                    BIPUSH 42
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPGT L1
+                    ALOAD 8     // Ljava/lang/String; patternPart
+                    BIPUSH 63
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPLE L4
+                L1: ALOAD 4     // [Ljava/lang/String; pathParts
+                    ARRAYLENGTH
+                    ILOAD 7     // I i
+                    ICONST_1
+                    IADD
+                    IF_ICMPLT L4
+                    ILOAD 6     // I puts   (line 247)
+                    IFGT L2
+                    ILOAD 7     // I i
+                    IFNE L3
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L3
+                L2: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 248)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L3: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 250)
+                    ALOAD 4     // [Ljava/lang/String; pathParts
+                    ILOAD 7     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC 6 1     // I puts   (line 251)
+                L4: IINC 7 1     // I i   (line 244)
+                L5: ILOAD 7     // I i
+                    ALOAD_3     // [Ljava/lang/String; patternParts
+                    ARRAYLENGTH
+                    IF_ICMPLT L0
+                    ALOAD_3     // [Ljava/lang/String; patternParts   (line 256)
+                    ARRAYLENGTH
+                    ISTORE 7
+                    GOTO L9
+                L6: ILOAD 6     // I puts   (line 257)
+                    IFGT L7
+                    ILOAD 7     // I i
+                    IFLE L8
+                L7: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 258)
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this
+                    GETFIELD org.springframework.util.AntPathMatcher.pathSeparator Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L8: ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 260)
+                    ALOAD 4     // [Ljava/lang/String; pathParts
+                    ILOAD 7     // I i
+                    AALOAD
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    IINC 7 1     // I i   (line 256)
+                L9: ILOAD 7     // I i
+                    ALOAD 4     // [Ljava/lang/String; pathParts
+                    ARRAYLENGTH
+                    IF_ICMPLT L6
+                    ALOAD 5     // Ljava/lang/StringBuilder; builder   (line 263)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String extractPathWithinPattern(String, String)
+
+  public java.util.Map extractUriTemplateVariables(String, String):
+                    NEW java.util.LinkedHashMap   (line 267)
+                    DUP
+                    INVOKESPECIAL java.util.LinkedHashMap.<init> ()V
+                    ASTORE_3
+                    ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 268)
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    ALOAD_2     // Ljava/lang/String; path
+                    ICONST_1
+                    ALOAD_3     // Ljava/util/Map; variables
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.doMatch (Ljava/lang/String;Ljava/lang/String;ZLjava/util/Map;)Z
+                    ISTORE 4
+                    ILOAD 4     // Z result   (line 269)
+                    NEW java.lang.StringBuilder
+                    DUP
+                    LDC "Pattern \""
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_1     // Ljava/lang/String; pattern
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "\" is not a match for \""
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; path
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "\""
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.Assert.state (ZLjava/lang/String;)V
+                    ALOAD_3     // Ljava/util/Map; variables   (line 270)
+                    ARETURN
+  end public java.util.Map extractUriTemplateVariables(String, String)
+
+  public String combine(String, String):
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 293)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L0
+                    LDC ""   (line 294)
+                    ARETURN
+                L0: ALOAD_1     // Ljava/lang/String; pattern1   (line 296)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L1
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 297)
+                    ARETURN
+                L1: ALOAD_2     // Ljava/lang/String; pattern2   (line 299)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFNE L2
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 300)
+                    ARETURN
+                L2: ALOAD_0     // Lorg/springframework/util/AntPathMatcher; this   (line 302)
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL org.springframework.util.AntPathMatcher.match (Ljava/lang/String;Ljava/lang/String;)Z
+                    IFEQ L3
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 303)
+                    ARETURN
+                L3: ALOAD_1     // Ljava/lang/String; pattern1   (line 305)
+                    LDC "/*"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L5
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 306)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L4
+                    NEW java.lang.StringBuilder   (line 308)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    ICONST_1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L4: NEW java.lang.StringBuilder   (line 312)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    ICONST_0
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    ICONST_1
+                    ISUB
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L5: ALOAD_1     // Ljava/lang/String; pattern1   (line 315)
+                    LDC "/**"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L7
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 316)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L6
+                    NEW java.lang.StringBuilder   (line 318)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L6: NEW java.lang.StringBuilder   (line 322)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L7: ALOAD_1     // Ljava/lang/String; pattern1   (line 326)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE_3
+                    ILOAD_3     // I dotPos1   (line 327)
+                    ICONST_M1
+                    IF_ICMPNE L10
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 329)
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFNE L8
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L9
+                L8: NEW java.lang.StringBuilder   (line 330)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+                L9: NEW java.lang.StringBuilder   (line 333)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; pattern1
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    LDC "/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_2     // Ljava/lang/String; pattern2
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+               L10: ALOAD_1     // Ljava/lang/String; pattern1   (line 336)
+                    ICONST_0
+                    ILOAD_3     // I dotPos1
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD_1     // Ljava/lang/String; pattern1   (line 337)
+                    ILOAD_3     // I dotPos1
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 5
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 340)
+                    BIPUSH 46
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ISTORE 8
+                    ILOAD 8     // I dotPos2   (line 341)
+                    ICONST_M1
+                    IF_ICMPEQ L11
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 342)
+                    ICONST_0
+                    ILOAD 8     // I dotPos2
+                    INVOKEVIRTUAL java.lang.String.substring (II)Ljava/lang/String;
+                    ASTORE 6
+                    ALOAD_2     // Ljava/lang/String; pattern2   (line 343)
+                    ILOAD 8     // I dotPos2
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ASTORE 7
+                    GOTO L12
+               L11: ALOAD_2     // Ljava/lang/String; pattern2   (line 346)
+                    ASTORE 6
+                    LDC ""   (line 347)
+                    ASTORE 7
+               L12: ALOAD 4     // Ljava/lang/String; fileName1   (line 349)
+                    LDC "*"
+                    INVOKEVIRTUAL java.lang.String.endsWith (Ljava/lang/String;)Z
+                    IFEQ L13
+                    ALOAD 6     // Ljava/lang/String; fileName2
+                    GOTO L14
+               L13: ALOAD 4     // Ljava/lang/String; fileName1
+               L14: ASTORE 9
+                    ALOAD 5     // Ljava/lang/String; extension1   (line 350)
+                    LDC "*"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFEQ L15
+                    ALOAD 7     // Ljava/lang/String; extension2
+                    GOTO L16
+               L15: ALOAD 5     // Ljava/lang/String; extension1
+               L16: ASTORE 10
+                    NEW java.lang.StringBuilder   (line 352)
+                    DUP
+                    ALOAD 9     // Ljava/lang/String; fileName
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ALOAD 10     // Ljava/lang/String; extension
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String combine(String, String)
+
+  public java.util.Comparator getPatternComparator(String):
+                    NEW org.springframework.util.AntPathMatcher$AntPatternComparator   (line 369)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; path
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.util.AntPathMatcher$AntPatternComparator.<init> (Ljava/lang/String;Lorg/springframework/util/AntPathMatcher$AntPatternComparator;)V
+                    ARETURN
+  end public java.util.Comparator getPatternComparator(String)
+
+  static java.util.regex.Pattern access$0():
+                    GETSTATIC org.springframework.util.AntPathMatcher.VARIABLE_PATTERN Ljava/util/regex/Pattern;   (line 49)
+                    ARETURN
+  end static java.util.regex.Pattern access$0()
+end public class org.springframework.util.AntPathMatcher
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.<init>(PathMatchingResourcePatternResolver.java:189)
+	at org.springframework.context.support.AbstractApplicationContext.getResourcePatternResolver(AbstractApplicationContext.java:350)
+	at org.springframework.context.support.AbstractApplicationContext.<init>(AbstractApplicationContext.java:222)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.<init>(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractRefreshableConfigApplicationContext.<init>(AbstractRefreshableConfigApplicationContext.java:59)
+	at org.springframework.context.support.AbstractXmlApplicationContext.<init>(AbstractXmlApplicationContext.java:61)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:136)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

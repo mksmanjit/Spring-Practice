@@ -1,0 +1,574 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.11 built on Tuesday Mar 15, 2011 at 15:31:04 GMT
+---- Dump Properties ---
+Dump file: ajcore.20150913.182857.673.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.factory.config.BeanDefinitionHolder extends java.lang.Object implements org.springframework.beans.BeanMetadataElement:
+  private final org.springframework.beans.factory.config.BeanDefinition beanDefinition
+  private final String beanName
+  private final String[] aliases
+  public void <init>(org.springframework.beans.factory.config.BeanDefinition, String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 53)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.factory.config.BeanDefinitionHolder.<init> (Lorg/springframework/beans/factory/config/BeanDefinition;Ljava/lang/String;[Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String))
+    |               RETURN   (line 54)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String))
+  end public void <init>(org.springframework.beans.factory.config.BeanDefinition, String)
+
+  public void <init>(org.springframework.beans.factory.config.BeanDefinition, String, String[]):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 62)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String, java.lang.String[]))
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 63)
+    |               LDC "BeanDefinition must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_2     // Ljava/lang/String; beanName   (line 64)
+    |               LDC "Bean name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 65)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 66)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 67)
+    |               ALOAD_3     // [Ljava/lang/String; aliases
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+    |               RETURN   (line 68)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String, java.lang.String[]))
+  end public void <init>(org.springframework.beans.factory.config.BeanDefinition, String, String[])
+
+  public void <init>(org.springframework.beans.factory.config.BeanDefinitionHolder):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 77)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinitionHolder))
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder   (line 78)
+    |               LDC "BeanDefinitionHolder must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 79)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanDefinition ()Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 80)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanName ()Ljava/lang/String;
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 81)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getAliases ()[Ljava/lang/String;
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+    |               RETURN   (line 82)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinitionHolder))
+  end public void <init>(org.springframework.beans.factory.config.BeanDefinitionHolder)
+
+  public org.springframework.beans.factory.config.BeanDefinition getBeanDefinition():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 89)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    ARETURN
+  end public org.springframework.beans.factory.config.BeanDefinition getBeanDefinition()
+
+  public String getBeanName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 96)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    ARETURN
+  end public String getBeanName()
+
+  public String[] getAliases():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 104)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    ARETURN
+  end public String[] getAliases()
+
+  public Object getSource():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 112)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getSource ()Ljava/lang/Object;
+                    ARETURN
+  end public Object getSource()
+
+  public boolean matchesName(String):
+                    ALOAD_1     // Ljava/lang/String; candidateName   (line 120)
+                    IFNULL L1
+                    ALOAD_1     // Ljava/lang/String; candidateName   (line 121)
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; candidateName
+                    INVOKESTATIC org.springframework.util.ObjectUtils.containsElement ([Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ICONST_1
+                    IRETURN
+                L1: ICONST_0
+                    IRETURN   (line 120)
+  end public boolean matchesName(String)
+
+  public String getShortDescription():
+                    NEW java.lang.StringBuilder   (line 131)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 132)
+                    LDC "Bean definition with name '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 133)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 134)
+                    LDC " and aliases ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToCommaDelimitedString ([Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L0: ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 136)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getShortDescription()
+
+  public String getLongDescription():
+                    NEW java.lang.StringBuilder   (line 146)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getShortDescription ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 147)
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 148)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getLongDescription()
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 159)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getLongDescription ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 165)
+                    ALOAD_1     // Ljava/lang/Object; other
+                    IF_ACMPNE L0
+                    ICONST_1   (line 166)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; other   (line 168)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinitionHolder
+                    IFNE L1
+                    ICONST_0   (line 169)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; other   (line 171)
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinitionHolder
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 172)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; otherHolder
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 173)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; otherHolder
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 174)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; otherHolder
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1
+                    IRETURN
+                L2: ICONST_0
+                    IRETURN   (line 172)
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 179)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    ISTORE_1
+                    BIPUSH 29   (line 180)
+                    ILOAD_1     // I hashCode
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.hashCode ()I
+                    IADD
+                    ISTORE_1     // I hashCode
+                    BIPUSH 29   (line 181)
+                    ILOAD_1     // I hashCode
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([Ljava/lang/Object;)I
+                    IADD
+                    ISTORE_1     // I hashCode
+                    ILOAD_1     // I hashCode   (line 182)
+                    IRETURN
+  end public int hashCode()
+
+end public class org.springframework.beans.factory.config.BeanDefinitionHolder
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.factory.config.BeanDefinitionHolder extends java.lang.Object implements org.springframework.beans.BeanMetadataElement:
+  private final org.springframework.beans.factory.config.BeanDefinition beanDefinition
+  private final String beanName
+  private final String[] aliases
+  public void <init>(org.springframework.beans.factory.config.BeanDefinition, String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 53)
+                    ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+                    ALOAD_2     // Ljava/lang/String; beanName
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.beans.factory.config.BeanDefinitionHolder.<init> (Lorg/springframework/beans/factory/config/BeanDefinition;Ljava/lang/String;[Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String))
+    |               RETURN   (line 54)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String))
+  end public void <init>(org.springframework.beans.factory.config.BeanDefinition, String)
+
+  public void <init>(org.springframework.beans.factory.config.BeanDefinition, String, String[]):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 62)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String, java.lang.String[]))
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition   (line 63)
+    |               LDC "BeanDefinition must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_2     // Ljava/lang/String; beanName   (line 64)
+    |               LDC "Bean name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 65)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinition; beanDefinition
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 66)
+    |               ALOAD_2     // Ljava/lang/String; beanName
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 67)
+    |               ALOAD_3     // [Ljava/lang/String; aliases
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+    |               RETURN   (line 68)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinition, java.lang.String, java.lang.String[]))
+  end public void <init>(org.springframework.beans.factory.config.BeanDefinition, String, String[])
+
+  public void <init>(org.springframework.beans.factory.config.BeanDefinitionHolder):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 77)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinitionHolder))
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder   (line 78)
+    |               LDC "BeanDefinitionHolder must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 79)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanDefinition ()Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 80)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getBeanName ()Ljava/lang/String;
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 81)
+    |               ALOAD_1     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; beanDefinitionHolder
+    |               INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getAliases ()[Ljava/lang/String;
+    |               PUTFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+    |               RETURN   (line 82)
+    constructor-execution(void org.springframework.beans.factory.config.BeanDefinitionHolder.<init>(org.springframework.beans.factory.config.BeanDefinitionHolder))
+  end public void <init>(org.springframework.beans.factory.config.BeanDefinitionHolder)
+
+  public org.springframework.beans.factory.config.BeanDefinition getBeanDefinition():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 89)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    ARETURN
+  end public org.springframework.beans.factory.config.BeanDefinition getBeanDefinition()
+
+  public String getBeanName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 96)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    ARETURN
+  end public String getBeanName()
+
+  public String[] getAliases():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 104)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    ARETURN
+  end public String[] getAliases()
+
+  public Object getSource():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 112)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEINTERFACE org.springframework.beans.factory.config.BeanDefinition.getSource ()Ljava/lang/Object;
+                    ARETURN
+  end public Object getSource()
+
+  public boolean matchesName(String):
+                    ALOAD_1     // Ljava/lang/String; candidateName   (line 120)
+                    IFNULL L1
+                    ALOAD_1     // Ljava/lang/String; candidateName   (line 121)
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/String; candidateName
+                    INVOKESTATIC org.springframework.util.ObjectUtils.containsElement ([Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ICONST_1
+                    IRETURN
+                L1: ICONST_0
+                    IRETURN   (line 120)
+  end public boolean matchesName(String)
+
+  public String getShortDescription():
+                    NEW java.lang.StringBuilder   (line 131)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 132)
+                    LDC "Bean definition with name '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 133)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 134)
+                    LDC " and aliases ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.StringUtils.arrayToCommaDelimitedString ([Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    POP
+                L0: ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 136)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getShortDescription()
+
+  public String getLongDescription():
+                    NEW java.lang.StringBuilder   (line 146)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getShortDescription ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuilder.<init> (Ljava/lang/String;)V
+                    ASTORE_1
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 147)
+                    LDC ": "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    POP
+                    ALOAD_1     // Ljava/lang/StringBuilder; sb   (line 148)
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getLongDescription()
+
+  public String toString():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 159)
+                    INVOKEVIRTUAL org.springframework.beans.factory.config.BeanDefinitionHolder.getLongDescription ()Ljava/lang/String;
+                    ARETURN
+  end public String toString()
+
+  public boolean equals(Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 165)
+                    ALOAD_1     // Ljava/lang/Object; other
+                    IF_ACMPNE L0
+                    ICONST_1   (line 166)
+                    IRETURN
+                L0: ALOAD_1     // Ljava/lang/Object; other   (line 168)
+                    INSTANCEOF org.springframework.beans.factory.config.BeanDefinitionHolder
+                    IFNE L1
+                    ICONST_0   (line 169)
+                    IRETURN
+                L1: ALOAD_1     // Ljava/lang/Object; other   (line 171)
+                    CHECKCAST org.springframework.beans.factory.config.BeanDefinitionHolder
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 172)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; otherHolder
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 173)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; otherHolder
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 174)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    ALOAD_2     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; otherHolder
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeEquals (Ljava/lang/Object;Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ICONST_1
+                    IRETURN
+                L2: ICONST_0
+                    IRETURN   (line 172)
+  end public boolean equals(Object)
+
+  public int hashCode():
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this   (line 179)
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanDefinition Lorg/springframework/beans/factory/config/BeanDefinition;
+                    INVOKEVIRTUAL java.lang.Object.hashCode ()I
+                    ISTORE_1
+                    BIPUSH 29   (line 180)
+                    ILOAD_1     // I hashCode
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.beanName Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.String.hashCode ()I
+                    IADD
+                    ISTORE_1     // I hashCode
+                    BIPUSH 29   (line 181)
+                    ILOAD_1     // I hashCode
+                    IMUL
+                    ALOAD_0     // Lorg/springframework/beans/factory/config/BeanDefinitionHolder; this
+                    GETFIELD org.springframework.beans.factory.config.BeanDefinitionHolder.aliases [Ljava/lang/String;
+                    INVOKESTATIC org.springframework.util.ObjectUtils.nullSafeHashCode ([Ljava/lang/Object;)I
+                    IADD
+                    ISTORE_1     // I hashCode
+                    ILOAD_1     // I hashCode   (line 182)
+                    IRETURN
+  end public int hashCode()
+
+end public class org.springframework.beans.factory.config.BeanDefinitionHolder
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:96)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1335)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1325)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at foo.ConfigureApp.main(ConfigureApp.java:9)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin
+java.vm.version=25.45-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=E:\Eclipse Latest\SpringChap3.3
+java.runtime.version=1.8.0_45-b15
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\SANJUS~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 7
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Java\jre1.8.0_45\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;;E:\Eclipse Latest\eclipse-jee-luna-SR2-win32-x86_64\eclipse;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.1
+user.home=C:\Users\sanju singh
+user.timezone=Asia/Calcutta
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+java.class.path=E:\Eclipse Latest\SpringChap3.3\bin;E:\Eclipse Latest\SpringJar\extra Jar\aopalliance-1.0.jar;E:\Eclipse Latest\SpringJar\extra Jar\asm-3.3.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjrt-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\aspectjweaver-1.6.11.jar;E:\Eclipse Latest\SpringJar\extra Jar\cglib-2.2.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\commons-logging-1.1.1.jar;E:\Eclipse Latest\SpringJar\extra Jar\junit-4.8.2.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-aop-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-asm-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-beans-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-context-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-core-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\extra Jar\spring-expression-3.0.5.RELEASE.jar;E:\Eclipse Latest\SpringJar\spring-aspects-4.1.6.RELEASE.jar;E:\TestJar\aspectjweaver-1.6.11.jar
+user.name=sanju singh
+java.vm.specification.version=1.8
+sun.java.command=foo.ConfigureApp
+java.home=C:\Program Files\Java\jdk1.8.0_45\jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_45
+java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

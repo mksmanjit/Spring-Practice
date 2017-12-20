@@ -1,0 +1,57 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+	<bean id="audience" class="foo.Audience"/>
+	<!-- <bean id="audienceAdvice" class="foo.AudienceAdvice">
+		<property name="audience" ref="audience"/>
+	</bean> -->
+	<bean id="audienceAdvice" class="foo.AudienceAroundAdvice">
+		<property name="audience" ref="audience"/>
+	</bean>
+	
+	<!-- <bean id="performancePointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+		<property name="pattern" value=".*perform"/>
+	</bean>
+	
+	<bean id="audienceAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="audienceAdvice"/>
+		<property name="pointcut" ref="performancePointcut"/>
+	</bean> -->
+	
+	<!-- <bean id="audienceAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="advice" ref="audienceAdvice"/>
+		<property name="pattern" value=".*perform"/>
+	</bean> -->
+	
+	<bean id="audienceAdvisor" class="org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor">
+		<property name="advice" ref="audienceAdvice"/>
+		<property name="expression" value="execution(* *.perform(..))"/>
+	</bean>
+	
+	<bean id="guitar" class="foo.Guitar"/>
+	
+	<!-- <bean id="dukeTarget" class="foo.Instrumentalist">
+		<property name="instrument" ref="guitar"/>
+		<property name="song" value="JIGEL BELL JIGEL BELL"/>
+	</bean>	
+	
+	<bean id="duke" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="dukeTarget"/>
+		<property name="interceptorNames" value="audienceAdvisor"/>
+		<property name="proxyInterfaces" value="foo.Performer"/>
+	</bean> -->
+	
+	<bean id="duke" class="foo.Instrumentalist">
+		<property name="instrument" ref="guitar"/>
+		<property name="song" value="JIGEL BELL JIGEL BELL"/>
+	</bean>
+	
+	<!-- <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/> -->
+	<aop:aspectj-autoproxy/>
+	
+</beans>
